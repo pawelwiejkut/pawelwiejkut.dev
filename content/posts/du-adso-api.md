@@ -1,7 +1,7 @@
 ---
 title: "Direct Update ADSO ABAP API"
 date: 2021-10-17T19:35:53+02:00
-draft: true
+draft: false
 ---
 
 {{< highlight abap >}}
