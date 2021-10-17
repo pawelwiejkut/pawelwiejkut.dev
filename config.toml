@@ -12,9 +12,9 @@ sectionPagesMenu = "main"
   url = '/search/'
   weight = 100
 [[menu.main]]
-  identifier = "categories"
-  name = "Categories"
-  url = "/categories/"
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
   weight = 10 
 [[menu.main]]
   identifier = "abapodpodstaw"
@@ -22,6 +22,8 @@ sectionPagesMenu = "main"
   url = "/abapodpodstaw/"
   weight = 0
 
+[params]
+env = "production"
 
 [params.homeInfoParams]
 Title = "Hi there 👋"
