@@ -3,7 +3,7 @@ title: "AMDP ABAP Transformation execution"
 date: 2021-10-17T21:44:24+02:00
 tags: ["AMDP","BW","ABAP"]
 editPost:
-    URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/content"
+    URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---

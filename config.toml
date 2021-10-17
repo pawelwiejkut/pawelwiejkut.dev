@@ -4,6 +4,9 @@ title = 'Pawel Wiejkut'
 theme = "PaperMod"
 sectionPagesMenu = "main"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [menu]
 [[menu.main]]
   identifier = 'search'
@@ -24,6 +27,8 @@ sectionPagesMenu = "main"
 
 [params]
 env = "production"
+comments = true
+
 
 [params.homeInfoParams]
 Title = "Hi there 👋"
@@ -49,7 +54,7 @@ url = "https://twitter.com/pawelwiejkut"
 name = "youtube"
 url = "https://www.youtube.com/user/PawelWiejkut/"
 
-
+disqusShortname = 'pawelwiejkut'
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]

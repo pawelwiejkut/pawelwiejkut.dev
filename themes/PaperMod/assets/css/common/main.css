@@ -76,7 +76,7 @@ img[alt$=">"] {
   
   img[alt$="><"] {
     display: block;
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
     margin: auto;
     float: none!important;
