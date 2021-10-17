@@ -54,7 +54,7 @@ url = "https://twitter.com/pawelwiejkut"
 name = "youtube"
 url = "https://www.youtube.com/user/PawelWiejkut/"
 
-disqusShortname = 'pawelwiejkut'
+disqusShortname = 'pawelwiejkut-dev'
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
