@@ -1,4 +1,4 @@
-#Get activated when pushing to the main branch
+# Get activated when pushing to the main branch
 
 name: Deploy
 on:
