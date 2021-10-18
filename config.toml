@@ -37,8 +37,8 @@ favicon32x32 = "https://pawelwiejkut.dev/favicon.png"
 Title = "Hi there 👋"
 Content = """ ![image alt >](/profile.png)
 My name is Pawel Wiejkut and I'm a SAP Consultant since 2016.  
-Here you can find some of my knowledge about SAP & Databases. For videos please check out my Youtube Channel.
-This blog is migrated from pawelwiejkut.net.
+Here you can find some of my knowledge about SAP & Databases. For videos please check out my youtube channel and follow me on instagram.
+This blog is migrated from pawelwiejkut.net.</br>**BW | ABAP | SAC | HANA** 
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
@@ -53,8 +53,8 @@ This blog is migrated from pawelwiejkut.net.
     </div>
 </form>
 </div>
+"""
 
-**BW | ABAP | SAC | HANA** """
 
 
 [[params.socialIcons]]
