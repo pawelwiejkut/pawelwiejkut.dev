@@ -28,6 +28,11 @@ unsafe= true
 [params]
 env = "production"
 comments = true
+[params.assets]
+favicon = "https://pawelwiejkut.dev/favicon.png"
+favicon16x16 = "https://pawelwiejkut.dev/favicon.png"
+favicon32x32 = "https://pawelwiejkut.dev/favicon.png"
+
 
 
 [params.homeInfoParams]
@@ -56,10 +61,5 @@ url = "https://www.youtube.com/user/PawelWiejkut/"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
-
-[assets]
-favicon = "https://pawelwiejkut.dev/favicon.png"
-favicon16x16 = "https://pawelwiejkut.dev/favicon.png"
-favicon32x32 = "https://pawelwiejkut.dev/favicon.png"
 
 
