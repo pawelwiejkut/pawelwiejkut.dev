@@ -33,6 +33,8 @@ comments = true
 favicon = "https://pawelwiejkut.dev/favicon.png"
 favicon16x16 = "https://pawelwiejkut.dev/favicon.png"
 favicon32x32 = "https://pawelwiejkut.dev/favicon.png"
+apple_touch_icon = "https://pawelwiejkut.dev/favicon.png"
+safari_pinned_tab = "https://pawelwiejkut.dev/favicon.png"
 
 [params.homeInfoParams]
 Title = "Hi there 👋"
