@@ -58,8 +58,8 @@ url = "https://www.youtube.com/user/PawelWiejkut/"
 home = [ "HTML", "RSS", "JSON" ]
 
 [assets]
-favicon = "favicon.png"
-favicon16x16 = "favicon.png"
-favicon32x32 = "favicon.png"
+favicon = "https://pawelwiejkut.dev/favicon.png"
+favicon16x16 = "https://pawelwiejkut.dev/favicon.png"
+favicon32x32 = "https://pawelwiejkut.dev/favicon.png"
 
 
