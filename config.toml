@@ -33,11 +33,9 @@ favicon = "https://pawelwiejkut.dev/favicon.png"
 favicon16x16 = "https://pawelwiejkut.dev/favicon.png"
 favicon32x32 = "https://pawelwiejkut.dev/favicon.png"
 
-
-
 [params.homeInfoParams]
 Title = "Hi there 👋"
-Content = """ ![image alt >](/me.jpeg)
+Content = """ ![image alt >](/profile.png)
 My name is Pawel Wiejkut and I'm a SAP Consultant since 2016.  
 Here you can find some of my knowledge about SAP & Databases. For videos please check out my Youtube Channel.
 This blog is migrated from pawelwiejkut.net.
