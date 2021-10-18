@@ -33,7 +33,7 @@ comments = true
 favicon = "https://pawelwiejkut.dev/profile.png"
 favicon16x16 = "https://pawelwiejkut.dev/profile.png"
 favicon32x32 = "https://pawelwiejkut.dev/profile.png"
-apple_touch_icon = "https://pawelwiejkut.dev/profile.png"
+apple_touch_icon = "./profile.png"
 safari_pinned_tab = "https://pawelwiejkut.dev/profile.png"
 
 [params.homeInfoParams]
