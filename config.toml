@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Pawel Wiejkut'
 theme = "PaperMod"
 sectionPagesMenu = "main"
+googleAnalytics = 'G-3R9CLWGY39'
 
 [markup.goldmark.renderer]
 unsafe= true
@@ -79,6 +80,6 @@ url = "https://www.youtube.com/user/PawelWiejkut/"
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
 
-googleAnalytics = 'G-3R9CLWGY39'
+
 
 
