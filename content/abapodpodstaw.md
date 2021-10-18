@@ -1,3 +1,9 @@
+---
+title: "ABAP od podstaw"
+date: 2017-03-04T21:44:24+02:00
+tags: ["ABAP od podstaw"]
+---
+
 Hej !
 
 W 2017 roku napisałem tutorial „Jak zainstalować SAPa żeby nauczyć się ABAPa” przez dwa lata wyświetliliście ten artykuł blisko 10 tysięcy razy ! Równocześnie z wpisem na blogu powstał też film na youtube który zbliża się już do 100 tys wyświetleń.Te liczby mówią same za siebie, dlatego postanowiłem całą serię przedłużyć i pokazać wam więcej.
