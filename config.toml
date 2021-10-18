@@ -79,6 +79,6 @@ url = "https://www.youtube.com/user/PawelWiejkut/"
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
 
-googleAnalytics = G-3R9CLWGY39
+googleAnalytics = "G-3R9CLWGY39"
 
 
