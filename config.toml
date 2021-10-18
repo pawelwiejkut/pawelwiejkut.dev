@@ -39,6 +39,7 @@ Content = """ ![image alt >](/profile.png)
 My name is Pawel Wiejkut and I'm a SAP Consultant since 2016.  
 Here you can find some of my knowledge about SAP & Databases. For videos please check out my Youtube Channel.
 This blog is migrated from pawelwiejkut.net.
+
 **BW | ABAP | SAC | HANA** """
 
 [[params.socialIcons]]
