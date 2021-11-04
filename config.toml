@@ -25,6 +25,11 @@ unsafe= true
   name = "ABAP od postaw 🇵🇱 "
   url = "/abapodpodstaw/"
   weight = 0
+[[menu.main]]
+  identifier = "mydevs"
+  name = "My devs"
+  url = "/mydevs/"
+  weight = 0
 
 [params]
 env = "production"
