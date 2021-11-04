@@ -1,0 +1,3 @@
+[submodule "github-widget"] 
+  path = static/github-widget
+  url = https://github.com/jawj/github-widget.git
