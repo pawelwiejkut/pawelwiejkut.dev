@@ -28,5 +28,5 @@ DATA(lr_segment_outbound) = lr_outbound->get_segment( i_segid = 001 ).
 
 {{< /highlight >}}
 
-What is funny - in opposite to standard ABAP execution, you need to put the "empty" outbound into execution and then you can pick up data from there. For complete use case please [check out this repostiory](https://github.com/pawelwiejkut/bw_trfn_tester/blob/old/src/zcl_bw_trfn_tester_amdp.clas.abap).
+Unfortunately you can't put data into this method - it always reads it from the ADSO table and provide only the result. For complete use case please [check out this repository](https://github.com/pawelwiejkut/bw_trfn_tester/blob/old/src/zcl_bw_trfn_tester_amdp.clas.abap).
 
