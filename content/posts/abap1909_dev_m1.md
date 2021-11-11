@@ -1,7 +1,7 @@
 ---
 title: "How to install ABAP 1909 on mac M1"
 date: 2021-11-10T20:44:24+02:00
-tags: ["ABAP","Installation","docker","M1","Apple Silicon"]
+tags: ["ABAP","Installation","docker","M1","Apple Silicon","ABAP_trial","A4H"]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
@@ -13,7 +13,11 @@ How to run ABAP 1909 on MacOs with M1 ? For me the best idea was to use UTM. I a
 1. Install [UTM](https://mac.getutm.app)
 2. Download [Ubuntu Server](https://ubuntu.com/download/server) x64 bit version
 3. Create virtual mchaine on UTM (220 GB storage, 6-7 CPU's, additional flags)
-
+<img src="/utm1.png" width="80%" />
+<img src="/utm2.png" width="80%" />
+<img src="/utm3.png" width="80%" />
+<img src="/utm4.png" width="80%" />
+<img src="/utm5.png" width="80%" />
 4. Install Ubuntu server on UTM
 5. Install [docker](https://docs.docker.com/engine/install/ubuntu/)
 {{< highlight bash >}}
