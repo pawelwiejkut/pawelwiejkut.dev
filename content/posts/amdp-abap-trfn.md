@@ -8,7 +8,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-You may wonder how to execute AMDP TRFN direclty via ABAP. It seems that the best idea is to use the method bellow:
+You may wonder how to execute AMDP TRFN directly via ABAP. It seems that the best idea is to use the method bellow:
 
 {{< highlight abap >}}
 cl_rstran_db_stat=>execute_haap(
@@ -28,5 +28,5 @@ DATA(lr_segment_outbound) = lr_outbound->get_segment( i_segid = 001 ).
 
 {{< /highlight >}}
 
-What is funny - in oposite to standard ABAP execution, you need to put the "empty" outbound into execution and then you can pick up data from there. For complete usecase please [check out this repostiory](https://github.com/pawelwiejkut/bw_trfn_tester/blob/old/src/zcl_bw_trfn_tester_amdp.clas.abap).
+What is funny - in opposite to standard ABAP execution, you need to put the "empty" outbound into execution and then you can pick up data from there. For complete use case please [check out this repostiory](https://github.com/pawelwiejkut/bw_trfn_tester/blob/old/src/zcl_bw_trfn_tester_amdp.clas.abap).
 

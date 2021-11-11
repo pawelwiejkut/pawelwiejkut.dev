@@ -32,7 +32,7 @@ BEGIN
 END;
 {{< /highlight >}}
 
-How to run it easily in SQL eviroment ?
+How to run it easily in SQL environment ?
 
 {{< highlight sql >}}
 DO 
