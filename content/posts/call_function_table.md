@@ -11,6 +11,9 @@ editPost:
 How to run HANA SQL function where output table is required ?
 Example function ([from this tutorial](https://developers.sap.com/tutorials/hana-graph-overview-graphscript.html)):
 {{< highlight sql >}}
+CREATE TYPE "TT_RESTAURANTS" AS TABLE ("node_id" INTEGER, "distance" INTEGER, "hops" BIGINT);
+
+
 CREATE OR REPLACE PROCEDURE "NEAREST_RESTAURANT"(IN startV INT, OUT res "TT_RESTAURANTS")
 LANGUAGE GRAPH READS SQL DATA AS
 BEGIN
