@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AMDP on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/amdp/</link>
+    <description>Recent content in AMDP on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Oct 2021 21:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/amdp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMDP ABAP Transformation execution</title>
+      <link>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</link>
+      <pubDate>Sun, 17 Oct 2021 21:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</guid>
+      <description>You may wonder how to execute AMDP TRFN direclty via ABAP. It seems that the best idea is to use the method bellow:
+cl_rstran_db_stat=&amp;gt;execute_haap( EXPORTING i_processing_phase = lr_request-&amp;gt;if_rsbk_request~get_stage( )-stage_id i_target_request = lr_request-&amp;gt;if_rsbk_request~get_requid( ) i_dtp = lr_dtp-&amp;gt;n_dtp i_t_trfn = lr_request-&amp;gt;if_rsbk_request~get_t_transformation( i_only_she_relevant = rs_c_true ) i_r_log = lr_request-&amp;gt;if_rsbk_request~get_log( ) i_simulation = lr_request-&amp;gt;get_simulation( ) i_th_bp = lt_bp i_r_outbound = lr_outbound IMPORTING e_r_analysis_rt = DATA(lr_analysis) ). DATA(lr_segment_outbound) = lr_outbound-&amp;gt;get_segment( i_segid = 001 ). What is funny - in oposite to standard ABAP execution, you need to put the &amp;ldquo;empty&amp;rdquo; outbound into execution and then you can pick up data from there.</description>
+    </item>
+    
+  </channel>
+</rss>

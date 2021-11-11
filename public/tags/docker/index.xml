@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>docker on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/docker/</link>
+    <description>Recent content in docker on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Nov 2021 16:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to install ABAP 1909 on mac M1</title>
+      <link>https://pawelwiejkut.dev/posts/abap1909_dev_m1/</link>
+      <pubDate>Mon, 08 Nov 2021 16:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/abap1909_dev_m1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

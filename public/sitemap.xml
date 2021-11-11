@@ -2,17 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/posts/my-first-post/</loc>
-    <lastmod>2021-10-17T13:39:48+02:00</lastmod>
+    <loc>https://pawelwiejkut.dev/tags/abap/</loc>
+    <lastmod>2021-11-08T16:44:24+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
-    <lastmod>2021-10-17T13:39:48+02:00</lastmod>
+    <loc>https://pawelwiejkut.dev/tags/apple-silicon/</loc>
+    <lastmod>2021-11-08T16:44:24+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2021-10-17T13:39:48+02:00</lastmod>
+    <loc>https://pawelwiejkut.dev/tags/docker/</loc>
+    <lastmod>2021-11-08T16:44:24+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://pawelwiejkut.dev/posts/abap1909_dev_m1/</loc>
+    <lastmod>2021-11-08T16:44:24+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://pawelwiejkut.dev/tags/installation/</loc>
+    <lastmod>2021-11-08T16:44:24+02:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/tags/m1/</loc>
+    <lastmod>2021-11-08T16:44:24+02:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/</loc>
+    <lastmod>2021-11-08T16:44:24+02:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/posts/</loc>
+    <lastmod>2021-11-08T16:44:24+02:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/tags/</loc>
+    <lastmod>2021-11-08T16:44:24+02:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/tags/bw/</loc>
+    <lastmod>2021-11-04T11:15:20+01:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/posts/bw_important_programs/</loc>
+    <lastmod>2021-11-04T11:15:20+01:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/tags/function-modules/</loc>
+    <lastmod>2021-11-04T11:15:20+01:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/tags/program/</loc>
+    <lastmod>2021-11-04T11:15:20+01:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/mydevs/</loc>
+    <lastmod>2021-11-04T11:15:14+01:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/tags/opensource/</loc>
+    <lastmod>2021-11-04T11:15:14+01:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/tags/amdp/</loc>
+    <lastmod>2021-10-17T21:44:24+02:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</loc>
+    <lastmod>2021-10-17T21:44:24+02:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/posts/du-adso-api/</loc>
+    <lastmod>2021-10-17T19:35:53+02:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/tags/abap-od-podstaw/</loc>
+    <lastmod>2017-03-04T21:44:24+02:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/abapodpodstaw/</loc>
+    <lastmod>2017-03-04T21:44:24+02:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/posts/aktywacja_netveawer/</loc>
+    <lastmod>2017-03-04T21:44:24+02:00</lastmod>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/categories/</loc>
+  </url><url>
+    <loc>https://pawelwiejkut.dev/search/</loc>
   </url>
 </urlset>

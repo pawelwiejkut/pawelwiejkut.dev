@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Opensource on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/opensource/</link>
+    <description>Recent content in Opensource on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Nov 2021 11:15:14 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My developments</title>
+      <link>https://pawelwiejkut.dev/mydevs/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/mydevs/</guid>
+      <description>  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Function modules on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/function-modules/</link>
+    <description>Recent content in Function modules on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Nov 2021 11:15:20 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/function-modules/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BW important programs / Function modules </title>
+      <link>https://pawelwiejkut.dev/posts/bw_important_programs/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:20 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/bw_important_programs/</guid>
+      <description>Almost all of this programs are included into my github development &amp;ldquo;bw_toolbox&amp;rdquo;. If you want, you can just implement this in easy way to your system. Please check by clicking here.
+Activate:    Name Category Description     RSDG_TRFN_ACTIVATE TRFN Activate transformations on the system.
+If you are missing fields in source or target -
+then it will not work correctly.   RSDS_DATASOURCE_ACTIVATE_ALL RSDS Activate data source   RSBKDTPREPAIR DTP Activate data transfer process   RSDG_HCPR_ACTIVATE HCPR Activate composite provider   RSDG_CUBE_ACTIVATE CUBE Activate cube   RSDG_ADSO_ACTIVATE ADSO Activate adso    </description>
+    </item>
+    
+  </channel>
+</rss>
