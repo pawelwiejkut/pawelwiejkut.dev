@@ -8,7 +8,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-If your monitor constantly blinking when it is connected to the HP Thunderbolt Dock G2 (via Display-Port) try to use HDMI<->DP adapter and connect yo HDMI in your monitor, or buy a HDMI<->DP cable.
+If your monitor constantly blinking when it is connected to the HP Thunderbolt Dock G2 (via Display-Port) try to use HDMI<->DP adapter and connect your HDMI in your monitor, or buy a HDMI<->DP cable.
 
 <img src="/hdmidp.jpg" width="80%" />
 
