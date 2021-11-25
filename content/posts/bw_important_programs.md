@@ -2,7 +2,6 @@
 title: "BW important programs / Function modules "
 date: 2021-11-04T11:15:20+01:00
 tags: ["BW","ABAP","Function modules","Program"]
-draft: true
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
