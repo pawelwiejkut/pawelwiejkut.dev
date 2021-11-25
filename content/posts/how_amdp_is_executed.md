@@ -2,8 +2,8 @@
 title: "How AMDP TRFN is executed"
 date: 2021-11-11T22:58:24+02:00
 tags: ["AMDP","TRFN","BW"]
-editPost:
 draft: true
+editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
