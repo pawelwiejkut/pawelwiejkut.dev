@@ -18,6 +18,7 @@ How to run ABAP 1909 on MacOs with M1 ? For me the best idea was to use UTM. I a
 <img src="/utm3.png" width="80%" />
 <img src="/utm4.png" width="80%" />
 <img src="/utm5.png" width="80%" />
+<img src="/utm6.png" width="80%" />
 4. Install Ubuntu server on UTM
 5. Install [docker](https://docs.docker.com/engine/install/ubuntu/)
 {{< highlight bash >}}
