@@ -13,25 +13,25 @@ Almost all of this programs are included into my github development "bw_toolbox"
 
 ### Activate:
 
-| Name                         	| Category 	| Description                                                                                                                    	|
-|------------------------------	|----------	|--------------------------------------------------------------------------------------------------------------------------------	|
-| RSDG_TRFN_ACTIVATE           	| TRFN     	| Activate transformations on the system.<br>If you are missing fields in source or target -<br>then it will not work correctly. 	|
-| RSDS_DATASOURCE_ACTIVATE_ALL 	| RSDS     	| Activate data source                                                                                                           	|
-| RSBKDTPREPAIR                	| DTP      	| Activate data transfer process                                                                                                 	|
-| RSDG_HCPR_ACTIVATE           	| HCPR     	| Activate composite provider                                                                                                    	|
-| RSDG_CUBE_ACTIVATE           	| CUBE     	| Activate cube                                                                                                                  	|
-| RSDG_ADSO_ACTIVATE           	| ADSO     	| Activate Advanced Data Store Object                                                                                               |
-| RSDG_IOBJ_ACTIVATE            | IOBJ      | Activate InfoObject                                                                                                               |      
+| Name                         | Category | Type | Description                                                                                                                |
+|------------------------------|----------|------|----------------------------------------------------------------------------------------------------------------------------|
+| RSDG_TRFN_ACTIVATE           | TRFN     | PROG | Activate transformations  on the system. If you are missing  fields in source or target - then it will not work correctly. |
+| RSDS_DATASOURCE_ACTIVATE_ALL | RSDS     | PROG | Activate data source                                                                                                       |
+| RSBKDTPREPAIR                | DTP      | PROG | Activate data transfer process                                                                                             |
+| RSDG_HCPR_ACTIVATE           | HCPR     | PROG | Activate composite provider                                                                                                |
+| RSDG_CUBE_ACTIVATE           | CUBE     | PROG | Activate cube                                                                                                              |
+| RSDG_ADSO_ACTIVATE           | ADSO     | PROG | Activate Advanced Data Store Object                                                                                        |
+| RSDG_IOBJ_ACTIVATE           | IOBJ     | PROG | Activate InfoObject                                                                                                        |
 
 ## Maitenance:
 
-| Name                       | Category | TYPE    | Description                         |
-|----------------------------|----------|---------|-------------------------------------|
-| RSDG_AFTER_IMPORT_FOR_CORR | N/A      | PROG | Reimport transport                  |
-| RSBM_GUI_CHANGE_USTATE     | DTP      |         | Change DTP request status           |
-| RSPC_VARIANT_DELETE        | RSPC     |         | Delete process chain variant        |
-| RSPC_API_CHAIN_START       |          |  FM     |                                     |
-| DB_DROP_TABLE              |          |         | Drop openhub tables                 |
-| RSDG_IOBJ_REORG            | IOBJ     |         | Repair Infoobject                   |
-| RSPC_PROCESS_FINISH        | RSPC     |         | Process chain variant status change |
-| BAPI_USER_UNLOCK           | N/A      |         | Unlock user                         |
+| Name                       | Category | TYPE | Description                                         |
+|----------------------------|----------|------|-----------------------------------------------------|
+| RSDG_AFTER_IMPORT_FOR_CORR | N/A      | PROG | Reimport transport                                  |
+| RSBM_GUI_CHANGE_USTATE     | DTP      | FM   | Change DTP request status                           |
+| RSPC_VARIANT_DELETE        | RSPC     | FM   | Delete process chain variant                        |
+| RSPC_API_CHAIN_START       | RSPC     |  FM  | Start process chain  immediately ( even scheduled ) |
+| DB_DROP_TABLE              | DEST     | PROG | Drop tables under the OpenHub                       |
+| RSDG_IOBJ_REORG            | IOBJ     | PROG | Repair Infoobject                                   |
+| RSPC_PROCESS_FINISH        | RSPC     | PROG | Process chain  variant status change                |
+| BAPI_USER_UNLOCK           | N/A      | FM   | Unlock user                                         |
