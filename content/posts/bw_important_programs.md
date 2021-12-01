@@ -20,4 +20,5 @@ Almost all of this programs are included into my github development "bw_toolbox"
 | RSBKDTPREPAIR                	| DTP      	| Activate data transfer process                                                                                                 	|
 | RSDG_HCPR_ACTIVATE           	| HCPR     	| Activate composite provider                                                                                                    	|
 | RSDG_CUBE_ACTIVATE           	| CUBE     	| Activate cube                                                                                                                  	|
-| RSDG_ADSO_ACTIVATE           	| ADSO     	| Activate adso                                                                                                                  	|
+| RSDG_ADSO_ACTIVATE           	| ADSO     	| Activate Advanced Data Store Object                                                                                               |
+| RSDG_IOBJ_ACTIVATE            | IOBJ      | Activate InfoObject                                                                                                               |      
