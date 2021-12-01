@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>HANA on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/hana/</link>
+    <description>Recent content in HANA on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Nov 2021 11:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/hana/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Call SAP HANA function with table</title>
+      <link>https://pawelwiejkut.dev/posts/call_function_table/</link>
+      <pubDate>Thu, 11 Nov 2021 11:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/call_function_table/</guid>
+      <description>How to run HANA SQL function where output table is required ? Example function (from this tutorial): CREATE TYPE &amp;#34;TT_RESTAURANTS&amp;#34; AS TABLE (&amp;#34;node_id&amp;#34; INTEGER, &amp;#34;distance&amp;#34; INTEGER, &amp;#34;hops&amp;#34; BIGINT); CREATE OR REPLACE PROCEDURE &amp;#34;NEAREST_RESTAURANT&amp;#34;(IN startV INT, OUT res &amp;#34;TT_RESTAURANTS&amp;#34;) LANGUAGE GRAPH READS SQL DATA AS BEGIN GRAPH g = Graph(&amp;#34;SKIING&amp;#34;); VERTEX v_s = Vertex(:g, :startV); MULTISET&amp;lt;Vertex&amp;gt; rests = v IN Vertices(:g) WHERE :v.&amp;#34;restaurant&amp;#34; == N&amp;#39;TRUE&amp;#39;; ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (INT &amp;#34;distance&amp;#34; = 0); ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (BIGINT &amp;#34;hops&amp;#34; = 0L); FOREACH rest in :rests { VERTEX v_rest = Vertex(:g, :rest.</description>
+    </item>
+    
+  </channel>
+</rss>

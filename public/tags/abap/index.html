@@ -155,13 +155,30 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>How to contribute ABAP projects on Github<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Last time, when I published my bw_toolbox project on Github, there was a lot of questions from regular developers not so much familiar with git, how they can contribute. Because of that, I decided to write this quick-start tutorial.
+What do I need? – system requirements Connection with GitHub – your instance should be able to establish a connection with github.com, SSL Entires – you have to configure your SAP System by adding necessary certificates into STRUST transaction (details), Profile configuration – also changes on the profile level are required, so you have to manual edit entries or use transaction (details)....</p>
+  </section>
+  <footer class="entry-footer">December 1, 2021</footer>
+  <a class="entry-link" aria-label="post link to How to contribute ABAP projects on Github" href="https://pawelwiejkut.dev/posts/how_to_contribute/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>How to install ABAP 1909 on mac M1
     </h2>
   </header>
   <section class="entry-content">
-    <p></p>
+    <p>How to run ABAP 1909 on MacOs with M1 ? For me the best idea was to use UTM. I also tried before with docker without success - at the end there was always an error.
+  Install UTM
+  Download Ubuntu Server x64 bit version
+  Create virtual machine on UTM (220 GB storage, 6-7 CPU’s, additional flags)   Install Ubuntu server on UTM
+  Install docker sudo apt-get update sudo apt-get install \  ca-certificates \  curl \  gnupg \  lsb-release curl -fsSL https://download....</p>
   </section>
-  <footer class="entry-footer">November 8, 2021</footer>
+  <footer class="entry-footer">November 10, 2021</footer>
   <a class="entry-link" aria-label="post link to How to install ABAP 1909 on mac M1" href="https://pawelwiejkut.dev/posts/abap1909_dev_m1/"></a>
 </article>
 
@@ -198,8 +215,8 @@ then it will not work correctly.   RSDS_DATASOURCE_ACTIVATE_ALL RSDS Activate da
     </h2>
   </header>
   <section class="entry-content">
-    <p>You may wonder how to execute AMDP TRFN direclty via ABAP. It seems that the best idea is to use the method bellow:
-cl_rstran_db_stat=&gt;execute_haap( EXPORTING i_processing_phase = lr_request-&gt;if_rsbk_request~get_stage( )-stage_id i_target_request = lr_request-&gt;if_rsbk_request~get_requid( ) i_dtp = lr_dtp-&gt;n_dtp i_t_trfn = lr_request-&gt;if_rsbk_request~get_t_transformation( i_only_she_relevant = rs_c_true ) i_r_log = lr_request-&gt;if_rsbk_request~get_log( ) i_simulation = lr_request-&gt;get_simulation( ) i_th_bp = lt_bp i_r_outbound = lr_outbound IMPORTING e_r_analysis_rt = DATA(lr_analysis) ). DATA(lr_segment_outbound) = lr_outbound-&gt;get_segment( i_segid = 001 ). What is funny - in oposite to standard ABAP execution, you need to put the “empty” outbound into execution and then you can pick up data from there....</p>
+    <p>You may wonder how to execute AMDP TRFN directly via ABAP. It seems that the best idea is to use the method bellow:
+cl_rstran_db_stat=&gt;execute_haap( EXPORTING i_processing_phase = lr_request-&gt;if_rsbk_request~get_stage( )-stage_id i_target_request = lr_request-&gt;if_rsbk_request~get_requid( ) i_dtp = lr_dtp-&gt;n_dtp i_t_trfn = lr_request-&gt;if_rsbk_request~get_t_transformation( i_only_she_relevant = rs_c_true ) i_r_log = lr_request-&gt;if_rsbk_request~get_log( ) i_simulation = lr_request-&gt;get_simulation( ) i_th_bp = lt_bp i_r_outbound = lr_outbound IMPORTING e_r_analysis_rt = DATA(lr_analysis) ). DATA(lr_segment_outbound) = lr_outbound-&gt;get_segment( i_segid = 001 ). Unfortunately you can’t put data into this method - it always reads it from the ADSO table and provide only the result....</p>
   </section>
   <footer class="entry-footer">October 17, 2021</footer>
   <a class="entry-link" aria-label="post link to AMDP ABAP Transformation execution" href="https://pawelwiejkut.dev/posts/amdp-abap-trfn/"></a>

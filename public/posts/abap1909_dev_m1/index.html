@@ -6,8 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>How to install ABAP 1909 on mac M1 | Pawel Wiejkut</title>
-<meta name="keywords" content="ABAP, Installation, docker, M1, Apple Silicon" />
-<meta name="description" content="How to install ABAP 1909 on mac M1 - Pawel Wiejkut">
+<meta name="keywords" content="ABAP, Installation, docker, M1, Apple Silicon, ABAP_trial, A4H" />
+<meta name="description" content="How to run ABAP 1909 on MacOs with M1 ? For me the best idea was to use UTM. I also tried before with docker without success - at the end there was always an error.
+  Install UTM
+  Download Ubuntu Server x64 bit version
+  Create virtual machine on UTM (220 GB storage, 6-7 CPU&rsquo;s, additional flags)   Install Ubuntu server on UTM
+  Install docker sudo apt-get update sudo apt-get install \  ca-certificates \  curl \  gnupg \  lsb-release curl -fsSL https://download.">
 <meta name="author" content="">
 <link rel="canonical" href="https://pawelwiejkut.dev/posts/abap1909_dev_m1/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.407b93c98560317134abe60b79693d90425c81bc572b601d7111faf0bc2076d2.css" integrity="sha256-QHuTyYVgMXE0q&#43;YLeWk9kEJcgbxXK2AdcRH68LwgdtI=" rel="preload stylesheet" as="style">
@@ -71,15 +75,23 @@ if (!doNotTrack) {
 }
 </script>
 <meta property="og:title" content="How to install ABAP 1909 on mac M1" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="How to run ABAP 1909 on MacOs with M1 ? For me the best idea was to use UTM. I also tried before with docker without success - at the end there was always an error.
+  Install UTM
+  Download Ubuntu Server x64 bit version
+  Create virtual machine on UTM (220 GB storage, 6-7 CPU&rsquo;s, additional flags)   Install Ubuntu server on UTM
+  Install docker sudo apt-get update sudo apt-get install \  ca-certificates \  curl \  gnupg \  lsb-release curl -fsSL https://download." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pawelwiejkut.dev/posts/abap1909_dev_m1/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-11-08T16:44:24&#43;02:00" />
-<meta property="article:modified_time" content="2021-11-08T16:44:24&#43;02:00" />
+<meta property="article:published_time" content="2021-11-10T20:44:24&#43;02:00" />
+<meta property="article:modified_time" content="2021-11-10T20:44:24&#43;02:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to install ABAP 1909 on mac M1"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="How to run ABAP 1909 on MacOs with M1 ? For me the best idea was to use UTM. I also tried before with docker without success - at the end there was always an error.
+  Install UTM
+  Download Ubuntu Server x64 bit version
+  Create virtual machine on UTM (220 GB storage, 6-7 CPU&rsquo;s, additional flags)   Install Ubuntu server on UTM
+  Install docker sudo apt-get update sudo apt-get install \  ca-certificates \  curl \  gnupg \  lsb-release curl -fsSL https://download."/>
 
 
 <script type="application/ld+json">
@@ -108,15 +120,15 @@ if (!doNotTrack) {
   "@type": "BlogPosting",
   "headline": "How to install ABAP 1909 on mac M1",
   "name": "How to install ABAP 1909 on mac M1",
-  "description": "",
+  "description": "How to run ABAP 1909 on MacOs with M1 ? For me the best idea was to use UTM. I also tried before with docker without success - at the end there was always an error.\n  Install UTM\n  Download Ubuntu Server x64 bit version\n  Create virtual machine on UTM (220 GB storage, 6-7 CPU\u0026rsquo;s, additional flags)   Install Ubuntu server on UTM\n  Install docker sudo apt-get update sudo apt-get install \\  ca-certificates \\  curl \\  gnupg \\  lsb-release curl -fsSL https://download.",
   "keywords": [
-    "ABAP", "Installation", "docker", "M1", "Apple Silicon"
+    "ABAP", "Installation", "docker", "M1", "Apple Silicon", "ABAP_trial", "A4H"
   ],
-  "articleBody": "",
-  "wordCount" : "0",
+  "articleBody": "How to run ABAP 1909 on MacOs with M1 ? For me the best idea was to use UTM. I also tried before with docker without success - at the end there was always an error.\n  Install UTM\n  Download Ubuntu Server x64 bit version\n  Create virtual machine on UTM (220 GB storage, 6-7 CPU’s, additional flags)   Install Ubuntu server on UTM\n  Install docker sudo apt-get update sudo apt-get install \\  ca-certificates \\  curl \\  gnupg \\  lsb-release curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg echo \\  \"deb [arch=$(dpkg --print-architecture)signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \\ $(lsb_release -cs)stable\" | sudo tee /etc/apt/sources.list.d/docker.list  /dev/null sudo apt-get update sudo apt-get install docker-ce docker-ce-cli containerd.io\n  Install ABAP 1909. Good article also here docker run --stop-timeout 3600 -i --name a4h -h vhcala4hci -p 3200:3200 -p 3300:3300 -p 8443:8443 -p 30213:30213 -p 30215:30215 -p 50000:50000 -p 50001:50001 -p 50013:50013 -p 50014:50014 store/saplabs/abaptrial:1909 -skip-limits-check -agree-to-sap-license\n  At the beginning it is always running slow. The best idea is to use sgen and regenerate all transactions, then it should be definitely better and pretty usable :)\n",
+  "wordCount" : "176",
   "inLanguage": "en",
-  "datePublished": "2021-11-08T16:44:24+02:00",
-  "dateModified": "2021-11-08T16:44:24+02:00",
+  "datePublished": "2021-11-10T20:44:24+02:00",
+  "dateModified": "2021-11-10T20:44:24+02:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://pawelwiejkut.dev/posts/abap1909_dev_m1/"
@@ -209,9 +221,56 @@ if (!doNotTrack) {
     <h1 class="post-title">
       How to install ABAP 1909 on mac M1
     </h1>
-    <div class="post-meta">November 8, 2021&nbsp;|&nbsp;<a href="https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content/posts/abap1909_dev_m1.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta">November 10, 2021&nbsp;|&nbsp;<a href="https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content/posts/abap1909_dev_m1.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 </div>
   </header> 
+  <div class="post-content"><p>How to run ABAP 1909 on MacOs with M1 ? For me the best idea was to use UTM. I also tried before with docker without success - at the end there was always an error.</p>
+<ol>
+<li>
+<p>Install <a href="https://mac.getutm.app">UTM</a></p>
+</li>
+<li>
+<p>Download <a href="https://ubuntu.com/download/server">Ubuntu Server</a> x64 bit version</p>
+</li>
+<li>
+<p>Create virtual machine on UTM (220 GB storage, 6-7 CPU&rsquo;s, additional flags)
+<img src="/utm1a.png" width="80%" />
+<img src="/utm2a.png" width="80%" />
+<img src="/utm3a.png" width="80%" />
+<img src="/utm4a.png" width="80%" /></p>
+</li>
+<li>
+<p>Install Ubuntu server on UTM</p>
+</li>
+<li>
+<p>Install <a href="https://docs.docker.com/engine/install/ubuntu/">docker</a>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get update
+
+sudo apt-get install <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    ca-certificates <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    curl <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    gnupg <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    lsb-release
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+echo <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#e6db74">&#34;deb [arch=</span><span style="color:#66d9ef">$(</span>dpkg --print-architecture<span style="color:#66d9ef">)</span><span style="color:#e6db74"> signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+</span><span style="color:#e6db74">  </span><span style="color:#66d9ef">$(</span>lsb_release -cs<span style="color:#66d9ef">)</span><span style="color:#e6db74"> stable&#34;</span> | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+
+  sudo apt-get update
+
+  sudo apt-get install docker-ce docker-ce-cli containerd.io</code></pre></div></p>
+</li>
+<li>
+<p>Install <a href="https://hub.docker.com/_/sap-abap-trial">ABAP 1909</a>. Good article also <a href="https://blogs.sap.com/2021/02/16/sap-abap-platform-1909-developer-edition-day-1-experience-and-tips-and-tricks/">here</a>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run --stop-timeout <span style="color:#ae81ff">3600</span> -i --name a4h -h vhcala4hci -p 3200:3200 -p 3300:3300 -p 8443:8443 -p 30213:30213 -p 30215:30215 -p 50000:50000 -p 50001:50001 -p 50013:50013 -p 50014:50014 store/saplabs/abaptrial:1909 -skip-limits-check -agree-to-sap-license</code></pre></div></p>
+</li>
+</ol>
+<p>At the beginning it is always running slow. The best idea is to use sgen and regenerate all transactions, then it should be definitely better and pretty usable :)</p>
+
+
+  </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
@@ -220,6 +279,8 @@ if (!doNotTrack) {
       <li><a href="https://pawelwiejkut.dev/tags/docker/">docker</a></li>
       <li><a href="https://pawelwiejkut.dev/tags/m1/">M1</a></li>
       <li><a href="https://pawelwiejkut.dev/tags/apple-silicon/">Apple Silicon</a></li>
+      <li><a href="https://pawelwiejkut.dev/tags/abap_trial/">ABAP_trial</a></li>
+      <li><a href="https://pawelwiejkut.dev/tags/a4h/">A4H</a></li>
     </ul>
   </footer>
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">

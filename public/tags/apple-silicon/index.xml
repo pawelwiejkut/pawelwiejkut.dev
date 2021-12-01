@@ -6,14 +6,18 @@
     <description>Recent content in Apple Silicon on Pawel Wiejkut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Nov 2021 16:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/apple-silicon/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Nov 2021 20:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/apple-silicon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to install ABAP 1909 on mac M1</title>
       <link>https://pawelwiejkut.dev/posts/abap1909_dev_m1/</link>
-      <pubDate>Mon, 08 Nov 2021 16:44:24 +0200</pubDate>
+      <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
       
       <guid>https://pawelwiejkut.dev/posts/abap1909_dev_m1/</guid>
-      <description></description>
+      <description>How to run ABAP 1909 on MacOs with M1 ? For me the best idea was to use UTM. I also tried before with docker without success - at the end there was always an error.
+  Install UTM
+  Download Ubuntu Server x64 bit version
+  Create virtual machine on UTM (220 GB storage, 6-7 CPU&amp;rsquo;s, additional flags)   Install Ubuntu server on UTM
+  Install docker sudo apt-get update sudo apt-get install \  ca-certificates \  curl \  gnupg \  lsb-release curl -fsSL https://download.</description>
     </item>
     
   </channel>

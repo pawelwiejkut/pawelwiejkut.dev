@@ -6,14 +6,50 @@
     <description>Recent content on Pawel Wiejkut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Nov 2021 16:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Dec 2021 22:01:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to contribute ABAP projects on Github</title>
+      <link>https://pawelwiejkut.dev/posts/how_to_contribute/</link>
+      <pubDate>Wed, 01 Dec 2021 22:01:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/how_to_contribute/</guid>
+      <description>Last time, when I published my bw_toolbox project on Github, there was a lot of questions from regular developers not so much familiar with git, how they can contribute. Because of that, I decided to write this quick-start tutorial.
+What do I need? – system requirements Connection with GitHub – your instance should be able to establish a connection with github.com, SSL Entires – you have to configure your SAP System by adding necessary certificates into STRUST transaction (details), Profile configuration – also changes on the profile level are required, so you have to manual edit entries or use transaction (details).</description>
+    </item>
+    
+    <item>
+      <title>How AMDP TRFN is executed</title>
+      <link>https://pawelwiejkut.dev/posts/how_amdp_is_executed/</link>
+      <pubDate>Thu, 11 Nov 2021 22:58:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/how_amdp_is_executed/</guid>
+      <description>ADSO definition:
+TRFN definition:
+In general execution looks like: ABAP Method-&amp;gt;Call SQL on HANA-&amp;gt;Execute &amp;hellip; -&amp;gt; select
+Step by step:
+ From ABAP site: cl_rstran_db_stat=&amp;gt;execute_haap() is executed with SQL like:  SELECT &amp;#34;FIELD1&amp;#34; AS &amp;#34;FIELD1&amp;#34; , &amp;#34;0RECORDMODE&amp;#34; AS &amp;#34;RECORDMODE&amp;#34; , &amp;#34;RECORD&amp;#34; AS &amp;#34;RECORD&amp;#34; FROM &amp;#34;SAPA4H&amp;#34;.&amp;#34;/1BCAMDP/0BW:DAP:TR_04TFNXDAAVG5T5E8AZJ239HYT&amp;#34; (&amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$aggregation$$&amp;#39;,&amp;#39;&amp;#34;BW_HAP__________DB_AGGREGATION&amp;#34;=&amp;#39;&amp;#39;&amp;#39;&amp;#39;&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$client$$&amp;#39;,&amp;#39;001&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$keydate$$&amp;#39;,&amp;#39;20211110&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$langu$$&amp;#39;,&amp;#39;E&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$objvers$$&amp;#39;,&amp;#39;&amp;#34;OBJVERS&amp;#34; = &amp;#39;&amp;#39;A&amp;#39;&amp;#39;&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$shift_decimal_places$$&amp;#39;,&amp;#39;&amp;#34;BW_HAP__________SHIFT_DECIMAL_PLACES&amp;#34;=&amp;#39;&amp;#39;I&amp;#39;&amp;#39;&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;TR_04TFNXDAAVG5T5E8AZJ239HYT.$$adso_dtp_extraction_mode$$&amp;#39;,&amp;#39;&amp;#34;_IS_FULL_KEY&amp;#34; = 1 AND ( (&amp;#34;1TECHPROV_KEY&amp;#34; = &amp;#39;&amp;#39;ZAMDP$C&amp;#39;&amp;#39; OR &amp;#34;1TECHPROV_KEY&amp;#34; = &amp;#39;&amp;#39;ZAMDP&amp;#39;&amp;#39; ) )&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;TR_04TFNXDAAVG5T5E8AZJ239HYT.$$runid$$&amp;#39;,&amp;#39;&amp;#34;BW_HAP__________RUNID&amp;#34;=&amp;#39;&amp;#39;96SBW6PMF5XU9CAGGGHRMDRSY&amp;#39;&amp;#39; AND &amp;#34;BW_HAP__________HAP_SEQ_NUMBER&amp;#34;=&amp;#39;&amp;#39;0&amp;#39;&amp;#39;&amp;#39;),&amp;#39;PLACEHOLDER&amp;#39; = (&amp;#39;ce_settings&amp;#39;, &amp;#39;{&amp;#34;enable_partitioned_execution&amp;#34;: &amp;#34;0&amp;#34;, &amp;#34;ceqo_enable_rownum_expr_general&amp;#34;: &amp;#34;1&amp;#34;}&amp;#39;) ) WITH HINT ( ROUTE_BY_CARDINALITY(&amp;#34;/BIC/AZAMDP2&amp;#34;) ) This is a</description>
+    </item>
+    
+    <item>
+      <title>Call SAP HANA function with table</title>
+      <link>https://pawelwiejkut.dev/posts/call_function_table/</link>
+      <pubDate>Thu, 11 Nov 2021 11:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/call_function_table/</guid>
+      <description>How to run HANA SQL function where output table is required ? Example function (from this tutorial): CREATE TYPE &amp;#34;TT_RESTAURANTS&amp;#34; AS TABLE (&amp;#34;node_id&amp;#34; INTEGER, &amp;#34;distance&amp;#34; INTEGER, &amp;#34;hops&amp;#34; BIGINT); CREATE OR REPLACE PROCEDURE &amp;#34;NEAREST_RESTAURANT&amp;#34;(IN startV INT, OUT res &amp;#34;TT_RESTAURANTS&amp;#34;) LANGUAGE GRAPH READS SQL DATA AS BEGIN GRAPH g = Graph(&amp;#34;SKIING&amp;#34;); VERTEX v_s = Vertex(:g, :startV); MULTISET&amp;lt;Vertex&amp;gt; rests = v IN Vertices(:g) WHERE :v.&amp;#34;restaurant&amp;#34; == N&amp;#39;TRUE&amp;#39;; ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (INT &amp;#34;distance&amp;#34; = 0); ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (BIGINT &amp;#34;hops&amp;#34; = 0L); FOREACH rest in :rests { VERTEX v_rest = Vertex(:g, :rest.</description>
+    </item>
+    
     <item>
       <title>How to install ABAP 1909 on mac M1</title>
       <link>https://pawelwiejkut.dev/posts/abap1909_dev_m1/</link>
-      <pubDate>Mon, 08 Nov 2021 16:44:24 +0200</pubDate>
+      <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
       
       <guid>https://pawelwiejkut.dev/posts/abap1909_dev_m1/</guid>
-      <description></description>
+      <description>How to run ABAP 1909 on MacOs with M1 ? For me the best idea was to use UTM. I also tried before with docker without success - at the end there was always an error.
+  Install UTM
+  Download Ubuntu Server x64 bit version
+  Create virtual machine on UTM (220 GB storage, 6-7 CPU&amp;rsquo;s, additional flags)   Install Ubuntu server on UTM
+  Install docker sudo apt-get update sudo apt-get install \  ca-certificates \  curl \  gnupg \  lsb-release curl -fsSL https://download.</description>
     </item>
     
     <item>
@@ -43,8 +79,8 @@ then it will not work correctly.   RSDS_DATASOURCE_ACTIVATE_ALL RSDS Activate da
       <pubDate>Sun, 17 Oct 2021 21:44:24 +0200</pubDate>
       
       <guid>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</guid>
-      <description>You may wonder how to execute AMDP TRFN direclty via ABAP. It seems that the best idea is to use the method bellow:
-cl_rstran_db_stat=&amp;gt;execute_haap( EXPORTING i_processing_phase = lr_request-&amp;gt;if_rsbk_request~get_stage( )-stage_id i_target_request = lr_request-&amp;gt;if_rsbk_request~get_requid( ) i_dtp = lr_dtp-&amp;gt;n_dtp i_t_trfn = lr_request-&amp;gt;if_rsbk_request~get_t_transformation( i_only_she_relevant = rs_c_true ) i_r_log = lr_request-&amp;gt;if_rsbk_request~get_log( ) i_simulation = lr_request-&amp;gt;get_simulation( ) i_th_bp = lt_bp i_r_outbound = lr_outbound IMPORTING e_r_analysis_rt = DATA(lr_analysis) ). DATA(lr_segment_outbound) = lr_outbound-&amp;gt;get_segment( i_segid = 001 ). What is funny - in oposite to standard ABAP execution, you need to put the &amp;ldquo;empty&amp;rdquo; outbound into execution and then you can pick up data from there.</description>
+      <description>You may wonder how to execute AMDP TRFN directly via ABAP. It seems that the best idea is to use the method bellow:
+cl_rstran_db_stat=&amp;gt;execute_haap( EXPORTING i_processing_phase = lr_request-&amp;gt;if_rsbk_request~get_stage( )-stage_id i_target_request = lr_request-&amp;gt;if_rsbk_request~get_requid( ) i_dtp = lr_dtp-&amp;gt;n_dtp i_t_trfn = lr_request-&amp;gt;if_rsbk_request~get_t_transformation( i_only_she_relevant = rs_c_true ) i_r_log = lr_request-&amp;gt;if_rsbk_request~get_log( ) i_simulation = lr_request-&amp;gt;get_simulation( ) i_th_bp = lt_bp i_r_outbound = lr_outbound IMPORTING e_r_analysis_rt = DATA(lr_analysis) ). DATA(lr_segment_outbound) = lr_outbound-&amp;gt;get_segment( i_segid = 001 ). Unfortunately you can&amp;rsquo;t put data into this method - it always reads it from the ADSO table and provide only the result.</description>
     </item>
     
     <item>
