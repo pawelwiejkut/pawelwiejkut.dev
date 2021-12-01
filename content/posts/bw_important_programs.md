@@ -22,3 +22,16 @@ Almost all of this programs are included into my github development "bw_toolbox"
 | RSDG_CUBE_ACTIVATE           	| CUBE     	| Activate cube                                                                                                                  	|
 | RSDG_ADSO_ACTIVATE           	| ADSO     	| Activate Advanced Data Store Object                                                                                               |
 | RSDG_IOBJ_ACTIVATE            | IOBJ      | Activate InfoObject                                                                                                               |      
+
+## Maitenance:
+
+| Name                       | Category | TYPE    | Description                         |
+|----------------------------|----------|---------|-------------------------------------|
+| RSDG_AFTER_IMPORT_FOR_CORR | N/A      | PROG | Reimport transport                  |
+| RSBM_GUI_CHANGE_USTATE     | DTP      |         | Change DTP request status           |
+| RSPC_VARIANT_DELETE        | RSPC     |         | Delete process chain variant        |
+| RSPC_API_CHAIN_START       |          |  FM     |                                     |
+| DB_DROP_TABLE              |          |         | Drop openhub tables                 |
+| RSDG_IOBJ_REORG            | IOBJ     |         | Repair Infoobject                   |
+| RSPC_PROCESS_FINISH        | RSPC     |         | Process chain variant status change |
+| BAPI_USER_UNLOCK           | N/A      |         | Unlock user                         |
