@@ -25,7 +25,7 @@ Almost all of this programs are included into my github development "bw_toolbox"
 
 ## Maitenance:
 
-| Name                       | Category | TYPE | Description                                         |
+| Name                       | Category | Type | Description                                         |
 |----------------------------|----------|------|-----------------------------------------------------|
 | RSDG_AFTER_IMPORT_FOR_CORR | N/A      | PROG | Reimport transport                                  |
 | RSBM_GUI_CHANGE_USTATE     | DTP      | FM   | Change DTP request status                           |
