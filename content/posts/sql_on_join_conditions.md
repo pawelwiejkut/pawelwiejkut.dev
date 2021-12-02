@@ -8,7 +8,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-When you use SQL for your daily work, you probably don’t know that we have at least two ways to set a condition: using "where" and .. put condition into join. Let me explain more.
+Even if you use SQL for your daily work, it is possible that you might don’t know about two ways to set a condition: using "where" and .. put condition into join. The main issue is that they can return different results. Let me explain more.
 
 1.Let’s assume that you have 2 tables. Content of first one
 <img src="/sql_on_join_conditions/1.png" width="80%" />
@@ -33,7 +33,7 @@ where sal.salary > 4000
 <img src="/sql_on_join_conditions/5.jpg" width="80%" />
 Image source: https://external-preview.redd.it/M5QHWsp2vgZ-3QDZ4m-qS58lsOUgDNHau8trSFzS8H0.jpg?auto=webp&s=cae9cdc438b71c9025d40dad4650801fdcae1ef8
 
-7. So as you see our statement without any statement should return
+7. So as you see our statement without any restriction should return
 <img src="/sql_on_join_conditions/6.png" width="80%" />
 
 
