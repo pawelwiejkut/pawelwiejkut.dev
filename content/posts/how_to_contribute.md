@@ -23,30 +23,30 @@ My youtube tutorial: https://youtu.be/Mk9dslG-_RU
 
 Step by step
 1. Install your ABAPGit instance, by copy/paste a zabapgit report form the repository: https://github.com/abapGit/abapGit. More information here.
-<img src="/contribution1.gif" width="80%" />
+<img src="/how_to_contribute/contribution1.gif" width="80%" />
 
 2. Set up your certificates and profiles as described in the official wiki
 
 3. Create and log in to your GitHub account. Next find & fork project which you want to contribute by click „Fork” button.
-<img src="/contribution2.gif" width="80%" />
+<img src="/how_to_contribute/contribution2.gif" width="80%" />
 
 4. Now forked project should be added to ABAPGit
-<img src="/contribution3.gif" width="80%" />
+<img src="/how_to_contribute/contribution3.gif" width="80%" />
 
 5. Now it is time do do your changes
-<img src="/contribution4.gif" width="80%" />
+<img src="/how_to_contribute/contribution4.gif" width="80%" />
 
 6. Let’s now push changes to our repository
-<img src="/contribution5.gif" width="80%" />
+<img src="/how_to_contribute/contribution5.gif" width="80%" />
 
 7. Now as you can see on your github page, code has been updated
-<img src="/contribution6.png" width="80%" />
+<img src="/how_to_contribute/contribution6.png" width="80%" />
 
 8. So we have to create a pull request to the original repository
-<img src="/contribution7.gif" width="80%" />
+<img src="/how_to_contribute/contribution7.gif" width="80%" />
 
 9. Now please wait until author will accept the changes
-<img src="/contribution8.png" width="80%" />
+<img src="/how_to_contribute/contribution8.png" width="80%" />
 
 
 That is all 🙂
