@@ -14,7 +14,7 @@ unsafe= true
   name = 'Search'
   pre = "<i class='fa fa-heart'></i>"
   url = '/search/'
-  weight = 100
+  weight = 5
 [[menu.main]]
   identifier = "tags"
   name = "Tags"
