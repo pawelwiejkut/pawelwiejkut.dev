@@ -17,9 +17,12 @@ Go to the SE37 transaction, and display function module: AUTH_CHECK_TCODE.
 
 <img src="/access_tcode_no_auth/2.png" width="80%" />
 
-Now seat a breakpoint on line 28, when sy-subrc is checked.
+Now seat a breakpoint on line 28, where sy-subrc is checked (in new versions line 53).
 
 <img src="/access_tcode_no_auth/3.png" width="80%" />
+Or
+<img src="/access_tcode_no_auth/6.png" width="80%" />
+
 
 Double click on sy-subrc value, and change it to 0.
 
