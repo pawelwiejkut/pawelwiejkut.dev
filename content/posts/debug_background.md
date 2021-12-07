@@ -1,6 +1,6 @@
 ---
 title: "How to debug background/batch job in SAP ?"
-date: 2019-05-15T20:44:24+02:00
+date: 2018-02-17T20:44:24+02:00
 tags: ["BW","DTP","job","batch","background"]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
