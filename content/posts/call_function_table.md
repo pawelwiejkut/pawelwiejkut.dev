@@ -2,6 +2,7 @@
 title: "Call SAP HANA function with table"
 date: 2021-11-11T11:44:24+02:00
 tags: ["SQL","HANA"]
+lastmod: 2021-12-11T00:00:00+02:00
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

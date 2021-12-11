@@ -2,6 +2,7 @@
 title: "How to install ABAP 1909 on mac M1"
 date: 2021-11-10T20:44:24+02:00
 tags: ["ABAP","Installation","docker","M1","Apple Silicon","ABAP_trial","A4H"]
+lastmod: 2021-12-08T00:00:00+02:00
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

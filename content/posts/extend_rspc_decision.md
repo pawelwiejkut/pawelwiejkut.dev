@@ -2,6 +2,7 @@
 title: "How to extend decision​ tree in process chain?"
 date: 2019-05-15T20:44:24+02:00
 tags: ["BW","RSPC","Decision"]
+lastmod: 2021-12-11T00:00:00+02:00
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

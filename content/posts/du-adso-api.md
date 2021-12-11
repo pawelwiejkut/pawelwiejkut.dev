@@ -2,6 +2,7 @@
 title: "Direct Update ADSO ABAP API"
 date: 2021-10-17T19:35:53+02:00
 tags: ["BW","ABAP"]
+lastmod: 2021-12-11T00:00:00+02:00
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

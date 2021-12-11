@@ -8,10 +8,6 @@ googleAnalytics = 'G-3R9CLWGY39'
 [markup.goldmark.renderer]
 unsafe= true
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-
 [menu]
 [[menu.main]]
   identifier = 'search'
@@ -34,7 +30,6 @@ unsafe= true
   name = "My devs"
   url = "/mydevs/"
   weight = 0
-
 
 [params]
 env = "production"

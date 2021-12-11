@@ -2,6 +2,7 @@
 title: "How to contribute ABAP projects on Github"
 date: 2021-12-01T22:01:24+02:00
 tags: ["ABAP","Github","ABAPGit"]
+lastmod: 2021-12-07T00:00:00+02:00
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

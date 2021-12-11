@@ -2,6 +2,7 @@
 title: "How to check who deleted your BW object?"
 date: 2021-01-10T20:44:24+02:00
 tags: ["BW","hack","slg0"]
+lastmod: 2021-12-10T00:00:00+02:00
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

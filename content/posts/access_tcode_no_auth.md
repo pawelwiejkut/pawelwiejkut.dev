@@ -2,6 +2,7 @@
 title: "Access transaction without auth"
 date: 2017-12-16T21:44:24+02:00
 tags: ["ABAP","Authorization","hack","function module","AUTH_CHECK_TCODE"]
+lastmod: 2021-12-08T00:00:00+02:00
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
