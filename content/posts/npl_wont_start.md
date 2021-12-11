@@ -9,9 +9,9 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about license issue, which has expired 1.04.2021. In this case command startsap ALL, will stuck on:
+This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, command starts ALL, will stick on:
 {{< highlight bash >}}
-Database is not available via R3trans
+The database is not available via R3trans
 -------------------------------------------
 starting database NPL ...
 Log file: /sybase/NPL/startdb.log

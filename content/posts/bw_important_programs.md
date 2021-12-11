@@ -9,22 +9,22 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-Almost all of this programs are included into my github development "bw_toolbox". If you want, you can just implement this in easy way to your system. [Please check by clicking here](https://github.com/pawelwiejkut/bw_toolbox).
+Almost all of these programs are included in my GitHub development "bw_toolbox". If you want, you can just implement this in an easy way to your system. [Please check by clicking here](https://github.com/pawelwiejkut/bw_toolbox).
 
 
 ### Activate:
 
 | Name                         | Category | Type | Description                                                                                                                |
 |------------------------------|----------|------|----------------------------------------------------------------------------------------------------------------------------|
-| RSDG_TRFN_ACTIVATE           | TRFN     | PROG | Activate transformations  on the system. If you are missing  fields in source or target - then it will not work correctly. |
+| RSDG_TRFN_ACTIVATE           | TRFN     | PROG | Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. |
 | RSDS_DATASOURCE_ACTIVATE_ALL | RSDS     | PROG | Activate data source                                                                                                       |
 | RSBKDTPREPAIR                | DTP      | PROG | Activate data transfer process                                                                                             |
 | RSDG_HCPR_ACTIVATE           | HCPR     | PROG | Activate composite provider                                                                                                |
 | RSDG_CUBE_ACTIVATE           | CUBE     | PROG | Activate cube                                                                                                              |
-| RSDG_ADSO_ACTIVATE           | ADSO     | PROG | Activate Advanced Data Store Object                                                                                        |
+| RSDG_ADSO_ACTIVATE           | ADSO     | PROG | Activate Advanced DataStore Object                                                                                        |
 | RSDG_IOBJ_ACTIVATE           | IOBJ     | PROG | Activate InfoObject                                                                                                        |
 
-## Maitenance:
+## Maintenance:
 
 | Name                       | Category | Type | Description                                         |
 |----------------------------|----------|------|-----------------------------------------------------|

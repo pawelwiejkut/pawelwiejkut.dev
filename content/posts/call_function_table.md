@@ -9,7 +9,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-How to run HANA SQL function where output table is required ?
+How to run the HANA SQL function where an output table is required?
 Example function ([from this tutorial](https://developers.sap.com/tutorials/hana-graph-overview-graphscript.html)):
 {{< highlight sql >}}
 CREATE TYPE "TT_RESTAURANTS" AS TABLE ("node_id" INTEGER, "distance" INTEGER, "hops" BIGINT);
@@ -33,7 +33,7 @@ BEGIN
 END;
 {{< /highlight >}}
 
-How to run it easily in SQL environment ?
+How to run it easily in an SQL environment?
 
 {{< highlight sql >}}
 DO 

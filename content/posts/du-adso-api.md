@@ -10,7 +10,7 @@ editPost:
 ---
 
 How to insert the data into the BW ADSO on the BW on Hana and BW4HANA ?
-Easy way is just to use official function module [delivered by SAP](https://help.sap.com/viewer/107a6e8a38b74ede94c833ca3b7b6f51/2.0.5/en-US/72e16c936fb94cffb71ce90edd5f8f8e.html)
+The easy way is just to use the official function module [delivered by SAP](https://help.sap.com/viewer/107a6e8a38b74ede94c833ca3b7b6f51/2.0.5/en-US/72e16c936fb94cffb71ce90edd5f8f8e.html)
 
 Example ADSO:
 <img src="/adso_api_1.png" width="80%" />

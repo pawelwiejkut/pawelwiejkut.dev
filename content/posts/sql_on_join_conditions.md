@@ -9,7 +9,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-Even if you use SQL for your daily work, it is possible that you might don’t know about two ways to set a condition: using "where" and .. put condition into join. The main issue is that they can return different results. Let me explain more.
+Even if you use SQL for your daily work, it is possible that you might don’t know about two ways to set a condition: using "where" and .. put the condition into the join. The main issue is that they can return different results. Let me explain more.
 
 1.Let’s assume that you have 2 tables. Content of first one
 <img src="/sql_on_join_conditions/1.png" width="80%" />
@@ -26,7 +26,7 @@ where sal.salary > 4000
 4. Result shouldn’t impress anyone
 <img src="/sql_on_join_conditions/3.png" width="80%" />
 
-5. But now let’s change our query and move condition to ON. Result will look different than before
+5. But now let’s change our query and move the condition to ON. Results will look different than before
 <img src="/sql_on_join_conditions/4.png" width="80%" />
 
 
@@ -125,4 +125,4 @@ plan '
 (prop T3 (parallel 4))
 '
 {{< /highlight >}}
-Thats all in this post, have a nice day and see you soon 🙂
+That's all in this post, have a nice day and see you soon 🙂

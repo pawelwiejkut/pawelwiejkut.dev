@@ -9,26 +9,26 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-Last time, when I published my bw_toolbox project on Github, there was a lot of questions from regular developers not so much familiar with git, how they can contribute. Because of that, I decided to write this quick-start tutorial.
+Last time, when I published my bw_toolbox project on Github, there were a lot of questions from regular developers not so much familiar with git, how they can contribute. Because of that, I decided to write this quick-start tutorial.
 
 What do I need? – system requirements
 Connection with GitHub – your instance should be able to establish a connection with github.com,
 SSL Entires – you have to configure your SAP System by adding necessary certificates into STRUST transaction (details),
-Profile configuration – also changes on the profile level are required, so you have to manual edit entries or use transaction (details).
-ABAP implementation of git – ABAPGit – this program can be downloaded by copy-paste from it’s GitHub page.
-As you see this is a quite specific configuration, and usually this can’t be done on our client instances. Because of that, a good idea is to install your own SAP Instance. For details please check article bellow or my youtube video.
+Profile configuration – also changes on the profile level are required, so you have to manual edit entries or use transactions (details).
+ABAP implementation of git – ABAPGit – this program can be downloaded by copy-paste from its GitHub page.
+As you see this is a quite specific configuration, and usually this can’t be done on our client instances. Because of that, a good idea is to install your own SAP Instance. For details please check the article below or my youtube video.
 
 Official SAP Blog post: https://blogs.sap.com/2018/10/16/sap-as-abap-7.5x-developer-editions-faqs/
 
 My youtube tutorial: https://youtu.be/Mk9dslG-_RU
 
 Step by step
-1. Install your ABAPGit instance, by copy/paste a zabapgit report form the repository: https://github.com/abapGit/abapGit. More information here.
+1. Install your ABAPGit instance, by copying/pasting a zabapgit report from the repository: https://github.com/abapGit/abapGit. More information here.
 <img src="/how_to_contribute/contribution1.gif" width="80%" />
 
 2. Set up your certificates and profiles as described in the official wiki
 
-3. Create and log in to your GitHub account. Next find & fork project which you want to contribute by click „Fork” button.
+3. Create and log in to your GitHub account. Next, find & fork the project which you want to contribute by clicking „Fork” button.
 <img src="/how_to_contribute/contribution2.gif" width="80%" />
 
 4. Now forked project should be added to ABAPGit
@@ -52,4 +52,4 @@ Step by step
 
 That is all 🙂
 
-Have a good time during your contributions !
+Have a good time with your contributions!

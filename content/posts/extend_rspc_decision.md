@@ -9,7 +9,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-Toady short tutorial about extending the decision tree in the process chain. As you probably know decision three blocks can be extended. In our example, we want to run delta info package in everyday processing, and depending on our customizing perform a full load.
+Toady short tutorial about extending the decision tree in the process chain. As you probably know decision three blocks can be extended. In our example, we want to run a delta info package in everyday processing, and depending on our customizing perform a full load.
 Process chain example:
 <img src="/extend_rspc_decision/1.jpg" width="80%" />
 Customization table:
@@ -26,7 +26,7 @@ Lets go to se18, and create new implementation
 The best idea now is to **DO NOT ACTIVATE** this implementation before fully fill implementing the class. Let’s just double click on the class name
 <img src="/extend_rspc_decision/5.png" width="80%" />
 
-<mark>If you activate implementation with wrong function definition, then you have to clear entries in table: SFBMETHSIG before enable implementation once again. In other way function structure will be not updated.</mark>
+<mark>If you activate implementation with the wrong function definition, then you have to clear entries in table: SFBMETHSIG before enabling implementation once again. In another way, the function structure will be not updated.</mark>
 
 Basic class should look like below:
 

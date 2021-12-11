@@ -8,7 +8,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-How to run ABAP 1909 on MacOs with M1 ? For me the best idea was to use UTM. I also tried before with docker without success - at the end there was always an error.
+How to run ABAP 1909 on MacOs with M1? For me, the best idea was to use UTM. I also tried before with docker without success - in the end, there was always an error.
 
 1. Install [UTM](https://mac.getutm.app)
 2. Download [Ubuntu Server](https://ubuntu.com/download/server) x64 bit version
@@ -44,4 +44,4 @@ echo \
 docker run --stop-timeout 3600 -i --name a4h -h vhcala4hci -p 3200:3200 -p 3300:3300 -p 8443:8443 -p 30213:30213 -p 30215:30215 -p 50000:50000 -p 50001:50001 -p 50013:50013 -p 50014:50014 store/saplabs/abaptrial:1909 -skip-limits-check -agree-to-sap-license
 {{< /highlight >}}
 
-At the beginning it is always running slow. The best idea is to use sgen and regenerate all transactions, then it should be definitely better and pretty usable :)
+In the beginning, it is always running slow. The best idea is to use sgen and regenerate all transactions, then it should be definitely better and pretty usable :)

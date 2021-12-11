@@ -13,7 +13,7 @@ In this blog post, I will show you how you can fast start with developing custom
 
 1. S-User is required to download data provisioning agent:
 https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&_EVENT=DISPHIER&HEADER=Y&FUNCTIONBAR=N&EVENT=TREE&NE=NAVIGATE&ENR=73555000100200005999&V=MAINT&TA=ACTUAL&PAGE=SEARCH/HANA%20DP%20AGENT%202.0
-I downloaded Linux version, but windows should work too (I’m on Mac OS).
+I downloaded the Linux version, but windows should work too (I’m on Mac OS).
 
 <img src="/custom_hana_adapter/1.png" width="80%" />
 
@@ -34,12 +34,12 @@ and put into the plugins folder
 
 <img src="/custom_hana_adapter/5.png" width="80%" />
 
-6. Install plugin.
+6. Install the plugin.
 7. Create a hello world adapter. Change perspective to Plug-in development. Click on File->New->Plugin Project.
 
 <img src="/custom_hana_adapter/6.png" width="80%" />
 
-8. Check Generate an activator flag.
+8. Check to Generate an activator flag.
 
 <img src="/custom_hana_adapter/7.png" width="80%" />
 

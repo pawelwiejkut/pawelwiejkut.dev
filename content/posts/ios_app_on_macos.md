@@ -9,11 +9,11 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-Is is still possible to install/sideload iOS apps into M1 Mac? Answer is yes - it is possible even on the newest version of MacOS (Monterey 12.0.1).<mark>Nevertheless you have to know that not all applications are working well</mark>. In example Instagram is crashing every time at startup, and you have to clear ~/Library/Containers/Instagram every time before launch.
+Is it still possible to install/sideload iOS apps into M1 Mac? The answer is yes - it is possible to even on the newest version of MacOS (Monterey 12.0.1).<mark>Nevertheless you have to know that not all applications are working well</mark>. For example, Instagram is crashing every time at startup, and you have to clear ~/Library/Containers/Instagram every time before launch.
 
 {{<figure align=center src="/ios_app_on_macos/1.png"  width="50%" >}}
 
-How to install iOS app ?
+How to install the iOS app?
 
 1. Download and install sideloadly from https://sideloadly.io
 <img src="/ios_app_on_macos/2.png" width="80%" />

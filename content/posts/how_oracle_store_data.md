@@ -8,9 +8,9 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-All of you probably at least once in your life try to insert some records to a database table, but is anyone of you ever try to understand how Oracle actually saves the entries in the database? Last time I was making a small experiment and I want to share my results with you.
+All of you probably at least once in your life try to insert some records to a database table, but is anyone of you ever tried to understand how Oracle actually saves the entries in the database? Last time I was making a small experiment and I want to share my results with you.
 
-Step one, let’s build a small table and insert a few records:
+Step one, let's build a small table and insert a few records:
 
 {{< highlight sql >}}
 INSERT INTO tab1 VALUES('AAA',111);
@@ -113,9 +113,9 @@ print
 and a result of this statement is:
 {{< /highlight >}}
 
-Value of raw 'c2 03 17′ is : 222. You can check all these values and everything will look like our inserts on the beginning. To be more precise we are actually on „row” level of database storage:
+The value of raw 'c2 03 17′ is 222. You can check all these values and everything will look like our inserts at the beginning. To be more precise we are actually on "row" level of database storage:
 
 <img src="/db_oracle_char.png" width="80%" />
 
-That’s all for today, this is a basic knowledge related to database data save in tables. This knowledge is a key to understand how  indexing or compression works on the database.
+That’s all for today, this is a basic knowledge related to database data save in tables. This knowledge is key to understanding how indexing or compression works on the database.
 
