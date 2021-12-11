@@ -19,5 +19,5 @@ How to install iOS app ?
 
 2. Download application that you want to install. It can be done i.e. by [iMazing]( https://imazing.com) or from [appdb](https://appdb.to)
 
-3. Choose your app, enter apple ID account details (it is a good idea to use a fake one)and click on start.
+3. Choose your app, enter apple ID account details (it is a good idea to use a fake one) and click on start.
 <img src="/ios_app_on_macos/3.png" width="80%" />
