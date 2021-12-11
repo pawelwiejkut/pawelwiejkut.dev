@@ -51,7 +51,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --enableGitInfo
         
         # Deployment to server. Secrets need to be entered via settings -> secrets in the repo. Change parameter accordingly.
         
