@@ -24,7 +24,12 @@ unsafe= true
   identifier = "abapodpodstaw"
   name = "ABAP od postaw 🇵🇱 "
   url = "/abapodpodstaw/"
-  weight = 0
+  weight = 8
+[[menu.main]]
+  identifier = "SAC"
+  name = "SAC"
+  url = "/sac/"
+  weight = 1
 [[menu.main]]
   identifier = "mydevs"
   name = "My devs"

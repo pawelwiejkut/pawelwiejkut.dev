@@ -8,7 +8,7 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-How to access transactions without authorization? One big requirement to do this trick is having to debug and replace the function. Let’s start!
+How to access transactions without an authorization? One big requirement to do this trick is having to debug and replace the function. Let’s start!
 
 I prepared myself, user, without authorization to the db02 transaction. When I want to run this transaction, I get a message: „You are not authorized to use transaction”
 
