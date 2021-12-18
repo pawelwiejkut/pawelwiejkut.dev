@@ -2,12 +2,14 @@
 title: "Cascade filtering in SAC"
 date: 2021-12-12T15:42:26+01:00
 tags: ["SAC","Dropdown","JavaScript","SACApp"]
+description: 'In this part of the tutorial, we are focusing on creating a filter on the dropdown in SAC APP.'
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
-	description: 'In this part we are focusing on creating a filter on the dropdown in SAC APP'
 ---
+
+In this part of the tutorial, we are focusing on creating a filter on the dropdown in SAC APP.
 
 1. First of all lets put a two new dropdowns and three texts
 
