@@ -1,9 +1,11 @@
 baseURL = 'https://pawelwiejkut.dev/'
 languageCode = 'en-us'
-title = 'Pawel Wiejkut'
+title = 'Pawel Wiejkut Homepage'
+author = 'Paweł Wiejkut'
 theme = "PaperMod"
 sectionPagesMenu = "main"
 googleAnalytics = 'G-3R9CLWGY39'
+description = 'ABAP BW SAC HANA Tips & Tricks 👨🏻‍💻'
 
 [markup.goldmark.renderer]
 unsafe= true
