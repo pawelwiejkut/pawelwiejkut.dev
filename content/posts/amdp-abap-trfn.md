@@ -3,7 +3,7 @@ title: "AMDP ABAP Transformation execution"
 date: 2021-10-17T21:44:24+02:00
 tags: ["AMDP","BW","ABAP"]
 lastmod: 2021-12-10T00:00:00+02:00
-description: 'How to execute AMDP TRFN directly from ABAP?  You can use the method execute_haap from cl_rstran_db_stat. Check this blog for complete examples with parameters.'
+description: 'How to execute AMDP TRFN directly from ABAP?  You can use the method execute_haap from cl_rstran_db_stat. Check this blog for complete example with parameters.'
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

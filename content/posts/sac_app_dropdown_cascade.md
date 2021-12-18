@@ -6,6 +6,7 @@ editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
+	description: 'In this part we are focusing on creating a filter on the dropdown in SAC APP'
 ---
 
 1. First of all lets put a two new dropdowns and three texts
