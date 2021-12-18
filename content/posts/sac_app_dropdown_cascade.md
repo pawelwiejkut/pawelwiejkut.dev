@@ -9,8 +9,6 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-In this part of the tutorial, we are focusing on creating a filter on the dropdown in SAC APP.
-
 1. First of all lets put a two new dropdowns and three texts
 
 {{<figure align=center src="/sac_app_dropdown_cascade/1.png"  width="80%" >}}
