@@ -30,3 +30,16 @@ All available formulas can be checked in class **CL_RSAR_FUNCTION**. Bellow, you
 | DATE_MONTH2           | Get month number from given date                                  | DATS<br>(20201201)                                   | NUMC<br>12                                |
 | DATE_QUATER           | Get quarter from given date                                       | DATS<br>(20210909)                                   | NUMC<br>20213                             |
 | DATE_QUATER1          | Get quarter number from given date                                | DATS<br>(20210909)                                   | NUMC<br>3                                 |
+| DATE_WEEK             | Get week from given date                                          | DATS<br>(20210731)                                   | NUMC<br>202130                            |
+| DATE_WEEKDAY          | Get day from given date                                           | DATS<br>(20211220)                                   | STRING<br>Monday                          |
+| DATE_WEEKDAY1         | Get day number from given date                                    | DATS<br>(20211220)                                   | NUMC<br>1<br>(here more)[#explanations]   |
+
+<h3>Explanations:</h3>
+DATE_WEEKDAY1():
+1	Monday
+2	Tuesday
+3	Wednesday
+4	Thursday
+5	Friday
+6	Saturday
+7	Sunday
