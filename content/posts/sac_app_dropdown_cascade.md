@@ -9,7 +9,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-1. First of all lets put a two new dropdowns and three texts
+1. First of all let's put two new dropdowns and three texts
 
 {{<figure align=center src="/sac_app_dropdown_cascade/1.png"  width="80%" >}}
 
@@ -85,7 +85,7 @@ Table_Games_Sales.getDataSource().setDimensionFilter("Year",selectedYear);
 
 {{< /highlight >}}
 
-At the end all filters should works fine.
+In the end, all filters should work fine.
 
 
 
