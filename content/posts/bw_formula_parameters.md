@@ -66,6 +66,11 @@ BW contains many standard formulas which can be used in TRFN's and RSPC's. The m
 | R_TRIM                 | ?                                                                                                                                                  | C<br>('d')                                           | STRING<br>d                               |
 | SHIFT_LEFT             | Remove first few <br>charters from the left site<br>of the string [more](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapshift.htm) | I,STRING<br>(2,abcdef)                               | STRING<br>cdef                            |
 | SHIFT_RIGHT            | Add few<br>charters from the left site<br>of the string [more](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapshift.htm)           | I,STRING<br>(2,abcdef)                               | STRING<br>'  abcdef'                      |
+| SKIP_RECORD            | Raise CX_RSFO_SKIP_RECORD exception to skip <br>processing of current record                                                                       | N/A                                                  | N/A                                       |
+| SKIP_RECORD_AS_ERROR   | Raise CX_RSFO_SKIP_RECORD_AS_ERROR exception to <br>skip current record processing with error                                                      | N/A                                                  | N/A                                       |
+| STR_LEN                | Returns the length of the string                                                                                                                   | STRING<br>abcdef                                     | INT<br>6                                  |
+| UNIT_CONVERSION        | Convert units                                                                                                                                      | UNIT,UNIT,ANY<br>(TO,KG,100)                         | F<br>100000                               |
+| UTC_LONG_TO_LOCAL_DATE | Convert timestamp base on selected timezone                                                                                                        | DEC,CHAR<br>(                                        |                                           |
 <h3>Explanations:</h3>
 DATE_WEEKDAY1(): </br>
 1 - Monday </br>
