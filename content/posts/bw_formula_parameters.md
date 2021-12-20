@@ -7,7 +7,7 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-BW contains many standard formulas which can be used in TRFN's and RSPC's. The main issue is that sometimes you need to know default values / data types. 
+BW contains many standard formulas which can be used in TRFN's and RSPC's. The main issue is that sometimes you need to know default values/data types. 
 
 All available formulas can be checked in class **CL_RSAR_FUNCTION**. Bellow, you can find a table with explained importing and returning parameters.
 
@@ -63,8 +63,8 @@ All available formulas can be checked in class **CL_RSAR_FUNCTION**. Bellow, you
 | REPLACE_ALL                 | Replace selected charter <br>to different one                                                                                                      | C,C,STRING<br>(4,9,A4B4C4)                           | STRING<br>A9B9C9                          |
 | REPLACE_FIRST               | Replace first occurrences of the <br>charters to different one                                                                                     | C,C,STRING<br>(4,9,A4B4C4)                           | STRING<br>A9B4C4                          |
 | RIGHT                       | Get first few numbers from right                                                                                                                   | I,STRING<br>(4,123456)                               | STRING<br>3456                            |
-| RTRIM                       | Trim white charters from right <br>based on provided regexp                                                                                        | STRING,STRING<br>('ABC ',\s)                         | STRING<br>'ABC'                           |
-| R_TRIM                      | ?                                                                                                                                                  | C<br>('d')                                           | STRING<br>d                               |
+| RTRIM                       | Trim white charters from right <br>based on provided regexp                                                                                        | STRING,STRING<br>(ABC,\s)                         | STRING<br>'ABC'                           |
+| R_TRIM                      | ?                                                                                                                                                  | C<br>(D)                                           | STRING<br>D                               |
 | SHIFT_LEFT                  | Remove first few <br>charters from the left site<br>of the string [more](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapshift.htm) | I,STRING<br>(2,abcdef)                               | STRING<br>cdef                            |
 | SHIFT_RIGHT                 | Add few<br>charters from the left site<br>of the string [more](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapshift.htm)           | I,STRING<br>(2,abcdef)                               | STRING<br>'  abcdef'                      |
 | SKIP_RECORD                 | Raise CX_RSFO_SKIP_RECORD <br>exception to skip <br>processing of current record                                                                   | N/A                                                  | N/A                                       |
@@ -89,7 +89,7 @@ DATE_WEEKDAY1(): </br>
 6 - Saturday </br>
 7 - Sunday </br> </br> 
 
-If result of functions with names ending at '2' is same, then probably version with 2 at the enad can handle both input (with year or without). MONTH2_QUARTER1 in example is checking both month and year + month :</br> 
+If the result of functions with names ending at '2' is the same, then probably the version with 2 at the end can handle both inputs (with a year or without). MONTH2_QUARTER1 in the example is checking both month and a year + month :</br> 
  
 {{< highlight abap >}} 
  IF strlen( i_month ) EQ 6.
@@ -101,7 +101,7 @@ If result of functions with names ending at '2' is same, then probably version w
   ENDIF.
 {{< /highlight >}}
 
-MONTH_QUARTER1 is checking only the year+motnh like 202106
+MONTH_QUARTER1 is checking only the year + month like 202106
   
 {{< highlight abap >}} 
     l_check = i_month+4(2).
