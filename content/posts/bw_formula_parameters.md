@@ -59,9 +59,9 @@ DATE_WEEKDAY1(): </br>
 4 - Thursday </br>
 5 - Friday </br>
 6 - Saturday </br>
-7 - Sunday </br>
+7 - Sunday </br> </br> 
 
-If result of functions with names ending at '2' is same, then it is better to choose this one becouse usually the have better input check. MONTH2_QUARTER1 in example is checking month and year:
+If result of functions with names ending at '2' is same, then it is better to choose this one becouse usually the have better input check. MONTH2_QUARTER1 in example is checking month and year:</br> 
 
 {{< highlight abap >}} 
  IF strlen( i_month ) EQ 6.
