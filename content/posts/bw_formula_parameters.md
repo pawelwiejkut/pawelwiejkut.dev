@@ -35,7 +35,7 @@ All available formulas can be checked in class **CL_RSAR_FUNCTION**. Bellow, you
 | DATE_WEEKDAY1         | Get day number from given date                                    | DATS<br>(20211220)                                   | NUMC<br>1<br>[more](#explanations)        |
 
 <h3>Explanations:</h3>
-DATE_WEEKDAY1():
+DATE_WEEKDAY1(): </br>
 1 - Monday </br>
 2 - Tuesday </br>
 3 - Wednesday </br>
