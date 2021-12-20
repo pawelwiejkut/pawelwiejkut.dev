@@ -6,7 +6,6 @@ editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
-draft: true
 ---
 
 BW contains many standard formulas which can be used in TRFN's and RSPC's. The main issue is that sometimes you need to know default values / data types. 
