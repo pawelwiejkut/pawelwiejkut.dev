@@ -1,6 +1,6 @@
 baseURL = 'https://pawelwiejkut.dev/'
 languageCode = 'en-us'
-title = 'Pawel Wiejkut Homepage'
+title = 'Pawel Wiejkut'
 author = 'Paweł Wiejkut'
 theme = "PaperMod"
 sectionPagesMenu = "main"
