@@ -7,8 +7,9 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-
 BW contains many standard formulas which can be used in TRFN's and RSPC's. The main issue is that sometimes you need to know default values / data types. 
+
+All available formulas can be checked in class **CL_RSAR_FUNCTION**. Bellow, you can find a table with explained importing and returning parameters.
 
 | Formula / Method Name       | Description                                                                                                                                        | Importing<br>Types<br>(Example)                      | Returning<br>Types<br>(Example<br>result) |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|-------------------------------------------|
