@@ -28,3 +28,5 @@ All available formulas can be checked in class **CL_RSAR_FUNCTION**. Bellow, you
 | DATE_HALFYEAR         | Check is given date in first or second<br>half of the year        | DATS<br>(20210212)                               | NUMC<br>1                                 |
 | DATE_MONTH            | Get calendar month from given date                                | DATS<br>(20201201)                               | NUMC<br>202012                            |
 | DATE_MONTH2           | Get month number from given date                                  | DATS<br>(20201201)                               | NUMC<br>12                                |
+| DATE_QUATER           | Get quarter from given date                                       | DATS<br>(20210909)                               | NUMC<br>20213                             |
+| DATE_QUATER1          | Get quarter number from given date                                | DATS<br>(20210909)                               | NUMC<br>3                                 |
