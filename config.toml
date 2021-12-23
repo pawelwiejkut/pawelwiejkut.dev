@@ -30,7 +30,7 @@ unsafe= true
 [[menu.main]]
   identifier = "SAC"
   name = "SAC"
-  url = "/sac_tutorial/"
+  url = "/sac_tutorial/" 
   weight = 1
 [[menu.main]]
   identifier = "mydevs"
@@ -41,12 +41,14 @@ unsafe= true
 [params]
 env = "production"
 comments = true
+ShowReadingTime = true
 [params.assets]
 favicon = "./profile.png"
 favicon16x16 = "./profile.png"
 favicon32x32 = "./profile.png"
 apple_touch_icon = "./profile.png"
 safari_pinned_tab = "./profile.png"
+
 
 [params.homeInfoParams]
 Title = "Hi there 👋"
