@@ -2,31 +2,40 @@
 title: "Cascade filtering in SAC"
 date: 2021-12-12T15:42:26+01:00
 tags: ["SAC","Dropdown","JavaScript","SACApp"]
-description: 'In this part of the tutorial, we are focusing on creating a filter on the dropdown in SAC APP.'
+Focus_Keyword: "Cascade filtering"
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
+In this part of the tutorial, we are focusing on creating a cascade filter on the dropdown in SAC APP. 
+Cascade means that filters on the dashboard will depend on each other. In the example, if you pick up the publisher name Nintendo then in the games list (Name) you should see only games that belong to Nintendo and no more others. To achieve this, we have to redesign our app a bit.
 
-1. First of all let's put two new dropdowns and three texts
+If you want to have a big picture, please check the rest of the tutorials.</br>
+Pervious topic - [Create and fill a dropdown in SAC APP](/sac_app_dropdown/)</br>
+Next part - [SAC APP Design & clean the filter button](/sac_app_design/)</br>
+The complete list is available [here](/sac/).
+
+
+1. Let's put two new dropdowns and three new texts. They will handle filters for Name (games list) and Year (when game was published).To add new elements please use bottom SAC panel.
 
 {{<figure align=center src="/sac_app_dropdown_cascade/1.png"  width="80%" >}}
 
-2. Resize a table, add more space at the top and align texts
+2. We have to resize the existing table, and add more space at the top and align texts. It is necessary to fits all elements on the dashboard. Check the image below for layout recommendations. To change the positions of the particular elements, simply click on it and drag and drop to the desired place. 
 
 {{<figure align=center src="/sac_app_dropdown_cascade/2.png"  width="80%" >}}
 
-3. Rename all elements accordingly
+3. Rename all elements accordingly. In the example, we are using a naming convention like Objecttype_Objectname. Keeping the one schema names is important, it allows us to easily find and access them.
 
 {{<figure align=center src="/sac_app_dropdown_cascade/3.png"  width="30%" >}}
 
-4. Please be informed that If your screen is to small to work with SAC, you can resize the page in Chrome settings:
+4. Please be informed that If your screen is too small to work with SAC, you can resize the page in Chrome settings. I recommend changing this setting, especially if you have a small screen with high resolution. To achieve this please click on the three dots icon in the right upper corner of Chrome, and change the zoom.
 
 {{<figure align=center src="/sac_app_dropdown_cascade/4.png"  width="50%" >}}
 
 
-5. Put code to fill dropdowns into Canvas - onInitialization
+5. Put code to fill dropdowns into Canvas - onInitialization. This piece of javascript will be responsible for filling our new dropdowns when the app starts. Our cascading filters are not working at this time, and we want to load all values. All magic starts when user choose one particular Publisher or Name.
+
 {{< highlight js >}}
 //Get all values from the table
 var resultSet = Table_Games_Sales.getDataSource().getResultSet();
@@ -46,7 +55,7 @@ for ( var z = 0; z< yearSet.length; z++ ){
 
 {{<figure align=center src="/sac_app_dropdown_cascade/5.png"  width="80%" >}}
 
-6. Put code into the Dropdown_Publisher - onSelect
+6. Put code into the Dropdown_Publisher - onSelect. Here we need to first clean all the combined filters name and publisher on our table Table_Games_Sales. The next step is to fill Name only with corresponding values (like for Sega we want to display only belong games - names).
 
 {{< highlight js >}}
 //Remove existing Name filter form the table
@@ -72,11 +81,11 @@ Table_Games_Sales.getDataSource().setDimensionFilter("Publisher",selectedPublish
 
 {{<figure align=center src="/sac_app_dropdown_cascade/6.png"  width="80%" >}}
 
-Now Publisher and Name should work pretty well 
+Run our application. Now Publisher and Name should work pretty well. We can see that the list is filled only by corresponding values.
 
 {{<figure align=center src="/sac_app_dropdown_cascade/7.gif"  width="80%" >}}
 
-7. Add missing code to the Year - onSelect. Here we just reading a value from the dropdown and put as a table filter. 
+7. Add missing code to the Year - onSelect. Here we just read a value from the dropdown and put it as a table filter. The year is not considered to be a cascading filter in our example, never the less we need it to be available.
 
 {{< highlight js >}}
 
@@ -85,7 +94,13 @@ Table_Games_Sales.getDataSource().setDimensionFilter("Year",selectedYear);
 
 {{< /highlight >}}
 
-In the end, all filters should work fine.
+8. Run the app once again. As you see, all filters are working fine now. Cascade filtering between the name and publisher should also behave as expected.
+
+If everything is working as expected, please check out next tutorial from SAC series
+[SAC APP Design & clean the filter button](/sac_app_design/).
+
+When the initial app is ready, it is time to add some images and clean the filter button. See you there :) 
+
 
 
 
