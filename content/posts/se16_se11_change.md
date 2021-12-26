@@ -12,7 +12,7 @@ Victor_Hugo: "true"
 
 Sometimes we are forced to change some database entries. There are many reasons like a new s-note from SAP or incorrect values in the technical table. Every SAP table can be changed via SE16 or SE11 transaction - all you need to have is a <mark> debug with change role</mark> assigned to your user. In this article you can find youtube video, and bellow is detailed step by step instruction.
 
-<h2>Wideo tutorial</h2>
+<h2>Video tutorial</h2>
 <div style="text-align:center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/evxRzGTY5lE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
