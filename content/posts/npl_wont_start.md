@@ -1,5 +1,5 @@
 ---
-title: "SAP NPL 7.52 won't start"
+title: "SAP NPL 7.52 does not start"
 date: 2021-04-02T22:01:24+02:00
 tags: ["NPL","ABAPTrial","SYBASE","License"]
 lastmod: 2021-12-11T00:00:00+02:00
@@ -9,7 +9,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, command starts ALL, will stick on:
+This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on:
 {{< highlight bash >}}
 The database is not available via R3trans
 -------------------------------------------

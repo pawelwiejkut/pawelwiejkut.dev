@@ -16,7 +16,7 @@ unsafe= true
   name = 'Search'
   pre = "<i class='fa fa-heart'></i>"
   url = '/search/'
-  weight = 5
+  weight = 1
 [[menu.main]]
   identifier = "tags"
   name = "Tags"
@@ -31,12 +31,12 @@ unsafe= true
   identifier = "SAC"
   name = "SAC"
   url = "/sac_tutorial/" 
-  weight = 1
+  weight = 2
 [[menu.main]]
-  identifier = "mydevs"
-  name = "My devs"
-  url = "/mydevs/"
-  weight = 0
+  identifier = "Aboutme"
+  name = "About me"
+  url = "/about_me/"
+  weight = 2
 
 [params]
 env = "production"
