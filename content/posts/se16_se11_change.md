@@ -1,5 +1,5 @@
 ---
-title: "How to change any database entries in SE16 or SE11"
+title: "How to change any entries in the database in SE16 or SE11"
 date: 2021-12-25T14:51:25+01:00
 tags: ["SE16","SE11","Database","Authorization"]
 editPost:
