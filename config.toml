@@ -30,7 +30,7 @@ unsafe= true
 [[menu.main]]
   identifier = "SAC"
   name = "SAC"
-  url = "/sac_tutorial/" 
+  url = "/sac-tutorial/" 
   weight = 2
 [[menu.main]]
   identifier = "Aboutme"

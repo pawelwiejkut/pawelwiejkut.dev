@@ -12,7 +12,7 @@ W 2017 roku napisałem tutorial „Jak zainstalować SAPa żeby nauczyć się AB
 Chcesz nauczyć się programować w języku ABAP ? A może chciałbyś lepiej zrozumieć w jaki sposób działają procesy w rozwiązaniach opartych na platformie NetVeawer ? Jeśli tak to to miejsce jest dla Ciebie! Lista poniżej będzie stopniowo rozbudowywana o coraz to nowsze artykuły które pozwolą Ci zdobyć niezbędną techniczną wiedzę do programowania aplikacji w ABAPie.
 
 1. Jak zainstalować SAPa żeby nauczyć się ABAPa ?
-2. [Aktywacja SAP NetVeawer](/posts/aktywacja_netveawer/)
+2. [Aktywacja SAP NetVeawer](/posts/aktywacja-netveawer/)
 3. Hello World w ABAPie
 4. Tworzymy proste ALV Grid
 5. Pierwszy ekran wyboru
