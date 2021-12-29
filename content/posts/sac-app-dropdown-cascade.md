@@ -3,6 +3,7 @@ title: "Cascade filtering in SAC"
 date: 2021-12-12T15:42:26+01:00
 tags: ["SAC","Dropdown","JavaScript","SACApp"]
 Focus_Keyword: "Cascade filtering"
+aliases : [ sac_app_dropdown_cascade]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

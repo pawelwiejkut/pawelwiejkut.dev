@@ -2,6 +2,7 @@
 title: "How to change any entries in the database in SE16 or SE11"
 date: 2021-12-25T14:51:25+01:00
 tags: ["SE16","SE11","Database","Authorization"]
+aliases : [ se16_se11_change ]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

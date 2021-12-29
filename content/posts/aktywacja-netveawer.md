@@ -2,7 +2,7 @@
 title: "Aktywacja SAP Netveawer 7.5"
 date: 2017-03-04T21:44:24+02:00
 tags: ["ABAP","ABAP od podstaw"]
-lastmod: 2021-12-09T00:00:00+02:00
+aliases : [ aktywacja_netveawer]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

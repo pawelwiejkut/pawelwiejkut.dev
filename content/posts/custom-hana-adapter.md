@@ -2,7 +2,7 @@
 title: "Developing custom HANA adapter – quickstart"
 date: 2020-10-18T20:44:24+02:00
 tags: ["HANA","Adapter","Java","Eclipse","Data provisioning"]
-lastmod: 2021-12-11T00:00:00+02:00
+aliases : [ custom_hana_adapter ]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

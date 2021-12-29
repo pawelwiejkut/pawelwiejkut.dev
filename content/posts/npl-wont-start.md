@@ -2,7 +2,7 @@
 title: "SAP NPL 7.52 does not start"
 date: 2021-04-02T22:01:24+02:00
 tags: ["NPL","ABAPTrial","SYBASE","License"]
-lastmod: 2021-12-11T00:00:00+02:00
+aliases : [ npl_wont_start ]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

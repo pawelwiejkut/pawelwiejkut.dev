@@ -2,7 +2,7 @@
 title: "How to install iOS apps on MacOs M1 (Monterey)"
 date: 2021-12-07T08:25:49+01:00
 tags: ["MacOS","Instagram","iOS","sideload"]
-lastmod: 2021-12-11T00:00:00+02:00
+aliases : [ ios_app_on_macos ]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

@@ -2,7 +2,7 @@
 title: "How AMDP TRFN is executed"
 date: 2021-11-11T22:58:24+02:00
 tags: ["AMDP","TRFN","BW"]
-lastmod: 2021-12-08T00:00:00+02:00
+aliases : [ how_amdp_is_executed ]
 draft: true
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"

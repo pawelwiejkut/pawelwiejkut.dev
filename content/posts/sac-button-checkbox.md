@@ -2,6 +2,7 @@
 title: "Select dimensions by CheckBox and Button"
 date: 2021-12-13T15:12:24+01:00
 tags: ["SAC","JavaScript","SACApp","SACButton"]
+aliases : [ sac_button_checkbox ]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

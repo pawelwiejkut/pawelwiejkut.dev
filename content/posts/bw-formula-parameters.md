@@ -2,6 +2,7 @@
 title: "BW formula parameters"
 date: 2021-12-20T09:13:49+01:00
 tags: ["BW","BWFunctions","Class","Parameters"]
+aliases : [ bw_formula_parameters ]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

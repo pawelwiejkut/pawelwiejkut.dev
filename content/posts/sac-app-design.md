@@ -2,6 +2,7 @@
 title: "SAC APP Design & clean the filter button"
 date: 2021-12-13T12:15:41+01:00
 tags: ["SAC","Dropdown","JavaScript","SACApp","SACAppFilter"]
+aliases : [ sac_app_design ]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

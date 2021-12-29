@@ -2,6 +2,7 @@
 title: "Create a popup to change dimensions order"
 date: 2021-12-15T22:01:41+01:00
 tags: ["SAC","JavaScript","SACApp","SACPopup"]
+aliases : [ sac_popup_order ]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

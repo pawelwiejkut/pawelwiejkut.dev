@@ -2,6 +2,7 @@
 title: "Simple APP on SAC"
 date: 2021-12-12T11:58:15+01:00
 tags: ["SAC","JavaScript","SACApp"]
+aliases : [ sac_create_app ]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

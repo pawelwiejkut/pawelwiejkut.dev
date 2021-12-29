@@ -2,6 +2,7 @@
 title: "Create and fill a dropdown in SAC APP"
 date: 2021-12-12T14:13:53+01:00
 tags: ["SAC","Dropdown","JavaScript","SACApp"]
+aliases : [ sac_app_dropdown ]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

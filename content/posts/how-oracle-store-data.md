@@ -2,7 +2,7 @@
 title: "How Oracle store your data"
 date: 2018-08-10T20:44:24+02:00
 tags: ["oralce","database","disk","storage"]
-lastmod: 2021-12-11T00:00:00+02:00
+aliases : [ how_oracle_store_data]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text

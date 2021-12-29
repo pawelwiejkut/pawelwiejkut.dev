@@ -2,6 +2,7 @@
 title: "Create new model on SAC"
 date: 2021-12-11T21:03:40+01:00
 tags: ["SAC","model"]
+aliases : [ sac_model ]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
