@@ -18,13 +18,13 @@ Kiedy mamy już zainstalowanego SAP NetWeavera, należy aktywować naszą instal
 1. Logujemy się do systemu i wchodzimy w transakcję SLICENSE.
 <img src="/aktywacja_netveawer/slicense.png" width="80%" />
 2. Kopiujemy  active hardware key.
-<img src="/hardware_key-1.png" width="80%" />
+<img src="/aktywacja_netveawer/hardware_key-1.png" width="80%" />
 3. Przechodzimy na stronę https://go.support.sap.com/minisap/ , wybieramy NPL i klikamy Generate. Krok ten dobrze jest wykonać w przeglądarce Internet Exploler.
 <img src="/aktywacja_netveawer/generate-1.png" width="80%" />
 4. Po zapisaniu wygenerowanego pliku, wracamy do transakcji SLICENSE gdzie klikamy na Install. Po zakończeniu procesu nasz numer instalacji powinien zostać zmieniony na DEMOSYSTEM.
 <img src="/aktywacja_netveawer/demosystem-1.png" width="80%" />
 5. Teraz należy wpisać Acces Key, aby to zrobić stworzymy od razu paczkę w której możemy następnie umieszczać swoje programy. W tym celu przechodzimy do transakcji se80.
-<img src="/se80.png" width="80%" />
+<img src="/aktywacja_netveawer/se80.png" width="80%" />
 6. Żeby stworzyć paczkę, należy w wpisać jej nazwę zaczynającą się od Z albo Y, następnie nacisnąć enter.
 <img src="/aktywacja_netveawer/package.png" width="80%" />
 7. Uzupełniamy wymagane pola
