@@ -35,7 +35,7 @@ unsafe= true
 [[menu.main]]
   identifier = "Aboutme"
   name = "About me"
-  url = "/about_me/"
+  url = "/about-me/"
   weight = 2
 
 [params]
