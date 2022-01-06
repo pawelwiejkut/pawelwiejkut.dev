@@ -10,6 +10,6 @@ editPost:
 
 If you are forced to change transport description after release, you have to consider following changes:
 
-1. Use RDDIT076 to change the description - if not possible, you have to find a way to edit E07T and E070.
+1. Use **RDDIT076** to change the description - if not possible, you have to find a way to edit E07T and E070.
 
 2. Change description in TMSBUFTXT to correct display of shorttext in STMS.
