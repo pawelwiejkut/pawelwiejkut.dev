@@ -9,11 +9,12 @@ editPost:
 ---
 <h2>Certificates</h2>
 <h3>SAC</h3>
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="d6bf6cf2-27bd-4535-84af-0919108cd200" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="d6bf6cf2-27bd-4535-84af-0919108cd200" data-share-badge-host="https://www.credly.com"><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 <a href="https://open.sap.com/verify/xisif-belyv-vikup-huguf-pucag">
 <img src ="/about-me/opensap_sac_ap.png" width="150">
 </a>
+</div>
 
 <h3>BW & HANA</h3>
 
