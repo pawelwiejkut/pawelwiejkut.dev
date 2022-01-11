@@ -18,6 +18,11 @@ My name is Pawel Wiejkut and I am an SAP Consultant since 2016. Since the beginn
 <img src ="/about-me/opensap_sac_ap.png" width="150">
 </a>
 </div>
+<div style="display:inline-block;margin-left:50px">
+<a href="https://open.sap.com/verify/xodoz-kekic-secuf-batyf-robam">
+<img src ="/about-me/s4h27_open_badge.png" width="150">
+</a>
+</div>
 </div>
 
 <h3>BW & HANA</h3>
