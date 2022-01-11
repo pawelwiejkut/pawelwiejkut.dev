@@ -13,7 +13,7 @@ editPost:
 
 Useful modern ABAP statements for TRFNs.
 
-<h3>Moving data from one internal table to another </h3>
+### Moving data from one internal table to another 
 
 Move only required records from one table to another:
 
@@ -29,7 +29,7 @@ Now:
 lt_result = VALUE #( FOR ls_source IN lt_source WHERE ( column_a = 'value' ) ( ls_source )).
 {{< / highlight>}}
 
-<h3> Fill table with data </h3>
+### Fill table with data 
 
 Previously:
 {{< highlight abap >}}
@@ -50,7 +50,7 @@ Second good example (add new values):
 INSERT VALUE #( column_a = 'value' column_b = 'value_b' column_c = 'value_c' ) TO lt_result.
 {{< / highlight>}}
 
-<h3> Read data from the table </h3>
+### Read data from the table 
 
 Previously:
 {{< highlight abap >}}
@@ -65,7 +65,7 @@ CATCH cx_sy_itab_line_not_found.
 ENDTRY.
 {{< / highlight>}}
 
-<h3> Pass corresponding data between internal tables</h3>
+### Pass corresponding data between internal tables
 
 Previously:
 {{< highlight abap >}}
@@ -77,7 +77,7 @@ Now:
 lt_result = CORRESPONDING #( lt_source ).
 {{< / highlight>}}
 
-<h3> Union of internal tables</h3>
+### Union of internal tables
 
 Previously:
 {{< highlight abap >}}
@@ -88,7 +88,7 @@ Now:
 lt_result = corresponding #(  base ( lt_result )  lt_table ).
 {{< / highlight>}}
 
-<h3> Get number of lines in the table</h3>
+### Get number of lines in the table
 
 Previously:
 {{< highlight abap >}}
@@ -100,7 +100,7 @@ Now:
 v_number_of_entries = lines( lt_result  ).
 {{< / highlight>}}
 
-<h3>Concatenate strings</h3>
+### Concatenate strings
 
 Previously:
 {{< highlight abap >}}

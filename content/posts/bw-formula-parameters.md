@@ -80,7 +80,7 @@ All available formulas can be checked in class **CL_RSAR_FUNCTION**. Bellow, you
 | WORKINGDAY_MONTH            | Get the number of working <br>days based on <br>month                                                                                              | DATS,CHAR,CHAR<br>(20211220,01,+)                    | INT<br>14                                 |
 | WORKINGDAY_YEAR             | Get the number of working day <br>base on<br>year                                                                                                      | DATS,CHAR,CHAR<br>(20211220,01,+)                    | INT<br>243                                |
 
-<h3>Explanations:</h3>
+### Explanations:
 DATE_WEEKDAY1(): </br>
 1 - Monday </br>
 2 - Tuesday </br>
