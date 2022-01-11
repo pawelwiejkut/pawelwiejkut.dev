@@ -13,12 +13,12 @@ My name is Pawel Wiejkut and I am an SAP Consultant since 2016. Since the beginn
  <div id="certs">
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="d6bf6cf2-27bd-4535-84af-0919108cd200" data-share-badge-host="https://www.credly.com" style="display:inline-block"><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </div>
-<div style="display:inline-block;margin-left:50px">
+<div style="display:inline-block;margin-left:40px">
 <a href="https://open.sap.com/verify/xisif-belyv-vikup-huguf-pucag">
 <img src ="/about-me/opensap_sac_ap.png" width="150">
 </a>
 </div>
-<div style="display:inline-block;margin-left:50px">
+<div style="display:inline-block;margin-left:40px">
 <a href="https://open.sap.com/verify/xodoz-kekic-secuf-batyf-robam">
 <img src ="/about-me/s4h27_open_badge.png" width="150">
 </a>
