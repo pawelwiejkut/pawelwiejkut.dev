@@ -62,7 +62,7 @@ Nice to meet you 👋
 </div>
 
 ### Open-Source Developments
-<link href="github-widget/github-widget.css" rel="stylesheet" type="text/css" />
+
 <div class="github-widget" data-user="pawelwiejkut" data-options='{"sortBy":"stargazers_count", "limit":6}'></div>
 <script src="/github-widget/github-widget.min.js"></script>
 
