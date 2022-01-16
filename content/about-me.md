@@ -17,6 +17,8 @@ Nice to meet you 👋
 3. [Twitter](https://twitter.com/pawelwiejkut)
 4. [SAP profile](http://people.sap.com/pawelwiejkut)
 5. [Tik Tok](https://www.tiktok.com/@subrc0)
+6. [Github](https://github.com/pawelwiejkut)
+7. [YouTube](https://www.youtube.com/user/PawelWiejkut)
 
 ## Certificates
 ### SAC
@@ -62,6 +64,7 @@ Nice to meet you 👋
 </div>
 
 ### Open-Source Developments
+<link href="/github-widget/github-widget.css" rel="stylesheet" type="text/css" />
 
 <div class="github-widget" data-user="pawelwiejkut" data-options='{"sortBy":"stargazers_count", "limit":6}'></div>
 <script src="/github-widget/github-widget.min.js"></script>
