@@ -52,10 +52,10 @@ safari_pinned_tab = "./profile.png"
 
 [params.homeInfoParams]
 Title = "Hi there 👋"
-Content = """ ![image alt >](/profile.png)
+Content = """ <img src="/profile.png" style="float:right; margin-left:15px;" /> 
 My name is Pawel Wiejkut and I'm a SAP Consultant since 2016.  
 Here you can find some of my knowledge about SAP & Databases. For videos please check out my youtube channel and follow me on instagram.
-This blog is migrated from wordpress version - pawelwiejkut.net.</br>**BW | ABAP | SAC | HANA**</br>
+This blog is migrated from wordpress version - pawelwiejkut.net.</br><b>BW | ABAP | SAC | HANA</b></br>
 
 
 <!-- Begin Mailchimp Signup Form -->

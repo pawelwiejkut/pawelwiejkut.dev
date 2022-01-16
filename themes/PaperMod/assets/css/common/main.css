@@ -59,25 +59,10 @@ pre {
     border-radius: var(--radius);
     padding: 0 5px;
     font-size: 14px;
+    user-select: none;
 }
 
 div.highlight:hover .copy-code,
 pre:hover .copy-code {
     display: block;
 }
-
-img[alt$=">"] {
-    float: right;
-  }
-  
-  img[alt$="<"] {
-    float: left;
-  }
-  
-  img[alt$="><"] {
-    display: block;
-    max-width: 30%;
-    height: auto;
-    margin: auto;
-    float: none!important;
-  }
