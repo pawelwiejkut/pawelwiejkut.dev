@@ -5,6 +5,7 @@ tags: ["BW","ABAP","Opensource"]
 TocOpen: true
 ShowToc: true
 ---
+
 Nice to meet you 👋 
 
  <img src="/me.jpeg" style="float:right; margin-left:15px;" /> My name is Pawel Wiejkut and I am an SAP Consultant since 2016. Since the beginning, my career is related to big data. In this blog, I share my knowledge about SAP & Databases. Besides, I am the author of saponit.pl platform where I teach people programming in ABAP in Polish. In my free time, I co-create projects on GitHub. Feel free to contact me via social media.
@@ -61,6 +62,7 @@ Nice to meet you 👋
 </div>
 
 ### Open-Source Developments
+<link href="github-widget/github-widget.css" rel="stylesheet" type="text/css" />
 <div class="github-widget" data-user="pawelwiejkut" data-options='{"sortBy":"stargazers_count", "limit":6}'></div>
 <script src="/github-widget/github-widget.min.js"></script>
 
