@@ -40,6 +40,7 @@ unsafe= true
 
 [params]
 description = 'Paweł Wiejkut homepage. ABAP BW SAC HANA Tips & Tricks 👨🏻‍💻'
+author = 'Pawel Wiejkut'
 env = "production"
 comments = true
 ShowReadingTime = true
