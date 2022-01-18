@@ -3,7 +3,7 @@ title: "Create simple SAC APP step by step"
 date: 2021-11-04T11:15:14+01:00
 tags: ["BW","ABAP","Opensource"]
 sitemap:
-  priority: 0.5
+  priority: 0.8
 cover:
     image: "sac_popup_order/16.gif"
     alt: "Result view"
