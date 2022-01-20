@@ -1,6 +1,6 @@
 ---
-title: "Useful modern ABAP statements for transformations"
-date: 2022-01-11T21:09:22+01:00
+title: "Useful modern ABAP statements for BW transformations"
+date: 2022-01-11T21:21:22+01:00
 tags: ["BW","ABAP"]
 TocOpen: true
 ShowToc: true
