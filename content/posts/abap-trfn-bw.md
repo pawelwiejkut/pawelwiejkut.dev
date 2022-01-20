@@ -10,7 +10,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-Since ABAP 7.4 SAP introduced a lot of inline declarations. Never the less in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statements that can be used in BW then this article is definatelly for you. Every example contains a previous and a new version to compare. If you want to check more information how to write a clean abap code, check out [check this website](https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md) where is a official guide from SAP.
+ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare. You can treat this post as a ABAP handbook/guide for BW developers. If you want to check more information how to write a clean ABAP code, check out [check this website](https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md) where is an official guide from SAP.
 
 ### Moving data from one internal table to another 
 
