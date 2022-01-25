@@ -13,8 +13,8 @@ In this part of the tutorial, we are focusing on creating a cascade filter on th
 Cascade means that filters on the dashboard will depend on each other. In the example, if you pick up the publisher name Nintendo then in the games list (Name) you should see only games that belong to Nintendo and no more others. To achieve this, we have to redesign our app a bit.
 
 If you want to have a big picture, please check the rest of the tutorials.</br>
-Pervious topic - [Create and fill a dropdown in SAC APP](/sac-app-dropdown/)</br>
-Next part - [SAC APP Design & clean the filter button](/sac-app-design/)</br>
+Pervious topic - [Create and fill a dropdown in SAC APP](/posts/sac-app-dropdown/)</br>
+Next part - [SAC APP Design & clean the filter button](/posts/sac-app-design/)</br>
 The complete list is available [here](/sac/).
 
 

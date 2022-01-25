@@ -3,6 +3,13 @@ title: "ABAP od podstaw"
 date: 2017-03-04T21:44:24+02:00
 lastmod: 2021-12-11T00:00:00+02:00
 tags: ["ABAP od podstaw"]
+sitemap:
+  priority: 0.9
+cover:
+    image: "abap_cover.jpg"
+    alt: "Cover image"
+    caption: "Cover image"
+    relative: false 
 ---
 
 Hej !
@@ -13,7 +20,7 @@ Chcesz nauczyć się programować w języku ABAP ? A może chciałbyś lepiej zr
 
 1. Jak zainstalować SAPa żeby nauczyć się ABAPa ?
 2. [Aktywacja SAP NetVeawer](/posts/aktywacja-netveawer/)
-3. Hello World w ABAPie
+3. [Hello World w ABAPie](/posts/hello-world-w-abapie/)
 4. Tworzymy proste ALV Grid
 5. Pierwszy ekran wyboru
 6. Czym jest DDIC ?
