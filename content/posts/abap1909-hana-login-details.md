@@ -15,6 +15,15 @@ user SYSTEM with the password Ldtf5432</br></br>
 For the database **HDB** (i.e to make some development):</br> 
 user SAPA4H with the password Ldtf5432
 
+In both cases, the instance number is 02. Example in Eclipse:
+
+{{<figure align=center src="/abap1909_hana_login_details/1.png"  width="80%" >}}
+
+{{<figure align=center src="/abap1909_hana_login_details/2.png"  width="80%" >}}
+
+
+
+
 
 
 
