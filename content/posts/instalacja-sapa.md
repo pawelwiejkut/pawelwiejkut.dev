@@ -1,5 +1,5 @@
 ---
-title: "Instalacja Sapa"
+title: "Jak zainstalować SAPa żeby nauczyć się ABAPa?"
 date: 2022-01-29T18:33:53+01:00
 tags: ["ABAP","ABAP od podstaw"]
 editPost:

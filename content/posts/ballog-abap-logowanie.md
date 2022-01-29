@@ -210,5 +210,4 @@ END-OF-SELECTION.
 
 {{<figure align=center src="/ballog_abap_logowanie/20.png"  width="70%" >}}
 
-
 To już wszystko w tym artykule poświęconym ballogowi. Od teraz znasz już podstawowy sposób na zalogowanie informacji.
