@@ -25,7 +25,7 @@ unsafe= true
 [[menu.main]]
   identifier = "abap-od-podstaw"
   name = "ABAP od postaw 🇵🇱 "
-  url = "/abapodpodstaw/"
+  url = "/abap-od-podstaw/"
   weight = 8
 [[menu.main]]
   identifier = "SAC"
