@@ -22,7 +22,7 @@ Chcesz nauczyć się programować w języku ABAP ? A może chciałbyś lepiej zr
 2. [Aktywacja SAP NetVeawer](/posts/aktywacja-netveawer/)
 3. [Hello World w ABAPie](/posts/hello-world-w-abapie/)
 4. [Tworzymy proste ALV Grid](/posts/tworzymy-alv-grid/)
-5. Pierwszy ekran wyboru
+5. [Pierwszy ekran wyboru](/posts/ekran-wyboru)
 6. Czym jest DDIC ?
 7. Ballog, czyli logowanie danych w ABAPie
 8. Operacje na plikach
