@@ -3,6 +3,7 @@ title: "ABAP od podstaw"
 date: 2017-03-04T21:44:24+02:00
 lastmod: 2021-12-11T00:00:00+02:00
 tags: ["ABAP od podstaw"]
+aliases: ["abapodpodstaw"]
 sitemap:
   priority: 0.9
 cover:
