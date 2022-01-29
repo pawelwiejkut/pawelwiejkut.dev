@@ -6,7 +6,6 @@ editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
-draft: true
 ---
 
 Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
