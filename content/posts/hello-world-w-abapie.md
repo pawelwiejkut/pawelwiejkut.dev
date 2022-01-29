@@ -1,7 +1,7 @@
 ---
 title: "Hello World W ABAPie"
 date: 2017-03-12T10:08:21+01:00
-tags: ["ABAP","ABAPodPodstaw"]
+tags: ["ABAP","ABAP od podstaw"]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
@@ -73,7 +73,7 @@ Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do z
 
 13. Wracamy teraz do naszego programu i zmieniamy jego zawartość, tak żeby wykorzystać dane z tabel, które wcześniej uzupełniliśmy.
 
-{{< highlight js >}}
+{{< highlight abap >}}
 *&---------------------------------------------------------------------*
 *& Report ZHELLOWORLD
 *&---------------------------------------------------------------------*

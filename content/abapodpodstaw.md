@@ -21,7 +21,7 @@ Chcesz nauczyć się programować w języku ABAP ? A może chciałbyś lepiej zr
 1. Jak zainstalować SAPa żeby nauczyć się ABAPa ?
 2. [Aktywacja SAP NetVeawer](/posts/aktywacja-netveawer/)
 3. [Hello World w ABAPie](/posts/hello-world-w-abapie/)
-4. Tworzymy proste ALV Grid
+4. [Tworzymy proste ALV Grid](/posts/tworzymy-alv-grid/)
 5. Pierwszy ekran wyboru
 6. Czym jest DDIC ?
 7. Ballog, czyli logowanie danych w ABAPie
