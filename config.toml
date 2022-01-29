@@ -23,7 +23,7 @@ unsafe= true
   url = "/tags/"
   weight = 10 
 [[menu.main]]
-  identifier = "abapodpodstaw"
+  identifier = "abap-od-podstaw"
   name = "ABAP od postaw 🇵🇱 "
   url = "/abapodpodstaw/"
   weight = 8
