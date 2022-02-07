@@ -15,16 +15,15 @@ To jest poradnik dla kompletnych laików, dlatego też tytuł jest bardzo skrót
 
 W skrócie, aby zainstalować SAPA potrzebujesz:
 1. Około 1,5 godziny wolnego czasu,
-2. Pobrać Open Suse Linux, dostępny [tutaj](https://get.opensuse.org/leap/?type=desktop#download)
-3. Pobrać SAP Netveawer, dostępny [tutaj](https://developers.sap.com/trials-downloads.html?search=abap)
-4. Pobrać Virtualbox, dostępny [tutaj](https://www.virtualbox.org/wiki/Downloads)
+2. Open Suse Linux, dostępny [tutaj](https://get.opensuse.org/leap/?type=desktop#download)
+3. SAP Netveawer, dostępny [tutaj](https://developers.sap.com/trials-downloads.html?search=abap)
+4. Virtualbox, dostępny [tutaj](https://www.virtualbox.org/wiki/Downloads)
 5. Instalujemy Virtualboxa,
 6. Instalujemy OpenSuse na Virtualboxie,
 7. Konfigurujemy OpenSuse,
 8. Instalujemy SAP na OpenSuse,
 9. Logujemy się do systemu
-
-Cały proces został szczegółowo przedstawiony, krok-po-korku w wideo poniżej.
+10. Cały proces został szczegółowo przedstawiony, krok-po-korku w wideo poniżej.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/615025108?h=e450dd354e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="3. Tydzien 1 - Instalacja SAP 2/2"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 </br></br>
