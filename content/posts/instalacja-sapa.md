@@ -22,8 +22,7 @@ W skrócie, aby zainstalować SAPA potrzebujesz:
 6. Instalujemy OpenSuse na Virtualboxie,
 7. Konfigurujemy OpenSuse,
 8. Instalujemy SAP na OpenSuse,
-9. Logujemy się do systemu
-10. Cały proces został szczegółowo przedstawiony, krok-po-korku w wideo poniżej.
+9. Cały proces został szczegółowo przedstawiony, krok-po-korku w wideo poniżej.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/615025108?h=e450dd354e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="3. Tydzien 1 - Instalacja SAP 2/2"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 </br></br>
