@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ABAP on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/abap/</link>
+    <description>Recent content in ABAP on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Feb 2022 16:45:44 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/abap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manual deployment from ABAP to SAP HANA</title>
+      <link>https://pawelwiejkut.dev/posts/manual-hana-abap-deployment/</link>
+      <pubDate>Fri, 11 Feb 2022 16:45:44 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/manual-hana-abap-deployment/</guid>
+      <description>Bellow you can find my notes about the manual deployment from ABAP Application Server to the HANA Database. This kind of activity can be done in example for Calculation Views.</description>
+    </item>
+    
+    <item>
+      <title>Jak zainstalować SAPa żeby nauczyć się ABAPa?</title>
+      <link>https://pawelwiejkut.dev/posts/instalacja-sapa/</link>
+      <pubDate>Sat, 29 Jan 2022 18:33:53 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/instalacja-sapa/</guid>
+      <description>Cześć! To jest poradnik dla kompletnych laików, dlatego też tytuł jest bardzo skrótowy. Co bowiem oznacza instalacja SAP-a ? SAP (Systemanalyse und Programmentwicklung) jest nazwą firmy, powstałej w 1972 roku w Waldorfie zajmującej się tworzeniem oprogramowania. Zachęcam, żeby poczytać więcej o niej tutaj. Dziś chciałem pokazać Ci prosty sposób na instalację systemu SAP NetWeaver, który to umożliwi Ci naukę programowania w języku ABAP. Ten tutorial był kiedyś dostępny w wersji tekstowej, teraz dostępna jest duzo nowsza wersja wideo, która równiez jest częścią płatnego kursu abap dostępnego pod adresem https://saponit.</description>
+    </item>
+    
+    <item>
+      <title>Useful modern ABAP statements for BW transformations</title>
+      <link>https://pawelwiejkut.dev/posts/abap-trfn-bw/</link>
+      <pubDate>Tue, 11 Jan 2022 21:21:22 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/abap-trfn-bw/</guid>
+      <description>ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare.</description>
+    </item>
+    
+    <item>
+      <title>Create ADSO from ABAP</title>
+      <link>https://pawelwiejkut.dev/posts/create-adso-abap/</link>
+      <pubDate>Thu, 06 Jan 2022 12:52:44 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/create-adso-abap/</guid>
+      <description>Creating ADSO from ABAP can be easily achieved by cl_rso_adso_api=&amp;gt;create DATA(ls_flags) = VALUE cl_rso_adso_api=&amp;gt;tn_s_adsoflags( direct_update = abap_true ). TRY. cl_rso_adso_api=&amp;gt;create( EXPORTING i_adsonm = &amp;#34;Name of the ADSO i_infoarea = &amp;#34;Infoarea name i_s_adsoflags = ls_flags i_t_object = &amp;#34;Table with all fields i_t_dimension = &amp;#34;Dimension i_t_key = &amp;#34;String table with key IMPORTING e_t_msg = DATA(lt_msg) ). CATCH cx_rs_all_msg INTO DATA(lr_msg). cl_demo_output=&amp;gt;display( EXPORTING data = lr_msg-&amp;gt;get_longtext( ) name = &amp;#39;Error&amp;#39; ). ENDTRY.
+Full usage examples can be found here</description>
+    </item>
+    
+    <item>
+      <title>Change transport description after release</title>
+      <link>https://pawelwiejkut.dev/posts/change-transport-desc/</link>
+      <pubDate>Thu, 06 Jan 2022 12:23:54 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/change-transport-desc/</guid>
+      <description>If you are forced to change transport description after release, you have to consider following changes:
+Use RDDIT076 to change the description - if not possible, you have to find a way to edit E07T and E070.
+Change description in TMSBUFTXT to correct display of shorttext in STMS.</description>
+    </item>
+    
+    <item>
+      <title>How to contribute ABAP projects on Github</title>
+      <link>https://pawelwiejkut.dev/posts/how-to-contribute/</link>
+      <pubDate>Wed, 01 Dec 2021 22:01:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/how-to-contribute/</guid>
+      <description>Last time, when I published my bw_toolbox project on Github, there were a lot of questions from regular developers not so much familiar with git, how they can contribute. Because of that, I decided to write this quick-start tutorial.
+What do I need? – system requirements Connection with GitHub – your instance should be able to establish a connection with github.com, SSL Entires – you have to configure your SAP System by adding necessary certificates into STRUST transaction (details), Profile configuration – also changes on the profile level are required, so you have to manual edit entries or use transactions (details).</description>
+    </item>
+    
+    <item>
+      <title>How to install ABAP 1909 on mac M1</title>
+      <link>https://pawelwiejkut.dev/posts/abap1909-dev-m1/</link>
+      <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/abap1909-dev-m1/</guid>
+      <description>How to run ABAP 1909 on MacOs with M1? For me, the best idea was to use UTM. I also tried before with docker without success - in the end, there was always an error.
+Install UTM
+Download Ubuntu Server x64 bit version
+Create virtual machine on UTM (220 GB storage, 6-7 CPU&amp;rsquo;s, additional flags) Install Ubuntu server on UTM
+Install docker sudo apt-get update sudo apt-get install \ ca-certificates \ curl \ gnupg \ lsb-release curl -fsSL https://download.</description>
+    </item>
+    
+    <item>
+      <title>BW important programs / Function modules </title>
+      <link>https://pawelwiejkut.dev/posts/bw-important-programs/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:20 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/bw-important-programs/</guid>
+      <description>Almost all of these programs are included in my GitHub development &amp;ldquo;bw_toolbox&amp;rdquo;. If you want, you can just implement this in an easy way to your system. Please check by clicking here.
+Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user </description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://pawelwiejkut.dev/about-me/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/about-me/</guid>
+      <description>Nice to meet you 👋
+My name is Pawel Wiejkut and I am an SAP Consultant since 2016. Since the beginning, my career is related to big data. In this blog, I share my knowledge about SAP &amp;amp; Databases. Besides, I am the author of saponit.pl platform where I teach people programming in ABAP in Polish. In my free time, I co-create projects on GitHub. Feel free to contact me via social media.</description>
+    </item>
+    
+    <item>
+      <title>Create simple SAC APP step by step</title>
+      <link>https://pawelwiejkut.dev/sac-tutorial/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/sac-tutorial/</guid>
+      <description>This tutorial group describes how to create a simple SAC App step by step. We are beginning from the new data model, and go through dropdowns, cascade filtering, design and popups. Everything step by step with screenshots and gifs.
+Create new model on SAC Simple APP on SAC Create and fill a dropdown in SAC APP Cascade filtering in SAC Design the app and create button to clean the filters Select dimensions by CheckBox and Button Create a popup to change dimensions order </description>
+    </item>
+    
+    <item>
+      <title>AMDP ABAP Transformation execution</title>
+      <link>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</link>
+      <pubDate>Sun, 17 Oct 2021 21:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</guid>
+      <description>How to execute AMDP TRFN directly from ABAP?  You can use the method execute_haap from cl_rstran_db_stat. Check this blog for complete example with parameters.</description>
+    </item>
+    
+    <item>
+      <title>Direct Update ADSO ABAP API</title>
+      <link>https://pawelwiejkut.dev/posts/du-adso-api/</link>
+      <pubDate>Sun, 17 Oct 2021 19:35:53 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/du-adso-api/</guid>
+      <description>How to insert the data into the BW ADSO on the BW on Hana and BW4HANA ? The easy way is just to use the official function module delivered by SAP
+Example ADSO: Example code:
+REPORT zadsoamdp. DATA: lt_data TYPE STANDARD TABLE OF /bic/aadsoamdp2, lt_msg TYPE rs_t_msg. APPEND VALUE #( field1 = &amp;#39;1&amp;#39; field2 = &amp;#39;2&amp;#39; ) TO lt_data. CALL FUNCTION &amp;#39;RSDSO_DU_WRITE_API&amp;#39; EXPORTING i_adsonm = &amp;#39;ADSOAMDP&amp;#39; it_data = lt_data IMPORTING et_msg = lt_msg EXCEPTIONS write_failed = 1 datastore_not_found = 2 OTHERS = 3.</description>
+    </item>
+    
+    <item>
+      <title>Joby W ABAPie</title>
+      <link>https://pawelwiejkut.dev/posts/joby-w-abapie/</link>
+      <pubDate>Sat, 23 Jan 2021 18:25:44 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/joby-w-abapie/</guid>
+      <description>Z tej lekcji dowiesz się jak działają joby w ABAPie. Napiszemy prosty program który bedzie odpowiedzialny za wstawienie danych do tabeli a następnie ustawimy go jako proces w tle. Dodatkowo opowiadam tez o tym czym są warianty, oraz jak je tworzyć. To wideo jest częścią płatnego kursu ABAP od podstaw, dostępnego na https://saponit.pl/kurs-abap</description>
+    </item>
+    
+    <item>
+      <title>Działania na plikach</title>
+      <link>https://pawelwiejkut.dev/posts/dzialania-na-plikach/</link>
+      <pubDate>Mon, 06 May 2019 17:53:34 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/dzialania-na-plikach/</guid>
+      <description>Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:
+employees Pobierz
+Procedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:
+wczytać dane od użytkownika, wprowadzić nowe wpisy od użytkownika do bazy , wprowadzić wpisy z serwera aplikacji do bazy.</description>
+    </item>
+    
+    <item>
+      <title>Ballog czyli logowanie danych w ABAPie</title>
+      <link>https://pawelwiejkut.dev/posts/ballog-abap-logowanie/</link>
+      <pubDate>Sun, 14 Apr 2019 17:01:40 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/ballog-abap-logowanie/</guid>
+      <description>Każdy język programowania posiada możliwość zapisania informacji technicznej, czy też zdarzenia które może być pomocna później na przykład podczas sprawdzenia poprawności działania napisanego programu. W wielu językach czynność ta sprowadza się często do napisania jednej linijki kodu, np:
+console.log(&amp;#34;Oh, coś poszło nie tak!&amp;#34;); W ABAPie sytuacja jest trochę bardziej skomplikowana. Zacznijmy może od napisania prostego programu, który będzie opierać się na stworzonych przez nas wcześniej obiektach DDICowych. Żeby nauczyć się czegoś nowego polecam razem ze mną wykonać wszystko w eclipse, oczywiście równie dobrze każdy krok będzie działać też bezpośrednio w SAP GUI.</description>
+    </item>
+    
+    <item>
+      <title>Access transaction without auth</title>
+      <link>https://pawelwiejkut.dev/posts/access-tcode-no-auth/</link>
+      <pubDate>Sat, 16 Dec 2017 21:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/access-tcode-no-auth/</guid>
+      <description>How to access transactions without an authorization? One big requirement to do this trick is having to debug and replace the function. Let’s start!
+I prepared myself, user, without authorization to the db02 transaction. When I want to run this transaction, I get a message: „You are not authorized to use transaction”
+Go to the SE37 transaction, and display function module: AUTH_CHECK_TCODE.
+Now seat a breakpoint on line 28, where sy-subrc is checked (in new versions line 53).</description>
+    </item>
+    
+    <item>
+      <title>Ekran Wyboru</title>
+      <link>https://pawelwiejkut.dev/posts/ekran-wyboru/</link>
+      <pubDate>Sun, 09 Apr 2017 17:01:40 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/ekran-wyboru/</guid>
+      <description>Dzisiejsza instrukcja będzie nieco krótsza i dotyczyć będzie rozszerzenia naszego poprzedniego programu z tego wpisu o klika linijek kodu odpowiedzialnych za stworzenie ekranu. Nasz tworzony ekran będzie odpowiadał za umożliwienie nam wyboru wyników wyświetlanych w tabeli w zależności od numeru połączenia i numeru przewoźnika.
+Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
+Zaczynamy od skopiowania poprzedniego programu. Aby to zrobić, w transakcji se80 klikamy prawym przyciskiem myszy na nasz poprzedni program i klikamy na copy.</description>
+    </item>
+    
+    <item>
+      <title>Tworzymy ALV Grid</title>
+      <link>https://pawelwiejkut.dev/posts/tworzymy-alv-grid/</link>
+      <pubDate>Sun, 19 Mar 2017 17:01:40 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/tworzymy-alv-grid/</guid>
+      <description>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
+Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
+Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy.</description>
+    </item>
+    
+    <item>
+      <title>Hello World W ABAPie</title>
+      <link>https://pawelwiejkut.dev/posts/hello-world-w-abapie/</link>
+      <pubDate>Sun, 12 Mar 2017 10:08:21 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/hello-world-w-abapie/</guid>
+      <description>Witajcie w kolejnym poradniku dotyczącym SAPa na blogu. Dzisiejszy wpis będzie dotyczyć uzupełnienia tabel przykładowymi danymi oraz napisania prostego programu w ABAPie, zapraszam do lektury 🙂
+Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/ Uruchamiamy naszą instalację. Pamiętaj o tym że po uruchomieniu maszyny wirtualnej, trzeba jeszcze zalogować się na odpowiedniego użytkownika i uruchomić odpowiednie procesy. Opis tego jak to zrobić możesz sprawdzić w jednym z poprzednich wpisów.</description>
+    </item>
+    
+    <item>
+      <title>Aktywacja SAP Netveawer 7.5</title>
+      <link>https://pawelwiejkut.dev/posts/aktywacja-netveawer/</link>
+      <pubDate>Sat, 04 Mar 2017 21:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/aktywacja-netveawer/</guid>
+      <description>Kiedy mamy już zainstalowanego SAP NetWeavera, należy aktywować naszą instalację SAP. Proces ten jest o wiele łatwiejszy niż instalacja, wymaga jednak pewnego oswojenia z interfejsem. Aktywacja instalacji jest niezbędna aby można było tworzyć programy w ABAPie. Przejdźmy do rzeczy. Od jakiegoś czasu tworzę kurs online poświęcony właśnie pogramowaniu w ABAPie, jeżeli jesteś zainteresowany, sprawdź proszę kursy.saponit.pl Logujemy się do systemu i wchodzimy w transakcję SLICENSE. Kopiujemy active hardware key. Przechodzimy na stronę https://go.</description>
+    </item>
+    
+  </channel>
+</rss>

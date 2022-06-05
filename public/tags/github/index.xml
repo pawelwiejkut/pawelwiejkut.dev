@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Github on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/github/</link>
+    <description>Recent content in Github on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Dec 2021 22:01:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to contribute ABAP projects on Github</title>
+      <link>https://pawelwiejkut.dev/posts/how-to-contribute/</link>
+      <pubDate>Wed, 01 Dec 2021 22:01:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/how-to-contribute/</guid>
+      <description>Last time, when I published my bw_toolbox project on Github, there were a lot of questions from regular developers not so much familiar with git, how they can contribute. Because of that, I decided to write this quick-start tutorial.
+What do I need? – system requirements Connection with GitHub – your instance should be able to establish a connection with github.com, SSL Entires – you have to configure your SAP System by adding necessary certificates into STRUST transaction (details), Profile configuration – also changes on the profile level are required, so you have to manual edit entries or use transactions (details).</description>
+    </item>
+    
+  </channel>
+</rss>

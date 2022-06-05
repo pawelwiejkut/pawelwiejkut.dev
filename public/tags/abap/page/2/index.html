@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>ABAP | Pawel Wiejkut</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Paweł Wiejkut homepage. ABAP BW SAC HANA Tips &amp; Tricks 👨🏻‍💻">
+<meta name="author" content="">
+<link rel="canonical" href="https://pawelwiejkut.dev/tags/abap/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.ac4bcbb73df0e6ab1ca259fb2803b8b2c1dd02cbb6ad0840029b799f5c5360ba.css" integrity="sha256-rEvLtz3w5qscoln7KAO4ssHdAsu2rQhAApt5n1xTYLo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://pawelwiejkut.dev/profile.png">
+<link rel="apple-touch-icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="mask-icon" href="https://pawelwiejkut.dev/profile.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.100.1" />
+<link rel="alternate" type="application/rss+xml" href="https://pawelwiejkut.dev/tags/abap/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3R9CLWGY39"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3R9CLWGY39', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="ABAP" />
+<meta property="og:description" content="Paweł Wiejkut homepage. ABAP BW SAC HANA Tips &amp; Tricks 👨🏻‍💻" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://pawelwiejkut.dev/tags/abap/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ABAP"/>
+<meta name="twitter:description" content="Paweł Wiejkut homepage. ABAP BW SAC HANA Tips &amp; Tricks 👨🏻‍💻"/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://pawelwiejkut.dev/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://pawelwiejkut.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span><i class='fa fa-heart'></i>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/sac-tutorial/" title="SAC">
+                    <span>SAC</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
+                    <span>ABAP od postaw 🇵🇱 </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>ABAP</h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>AMDP ABAP Transformation execution
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>You may wonder how to execute AMDP TRFN directly via ABAP. It seems that the best idea is to use the method below:
+cl_rstran_db_stat=&gt;execute_haap( EXPORTING i_processing_phase = lr_request-&gt;if_rsbk_request~get_stage( )-stage_id i_target_request = lr_request-&gt;if_rsbk_request~get_requid( ) i_dtp = lr_dtp-&gt;n_dtp i_t_trfn = lr_request-&gt;if_rsbk_request~get_t_transformation( i_only_she_relevant = rs_c_true ) i_r_log = lr_request-&gt;if_rsbk_request~get_log( ) i_simulation = lr_request-&gt;get_simulation( ) i_th_bp = lt_bp i_r_outbound = lr_outbound IMPORTING e_r_analysis_rt = DATA(lr_analysis) ). DATA(lr_segment_outbound) = lr_outbound-&gt;get_segment( i_segid = 001 ). Unfortunately you can’t put data into this method - it always reads it from the ADSO table and provides only the result....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-10-17 21:44:24 +0200 CEST'>October 17, 2021</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to AMDP ABAP Transformation execution" href="https://pawelwiejkut.dev/posts/amdp-abap-trfn/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Direct Update ADSO ABAP API
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>How to insert the data into the BW ADSO on the BW on Hana and BW4HANA ? The easy way is just to use the official function module delivered by SAP
+Example ADSO: Example code:
+REPORT zadsoamdp. DATA: lt_data TYPE STANDARD TABLE OF /bic/aadsoamdp2, lt_msg TYPE rs_t_msg. APPEND VALUE #( field1 = &#39;1&#39; field2 = &#39;2&#39; ) TO lt_data. CALL FUNCTION &#39;RSDSO_DU_WRITE_API&#39; EXPORTING i_adsonm = &#39;ADSOAMDP&#39; it_data = lt_data IMPORTING et_msg = lt_msg EXCEPTIONS write_failed = 1 datastore_not_found = 2 OTHERS = 3....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-10-17 19:35:53 +0200 CEST'>October 17, 2021</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Direct Update ADSO ABAP API" href="https://pawelwiejkut.dev/posts/du-adso-api/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Joby W ABAPie
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Z tej lekcji dowiesz się jak działają joby w ABAPie. Napiszemy prosty program który bedzie odpowiedzialny za wstawienie danych do tabeli a następnie ustawimy go jako proces w tle. Dodatkowo opowiadam tez o tym czym są warianty, oraz jak je tworzyć. To wideo jest częścią płatnego kursu ABAP od podstaw, dostępnego na https://saponit.pl/kurs-abap</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-01-23 18:25:44 +0100 CET'>January 23, 2021</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Joby W ABAPie" href="https://pawelwiejkut.dev/posts/joby-w-abapie/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Działania na plikach
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:
+employees Pobierz
+Procedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:
+wczytać dane od użytkownika, wprowadzić nowe wpisy od użytkownika do bazy , wprowadzić wpisy z serwera aplikacji do bazy....</p>
+  </section>
+  <footer class="entry-footer"><span title='2019-05-06 17:53:34 +0100 +0100'>May 6, 2019</span>&nbsp;·&nbsp;8 min</footer>
+  <a class="entry-link" aria-label="post link to Działania na plikach" href="https://pawelwiejkut.dev/posts/dzialania-na-plikach/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Ballog czyli logowanie danych w ABAPie
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Każdy język programowania posiada możliwość zapisania informacji technicznej, czy też zdarzenia które może być pomocna później na przykład podczas sprawdzenia poprawności działania napisanego programu. W wielu językach czynność ta sprowadza się często do napisania jednej linijki kodu, np:
+console.log(&#34;Oh, coś poszło nie tak!&#34;); W ABAPie sytuacja jest trochę bardziej skomplikowana. Zacznijmy może od napisania prostego programu, który będzie opierać się na stworzonych przez nas wcześniej obiektach DDICowych. Żeby nauczyć się czegoś nowego polecam razem ze mną wykonać wszystko w eclipse, oczywiście równie dobrze każdy krok będzie działać też bezpośrednio w SAP GUI....</p>
+  </section>
+  <footer class="entry-footer"><span title='2019-04-14 17:01:40 +0100 +0100'>April 14, 2019</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to Ballog czyli logowanie danych w ABAPie" href="https://pawelwiejkut.dev/posts/ballog-abap-logowanie/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Access transaction without auth
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>How to access transactions without an authorization? One big requirement to do this trick is having to debug and replace the function. Let’s start!
+I prepared myself, user, without authorization to the db02 transaction. When I want to run this transaction, I get a message: „You are not authorized to use transaction”
+Go to the SE37 transaction, and display function module: AUTH_CHECK_TCODE.
+Now seat a breakpoint on line 28, where sy-subrc is checked (in new versions line 53)....</p>
+  </section>
+  <footer class="entry-footer"><span title='2017-12-16 21:44:24 +0200 +0200'>December 16, 2017</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Access transaction without auth" href="https://pawelwiejkut.dev/posts/access-tcode-no-auth/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Ekran Wyboru
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Dzisiejsza instrukcja będzie nieco krótsza i dotyczyć będzie rozszerzenia naszego poprzedniego programu z tego wpisu o klika linijek kodu odpowiedzialnych za stworzenie ekranu. Nasz tworzony ekran będzie odpowiadał za umożliwienie nam wyboru wyników wyświetlanych w tabeli w zależności od numeru połączenia i numeru przewoźnika.
+Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
+Zaczynamy od skopiowania poprzedniego programu. Aby to zrobić, w transakcji se80 klikamy prawym przyciskiem myszy na nasz poprzedni program i klikamy na copy....</p>
+  </section>
+  <footer class="entry-footer"><span title='2017-04-09 17:01:40 +0100 +0100'>April 9, 2017</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Ekran Wyboru" href="https://pawelwiejkut.dev/posts/ekran-wyboru/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Tworzymy ALV Grid
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
+Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
+Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy....</p>
+  </section>
+  <footer class="entry-footer"><span title='2017-03-19 17:01:40 +0100 CET'>March 19, 2017</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Tworzymy ALV Grid" href="https://pawelwiejkut.dev/posts/tworzymy-alv-grid/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Hello World W ABAPie
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Witajcie w kolejnym poradniku dotyczącym SAPa na blogu. Dzisiejszy wpis będzie dotyczyć uzupełnienia tabel przykładowymi danymi oraz napisania prostego programu w ABAPie, zapraszam do lektury 🙂
+Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/ Uruchamiamy naszą instalację. Pamiętaj o tym że po uruchomieniu maszyny wirtualnej, trzeba jeszcze zalogować się na odpowiedniego użytkownika i uruchomić odpowiednie procesy. Opis tego jak to zrobić możesz sprawdzić w jednym z poprzednich wpisów....</p>
+  </section>
+  <footer class="entry-footer"><span title='2017-03-12 10:08:21 +0100 CET'>March 12, 2017</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Hello World W ABAPie" href="https://pawelwiejkut.dev/posts/hello-world-w-abapie/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Aktywacja SAP Netveawer 7.5
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Kiedy mamy już zainstalowanego SAP NetWeavera, należy aktywować naszą instalację SAP. Proces ten jest o wiele łatwiejszy niż instalacja, wymaga jednak pewnego oswojenia z interfejsem. Aktywacja instalacji jest niezbędna aby można było tworzyć programy w ABAPie. Przejdźmy do rzeczy. Od jakiegoś czasu tworzę kurs online poświęcony właśnie pogramowaniu w ABAPie, jeżeli jesteś zainteresowany, sprawdź proszę kursy.saponit.pl Logujemy się do systemu i wchodzimy w transakcję SLICENSE. Kopiujemy active hardware key. Przechodzimy na stronę https://go....</p>
+  </section>
+  <footer class="entry-footer"><span title='2017-03-04 21:44:24 +0200 +0200'>March 4, 2017</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Aktywacja SAP Netveawer 7.5" href="https://pawelwiejkut.dev/posts/aktywacja-netveawer/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://pawelwiejkut.dev/tags/abap/">« Prev Page</a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://pawelwiejkut.dev/">Pawel Wiejkut</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+const images = Array.from(document.querySelectorAll(".post-content img"));
+images.forEach(img => {
+  mediumZoom(img, {
+    margin: 0,  
+    scrollOffset: 40,  
+    container: null,  
+    template: null  
+  });
+});
+</script>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

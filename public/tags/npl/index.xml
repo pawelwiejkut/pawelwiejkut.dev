@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NPL on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/npl/</link>
+    <description>Recent content in NPL on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Apr 2021 22:01:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/npl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SAP NPL 7.52 does not start</title>
+      <link>https://pawelwiejkut.dev/posts/npl-wont-start/</link>
+      <pubDate>Fri, 02 Apr 2021 22:01:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/npl-wont-start/</guid>
+      <description>This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on: The database is not available via R3trans ------------------------------------------- starting database NPL ... Log file: /sybase/NPL/startdb.log
+Or Stop returns modlib.jslib.caughtException
+We have to download a new license file from https://developers.</description>
+    </item>
+    
+    <item>
+      <title>SQL ON conditions in left join</title>
+      <link>https://pawelwiejkut.dev/posts/sql-on-join-conditions/</link>
+      <pubDate>Sun, 14 Apr 2019 22:01:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/sql-on-join-conditions/</guid>
+      <description>Even if you use SQL for your daily work, it is possible that you might don’t know about two ways to set a condition: using &amp;ldquo;where&amp;rdquo; and .. put the condition into the join. The main issue is that they can return different results. Let me explain more.
+1.Let’s assume that you have 2 tables. Content of first one 2.Content of the second one Now let’s get only this employees with salary bigger than 4 000 select * from employees emp left join salaries sal on emp.</description>
+    </item>
+    
+  </channel>
+</rss>

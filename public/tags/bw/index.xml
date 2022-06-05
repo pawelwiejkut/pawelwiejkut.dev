@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>BW on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/bw/</link>
+    <description>Recent content in BW on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jun 2022 21:23:34 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/bw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to trace BW BPC Authorization</title>
+      <link>https://pawelwiejkut.dev/posts/check-bpc-authorization/</link>
+      <pubDate>Sat, 04 Jun 2022 21:23:34 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/check-bpc-authorization/</guid>
+      <description>Process of building authorization in BW with and without BPC is different. Reason is that user authorizaitons are enhanced by roles assigned to them in
+Important SAP Note: https://launchpad.support.sap.com/#/notes/2366358</description>
+    </item>
+    
+    <item>
+      <title>Manual deployment from ABAP to SAP HANA</title>
+      <link>https://pawelwiejkut.dev/posts/manual-hana-abap-deployment/</link>
+      <pubDate>Fri, 11 Feb 2022 16:45:44 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/manual-hana-abap-deployment/</guid>
+      <description>Bellow you can find my notes about the manual deployment from ABAP Application Server to the HANA Database. This kind of activity can be done in example for Calculation Views.</description>
+    </item>
+    
+    <item>
+      <title>Useful modern ABAP statements for BW transformations</title>
+      <link>https://pawelwiejkut.dev/posts/abap-trfn-bw/</link>
+      <pubDate>Tue, 11 Jan 2022 21:21:22 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/abap-trfn-bw/</guid>
+      <description>ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare.</description>
+    </item>
+    
+    <item>
+      <title>Create ADSO from ABAP</title>
+      <link>https://pawelwiejkut.dev/posts/create-adso-abap/</link>
+      <pubDate>Thu, 06 Jan 2022 12:52:44 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/create-adso-abap/</guid>
+      <description>Creating ADSO from ABAP can be easily achieved by cl_rso_adso_api=&amp;gt;create DATA(ls_flags) = VALUE cl_rso_adso_api=&amp;gt;tn_s_adsoflags( direct_update = abap_true ). TRY. cl_rso_adso_api=&amp;gt;create( EXPORTING i_adsonm = &amp;#34;Name of the ADSO i_infoarea = &amp;#34;Infoarea name i_s_adsoflags = ls_flags i_t_object = &amp;#34;Table with all fields i_t_dimension = &amp;#34;Dimension i_t_key = &amp;#34;String table with key IMPORTING e_t_msg = DATA(lt_msg) ). CATCH cx_rs_all_msg INTO DATA(lr_msg). cl_demo_output=&amp;gt;display( EXPORTING data = lr_msg-&amp;gt;get_longtext( ) name = &amp;#39;Error&amp;#39; ). ENDTRY.
+Full usage examples can be found here</description>
+    </item>
+    
+    <item>
+      <title>Remove invalid charters in your BW transformation</title>
+      <link>https://pawelwiejkut.dev/posts/bw-remove-charters/</link>
+      <pubDate>Sun, 02 Jan 2022 19:56:19 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/bw-remove-charters/</guid>
+      <description>If you have in your BW regular flat-file data load in your BW system, you probably afflict issues with the wrong data provided by the user. The scenario of this issue can be very simple. It’s enough that the user provides an invalid unsupported charter and during activation, you will get a similar issue:
+Or other issues like:
+Value &amp;lsquo;#’ (hex. &amp;lsquo;2300′) of characteristic contains invalid characters Error when assigning SID: Action VAL_SID_CONVERT InfoObject (hex.</description>
+    </item>
+    
+    <item>
+      <title>BW formula parameters</title>
+      <link>https://pawelwiejkut.dev/posts/bw-formula-parameters/</link>
+      <pubDate>Mon, 20 Dec 2021 09:13:49 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/bw-formula-parameters/</guid>
+      <description>BW contains many standard formulas which can be used in TRFN&amp;rsquo;s and RSPC&amp;rsquo;s. The main issue is that sometimes you need to know default values/data types.
+All available formulas can be checked in class CL_RSAR_FUNCTION. Bellow, you can find a table with explained importing and returning parameters.
+Formula / Method Name Description Importing
+Types
+(Example) Returning
+Types
+(Example
+result) ABORT_PACKAGE Returns exception cx_rfso_abort_package to stop
+processing N/A N/A ADD_TO_DATE Add days to the specified date DATS,INT</description>
+    </item>
+    
+    <item>
+      <title>How AMDP TRFN is executed</title>
+      <link>https://pawelwiejkut.dev/posts/how-amdp-is-executed/</link>
+      <pubDate>Thu, 11 Nov 2021 22:58:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/how-amdp-is-executed/</guid>
+      <description>ADSO definition:
+TRFN definition:
+In general execution looks like: ABAP Method-&amp;gt;Call SQL on HANA-&amp;gt;Execute &amp;hellip; -&amp;gt; select
+Step by step:
+From ABAP site: cl_rstran_db_stat=&amp;gt;execute_haap() is executed with SQL like: SELECT &amp;#34;FIELD1&amp;#34; AS &amp;#34;FIELD1&amp;#34; , &amp;#34;0RECORDMODE&amp;#34; AS &amp;#34;RECORDMODE&amp;#34; , &amp;#34;RECORD&amp;#34; AS &amp;#34;RECORD&amp;#34; FROM &amp;#34;SAPA4H&amp;#34;.&amp;#34;/1BCAMDP/0BW:DAP:TR_04TFNXDAAVG5T5E8AZJ239HYT&amp;#34; (&amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$aggregation$$&amp;#39;,&amp;#39;&amp;#34;BW_HAP__________DB_AGGREGATION&amp;#34;=&amp;#39;&amp;#39;&amp;#39;&amp;#39;&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$client$$&amp;#39;,&amp;#39;001&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$keydate$$&amp;#39;,&amp;#39;20211110&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$langu$$&amp;#39;,&amp;#39;E&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$objvers$$&amp;#39;,&amp;#39;&amp;#34;OBJVERS&amp;#34; = &amp;#39;&amp;#39;A&amp;#39;&amp;#39;&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$shift_decimal_places$$&amp;#39;,&amp;#39;&amp;#34;BW_HAP__________SHIFT_DECIMAL_PLACES&amp;#34;=&amp;#39;&amp;#39;I&amp;#39;&amp;#39;&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;TR_04TFNXDAAVG5T5E8AZJ239HYT.$$adso_dtp_extraction_mode$$&amp;#39;,&amp;#39;&amp;#34;_IS_FULL_KEY&amp;#34; = 1 AND ( (&amp;#34;1TECHPROV_KEY&amp;#34; = &amp;#39;&amp;#39;ZAMDP$C&amp;#39;&amp;#39; OR &amp;#34;1TECHPROV_KEY&amp;#34; = &amp;#39;&amp;#39;ZAMDP&amp;#39;&amp;#39; ) )&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;TR_04TFNXDAAVG5T5E8AZJ239HYT.$$runid$$&amp;#39;,&amp;#39;&amp;#34;BW_HAP__________RUNID&amp;#34;=&amp;#39;&amp;#39;96SBW6PMF5XU9CAGGGHRMDRSY&amp;#39;&amp;#39; AND &amp;#34;BW_HAP__________HAP_SEQ_NUMBER&amp;#34;=&amp;#39;&amp;#39;0&amp;#39;&amp;#39;&amp;#39;),&amp;#39;PLACEHOLDER&amp;#39; = (&amp;#39;ce_settings&amp;#39;, &amp;#39;{&amp;#34;enable_partitioned_execution&amp;#34;: &amp;#34;0&amp;#34;, &amp;#34;ceqo_enable_rownum_expr_general&amp;#34;: &amp;#34;1&amp;#34;}&amp;#39;) ) WITH HINT ( ROUTE_BY_CARDINALITY(&amp;#34;/BIC/AZAMDP2&amp;#34;) ) This is a</description>
+    </item>
+    
+    <item>
+      <title>BW important programs / Function modules </title>
+      <link>https://pawelwiejkut.dev/posts/bw-important-programs/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:20 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/bw-important-programs/</guid>
+      <description>Almost all of these programs are included in my GitHub development &amp;ldquo;bw_toolbox&amp;rdquo;. If you want, you can just implement this in an easy way to your system. Please check by clicking here.
+Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user </description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://pawelwiejkut.dev/about-me/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/about-me/</guid>
+      <description>Nice to meet you 👋
+My name is Pawel Wiejkut and I am an SAP Consultant since 2016. Since the beginning, my career is related to big data. In this blog, I share my knowledge about SAP &amp;amp; Databases. Besides, I am the author of saponit.pl platform where I teach people programming in ABAP in Polish. In my free time, I co-create projects on GitHub. Feel free to contact me via social media.</description>
+    </item>
+    
+    <item>
+      <title>Create simple SAC APP step by step</title>
+      <link>https://pawelwiejkut.dev/sac-tutorial/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/sac-tutorial/</guid>
+      <description>This tutorial group describes how to create a simple SAC App step by step. We are beginning from the new data model, and go through dropdowns, cascade filtering, design and popups. Everything step by step with screenshots and gifs.
+Create new model on SAC Simple APP on SAC Create and fill a dropdown in SAC APP Cascade filtering in SAC Design the app and create button to clean the filters Select dimensions by CheckBox and Button Create a popup to change dimensions order </description>
+    </item>
+    
+    <item>
+      <title>AMDP ABAP Transformation execution</title>
+      <link>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</link>
+      <pubDate>Sun, 17 Oct 2021 21:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</guid>
+      <description>How to execute AMDP TRFN directly from ABAP?  You can use the method execute_haap from cl_rstran_db_stat. Check this blog for complete example with parameters.</description>
+    </item>
+    
+    <item>
+      <title>Direct Update ADSO ABAP API</title>
+      <link>https://pawelwiejkut.dev/posts/du-adso-api/</link>
+      <pubDate>Sun, 17 Oct 2021 19:35:53 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/du-adso-api/</guid>
+      <description>How to insert the data into the BW ADSO on the BW on Hana and BW4HANA ? The easy way is just to use the official function module delivered by SAP
+Example ADSO: Example code:
+REPORT zadsoamdp. DATA: lt_data TYPE STANDARD TABLE OF /bic/aadsoamdp2, lt_msg TYPE rs_t_msg. APPEND VALUE #( field1 = &amp;#39;1&amp;#39; field2 = &amp;#39;2&amp;#39; ) TO lt_data. CALL FUNCTION &amp;#39;RSDSO_DU_WRITE_API&amp;#39; EXPORTING i_adsonm = &amp;#39;ADSOAMDP&amp;#39; it_data = lt_data IMPORTING et_msg = lt_msg EXCEPTIONS write_failed = 1 datastore_not_found = 2 OTHERS = 3.</description>
+    </item>
+    
+    <item>
+      <title>How to check who deleted your BW object?</title>
+      <link>https://pawelwiejkut.dev/posts/check-who-deleted/</link>
+      <pubDate>Sun, 10 Jan 2021 20:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/check-who-deleted/</guid>
+      <description>Most of the objects are not modifiable on the quality or production systems, but we have exceptions like Infopackages on BW. Yesterday I have to check who deleted an object from the system and fortunately, there is the log for this operation. I will show you how to check this.
+We have to go to the transaction SGL1 and search for RSSM Now you should be able to find the impostor 🙂 </description>
+    </item>
+    
+    <item>
+      <title>How to extend decision​ tree in process chain?</title>
+      <link>https://pawelwiejkut.dev/posts/extend-rspc-decision/</link>
+      <pubDate>Wed, 15 May 2019 20:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/extend-rspc-decision/</guid>
+      <description>Toady short tutorial about extending the decision tree in the process chain. As you probably know decision three blocks can be extended. In our example, we want to run a delta info package in everyday processing, and depending on our customizing perform a full load. Process chain example: Customization table: Basically, if the value of param ISIP in our customer table is set to DELTA, we want to execute the delta info package.</description>
+    </item>
+    
+    <item>
+      <title>How to debug background/batch job in SAP ?</title>
+      <link>https://pawelwiejkut.dev/posts/debug-background/</link>
+      <pubDate>Sat, 17 Feb 2018 20:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/debug-background/</guid>
+      <description>Today I want to show you a simple way to debug a batch job. Sometimes you just want to debug some process witch default runs in batch. Everything looks simple but you should notice that breakpoints sometimes don’t work in these cases. The situation can be even worst when your job runs only a few seconds.
+First of all if your job works for a short time, you just should keep him working for a while.</description>
+    </item>
+    
+  </channel>
+</rss>

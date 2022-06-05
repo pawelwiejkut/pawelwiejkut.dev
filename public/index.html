@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Pawel Wiejkut</title>
+
+<meta name="description" content="Paweł Wiejkut homepage. ABAP BW SAC HANA Tips &amp; Tricks 👨🏻‍💻">
+<meta name="author" content="">
+<link rel="canonical" href="https://pawelwiejkut.dev/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.ac4bcbb73df0e6ab1ca259fb2803b8b2c1dd02cbb6ad0840029b799f5c5360ba.css" integrity="sha256-rEvLtz3w5qscoln7KAO4ssHdAsu2rQhAApt5n1xTYLo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://pawelwiejkut.dev/profile.png">
+<link rel="apple-touch-icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="mask-icon" href="https://pawelwiejkut.dev/profile.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.100.1" />
+<link rel="alternate" type="application/rss+xml" href="https://pawelwiejkut.dev/index.xml">
+<link rel="alternate" type="application/json" href="https://pawelwiejkut.dev/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3R9CLWGY39"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3R9CLWGY39', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Pawel Wiejkut" />
+<meta property="og:description" content="Paweł Wiejkut homepage. ABAP BW SAC HANA Tips &amp; Tricks 👨🏻‍💻" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://pawelwiejkut.dev/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pawel Wiejkut"/>
+<meta name="twitter:description" content="Paweł Wiejkut homepage. ABAP BW SAC HANA Tips &amp; Tricks 👨🏻‍💻"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pawel Wiejkut",
+  "url": "https://pawelwiejkut.dev/",
+  "description": "Paweł Wiejkut homepage. ABAP BW SAC HANA Tips \u0026amp; Tricks 👨🏻‍💻",
+  "thumbnailUrl": "https://pawelwiejkut.dev/profile.png",
+  "sameAs": [
+      "https://instagram.com/subrc0", "https://linkedin.com/in/pawelwiejkut", "https://github.com/pawelwiejkut", "https://twitter.com/pawelwiejkut", "https://www.youtube.com/user/PawelWiejkut/"
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://pawelwiejkut.dev/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://pawelwiejkut.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span><i class='fa fa-heart'></i>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/sac-tutorial/" title="SAC">
+                    <span>SAC</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
+                    <span>ABAP od postaw 🇵🇱 </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>Hi there 👋</h1>
+    </header>
+    <section class="entry-content">
+        <p> <img src="/profile.png" style="float:right; margin-left:15px;" /> 
+My name is Pawel Wiejkut and I'm a SAP Consultant since 2016.  
+Here you can find some of my knowledge about SAP & Databases. For videos please check out my youtube channel and follow me on instagram.
+This blog is migrated from wordpress version - pawelwiejkut.net.</br><b>BW | ABAP | SAC | HANA</b></br>
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup form {display:block; position:left; text-align:left; 0 10px 3%}
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://pawelwiejkut.us19.list-manage.com/subscribe/post?u=ead4e0dc04f1f8c07403a39ac&amp;id=500c9c1881" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ead4e0dc04f1f8c07403a39ac_500c9c1881" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe to newsletter" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+</p>
+    </section>
+    <footer class="entry-footer">
+        <div class="social-icons">
+    <a href="https://instagram.com/subrc0" target="_blank" rel="noopener noreferrer me" title="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+</svg>
+    </a>
+    <a href="https://linkedin.com/in/pawelwiejkut" target="_blank" rel="noopener noreferrer me" title="Linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+    </a>
+    <a href="https://github.com/pawelwiejkut" target="_blank" rel="noopener noreferrer me" title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="https://twitter.com/pawelwiejkut" target="_blank" rel="noopener noreferrer me" title="Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+    </a>
+    <a href="https://www.youtube.com/user/PawelWiejkut/" target="_blank" rel="noopener noreferrer me" title="Youtube">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+    </path>
+    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+</svg>
+    </a>
+</div>
+
+    </footer>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>How to trace BW BPC Authorization
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Process of building authorization in BW with and without BPC is different. Reason is that user authorizaitons are enhanced by roles assigned to them in
+Important SAP Note: https://launchpad.support.sap.com/#/notes/2366358</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-06-04 21:23:34 +0200 CEST'>June 4, 2022</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to How to trace BW BPC Authorization" href="https://pawelwiejkut.dev/posts/check-bpc-authorization/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Manual deployment from ABAP to SAP HANA
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Normally BW objects are transported to HANA using a transportation system, but what can be done when transport fails? When you have authorization to repat the import - it is still ok. You can go to Sap Transport Management system (transaction: STMS) and reimport. Thinks get much more complicated when you do not have the necessary rights. Let me share with you my notes about this process.
+Authorization To manually deploy ABAP objects to SAP Hana databse you need a following authorization:...</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-02-11 16:45:44 +0100 CET'>February 11, 2022</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Manual deployment from ABAP to SAP HANA" href="https://pawelwiejkut.dev/posts/manual-hana-abap-deployment/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Jak zainstalować SAPa żeby nauczyć się ABAPa?
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Cześć! To jest poradnik dla kompletnych laików, dlatego też tytuł jest bardzo skrótowy. Co bowiem oznacza instalacja SAP-a ? SAP (Systemanalyse und Programmentwicklung) jest nazwą firmy, powstałej w 1972 roku w Waldorfie zajmującej się tworzeniem oprogramowania. Zachęcam, żeby poczytać więcej o niej tutaj. Dziś chciałem pokazać Ci prosty sposób na instalację systemu SAP NetWeaver, który to umożliwi Ci naukę programowania w języku ABAP. Ten tutorial był kiedyś dostępny w wersji tekstowej, teraz dostępna jest duzo nowsza wersja wideo, która równiez jest częścią płatnego kursu abap dostępnego pod adresem https://saponit....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-29 18:33:53 +0100 CET'>January 29, 2022</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Jak zainstalować SAPa żeby nauczyć się ABAPa?" href="https://pawelwiejkut.dev/posts/instalacja-sapa/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>ABAP1909 A4H HANA Login Details
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>If you want to login into HANA DB on ABAP1909 platform - in the example to create a calculation view, change something please use bellow details:
+For the tentant database SYSTEMDB (i.e to make some administrative changes): user SYSTEM with the password Ldtf5432 For the single-container database HDB (i.e to make some development): user SAPA4H with the password Ldtf5432
+In both cases, the instance number is 02. Example in Eclipse:</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-28 14:53:45 +0100 CET'>January 28, 2022</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to ABAP1909 A4H HANA Login Details" href="https://pawelwiejkut.dev/posts/abap1909-hana-login-details/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Useful modern ABAP statements for BW transformations
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-11 21:21:22 +0100 CET'>January 11, 2022</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Useful modern ABAP statements for BW transformations" href="https://pawelwiejkut.dev/posts/abap-trfn-bw/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Create ADSO from ABAP
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Creating ADSO from ABAP can be easily achieved by cl_rso_adso_api=&gt;create DATA(ls_flags) = VALUE cl_rso_adso_api=&gt;tn_s_adsoflags( direct_update = abap_true ). TRY. cl_rso_adso_api=&gt;create( EXPORTING i_adsonm = &#34;Name of the ADSO i_infoarea = &#34;Infoarea name i_s_adsoflags = ls_flags i_t_object = &#34;Table with all fields i_t_dimension = &#34;Dimension i_t_key = &#34;String table with key IMPORTING e_t_msg = DATA(lt_msg) ). CATCH cx_rs_all_msg INTO DATA(lr_msg). cl_demo_output=&gt;display( EXPORTING data = lr_msg-&gt;get_longtext( ) name = &#39;Error&#39; ). ENDTRY.
+Full usage examples can be found here</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-06 12:52:44 +0100 CET'>January 6, 2022</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Create ADSO from ABAP" href="https://pawelwiejkut.dev/posts/create-adso-abap/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Change transport description after release
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>If you are forced to change transport description after release, you have to consider following changes:
+Use RDDIT076 to change the description - if not possible, you have to find a way to edit E07T and E070.
+Change description in TMSBUFTXT to correct display of shorttext in STMS.</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-06 12:23:54 +0100 CET'>January 6, 2022</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Change transport description after release" href="https://pawelwiejkut.dev/posts/change-transport-desc/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Remove invalid charters in your BW transformation
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>If you have in your BW regular flat-file data load in your BW system, you probably afflict issues with the wrong data provided by the user. The scenario of this issue can be very simple. It’s enough that the user provides an invalid unsupported charter and during activation, you will get a similar issue:
+Or other issues like:
+Value ‘#’ (hex. ‘2300′) of characteristic contains invalid characters Error when assigning SID: Action VAL_SID_CONVERT InfoObject (hex....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-01-02 19:56:19 +0100 CET'>January 2, 2022</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Remove invalid charters in your BW transformation" href="https://pawelwiejkut.dev/posts/bw-remove-charters/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>How to change any entries in the database in SE16 or SE11
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Sometimes we are forced to change some database entries. There are many reasons like a new s-note from SAP or incorrect values in the technical table. Every SAP table can be changed via SE16 or SE11 transaction - all you need to have is a debug with change role assigned to your user. In this article you can find youtube video, and bellow is detailed step by step instruction.
+Video tutorial Step by step instruction how to change entry in SE16 1....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-12-25 14:51:25 +0100 CET'>December 25, 2021</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to How to change any entries in the database in SE16 or SE11" href="https://pawelwiejkut.dev/posts/se16-se11-change/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>BW formula parameters
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>BW contains many standard formulas which can be used in TRFN’s and RSPC’s. The main issue is that sometimes you need to know default values/data types.
+All available formulas can be checked in class CL_RSAR_FUNCTION. Bellow, you can find a table with explained importing and returning parameters.
+Formula / Method Name Description Importing
+Types
+(Example) Returning
+Types
+(Example
+result) ABORT_PACKAGE Returns exception cx_rfso_abort_package to stop
+processing N/A N/A ADD_TO_DATE Add days to the specified date DATS,INT...</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-12-20 09:13:49 +0100 CET'>December 20, 2021</span>&nbsp;·&nbsp;5 min</footer>
+  <a class="entry-link" aria-label="post link to BW formula parameters" href="https://pawelwiejkut.dev/posts/bw-formula-parameters/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://pawelwiejkut.dev/page/2/">Next Page »</a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://pawelwiejkut.dev/">Pawel Wiejkut</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+const images = Array.from(document.querySelectorAll(".post-content img"));
+images.forEach(img => {
+  mediumZoom(img, {
+    margin: 0,  
+    scrollOffset: 40,  
+    container: null,  
+    template: null  
+  });
+});
+</script>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

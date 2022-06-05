@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>batch on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/batch/</link>
+    <description>Recent content in batch on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Feb 2018 20:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/batch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to debug background/batch job in SAP ?</title>
+      <link>https://pawelwiejkut.dev/posts/debug-background/</link>
+      <pubDate>Sat, 17 Feb 2018 20:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/debug-background/</guid>
+      <description>Today I want to show you a simple way to debug a batch job. Sometimes you just want to debug some process witch default runs in batch. Everything looks simple but you should notice that breakpoints sometimes don’t work in these cases. The situation can be even worst when your job runs only a few seconds.
+First of all if your job works for a short time, you just should keep him working for a while.</description>
+    </item>
+    
+  </channel>
+</rss>

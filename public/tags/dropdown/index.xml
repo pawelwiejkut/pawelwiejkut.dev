@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dropdown on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/dropdown/</link>
+    <description>Recent content in Dropdown on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Dec 2021 12:15:41 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/dropdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SAC APP Design &amp; clean the filter button</title>
+      <link>https://pawelwiejkut.dev/posts/sac-app-design/</link>
+      <pubDate>Mon, 13 Dec 2021 12:15:41 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/sac-app-design/</guid>
+      <description>Button To clean the filter we need a button. Let&amp;rsquo;s get one from the plus in the toolbar Put the button near the Year dropdown and rename it Go to the Button_Clean_Filters - onClick Put the following code // Remove all filters from the model Table_Games_Sales.getDataSource().removeDimensionFilter(&amp;#34;Name&amp;#34;); Table_Games_Sales.getDataSource().removeDimensionFilter(&amp;#34;Publisher&amp;#34;); Table_Games_Sales.getDataSource().removeDimensionFilter(&amp;#34;Year&amp;#34;); //Set all dropdowns selection to empty Dropdown_Name.setSelectedKey(&amp;#39;&amp;#39;); Dropdown_Publisher.setSelectedKey(&amp;#39;&amp;#39;); Dropdown_Year.setSelectedKey(&amp;#39;&amp;#39;); Button should now work properly Design Please download image dataset from here
+Insert images using the plus in the toolbar</description>
+    </item>
+    
+    <item>
+      <title>Cascade filtering in SAC</title>
+      <link>https://pawelwiejkut.dev/posts/sac-app-dropdown-cascade/</link>
+      <pubDate>Sun, 12 Dec 2021 15:42:26 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/sac-app-dropdown-cascade/</guid>
+      <description>In this part of the tutorial, we are focusing on creating a cascade filter on the dropdown in SAC APP. Cascade means that filters on the dashboard will depend on each other. In the example, if you pick up the publisher name Nintendo then in the games list (Name) you should see only games that belong to Nintendo and no more others. To achieve this, we have to redesign our app a bit.</description>
+    </item>
+    
+    <item>
+      <title>Create and fill a dropdown in SAC APP</title>
+      <link>https://pawelwiejkut.dev/posts/sac-app-dropdown/</link>
+      <pubDate>Sun, 12 Dec 2021 14:13:53 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/sac-app-dropdown/</guid>
+      <description>Firstly we have to move our table a few lines down. This can be done by moving the mouse between the table and toolbar and drag and dropping when the cursor changes the icon: Click on the plus icon on the toolbar Select Dropdown form the list Lets rename the Table by click on tree dots -&amp;gt; Rename, and set new name to Table_Games_Sales Same with Dropdown, and put new name Dropdown_Name</description>
+    </item>
+    
+  </channel>
+</rss>

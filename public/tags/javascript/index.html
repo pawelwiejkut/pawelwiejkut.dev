@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>JavaScript | Pawel Wiejkut</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Paweł Wiejkut homepage. ABAP BW SAC HANA Tips &amp; Tricks 👨🏻‍💻">
+<meta name="author" content="">
+<link rel="canonical" href="https://pawelwiejkut.dev/tags/javascript/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.ac4bcbb73df0e6ab1ca259fb2803b8b2c1dd02cbb6ad0840029b799f5c5360ba.css" integrity="sha256-rEvLtz3w5qscoln7KAO4ssHdAsu2rQhAApt5n1xTYLo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://pawelwiejkut.dev/profile.png">
+<link rel="apple-touch-icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="mask-icon" href="https://pawelwiejkut.dev/profile.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.100.1" />
+<link rel="alternate" type="application/rss+xml" href="https://pawelwiejkut.dev/tags/javascript/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3R9CLWGY39"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3R9CLWGY39', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="JavaScript" />
+<meta property="og:description" content="Paweł Wiejkut homepage. ABAP BW SAC HANA Tips &amp; Tricks 👨🏻‍💻" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://pawelwiejkut.dev/tags/javascript/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JavaScript"/>
+<meta name="twitter:description" content="Paweł Wiejkut homepage. ABAP BW SAC HANA Tips &amp; Tricks 👨🏻‍💻"/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://pawelwiejkut.dev/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://pawelwiejkut.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span><i class='fa fa-heart'></i>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/sac-tutorial/" title="SAC">
+                    <span>SAC</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
+                    <span>ABAP od postaw 🇵🇱 </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>JavaScript</h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Create a popup to change dimensions order
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Let’s start by creating the popup Rename new window Definitely we should arrange this new space. Start with a new List Box Add tree new buttons: UP, DOWN, Save and Close Change style on List Box to add borders Rename new elements Create a new button on the Canvas Create a script variable Change name and set as array Create onClick event for the new - Change Layout button // Get current dimensions var currentDimensions = Table_Games_Sales....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-12-15 22:01:41 +0100 CET'>December 15, 2021</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Create a popup to change dimensions order" href="https://pawelwiejkut.dev/posts/sac-popup-order/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Select dimensions by CheckBox and Button
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>We need a CheckBox, it can be added from the toolbar Let’s change the background color of the CheckboxGroup. To do this, please click on the brush icon, bucket icon and then on more Change color to hex 1f303f Next change the font color Set new color to white, hex ffffff Remove the values from the Checkbox Rename checkbox to CheckboxGroup_Dimensions, bu click on the keys icon Add additional code to the Application - onInitialization // Get all dimensions var dimensions = Table_Games_Sales....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-12-13 15:12:24 +0100 CET'>December 13, 2021</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Select dimensions by CheckBox and Button" href="https://pawelwiejkut.dev/posts/sac-button-checkbox/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>SAC APP Design &amp; clean the filter button
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Button To clean the filter we need a button. Let’s get one from the plus in the toolbar Put the button near the Year dropdown and rename it Go to the Button_Clean_Filters - onClick Put the following code // Remove all filters from the model Table_Games_Sales.getDataSource().removeDimensionFilter(&#34;Name&#34;); Table_Games_Sales.getDataSource().removeDimensionFilter(&#34;Publisher&#34;); Table_Games_Sales.getDataSource().removeDimensionFilter(&#34;Year&#34;); //Set all dropdowns selection to empty Dropdown_Name.setSelectedKey(&#39;&#39;); Dropdown_Publisher.setSelectedKey(&#39;&#39;); Dropdown_Year.setSelectedKey(&#39;&#39;); Button should now work properly Design Please download image dataset from here
+Insert images using the plus in the toolbar...</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-12-13 12:15:41 +0100 CET'>December 13, 2021</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to SAC APP Design &amp; clean the filter button" href="https://pawelwiejkut.dev/posts/sac-app-design/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Cascade filtering in SAC
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>In this part of the tutorial, we are focusing on creating a cascade filter on the dropdown in SAC APP. Cascade means that filters on the dashboard will depend on each other. In the example, if you pick up the publisher name Nintendo then in the games list (Name) you should see only games that belong to Nintendo and no more others. To achieve this, we have to redesign our app a bit....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-12-12 15:42:26 +0100 CET'>December 12, 2021</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to Cascade filtering in SAC" href="https://pawelwiejkut.dev/posts/sac-app-dropdown-cascade/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Create and fill a dropdown in SAC APP
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Firstly we have to move our table a few lines down. This can be done by moving the mouse between the table and toolbar and drag and dropping when the cursor changes the icon: Click on the plus icon on the toolbar Select Dropdown form the list Lets rename the Table by click on tree dots -&gt; Rename, and set new name to Table_Games_Sales Same with Dropdown, and put new name Dropdown_Name...</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-12-12 14:13:53 +0100 CET'>December 12, 2021</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Create and fill a dropdown in SAC APP" href="https://pawelwiejkut.dev/posts/sac-app-dropdown/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Simple APP on SAC
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>We have a model so now it is time to build a SAC APP.
+Go to applications, click on Create Application Click on the table from at the toolbar Select a existing model Click on model that we created in the previous post Delete columns Add Measure/Dimension to rows Select Name and Publisher Quit panel Save application Click on Run Result should be similar to the image bellow </p>
+  </section>
+  <footer class="entry-footer"><span title='2021-12-12 11:58:15 +0100 CET'>December 12, 2021</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Simple APP on SAC" href="https://pawelwiejkut.dev/posts/sac-create-app/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://pawelwiejkut.dev/">Pawel Wiejkut</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+const images = Array.from(document.querySelectorAll(".post-content img"));
+images.forEach(img => {
+  mediumZoom(img, {
+    margin: 0,  
+    scrollOffset: 40,  
+    container: null,  
+    template: null  
+  });
+});
+</script>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

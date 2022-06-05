@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>BW formula parameters | Pawel Wiejkut</title>
+<meta name="keywords" content="BW, BWFunctions, Class, Parameters" />
+<meta name="description" content="BW contains many standard formulas which can be used in TRFN&rsquo;s and RSPC&rsquo;s. The main issue is that sometimes you need to know default values/data types.
+All available formulas can be checked in class CL_RSAR_FUNCTION. Bellow, you can find a table with explained importing and returning parameters.
+Formula / Method Name Description Importing
+Types
+(Example) Returning
+Types
+(Example
+result) ABORT_PACKAGE Returns exception cx_rfso_abort_package to stop
+processing N/A N/A ADD_TO_DATE Add days to the specified date DATS,INT">
+<meta name="author" content="">
+<link rel="canonical" href="https://pawelwiejkut.dev/posts/bw-formula-parameters/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.ac4bcbb73df0e6ab1ca259fb2803b8b2c1dd02cbb6ad0840029b799f5c5360ba.css" integrity="sha256-rEvLtz3w5qscoln7KAO4ssHdAsu2rQhAApt5n1xTYLo=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://pawelwiejkut.dev/profile.png">
+<link rel="apple-touch-icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="mask-icon" href="https://pawelwiejkut.dev/profile.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.100.1" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3R9CLWGY39"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3R9CLWGY39', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="BW formula parameters" />
+<meta property="og:description" content="BW contains many standard formulas which can be used in TRFN&rsquo;s and RSPC&rsquo;s. The main issue is that sometimes you need to know default values/data types.
+All available formulas can be checked in class CL_RSAR_FUNCTION. Bellow, you can find a table with explained importing and returning parameters.
+Formula / Method Name Description Importing
+Types
+(Example) Returning
+Types
+(Example
+result) ABORT_PACKAGE Returns exception cx_rfso_abort_package to stop
+processing N/A N/A ADD_TO_DATE Add days to the specified date DATS,INT" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawelwiejkut.dev/posts/bw-formula-parameters/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-20T09:13:49&#43;01:00" />
+<meta property="article:modified_time" content="2021-12-20T09:13:49&#43;01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="BW formula parameters"/>
+<meta name="twitter:description" content="BW contains many standard formulas which can be used in TRFN&rsquo;s and RSPC&rsquo;s. The main issue is that sometimes you need to know default values/data types.
+All available formulas can be checked in class CL_RSAR_FUNCTION. Bellow, you can find a table with explained importing and returning parameters.
+Formula / Method Name Description Importing
+Types
+(Example) Returning
+Types
+(Example
+result) ABORT_PACKAGE Returns exception cx_rfso_abort_package to stop
+processing N/A N/A ADD_TO_DATE Add days to the specified date DATS,INT"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://pawelwiejkut.dev/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "BW formula parameters",
+      "item": "https://pawelwiejkut.dev/posts/bw-formula-parameters/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "BW formula parameters",
+  "name": "BW formula parameters",
+  "description": "BW contains many standard formulas which can be used in TRFN\u0026rsquo;s and RSPC\u0026rsquo;s. The main issue is that sometimes you need to know default values/data types.\nAll available formulas can be checked in class CL_RSAR_FUNCTION. Bellow, you can find a table with explained importing and returning parameters.\nFormula / Method Name Description Importing\nTypes\n(Example) Returning\nTypes\n(Example\nresult) ABORT_PACKAGE Returns exception cx_rfso_abort_package to stop\nprocessing N/A N/A ADD_TO_DATE Add days to the specified date DATS,INT",
+  "keywords": [
+    "BW", "BWFunctions", "Class", "Parameters"
+  ],
+  "articleBody": "BW contains many standard formulas which can be used in TRFN’s and RSPC’s. The main issue is that sometimes you need to know default values/data types.\nAll available formulas can be checked in class CL_RSAR_FUNCTION. Bellow, you can find a table with explained importing and returning parameters.\nFormula / Method Name Description Importing\nTypes\n(Example) Returning\nTypes\n(Example\nresult) ABORT_PACKAGE Returns exception cx_rfso_abort_package to stop\nprocessing N/A N/A ADD_TO_DATE Add days to the specified date DATS,INT\n(20201201,1) DATS\n20201202 ALPHA Add leading zeros base on\nthe provided length STRING,INT (123,5) STRING\n00123 CALMONTH_FISCPER Convert calendar month to the fiscal period CONDENSE Trim text (left site) STRING\n( 43) STRING\n‘43’ CONDENSE_NO_GAPS Trim text + remove spaces inside STRING\n( 43 55 33) STRING\n‘435533’ DATECONV Change date format to internal CHAR10,CHAR10,CHAR1\n(12/07/1992,\nMM/DD/YYYY,/) DATS\n19921207 DATE_DIFF Calculate differences between dates DATS,DATS\n(20211212,20211215) INT\n3 DATE_FISCPER DATE_FISCPER3 DATE_FISCYEAR DATE_HALFYEAR Check if the date is in the first or second part of the year DATS\n(20210212) NUMC\n1 DATE_MONTH Get the calendar month from the given date DATS\n(20201201) NUMC\n202012 DATE_MONTH2 Get the month number from the given date DATS\n(20201201) NUMC\n12 DATE_QUATER Get the quarter from the given date DATS\n(20210909) NUMC\n20213 DATE_QUATER1 Get the quarter number from the given date DATS\n(20210909) NUMC\n3 DATE_WEEK Get the week from the given date DATS\n(20210731) NUMC\n202130 DATE_WEEKDAY Get the day from the given date DATS\n(20211220) STRING\nMonday DATE_WEEKDAY1 Get the day number from given date DATS\n(20211220) NUMC\n1\nmore DATE_YEAR Get the year from the given date DATS\n(20210101) NUMC\n4 FIRST_WORKINGDAY_MONTH Get the first working day from the given date and calendar DATS,CHAR\n(20210425,01) DATS\n20210401 FIRST_WORKINGDAY_YEAR Get the first working day of the year\nand calendar DATS,CHAR\n(20210525,01) DATS\n20210104 FISCPER_CALMONTH FISCPER_FISCPER3 FISCPER_FISCYEAR IF Check condition - If I_Arg1 = X then Arg2 else Arg3 BOOLEAN,ANY,ANY\n(X,1,10) ANY\n1 IS_INITIAL Check if the string is initial ANY\n(’') BOOLEAN\nX IS_INTEGER Check if the string contains only integers STRING\n(9) BOOLEAN\nX LAST_WORKINGDAY_MONTH Get the last working day from the given date DATS,CHAR\n(20210101,01) DATS\n20210129 LAST_WORKINGDAY_YEAR Get the last working day of the year from the date given DATS,CHAR\n(20210101,01) DATS\n20211231 LEFT Get the first X characters from the string INT,STRING\n(4,123456) STRING\n1234 LTRIM Trim text (left site), by given regexp STRING,STRING\n( ABCD,\\s) STRING\n‘ABCD’ L_TRIM Trim text (left site) STRING\n( ABCD) STRING\n‘ABCD’ MAPPING Looks like deprecated - almost all code inside commented out\nResult = Arg4 MONTH2_HALFYEAR Check if the month is in the first or second half of the year ANY\n(202112) or (11) NUMC\n2 MONTH2_QUARTER1 Check the quarter of the month ANY\n(202208) or (08) NUMC\n3 MONTH_HALFYEAR Check if the month is in the first or second half of the year. ANY\n(202112) NUMC\n2 MONTH2_QUARTER1 Get the quarter based on the given date ANY\n(202106) or (06) NUMC\n2 MONTH_HALFYEAR Check is given month in first or second half of the year ANY\n(20211) NUMC\n2 MONTH_QUARTER Check the quarter of the given month ANY\n(202208) NUMC\n202003 MONTH_QUARTER1 Check the quarter of the given month ANY\n(202208) NUMC\n3 MONTH_YEAR Check the month of the given date ANY\n(202111) or (20211125) NUMC\n2021 NEGATIVE Return number with negative sing F\n(1) F\n-1 QUARTER1_HALFYEAR Check if given quarter is in first or\nsecond half of the year ANY\n(202101) NUMC\n1 QUARTER_HALFYEAR Check if given quarter is in first or second half of the year ANY\n(20214) NUMC\n2 QUARTER_QUARTER1 Get the quarter from the given quarter ANY\n(20214) NUMC\n4 QUARTER_YEAR Get the year from the given quarter ANY\n(20211) NUMC\n2021 REPLACE_ALL Replace selected charter to different one C,C,STRING\n(4,9,A4B4C4) STRING\nA9B9C9 REPLACE_FIRST Replace first occurrences of the charters to different one C,C,STRING\n(4,9,A4B4C4) STRING\nA9B4C4 RIGHT Get first few numbers from right I,STRING\n(4,123456) STRING\n3456 RTRIM Trim white charters from right based on provided regexp STRING,STRING\n(ABC,\\s) STRING\n‘ABC’ R_TRIM ? C\n(D) STRING\nD SHIFT_LEFT Remove first few charters from the left site\nof the string more I,STRING\n(2,abcdef) STRING\ncdef SHIFT_RIGHT Add few\ncharters from the left site\nof the string more I,STRING\n(2,abcdef) STRING\n’ abcdef' SKIP_RECORD Raise CX_RSFO_SKIP_RECORD exception to skip processing of current record N/A N/A SKIP_RECORD_AS_ERROR Raise CX_RSFO_SKIP_RECORD\n_AS_ERROR exception to skip current record processing with error N/A N/A STR_LEN Returns the length of the string STRING\nabcdef INT\n6 UNIT_CONVERSION Convert units UNIT,UNIT,ANY\n(TO,KG,100) F\n100000 UTC_LONG_TO_\nLOCAL_DATE Convert timestamp based on selected timezone to get the date DEC,CHAR\n(20161030053000,EST) DATS\n20161030 UTC_LONG_TO_\nLOCAL_TIME Convert timestamp based on selected timezone to get the hour DEC,CHAR\n(20161030053000,EST) F\n5.40 UTC_SHORT_TO_\nLOCAL_DATE Convert timestamp based on selected timezone to get the date (same code like for long version) DEC,CHAR\n(20161030053000,EST) DATS\n20161030 UTC_SHORT_TO_\nLOCAL_TIME Convert timestamp based on selected timezone to get the hour DEC,CHAR\n(20161030053000,EST) TIMS\n013000 WEEK_FIRST_DAY Get the first day of the week NUMC\n(202104) DATS\n20210125 WORKINGDAY_MONTH Get the number of working days based on month DATS,CHAR,CHAR\n(20211220,01,+) INT\n14 WORKINGDAY_YEAR Get the number of working day base on\nyear DATS,CHAR,CHAR\n(20211220,01,+) INT\n243 Explanations: DATE_WEEKDAY1(): 1 - Monday 2 - Tuesday 3 - Wednesday 4 - Thursday 5 - Friday 6 - Saturday 7 - Sunday If the result of functions with names ending at ‘2’ is the same, then probably the version with 2 at the end can handle both inputs (with a year or without). MONTH2_QUARTER1 in the example is checking both month and a year + month :\nIF strlen( i_month ) EQ 6. l_month = i_month+4(2). ELSEIF strlen( i_month ) EQ 2. l_month = i_month. ELSE. RAISE EXCEPTION TYPE cx_foev_error_in_function. ENDIF. MONTH_QUARTER1 is checking only the year + month like 202106\nl_check = i_month+4(2). IF l_check \u003c '01' OR l_check \u003e '12'. RAISE EXCEPTION TYPE cx_foev_error_in_function. ELSE. ",
+  "wordCount" : "975",
+  "inLanguage": "en",
+  "datePublished": "2021-12-20T09:13:49+01:00",
+  "dateModified": "2021-12-20T09:13:49+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pawelwiejkut.dev/posts/bw-formula-parameters/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pawel Wiejkut",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pawelwiejkut.dev/profile.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://pawelwiejkut.dev/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://pawelwiejkut.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span><i class='fa fa-heart'></i>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/sac-tutorial/" title="SAC">
+                    <span>SAC</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
+                    <span>ABAP od postaw 🇵🇱 </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      BW formula parameters
+    </h1>
+    <div class="post-meta"><span title='2021-12-20 09:13:49 +0100 CET'>December 20, 2021</span>&nbsp;·&nbsp;5 min&nbsp;|&nbsp;<a href="https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content/posts/bw-formula-parameters.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+</div>
+  </header> 
+  <div class="post-content"><p>BW contains many standard formulas which can be used in TRFN&rsquo;s and RSPC&rsquo;s. The main issue is that sometimes you need to know default values/data types.</p>
+<p>All available formulas can be checked in class <strong>CL_RSAR_FUNCTION</strong>. Bellow, you can find a table with explained importing and returning parameters.</p>
+<table>
+<thead>
+<tr>
+<th>Formula / Method Name</th>
+<th>Description</th>
+<th>Importing<br>Types<br>(Example)</th>
+<th>Returning<br>Types<br>(Example<br>result)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ABORT_PACKAGE</td>
+<td>Returns exception <br>cx_rfso_abort_package to stop<br>processing</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>ADD_TO_DATE</td>
+<td>Add days to the specified date</td>
+<td>DATS,INT<br>(20201201,1)</td>
+<td>DATS<br>20201202</td>
+</tr>
+<tr>
+<td>ALPHA</td>
+<td>Add leading zeros base on<br> the provided length</td>
+<td>STRING,INT <br>(123,5)</td>
+<td>STRING<br>00123</td>
+</tr>
+<tr>
+<td>CALMONTH_FISCPER</td>
+<td>Convert calendar month <br>to the fiscal period</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CONDENSE</td>
+<td>Trim text (left site)</td>
+<td>STRING<br>( 43)</td>
+<td>STRING<br>&lsquo;43&rsquo;</td>
+</tr>
+<tr>
+<td>CONDENSE_NO_GAPS</td>
+<td>Trim text + remove spaces inside</td>
+<td>STRING<br>( 43 55 33)</td>
+<td>STRING<br>&lsquo;435533&rsquo;</td>
+</tr>
+<tr>
+<td>DATECONV</td>
+<td>Change date format to internal</td>
+<td>CHAR10,CHAR10,CHAR1<br>(12/07/1992,<br>MM/DD/YYYY,/)</td>
+<td>DATS<br>19921207</td>
+</tr>
+<tr>
+<td>DATE_DIFF</td>
+<td>Calculate differences between dates</td>
+<td>DATS,DATS<br>(20211212,20211215)</td>
+<td>INT<br>3</td>
+</tr>
+<tr>
+<td>DATE_FISCPER</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DATE_FISCPER3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DATE_FISCYEAR</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DATE_HALFYEAR</td>
+<td>Check if the date is in the first <br> or second part of the year</td>
+<td>DATS<br>(20210212)</td>
+<td>NUMC<br>1</td>
+</tr>
+<tr>
+<td>DATE_MONTH</td>
+<td>Get the calendar month from the given date</td>
+<td>DATS<br>(20201201)</td>
+<td>NUMC<br>202012</td>
+</tr>
+<tr>
+<td>DATE_MONTH2</td>
+<td>Get the month number from the given date</td>
+<td>DATS<br>(20201201)</td>
+<td>NUMC<br>12</td>
+</tr>
+<tr>
+<td>DATE_QUATER</td>
+<td>Get the quarter from the given date</td>
+<td>DATS<br>(20210909)</td>
+<td>NUMC<br>20213</td>
+</tr>
+<tr>
+<td>DATE_QUATER1</td>
+<td>Get the quarter number from the given date</td>
+<td>DATS<br>(20210909)</td>
+<td>NUMC<br>3</td>
+</tr>
+<tr>
+<td>DATE_WEEK</td>
+<td>Get the week from the given date</td>
+<td>DATS<br>(20210731)</td>
+<td>NUMC<br>202130</td>
+</tr>
+<tr>
+<td>DATE_WEEKDAY</td>
+<td>Get the day from the given date</td>
+<td>DATS<br>(20211220)</td>
+<td>STRING<br>Monday</td>
+</tr>
+<tr>
+<td>DATE_WEEKDAY1</td>
+<td>Get the day number from given date</td>
+<td>DATS<br>(20211220)</td>
+<td>NUMC<br>1<br><a href="#explanations">more</a></td>
+</tr>
+<tr>
+<td>DATE_YEAR</td>
+<td>Get the year from the given date</td>
+<td>DATS<br>(20210101)</td>
+<td>NUMC<br>4</td>
+</tr>
+<tr>
+<td>FIRST_WORKINGDAY_MONTH</td>
+<td>Get the first working day from the given date <br>and calendar</td>
+<td>DATS,CHAR<br>(20210425,01)</td>
+<td>DATS<br>20210401</td>
+</tr>
+<tr>
+<td>FIRST_WORKINGDAY_YEAR</td>
+<td>Get the first working day of the year<br>and calendar</td>
+<td>DATS,CHAR<br>(20210525,01)</td>
+<td>DATS<br>20210104</td>
+</tr>
+<tr>
+<td>FISCPER_CALMONTH</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FISCPER_FISCPER3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FISCPER_FISCYEAR</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IF</td>
+<td>Check condition - <br>If I_Arg1 = X then Arg2 else Arg3</td>
+<td>BOOLEAN,ANY,ANY<br>(X,1,10)</td>
+<td>ANY<br>1</td>
+</tr>
+<tr>
+<td>IS_INITIAL</td>
+<td>Check if the string is initial</td>
+<td>ANY<br>(&rsquo;')</td>
+<td>BOOLEAN<br>X</td>
+</tr>
+<tr>
+<td>IS_INTEGER</td>
+<td>Check if the string contains <br>only integers</td>
+<td>STRING<br>(9)</td>
+<td>BOOLEAN<br>X</td>
+</tr>
+<tr>
+<td>LAST_WORKINGDAY_MONTH</td>
+<td>Get the last working day from the given date</td>
+<td>DATS,CHAR<br>(20210101,01)</td>
+<td>DATS<br>20210129</td>
+</tr>
+<tr>
+<td>LAST_WORKINGDAY_YEAR</td>
+<td>Get the last working day of the year from <br>the date given</td>
+<td>DATS,CHAR<br>(20210101,01)</td>
+<td>DATS<br>20211231</td>
+</tr>
+<tr>
+<td>LEFT</td>
+<td>Get the first X characters from the string</td>
+<td>INT,STRING<br>(4,123456)</td>
+<td>STRING<br>1234</td>
+</tr>
+<tr>
+<td>LTRIM</td>
+<td>Trim text (left site), <br>by given regexp</td>
+<td>STRING,STRING<br>( ABCD,\s)</td>
+<td>STRING<br>&lsquo;ABCD&rsquo;</td>
+</tr>
+<tr>
+<td>L_TRIM</td>
+<td>Trim text (left site)</td>
+<td>STRING<br>( ABCD)</td>
+<td>STRING<br>&lsquo;ABCD&rsquo;</td>
+</tr>
+<tr>
+<td>MAPPING</td>
+<td>Looks like deprecated <br>- almost all code inside commented out<br>Result = Arg4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MONTH2_HALFYEAR</td>
+<td>Check if the month is in the first or second half of the year</td>
+<td>ANY<br>(202112) or (11)</td>
+<td>NUMC<br>2</td>
+</tr>
+<tr>
+<td>MONTH2_QUARTER1</td>
+<td>Check the quarter of the month</td>
+<td>ANY<br>(202208) or (08)</td>
+<td>NUMC<br>3</td>
+</tr>
+<tr>
+<td>MONTH_HALFYEAR</td>
+<td>Check if the month is in the first <br>or second half of the year.</td>
+<td>ANY<br>(202112)</td>
+<td>NUMC<br>2</td>
+</tr>
+<tr>
+<td>MONTH2_QUARTER1</td>
+<td>Get the quarter based on the given date</td>
+<td>ANY<br>(202106) or (06)</td>
+<td>NUMC<br>2</td>
+</tr>
+<tr>
+<td>MONTH_HALFYEAR</td>
+<td>Check is given month in first or <br>second half of the year</td>
+<td>ANY<br>(20211)</td>
+<td>NUMC<br>2</td>
+</tr>
+<tr>
+<td>MONTH_QUARTER</td>
+<td>Check the quarter of the given month</td>
+<td>ANY<br>(202208)</td>
+<td>NUMC<br>202003</td>
+</tr>
+<tr>
+<td>MONTH_QUARTER1</td>
+<td>Check the quarter of the given month</td>
+<td>ANY<br>(202208)</td>
+<td>NUMC<br>3</td>
+</tr>
+<tr>
+<td>MONTH_YEAR</td>
+<td>Check the month of the given date</td>
+<td>ANY<br>(202111) or (20211125)</td>
+<td>NUMC<br>2021</td>
+</tr>
+<tr>
+<td>NEGATIVE</td>
+<td>Return number with negative sing</td>
+<td>F<br>(1)</td>
+<td>F<br>-1</td>
+</tr>
+<tr>
+<td>QUARTER1_HALFYEAR</td>
+<td>Check if given quarter is in first or<br>second half of the year</td>
+<td>ANY<br>(202101)</td>
+<td>NUMC<br>1</td>
+</tr>
+<tr>
+<td>QUARTER_HALFYEAR</td>
+<td>Check if given quarter is in first or <br>second half of the year</td>
+<td>ANY<br>(20214)</td>
+<td>NUMC<br>2</td>
+</tr>
+<tr>
+<td>QUARTER_QUARTER1</td>
+<td>Get the quarter from the given quarter</td>
+<td>ANY<br>(20214)</td>
+<td>NUMC<br>4</td>
+</tr>
+<tr>
+<td>QUARTER_YEAR</td>
+<td>Get the year from the given quarter</td>
+<td>ANY<br>(20211)</td>
+<td>NUMC<br>2021</td>
+</tr>
+<tr>
+<td>REPLACE_ALL</td>
+<td>Replace selected charter <br>to different one</td>
+<td>C,C,STRING<br>(4,9,A4B4C4)</td>
+<td>STRING<br>A9B9C9</td>
+</tr>
+<tr>
+<td>REPLACE_FIRST</td>
+<td>Replace first occurrences of the <br>charters to different one</td>
+<td>C,C,STRING<br>(4,9,A4B4C4)</td>
+<td>STRING<br>A9B4C4</td>
+</tr>
+<tr>
+<td>RIGHT</td>
+<td>Get first few numbers from right</td>
+<td>I,STRING<br>(4,123456)</td>
+<td>STRING<br>3456</td>
+</tr>
+<tr>
+<td>RTRIM</td>
+<td>Trim white charters from right <br>based on provided regexp</td>
+<td>STRING,STRING<br>(ABC,\s)</td>
+<td>STRING<br>&lsquo;ABC&rsquo;</td>
+</tr>
+<tr>
+<td>R_TRIM</td>
+<td>?</td>
+<td>C<br>(D)</td>
+<td>STRING<br>D</td>
+</tr>
+<tr>
+<td>SHIFT_LEFT</td>
+<td>Remove first few <br>charters from the left site<br>of the string <a href="https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapshift.htm">more</a></td>
+<td>I,STRING<br>(2,abcdef)</td>
+<td>STRING<br>cdef</td>
+</tr>
+<tr>
+<td>SHIFT_RIGHT</td>
+<td>Add few<br>charters from the left site<br>of the string <a href="https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapshift.htm">more</a></td>
+<td>I,STRING<br>(2,abcdef)</td>
+<td>STRING<br>&rsquo;  abcdef'</td>
+</tr>
+<tr>
+<td>SKIP_RECORD</td>
+<td>Raise CX_RSFO_SKIP_RECORD <br>exception to skip <br>processing of current record</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>SKIP_RECORD_AS_ERROR</td>
+<td>Raise CX_RSFO_SKIP_RECORD<br>_AS_ERROR exception to <br>skip current record <br>processing with error</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>STR_LEN</td>
+<td>Returns the length of the string</td>
+<td>STRING<br>abcdef</td>
+<td>INT<br>6</td>
+</tr>
+<tr>
+<td>UNIT_CONVERSION</td>
+<td>Convert units</td>
+<td>UNIT,UNIT,ANY<br>(TO,KG,100)</td>
+<td>F<br>100000</td>
+</tr>
+<tr>
+<td>UTC_LONG_TO_<br>LOCAL_DATE</td>
+<td>Convert timestamp based on <br>selected timezone <br>to get the date</td>
+<td>DEC,CHAR<br>(20161030053000,EST)</td>
+<td>DATS<br>20161030</td>
+</tr>
+<tr>
+<td>UTC_LONG_TO_<br>LOCAL_TIME</td>
+<td>Convert timestamp based on <br>selected timezone <br>to  get the hour</td>
+<td>DEC,CHAR<br>(20161030053000,EST)</td>
+<td>F<br>5.40</td>
+</tr>
+<tr>
+<td>UTC_SHORT_TO_<br>LOCAL_DATE</td>
+<td>Convert timestamp based on <br>selected timezone <br>to get the date <br>(same code like for long <br>version)</td>
+<td>DEC,CHAR<br>(20161030053000,EST)</td>
+<td>DATS<br>20161030</td>
+</tr>
+<tr>
+<td>UTC_SHORT_TO_<br>LOCAL_TIME</td>
+<td>Convert timestamp based on <br>selected timezone <br>to get the hour</td>
+<td>DEC,CHAR<br>(20161030053000,EST)</td>
+<td>TIMS<br>013000</td>
+</tr>
+<tr>
+<td>WEEK_FIRST_DAY</td>
+<td>Get the first day of the week</td>
+<td>NUMC<br>(202104)</td>
+<td>DATS<br>20210125</td>
+</tr>
+<tr>
+<td>WORKINGDAY_MONTH</td>
+<td>Get the number of working <br>days based on <br>month</td>
+<td>DATS,CHAR,CHAR<br>(20211220,01,+)</td>
+<td>INT<br>14</td>
+</tr>
+<tr>
+<td>WORKINGDAY_YEAR</td>
+<td>Get the number of working day <br>base on<br>year</td>
+<td>DATS,CHAR,CHAR<br>(20211220,01,+)</td>
+<td>INT<br>243</td>
+</tr>
+</tbody>
+</table>
+<h3 id="explanations">Explanations:<a hidden class="anchor" aria-hidden="true" href="#explanations">#</a></h3>
+<p>DATE_WEEKDAY1(): </br>
+1 - Monday </br>
+2 - Tuesday </br>
+3 - Wednesday </br>
+4 - Thursday </br>
+5 - Friday </br>
+6 - Saturday </br>
+7 - Sunday </br> </br></p>
+<p>If the result of functions with names ending at &lsquo;2&rsquo; is the same, then probably the version with 2 at the end can handle both inputs (with a year or without). MONTH2_QUARTER1 in the example is checking both month and a year + month :</br></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">IF</span> strlen( i_month ) <span style="color:#f92672">EQ</span> <span style="color:#ae81ff">6</span>.
+</span></span><span style="display:flex;"><span>    l_month <span style="color:#f92672">=</span> i_month<span style="color:#f92672">+</span><span style="color:#ae81ff">4</span>(<span style="color:#ae81ff">2</span>).
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ELSEIF</span> strlen( i_month ) <span style="color:#f92672">EQ</span> <span style="color:#ae81ff">2</span>.
+</span></span><span style="display:flex;"><span>    l_month <span style="color:#f92672">=</span> i_month.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ELSE</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">RAISE</span> <span style="color:#66d9ef">EXCEPTION</span> <span style="color:#66d9ef">TYPE </span>cx_foev_error_in_function.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ENDIF</span>.</span></span></code></pre></div>
+<p>MONTH_QUARTER1 is checking only the year + month like 202106</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    l_check <span style="color:#f92672">=</span> i_month<span style="color:#f92672">+</span><span style="color:#ae81ff">4</span>(<span style="color:#ae81ff">2</span>).
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">IF</span> l_check <span style="color:#f92672">&lt;</span> <span style="color:#e6db74">&#39;01&#39;</span> <span style="color:#f92672">OR</span> l_check <span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;12&#39;</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">RAISE</span> <span style="color:#66d9ef">EXCEPTION</span> <span style="color:#66d9ef">TYPE </span>cx_foev_error_in_function.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ELSE</span>.</span></span></code></pre></div>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://pawelwiejkut.dev/tags/bw/">BW</a></li>
+      <li><a href="https://pawelwiejkut.dev/tags/bwfunctions/">BWFunctions</a></li>
+      <li><a href="https://pawelwiejkut.dev/tags/class/">Class</a></li>
+      <li><a href="https://pawelwiejkut.dev/tags/parameters/">Parameters</a></li>
+    </ul>
+  </footer>
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup">
+<form action="https://pawelwiejkut.us19.list-manage.com/subscribe/post?u=ead4e0dc04f1f8c07403a39ac&amp;id=500c9c1881" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe for newsletter:</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ead4e0dc04f1f8c07403a39ac_500c9c1881" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+
+
+<script src="https://utteranc.es/client.js"
+        repo="pawelwiejkut/pawelwiejkut.dev"
+        issue-term="pathname"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://pawelwiejkut.dev/">Pawel Wiejkut</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+const images = Array.from(document.querySelectorAll(".post-content img"));
+images.forEach(img => {
+  mediumZoom(img, {
+    margin: 0,  
+    scrollOffset: 40,  
+    container: null,  
+    template: null  
+  });
+});
+</script>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Opensource on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/opensource/</link>
+    <description>Recent content in Opensource on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Nov 2021 11:15:14 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me</title>
+      <link>https://pawelwiejkut.dev/about-me/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/about-me/</guid>
+      <description>Nice to meet you 👋
+My name is Pawel Wiejkut and I am an SAP Consultant since 2016. Since the beginning, my career is related to big data. In this blog, I share my knowledge about SAP &amp;amp; Databases. Besides, I am the author of saponit.pl platform where I teach people programming in ABAP in Polish. In my free time, I co-create projects on GitHub. Feel free to contact me via social media.</description>
+    </item>
+    
+    <item>
+      <title>Create simple SAC APP step by step</title>
+      <link>https://pawelwiejkut.dev/sac-tutorial/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/sac-tutorial/</guid>
+      <description>This tutorial group describes how to create a simple SAC App step by step. We are beginning from the new data model, and go through dropdowns, cascade filtering, design and popups. Everything step by step with screenshots and gifs.
+Create new model on SAC Simple APP on SAC Create and fill a dropdown in SAC APP Cascade filtering in SAC Design the app and create button to clean the filters Select dimensions by CheckBox and Button Create a popup to change dimensions order </description>
+    </item>
+    
+  </channel>
+</rss>

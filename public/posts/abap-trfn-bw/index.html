@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Useful modern ABAP statements for BW transformations | Pawel Wiejkut</title>
+<meta name="keywords" content="BW, ABAP" />
+<meta name="description" content="ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare.">
+<meta name="author" content="">
+<link rel="canonical" href="https://pawelwiejkut.dev/posts/abap-trfn-bw/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.ac4bcbb73df0e6ab1ca259fb2803b8b2c1dd02cbb6ad0840029b799f5c5360ba.css" integrity="sha256-rEvLtz3w5qscoln7KAO4ssHdAsu2rQhAApt5n1xTYLo=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://pawelwiejkut.dev/profile.png">
+<link rel="apple-touch-icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="mask-icon" href="https://pawelwiejkut.dev/profile.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.100.1" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3R9CLWGY39"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3R9CLWGY39', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Useful modern ABAP statements for BW transformations" />
+<meta property="og:description" content="ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawelwiejkut.dev/posts/abap-trfn-bw/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-11T21:21:22&#43;01:00" />
+<meta property="article:modified_time" content="2022-01-11T21:21:22&#43;01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Useful modern ABAP statements for BW transformations"/>
+<meta name="twitter:description" content="ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://pawelwiejkut.dev/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Useful modern ABAP statements for BW transformations",
+      "item": "https://pawelwiejkut.dev/posts/abap-trfn-bw/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Useful modern ABAP statements for BW transformations",
+  "name": "Useful modern ABAP statements for BW transformations",
+  "description": "ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare.",
+  "keywords": [
+    "BW", "ABAP"
+  ],
+  "articleBody": "ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare. You can treat this post as a ABAP handbook/guide for BW developers. If you want to check more information how to write a clean ABAP code, check out check this website where is an official guide from SAP.\nMoving data from one internal table to another Move only required records from one table to another:\nPreviously: put a where into the LOOP LOOP AT lt_source INTO ls_source WHERE column_a = 'value'. APPEND ls_source TO lt_result. ENDLOOP.\nNow: use a VALUE with WHERE lt_result = VALUE #( FOR ls_source IN lt_source WHERE ( column_a = 'value' ) ( ls_source )).\nFill table with data Previously: declare a structure and assign separately all values in new lines. DATA: ls_source type ty_source, lt_result type t_ty_result. ls_source-column_a = 'value'. ls_source-column_b = 'value_b'. ls_source-column_c = 'value_c'. APPEND ls_source to lt_result.\nNow: create a table and insert the values in the same time DATA(lt_result) = VALUE t_ty_result( ( column_a = 'value' column_b = 'value_b' column_c = 'value_c' ) ).\nOR insert the value to the existing table DATA: lt_result type t_ty_result. INSERT VALUE #( column_a = 'value' column_b = 'value_b' column_c = 'value_c' ) TO lt_result.\nRead data from the table Previously: using READ TABLE READ TABLE lt_result WITH KEY colum_a = 'value_a' INTO DATA ls_result.\nNow: use function and catch exception TRY. ls_result = lt_result[ colum_a = 'value_a' ]. CATCH cx_sy_itab_line_not_found. ENDTRY.\nPass corresponding data between internal tables Previously: MOVE-CORRESPONDING lt_source to lt_result.\nNow: lt_result = CORRESPONDING #( lt_source ).\nIt can be also nicely used in ABAP OO:\ncl_test_class-\u003emethod(EXPORTING iv_source = CORRESPONDING #(lt_result)). Union of internal tables Previously: LOOP AT lt_table ASSIGING FIELD-SYMBOL(). APPEND TO lt_result. ENDLOOP.\nNow: lt_result = corresponding #( base ( lt_result ) lt_table ).\nGet number of lines in the table Previously: DESCRIBE lt_result INTO lv_number_of_entries.\nNow: v_number_of_entries = lines( lt_result ).\nConcatenate strings Previously: CONCATENATE lv_string_x 'aaa' lv_string_y INTO DATA(lv_result).\nNow: DATA(lv_result) = |{ lv_string_x } 'aaa' { lv_string_y }|.\nUpper case Previously: TRANSLATE lv_result TO UPPER-CASE.\nNow: lv_result = to_upper( lv_result ).\nVery similar approach also for: More\nfunction desciption cmax, cmin character-like extreme value functions condense condense function concat_lines_of concatenation function escape escape function insert insert function match match function repeat repeat function replace replace function reverse reverse function segment segment function shift_left, shift_right shift functions substring, substring substring functions to_upper, to_lower, to_mixed, from_mixed case functions translate translate function More\nTable lines Previously: DESCRIBE lt_table LINES lv_table_lines.\nNow: lv_table_lines = lines( lt_lines ).\nMore\nDynamic variable declarations Previously: Declare separately variable and assign value to it. DATA : lv_integer type i. lv_integer = 1.\nNow: Declare and assign value in one line. DATA(lv_integer) = 1.\nIt can be also used in the context of the ABAP OO.Note that function modules are not supported.\nPreviously: You have to declare separately variable lv_integer and then use it in the method. DATA : lv_integer type i. cl_test_class-\u003emethod( IMPORTING ev_integer = lv_integer ).\nNow: You can declare lv_integer directly after method IMPORTING, EXPORTING or RETURNING. cl_test_class-\u003emethod( IMPORTING ev_integer = DATA(lv_integer) ).\nCreate a new object Previously: Declare data reference and then create an object DATA : lro_class type cl_test_class. CREATE OBJECT lro_class EXPORTING iv_integer = 1.\nNow: Create an object without the data declaration by the NEW parameter DATA(lro_class) = NEW cl_test_class( iv_integer = 1 ).\n",
+  "wordCount" : "617",
+  "inLanguage": "en",
+  "datePublished": "2022-01-11T21:21:22+01:00",
+  "dateModified": "2022-01-11T21:21:22+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pawelwiejkut.dev/posts/abap-trfn-bw/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pawel Wiejkut",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pawelwiejkut.dev/profile.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://pawelwiejkut.dev/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://pawelwiejkut.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span><i class='fa fa-heart'></i>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/sac-tutorial/" title="SAC">
+                    <span>SAC</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
+                    <span>ABAP od postaw 🇵🇱 </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Useful modern ABAP statements for BW transformations
+    </h1>
+    <div class="post-meta"><span title='2022-01-11 21:21:22 +0100 CET'>January 11, 2022</span>&nbsp;·&nbsp;3 min&nbsp;|&nbsp;<a href="https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content/posts/abap-trfn-bw.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#moving-data-from-one-internal-table-to-another" aria-label="Moving data from one internal table to another">Moving data from one internal table to another</a></li>
+                <li>
+                    <a href="#fill-table-with-data" aria-label="Fill table with data">Fill table with data</a></li>
+                <li>
+                    <a href="#read-data-from-the-table" aria-label="Read data from the table">Read data from the table</a></li>
+                <li>
+                    <a href="#pass-corresponding-data-between-internal-tables" aria-label="Pass corresponding data between internal tables">Pass corresponding data between internal tables</a></li>
+                <li>
+                    <a href="#union-of-internal-tables" aria-label="Union of internal tables">Union of internal tables</a></li>
+                <li>
+                    <a href="#get-number-of-lines-in-the-table" aria-label="Get number of lines in the table">Get number of lines in the table</a></li>
+                <li>
+                    <a href="#concatenate-strings" aria-label="Concatenate strings">Concatenate strings</a></li>
+                <li>
+                    <a href="#upper-case" aria-label="Upper case">Upper case</a></li>
+                <li>
+                    <a href="#table-lines" aria-label="Table lines">Table lines</a></li>
+                <li>
+                    <a href="#dynamic-variable-declarations" aria-label="Dynamic variable declarations">Dynamic variable declarations</a></li>
+                <li>
+                    <a href="#create-a-new-object" aria-label="Create a new object">Create a new object</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare. You can treat this post as a ABAP handbook/guide for BW developers. If you want to check more information how to write a clean ABAP code, check out <a href="https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md">check this website</a> where is an official guide from SAP.</p>
+<h3 id="moving-data-from-one-internal-table-to-another">Moving data from one internal table to another<a hidden class="anchor" aria-hidden="true" href="#moving-data-from-one-internal-table-to-another">#</a></h3>
+<p>Move only required records from one table to another:</p>
+<p>Previously: put a where into the LOOP
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">LOOP AT </span>lt_source <span style="color:#66d9ef">INTO</span> ls_source <span style="color:#66d9ef">WHERE</span> column_a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value&#39;</span>.
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">APPEND</span> ls_source <span style="color:#66d9ef">TO</span> lt_result.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ENDLOOP</span>.</span></span></code></pre></div></p>
+<p>Now: use a VALUE with WHERE
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span>lt_result <span style="color:#f92672">=</span> <span style="color:#66d9ef">VALUE</span> <span style="color:#960050;background-color:#1e0010">#</span>( <span style="color:#66d9ef">FOR</span> ls_source <span style="color:#66d9ef">IN</span> lt_source <span style="color:#66d9ef">WHERE</span> ( column_a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value&#39;</span> ) ( ls_source )).</span></span></code></pre></div></p>
+<h3 id="fill-table-with-data">Fill table with data<a hidden class="anchor" aria-hidden="true" href="#fill-table-with-data">#</a></h3>
+<p>Previously: declare a structure and assign separately all values in new lines.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">DATA</span>: ls_source <span style="color:#66d9ef">type </span>ty_source,
+</span></span><span style="display:flex;"><span>      lt_result <span style="color:#66d9ef">type </span>t_ty_result.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ls_source<span style="color:#f92672">-</span>column_a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value&#39;</span>.
+</span></span><span style="display:flex;"><span>ls_source<span style="color:#f92672">-</span>column_b <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value_b&#39;</span>.
+</span></span><span style="display:flex;"><span>ls_source<span style="color:#f92672">-</span>column_c <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value_c&#39;</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">APPEND</span> ls_source <span style="color:#66d9ef">to</span> lt_result.</span></span></code></pre></div></p>
+<p>Now: create a table and insert the values in the same time
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">DATA</span>(lt_result) <span style="color:#f92672">=</span> <span style="color:#66d9ef">VALUE</span> t_ty_result( ( column_a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value&#39;</span> column_b <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value_b&#39;</span> column_c <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value_c&#39;</span> ) ).</span></span></code></pre></div></p>
+<p>OR insert the value to the existing table
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">DATA</span>: lt_result <span style="color:#66d9ef">type </span>t_ty_result.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">VALUE</span> <span style="color:#960050;background-color:#1e0010">#</span>( column_a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value&#39;</span> column_b <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value_b&#39;</span> column_c <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value_c&#39;</span> ) <span style="color:#66d9ef">TO</span> lt_result.</span></span></code></pre></div></p>
+<h3 id="read-data-from-the-table">Read data from the table<a hidden class="anchor" aria-hidden="true" href="#read-data-from-the-table">#</a></h3>
+<p>Previously: using READ TABLE
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">READ</span> <span style="color:#66d9ef">TABLE</span> lt_result <span style="color:#66d9ef">WITH</span> <span style="color:#66d9ef">KEY</span> colum_a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value_a&#39;</span> <span style="color:#66d9ef">INTO</span> <span style="color:#66d9ef">DATA</span> ls_result.</span></span></code></pre></div></p>
+<p>Now: use function and <mark>catch exception</mark>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">TRY</span>.
+</span></span><span style="display:flex;"><span> ls_result <span style="color:#f92672">=</span> lt_result[ colum_a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;value_a&#39;</span> ].
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CATCH</span> cx_sy_itab_line_not_found.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ENDTRY</span>.</span></span></code></pre></div></p>
+<h3 id="pass-corresponding-data-between-internal-tables">Pass corresponding data between internal tables<a hidden class="anchor" aria-hidden="true" href="#pass-corresponding-data-between-internal-tables">#</a></h3>
+<p>Previously:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">MOVE-CORRESPONDING</span> lt_source <span style="color:#66d9ef">to</span> lt_result.</span></span></code></pre></div></p>
+<p>Now:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span>lt_result <span style="color:#f92672">=</span> CORRESPONDING <span style="color:#960050;background-color:#1e0010">#</span>( lt_source ).</span></span></code></pre></div></p>
+<p>It can be also nicely used in ABAP OO:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span>cl_test_class<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">method</span>(EXPORTING iv_source <span style="color:#f92672">=</span> CORRESPONDING <span style="color:#960050;background-color:#1e0010">#</span>(lt_result)).</span></span></code></pre></div>
+<h3 id="union-of-internal-tables">Union of internal tables<a hidden class="anchor" aria-hidden="true" href="#union-of-internal-tables">#</a></h3>
+<p>Previously:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">LOOP AT </span>lt_table ASSIGING <span style="color:#66d9ef">FIELD</span><span style="color:#f92672">-</span>SYMBOL(&lt;ls_table&gt;).
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">APPEND</span> &lt;ls_table&gt; <span style="color:#66d9ef">TO</span> lt_result.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ENDLOOP</span>.</span></span></code></pre></div></p>
+<p>Now:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span>lt_result <span style="color:#f92672">=</span> corresponding <span style="color:#960050;background-color:#1e0010">#</span>(  base ( lt_result )  lt_table ).</span></span></code></pre></div></p>
+<h3 id="get-number-of-lines-in-the-table">Get number of lines in the table<a hidden class="anchor" aria-hidden="true" href="#get-number-of-lines-in-the-table">#</a></h3>
+<p>Previously:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span>DESCRIBE lt_result <span style="color:#66d9ef">INTO</span> lv_number_of_entries.</span></span></code></pre></div></p>
+<p>Now:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span>v_number_of_entries <span style="color:#f92672">=</span> <span style="color:#66d9ef">lines</span>( lt_result  ).</span></span></code></pre></div></p>
+<h3 id="concatenate-strings">Concatenate strings<a hidden class="anchor" aria-hidden="true" href="#concatenate-strings">#</a></h3>
+<p>Previously:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">CONCATENATE</span> lv_string_x <span style="color:#e6db74">&#39;aaa&#39;</span> lv_string_y <span style="color:#66d9ef">INTO</span> <span style="color:#66d9ef">DATA</span>(lv_result).</span></span></code></pre></div></p>
+<p>Now:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">DATA</span>(lv_result) <span style="color:#f92672">=</span> |{ lv_string_x }<span style="color:#e6db74"> &#39;aaa&#39; </span>{ lv_string_y }|.</span></span></code></pre></div></p>
+<h3 id="upper-case">Upper case<a hidden class="anchor" aria-hidden="true" href="#upper-case">#</a></h3>
+<p>Previously:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">TRANSLATE</span> lv_result <span style="color:#66d9ef">TO</span> UPPER<span style="color:#f92672">-</span>CASE.</span></span></code></pre></div></p>
+<p>Now:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span>lv_result <span style="color:#f92672">=</span> to_upper( lv_result  ).</span></span></code></pre></div></p>
+<p>Very similar approach also for:</br> <a href="https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenprocess_functions.htm">More</a></p>
+<table>
+<thead>
+<tr>
+<th>function</th>
+<th>desciption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cmax, cmin</td>
+<td>character-like extreme value functions</td>
+</tr>
+<tr>
+<td>condense</td>
+<td>condense function</td>
+</tr>
+<tr>
+<td>concat_lines_of</td>
+<td>concatenation function</td>
+</tr>
+<tr>
+<td>escape</td>
+<td>escape function</td>
+</tr>
+<tr>
+<td>insert</td>
+<td>insert function</td>
+</tr>
+<tr>
+<td>match</td>
+<td>match function</td>
+</tr>
+<tr>
+<td>repeat</td>
+<td>repeat function</td>
+</tr>
+<tr>
+<td>replace</td>
+<td>replace function</td>
+</tr>
+<tr>
+<td>reverse</td>
+<td>reverse function</td>
+</tr>
+<tr>
+<td>segment</td>
+<td>segment function</td>
+</tr>
+<tr>
+<td>shift_left, shift_right</td>
+<td>shift functions</td>
+</tr>
+<tr>
+<td>substring, substring</td>
+<td>substring functions</td>
+</tr>
+<tr>
+<td>to_upper, to_lower, to_mixed, from_mixed</td>
+<td>case functions</td>
+</tr>
+<tr>
+<td>translate</td>
+<td>translate function</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenprocess_functions.htm">More</a></p>
+<h3 id="table-lines">Table lines<a hidden class="anchor" aria-hidden="true" href="#table-lines">#</a></h3>
+<p>Previously:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span>DESCRIBE lt_table <span style="color:#66d9ef">LINES</span> lv_table_lines.</span></span></code></pre></div></p>
+<p>Now:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span>lv_table_lines <span style="color:#f92672">=</span> <span style="color:#66d9ef">lines</span>( lt_lines  ).</span></span></code></pre></div></p>
+<p><a href="https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abentable_functions.htm">More</a></p>
+<h3 id="dynamic-variable-declarations">Dynamic variable declarations<a hidden class="anchor" aria-hidden="true" href="#dynamic-variable-declarations">#</a></h3>
+<p>Previously:
+Declare separately variable and assign value to it.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">DATA</span> : lv_integer <span style="color:#66d9ef">type </span>i.
+</span></span><span style="display:flex;"><span>lv_integer <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>.</span></span></code></pre></div></p>
+<p>Now:
+Declare and assign value in one line.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">DATA</span>(lv_integer) <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>.</span></span></code></pre></div></p>
+<p>It can be also used in the context of the ABAP OO.<mark>Note that function modules are not supported</mark>.</p>
+<p>Previously:
+You have to declare separately variable lv_integer and then use it in the method.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">DATA</span> : lv_integer <span style="color:#66d9ef">type </span>i.
+</span></span><span style="display:flex;"><span>cl_test_class<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">method</span>( <span style="color:#66d9ef">IMPORTING</span> ev_integer <span style="color:#f92672">=</span> lv_integer  ).</span></span></code></pre></div></p>
+<p>Now:
+You can declare lv_integer directly after method IMPORTING, EXPORTING or RETURNING.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span>cl_test_class<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">method</span>( <span style="color:#66d9ef">IMPORTING</span> ev_integer <span style="color:#f92672">=</span> <span style="color:#66d9ef">DATA</span>(lv_integer)  ).</span></span></code></pre></div></p>
+<h3 id="create-a-new-object">Create a new object<a hidden class="anchor" aria-hidden="true" href="#create-a-new-object">#</a></h3>
+<p>Previously: Declare data reference and then create an object
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">DATA</span> : lro_class <span style="color:#66d9ef">type </span>cl_test_class.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE OBJECT</span> lro_class 
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">EXPORTING</span> iv_integer <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>.</span></span></code></pre></div></p>
+<p>Now: Create an object without the data declaration by the NEW parameter
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">DATA</span>(lro_class) <span style="color:#f92672">=</span> NEW cl_test_class( iv_integer <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> ).</span></span></code></pre></div></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://pawelwiejkut.dev/tags/bw/">BW</a></li>
+      <li><a href="https://pawelwiejkut.dev/tags/abap/">ABAP</a></li>
+    </ul>
+  </footer>
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup">
+<form action="https://pawelwiejkut.us19.list-manage.com/subscribe/post?u=ead4e0dc04f1f8c07403a39ac&amp;id=500c9c1881" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe for newsletter:</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ead4e0dc04f1f8c07403a39ac_500c9c1881" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+
+
+<script src="https://utteranc.es/client.js"
+        repo="pawelwiejkut/pawelwiejkut.dev"
+        issue-term="pathname"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://pawelwiejkut.dev/">Pawel Wiejkut</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+const images = Array.from(document.querySelectorAll(".post-content img"));
+images.forEach(img => {
+  mediumZoom(img, {
+    margin: 0,  
+    scrollOffset: 40,  
+    container: null,  
+    template: null  
+  });
+});
+</script>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

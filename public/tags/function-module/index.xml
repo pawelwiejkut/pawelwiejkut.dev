@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>function module on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/function-module/</link>
+    <description>Recent content in function module on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Dec 2017 21:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/function-module/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Access transaction without auth</title>
+      <link>https://pawelwiejkut.dev/posts/access-tcode-no-auth/</link>
+      <pubDate>Sat, 16 Dec 2017 21:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/access-tcode-no-auth/</guid>
+      <description>How to access transactions without an authorization? One big requirement to do this trick is having to debug and replace the function. Let’s start!
+I prepared myself, user, without authorization to the db02 transaction. When I want to run this transaction, I get a message: „You are not authorized to use transaction”
+Go to the SE37 transaction, and display function module: AUTH_CHECK_TCODE.
+Now seat a breakpoint on line 28, where sy-subrc is checked (in new versions line 53).</description>
+    </item>
+    
+  </channel>
+</rss>

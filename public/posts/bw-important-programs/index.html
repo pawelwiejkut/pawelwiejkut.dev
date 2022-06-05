@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>BW important programs / Function modules  | Pawel Wiejkut</title>
+<meta name="keywords" content="BW, ABAP, Function modules, Program" />
+<meta name="description" content="Almost all of these programs are included in my GitHub development &ldquo;bw_toolbox&rdquo;. If you want, you can just implement this in an easy way to your system. Please check by clicking here.
+Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user ">
+<meta name="author" content="">
+<link rel="canonical" href="https://pawelwiejkut.dev/posts/bw-important-programs/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.ac4bcbb73df0e6ab1ca259fb2803b8b2c1dd02cbb6ad0840029b799f5c5360ba.css" integrity="sha256-rEvLtz3w5qscoln7KAO4ssHdAsu2rQhAApt5n1xTYLo=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://pawelwiejkut.dev/profile.png">
+<link rel="apple-touch-icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="mask-icon" href="https://pawelwiejkut.dev/profile.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.100.1" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3R9CLWGY39"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3R9CLWGY39', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="BW important programs / Function modules " />
+<meta property="og:description" content="Almost all of these programs are included in my GitHub development &ldquo;bw_toolbox&rdquo;. If you want, you can just implement this in an easy way to your system. Please check by clicking here.
+Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawelwiejkut.dev/posts/bw-important-programs/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-04T11:15:20&#43;01:00" />
+<meta property="article:modified_time" content="2021-11-04T11:15:20&#43;01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="BW important programs / Function modules "/>
+<meta name="twitter:description" content="Almost all of these programs are included in my GitHub development &ldquo;bw_toolbox&rdquo;. If you want, you can just implement this in an easy way to your system. Please check by clicking here.
+Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user "/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://pawelwiejkut.dev/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "BW important programs / Function modules ",
+      "item": "https://pawelwiejkut.dev/posts/bw-important-programs/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "BW important programs / Function modules ",
+  "name": "BW important programs \/ Function modules ",
+  "description": "Almost all of these programs are included in my GitHub development \u0026ldquo;bw_toolbox\u0026rdquo;. If you want, you can just implement this in an easy way to your system. Please check by clicking here.\nActivate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user ",
+  "keywords": [
+    "BW", "ABAP", "Function modules", "Program"
+  ],
+  "articleBody": "Almost all of these programs are included in my GitHub development “bw_toolbox”. If you want, you can just implement this in an easy way to your system. Please check by clicking here.\nActivate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user ",
+  "wordCount" : "158",
+  "inLanguage": "en",
+  "datePublished": "2021-11-04T11:15:20+01:00",
+  "dateModified": "2021-11-04T11:15:20+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pawelwiejkut.dev/posts/bw-important-programs/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pawel Wiejkut",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pawelwiejkut.dev/profile.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://pawelwiejkut.dev/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://pawelwiejkut.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span><i class='fa fa-heart'></i>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/sac-tutorial/" title="SAC">
+                    <span>SAC</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
+                    <span>ABAP od postaw 🇵🇱 </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      BW important programs / Function modules 
+    </h1>
+    <div class="post-meta"><span title='2021-11-04 11:15:20 +0100 CET'>November 4, 2021</span>&nbsp;·&nbsp;1 min&nbsp;|&nbsp;<a href="https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content/posts/bw-important-programs.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Almost all of these programs are included in my GitHub development &ldquo;bw_toolbox&rdquo;. If you want, you can just implement this in an easy way to your system. <a href="https://github.com/pawelwiejkut/bw_toolbox">Please check by clicking here</a>.</p>
+<h3 id="activate">Activate:<a hidden class="anchor" aria-hidden="true" href="#activate">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Category</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RSDG_TRFN_ACTIVATE</td>
+<td>TRFN</td>
+<td>PROG</td>
+<td>Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly.</td>
+</tr>
+<tr>
+<td>RSDS_DATASOURCE_ACTIVATE_ALL</td>
+<td>RSDS</td>
+<td>PROG</td>
+<td>Activate data source</td>
+</tr>
+<tr>
+<td>RSBKDTPREPAIR</td>
+<td>DTP</td>
+<td>PROG</td>
+<td>Activate data transfer process</td>
+</tr>
+<tr>
+<td>RSDG_HCPR_ACTIVATE</td>
+<td>HCPR</td>
+<td>PROG</td>
+<td>Activate composite provider</td>
+</tr>
+<tr>
+<td>RSDG_CUBE_ACTIVATE</td>
+<td>CUBE</td>
+<td>PROG</td>
+<td>Activate cube</td>
+</tr>
+<tr>
+<td>RSDG_ADSO_ACTIVATE</td>
+<td>ADSO</td>
+<td>PROG</td>
+<td>Activate Advanced DataStore Object</td>
+</tr>
+<tr>
+<td>RSDG_IOBJ_ACTIVATE</td>
+<td>IOBJ</td>
+<td>PROG</td>
+<td>Activate InfoObject</td>
+</tr>
+</tbody>
+</table>
+<h2 id="maintenance">Maintenance:<a hidden class="anchor" aria-hidden="true" href="#maintenance">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Category</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RSDG_AFTER_IMPORT_FOR_CORR</td>
+<td>N/A</td>
+<td>PROG</td>
+<td>Reimport transport</td>
+</tr>
+<tr>
+<td>RSBM_GUI_CHANGE_USTATE</td>
+<td>DTP</td>
+<td>FM</td>
+<td>Change DTP request status</td>
+</tr>
+<tr>
+<td>RSPC_VARIANT_DELETE</td>
+<td>RSPC</td>
+<td>FM</td>
+<td>Delete process chain variant</td>
+</tr>
+<tr>
+<td>RSPC_API_CHAIN_START</td>
+<td>RSPC</td>
+<td>FM</td>
+<td>Start process chain  immediately ( even scheduled )</td>
+</tr>
+<tr>
+<td>DB_DROP_TABLE</td>
+<td>DEST</td>
+<td>PROG</td>
+<td>Drop tables under the OpenHub</td>
+</tr>
+<tr>
+<td>RSDG_IOBJ_REORG</td>
+<td>IOBJ</td>
+<td>PROG</td>
+<td>Repair Infoobject</td>
+</tr>
+<tr>
+<td>RSPC_PROCESS_FINISH</td>
+<td>RSPC</td>
+<td>PROG</td>
+<td>Process chain  variant status change</td>
+</tr>
+<tr>
+<td>BAPI_USER_UNLOCK</td>
+<td>N/A</td>
+<td>FM</td>
+<td>Unlock user</td>
+</tr>
+</tbody>
+</table>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://pawelwiejkut.dev/tags/bw/">BW</a></li>
+      <li><a href="https://pawelwiejkut.dev/tags/abap/">ABAP</a></li>
+      <li><a href="https://pawelwiejkut.dev/tags/function-modules/">Function modules</a></li>
+      <li><a href="https://pawelwiejkut.dev/tags/program/">Program</a></li>
+    </ul>
+  </footer>
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup">
+<form action="https://pawelwiejkut.us19.list-manage.com/subscribe/post?u=ead4e0dc04f1f8c07403a39ac&amp;id=500c9c1881" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe for newsletter:</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ead4e0dc04f1f8c07403a39ac_500c9c1881" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+
+
+<script src="https://utteranc.es/client.js"
+        repo="pawelwiejkut/pawelwiejkut.dev"
+        issue-term="pathname"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://pawelwiejkut.dev/">Pawel Wiejkut</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+const images = Array.from(document.querySelectorAll(".post-content img"));
+images.forEach(img => {
+  mediumZoom(img, {
+    margin: 0,  
+    scrollOffset: 40,  
+    container: null,  
+    template: null  
+  });
+});
+</script>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

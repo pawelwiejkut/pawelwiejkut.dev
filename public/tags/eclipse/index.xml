@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Eclipse on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/eclipse/</link>
+    <description>Recent content in Eclipse on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Oct 2020 20:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/eclipse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developing custom HANA adapter – quickstart</title>
+      <link>https://pawelwiejkut.dev/posts/custom-hana-adapter/</link>
+      <pubDate>Sun, 18 Oct 2020 20:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/custom-hana-adapter/</guid>
+      <description>In this blog post, I will show you how you can fast start with developing custom HANA adapters in JAVA.
+S-User is required to download data provisioning agent: https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73555000100200005999&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/HANA%20DP%20AGENT%202.0 I downloaded the Linux version, but windows should work too (I’m on Mac OS). I will proceed in SAP Hana Studio because Eclipse is missing some packages. If you don’t have SAP Hana Studio, please check: https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73554900100200000585&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/SAP%20HANA%20STUDIO%202 Download missing plugins: https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api/2.3.0 https://mvnrepository.</description>
+    </item>
+    
+  </channel>
+</rss>

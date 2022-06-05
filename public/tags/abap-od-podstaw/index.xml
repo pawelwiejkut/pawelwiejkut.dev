@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ABAP od podstaw on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/abap-od-podstaw/</link>
+    <description>Recent content in ABAP od podstaw on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Jan 2022 18:33:53 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/abap-od-podstaw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jak zainstalować SAPa żeby nauczyć się ABAPa?</title>
+      <link>https://pawelwiejkut.dev/posts/instalacja-sapa/</link>
+      <pubDate>Sat, 29 Jan 2022 18:33:53 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/instalacja-sapa/</guid>
+      <description>Cześć! To jest poradnik dla kompletnych laików, dlatego też tytuł jest bardzo skrótowy. Co bowiem oznacza instalacja SAP-a ? SAP (Systemanalyse und Programmentwicklung) jest nazwą firmy, powstałej w 1972 roku w Waldorfie zajmującej się tworzeniem oprogramowania. Zachęcam, żeby poczytać więcej o niej tutaj. Dziś chciałem pokazać Ci prosty sposób na instalację systemu SAP NetWeaver, który to umożliwi Ci naukę programowania w języku ABAP. Ten tutorial był kiedyś dostępny w wersji tekstowej, teraz dostępna jest duzo nowsza wersja wideo, która równiez jest częścią płatnego kursu abap dostępnego pod adresem https://saponit.</description>
+    </item>
+    
+    <item>
+      <title>Joby W ABAPie</title>
+      <link>https://pawelwiejkut.dev/posts/joby-w-abapie/</link>
+      <pubDate>Sat, 23 Jan 2021 18:25:44 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/joby-w-abapie/</guid>
+      <description>Z tej lekcji dowiesz się jak działają joby w ABAPie. Napiszemy prosty program który bedzie odpowiedzialny za wstawienie danych do tabeli a następnie ustawimy go jako proces w tle. Dodatkowo opowiadam tez o tym czym są warianty, oraz jak je tworzyć. To wideo jest częścią płatnego kursu ABAP od podstaw, dostępnego na https://saponit.pl/kurs-abap</description>
+    </item>
+    
+    <item>
+      <title>Działania na plikach</title>
+      <link>https://pawelwiejkut.dev/posts/dzialania-na-plikach/</link>
+      <pubDate>Mon, 06 May 2019 17:53:34 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/dzialania-na-plikach/</guid>
+      <description>Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:
+employees Pobierz
+Procedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:
+wczytać dane od użytkownika, wprowadzić nowe wpisy od użytkownika do bazy , wprowadzić wpisy z serwera aplikacji do bazy.</description>
+    </item>
+    
+    <item>
+      <title>Ballog czyli logowanie danych w ABAPie</title>
+      <link>https://pawelwiejkut.dev/posts/ballog-abap-logowanie/</link>
+      <pubDate>Sun, 14 Apr 2019 17:01:40 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/ballog-abap-logowanie/</guid>
+      <description>Każdy język programowania posiada możliwość zapisania informacji technicznej, czy też zdarzenia które może być pomocna później na przykład podczas sprawdzenia poprawności działania napisanego programu. W wielu językach czynność ta sprowadza się często do napisania jednej linijki kodu, np:
+console.log(&amp;#34;Oh, coś poszło nie tak!&amp;#34;); W ABAPie sytuacja jest trochę bardziej skomplikowana. Zacznijmy może od napisania prostego programu, który będzie opierać się na stworzonych przez nas wcześniej obiektach DDICowych. Żeby nauczyć się czegoś nowego polecam razem ze mną wykonać wszystko w eclipse, oczywiście równie dobrze każdy krok będzie działać też bezpośrednio w SAP GUI.</description>
+    </item>
+    
+    <item>
+      <title>Ekran Wyboru</title>
+      <link>https://pawelwiejkut.dev/posts/ekran-wyboru/</link>
+      <pubDate>Sun, 09 Apr 2017 17:01:40 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/ekran-wyboru/</guid>
+      <description>Dzisiejsza instrukcja będzie nieco krótsza i dotyczyć będzie rozszerzenia naszego poprzedniego programu z tego wpisu o klika linijek kodu odpowiedzialnych za stworzenie ekranu. Nasz tworzony ekran będzie odpowiadał za umożliwienie nam wyboru wyników wyświetlanych w tabeli w zależności od numeru połączenia i numeru przewoźnika.
+Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
+Zaczynamy od skopiowania poprzedniego programu. Aby to zrobić, w transakcji se80 klikamy prawym przyciskiem myszy na nasz poprzedni program i klikamy na copy.</description>
+    </item>
+    
+    <item>
+      <title>Tworzymy ALV Grid</title>
+      <link>https://pawelwiejkut.dev/posts/tworzymy-alv-grid/</link>
+      <pubDate>Sun, 19 Mar 2017 17:01:40 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/tworzymy-alv-grid/</guid>
+      <description>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
+Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
+Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy.</description>
+    </item>
+    
+    <item>
+      <title>Hello World W ABAPie</title>
+      <link>https://pawelwiejkut.dev/posts/hello-world-w-abapie/</link>
+      <pubDate>Sun, 12 Mar 2017 10:08:21 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/hello-world-w-abapie/</guid>
+      <description>Witajcie w kolejnym poradniku dotyczącym SAPa na blogu. Dzisiejszy wpis będzie dotyczyć uzupełnienia tabel przykładowymi danymi oraz napisania prostego programu w ABAPie, zapraszam do lektury 🙂
+Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/ Uruchamiamy naszą instalację. Pamiętaj o tym że po uruchomieniu maszyny wirtualnej, trzeba jeszcze zalogować się na odpowiedniego użytkownika i uruchomić odpowiednie procesy. Opis tego jak to zrobić możesz sprawdzić w jednym z poprzednich wpisów.</description>
+    </item>
+    
+    <item>
+      <title>ABAP od podstaw</title>
+      <link>https://pawelwiejkut.dev/abap-od-podstaw/</link>
+      <pubDate>Sat, 04 Mar 2017 21:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/abap-od-podstaw/</guid>
+      <description>Hej!
+W 2017 roku napisałem tutorial „Jak zainstalować SAPa żeby nauczyć się ABAPa” przez dwa lata wyświetliliście ten artykuł blisko 10 tysięcy razy ! Równocześnie z wpisem na blogu powstał też film na youtube który zbliża się już do 100 tys wyświetleń.Te liczby mówią same za siebie, dlatego postanowiłem całą serię przedłużyć i pokazać wam więcej.
+Chcesz nauczyć się programować w języku ABAP ? A może chciałbyś lepiej zrozumieć w jaki sposób działają procesy w rozwiązaniach opartych na platformie NetVeawer ?</description>
+    </item>
+    
+    <item>
+      <title>Aktywacja SAP Netveawer 7.5</title>
+      <link>https://pawelwiejkut.dev/posts/aktywacja-netveawer/</link>
+      <pubDate>Sat, 04 Mar 2017 21:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/aktywacja-netveawer/</guid>
+      <description>Kiedy mamy już zainstalowanego SAP NetWeavera, należy aktywować naszą instalację SAP. Proces ten jest o wiele łatwiejszy niż instalacja, wymaga jednak pewnego oswojenia z interfejsem. Aktywacja instalacji jest niezbędna aby można było tworzyć programy w ABAPie. Przejdźmy do rzeczy. Od jakiegoś czasu tworzę kurs online poświęcony właśnie pogramowaniu w ABAPie, jeżeli jesteś zainteresowany, sprawdź proszę kursy.saponit.pl Logujemy się do systemu i wchodzimy w transakcję SLICENSE. Kopiujemy active hardware key. Przechodzimy na stronę https://go.</description>
+    </item>
+    
+  </channel>
+</rss>

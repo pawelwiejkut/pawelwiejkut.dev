@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Client on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/client/</link>
+    <description>Recent content in Client on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jun 2019 20:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/client/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create new SAP client</title>
+      <link>https://pawelwiejkut.dev/posts/new-sap-client/</link>
+      <pubDate>Mon, 03 Jun 2019 20:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/new-sap-client/</guid>
+      <description>In the SAP NetWeaver system, clients are used for many purposes. One of the business purposes can be handling many sub-companies on one system. From a development perspective, you can use a different client to protect your development or split the system by development and unit tests. Last time I also create a new client on my instance, to separate the client between data to my extractors and rest. How you can achieve this?</description>
+    </item>
+    
+  </channel>
+</rss>

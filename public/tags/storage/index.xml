@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>storage on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/storage/</link>
+    <description>Recent content in storage on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Aug 2018 20:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Oracle store your data</title>
+      <link>https://pawelwiejkut.dev/posts/how-oracle-store-data/</link>
+      <pubDate>Fri, 10 Aug 2018 20:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/how-oracle-store-data/</guid>
+      <description>All of you probably at least once in your life try to insert some records to a database table, but is anyone of you ever tried to understand how Oracle actually saves the entries in the database? Last time I was making a small experiment and I want to share my results with you.
+Step one, let&amp;rsquo;s build a small table and insert a few records:
+INSERT INTO tab1 VALUES(&amp;#39;AAA&amp;#39;,111); INSERT INTO tab1 VALUES(&amp;#39;AAA&amp;#39;,222); INSERT INTO tab1 VALUES(&amp;#39;AAA&amp;#39;,333); INSERT INTO tab1 VALUES(&amp;#39;AAA&amp;#39;,444); INSERT INTO tab1 VALUES(&amp;#39;BBB&amp;#39;,111); INSERT INTO tab1 VALUES(&amp;#39;BBB&amp;#39;,222); INSERT INTO tab1 VALUES(&amp;#39;BBB&amp;#39;,333); INSERT INTO tab1 VALUES(&amp;#39;BBB&amp;#39;,444); INSERT INTO tab1 VALUES(&amp;#39;CCC&amp;#39;,111); INSERT INTO tab1 VALUES(&amp;#39;CCC&amp;#39;,222); INSERT INTO tab1 VALUES(&amp;#39;CCC&amp;#39;,333); INSERT INTO tab1 VALUES(&amp;#39;CCC&amp;#39;,444); Let’s start some fun and check how my dump from Oracle DB looks like.</description>
+    </item>
+    
+  </channel>
+</rss>

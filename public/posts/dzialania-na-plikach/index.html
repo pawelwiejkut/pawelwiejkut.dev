@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Działania na plikach | Pawel Wiejkut</title>
+<meta name="keywords" content="ABAP, ABAP od podstaw" />
+<meta name="description" content="Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:
+employees Pobierz
+Procedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:
+wczytać dane od użytkownika, wprowadzić nowe wpisy od użytkownika do bazy , wprowadzić wpisy z serwera aplikacji do bazy.">
+<meta name="author" content="">
+<link rel="canonical" href="https://pawelwiejkut.dev/posts/dzialania-na-plikach/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.ac4bcbb73df0e6ab1ca259fb2803b8b2c1dd02cbb6ad0840029b799f5c5360ba.css" integrity="sha256-rEvLtz3w5qscoln7KAO4ssHdAsu2rQhAApt5n1xTYLo=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://pawelwiejkut.dev/profile.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://pawelwiejkut.dev/profile.png">
+<link rel="apple-touch-icon" href="https://pawelwiejkut.dev/profile.png">
+<link rel="mask-icon" href="https://pawelwiejkut.dev/profile.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.100.1" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3R9CLWGY39"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3R9CLWGY39', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Działania na plikach" />
+<meta property="og:description" content="Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:
+employees Pobierz
+Procedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:
+wczytać dane od użytkownika, wprowadzić nowe wpisy od użytkownika do bazy , wprowadzić wpisy z serwera aplikacji do bazy." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawelwiejkut.dev/posts/dzialania-na-plikach/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-05-06T17:53:34&#43;01:00" />
+<meta property="article:modified_time" content="2019-05-06T17:53:34&#43;01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Działania na plikach"/>
+<meta name="twitter:description" content="Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:
+employees Pobierz
+Procedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:
+wczytać dane od użytkownika, wprowadzić nowe wpisy od użytkownika do bazy , wprowadzić wpisy z serwera aplikacji do bazy."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://pawelwiejkut.dev/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Działania na plikach",
+      "item": "https://pawelwiejkut.dev/posts/dzialania-na-plikach/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Działania na plikach",
+  "name": "Działania na plikach",
+  "description": "Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:\nemployees Pobierz\nProcedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:\nwczytać dane od użytkownika, wprowadzić nowe wpisy od użytkownika do bazy , wprowadzić wpisy z serwera aplikacji do bazy.",
+  "keywords": [
+    "ABAP", "ABAP od podstaw"
+  ],
+  "articleBody": "Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:\nemployees Pobierz\nProcedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:\nwczytać dane od użytkownika, wprowadzić nowe wpisy od użytkownika do bazy , wprowadzić wpisy z serwera aplikacji do bazy. Fajnie byłoby aby program był tak dynamicznie napisany, że nie będziemy musieli go zmieniać nawet jeżeli będziemy chcieć „wpisać” dane do tabeli określonej w pierwszej kolumnie naszego pliku. Jeżeli otworzymy zbiór danych, zobaczymy że prezentują się one następująco:\nUwaga, w tym artykule przedstawiam dwa ważne rozdziały: operacje na plikach i programowanie obiektowe. Jeśli niektóre rozwiązania są dla Ciebie niejasne, bądź też chcesz dowiedzieć się więcej to zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/ Tworzymy dodatkową tabelę Pierwszą kolumną w pliku csv oznaczona jest nazwa tabeli do której chcemy wpisać dane. Dwie kolejne zawierają dane które chcemy do podanych tabel wpisać. Potrzebujemy zatem poza tabelką ZEMPLOYEES jeszcze tabelę ZSALARIES. Możemy ją szybko utworzyć w eclipse:\n@EndUserText.label : 'Employees salaries' @AbapCatalog.enhancementCategory : #NOT_EXTENSIBLE @AbapCatalog.tableCategory : #TRANSPARENT @AbapCatalog.deliveryClass : #A @AbapCatalog.dataMaintenance : #LIMITED define table zsalaries { key id : char3 not null; amount : integer64; } Tabele mamy gotowe, fajnie byłoby gdybyśmy mogli nie tylko używać plików pobranych od użytkownika, ale również tych które są dostępne na app serwerze. O tym ostatnim jeszcze nie pisałem w żadnych z poprzednich poradników. Nowością jest tu transakcja al11, która służy w NetVeawer do przechowywania plików. Można powiedzieć, że jest ona odpowiednikiem windowsowego explorera, widać w niej foldery odpowiadające tym faktycznie umieszczonym na dysku twardym wirtualnej maszyny:\nDostęp do plików z poziomu ABAPa odpowiada dostępowi z poziomu systemu operacyjnego. Jest to o tyle ważne, że jeżeli używamy Windowsa to wielkość znaków w ścieżce do pliku nie ma znaczenia, natomiast w przypadku Linuxa jest odwrotnie. Nasz serwer aplikacji zainstalowany jest na maszynie z Linuxem, natomiast serwer prezentacji (czyli SAP GUI) możemy mieć zainstalowany na dowolnym systemie operacyjnym, np. Windows. Nasz development będzie składać się z dwóch klas i raportu służącego do uruchomienia. Wykorzystamy tutaj dziedziczenie, czyli jedną z zalet programowania obiektowego. Jeżeli chcielibyśmy przedstawić klasy graficznie wyglądałoby to następująco:\nKlasa po której będziemy dziedziczyć Zacznijmy od eclipse i stwórzmy pierwszą klasę ZCL_FILE. Po pierwsze musimy zadeklarować potrzebne typy danych: CLASS zcl_file DEFINITION PUBLIC CREATE PUBLIC . PUBLIC SECTION. TYPES t_string_tab TYPE string. TYPES tt_string_tab TYPE STANDARD TABLE OF t_string_tab. METHODS insert_to_table IMPORTING iv_table_name TYPE string it_table TYPE STANDARD TABLE. PROTECTED SECTION. METHODS process_table IMPORTING is_line_to_insert TYPE t_string_tab EXPORTING et_processed_data TYPE tt_string_tab ev_table_name TYPE string. PRIVATE SECTION. ENDCLASS. Określamy najpierw własne typy: strukturę zwierającą tylko stringi i tabelę do niej. W sekcji publicznej tworzymy również dwie metody. Pierwsza z nich ma za zadanie wpisać nasze dane do tabeli, natomiast druga jest odpowiedzialna za odczytanie przekazanej lini z tabeli i określenia do jakiej tabeli wpis powinien trafić.\nImplementacja: CLASS zcl_file IMPLEMENTATION. METHOD insert_to_table. \"deklarujemy tabele stringów DATA:lt_tab TYPE tt_string_tab. \"oraz dwie referencje, do danych i do opisu struktury DATA: lr_str TYPE REF TO data, lr_strd TYPE REF TO cl_abap_structdescr. \"tworzymy sobie referencje CREATE DATA lr_str TYPE (iv_table_name). \"i przypisujemy ją do field-sybolu ASSIGN lr_str-\u003e* TO FIELD-SYMBOL(). \"pobieramy refernecję do opisu naszej struktury na podstawie field-symbolu \"(można było również pobrać ją po nazwie) lr_strd ?= cl_abap_tabledescr=\u003edescribe_by_data_ref( lr_str ). \"wykonujemy petle po wszytskich komponentach naszej struktury \"(w przypadku zemployees będzie tu:ID,NAME,LAST_NAME) LOOP AT lr_strd-\u003ecomponents ASSIGNING FIELD-SYMBOL(). \"każdy z komponentów przypisujemy do zmiennej ASSIGN COMPONENT -name OF STRUCTURE TO FIELD-SYMBOL(). \"z odczytanej lini z danymi bierzemy odpowiednią wartość, o takiej samej kolejności \"jak ta odczytana z kompnentu \"(w przypadku naszego pliku pierwsze będzie tu: JNO \") ASSIGN it_table[ sy-tabix ] TO FIELD-SYMBOL() . \"do struktury przypisujemy dane z odczytanej lini, teraz nasze dane \"powinny być w poprawnym typie w = . ENDLOOP. \"wpisujemy dane do tabeli w bazie danych MODIFY (iv_table_name) FROM . \"jeśli wystąpi błąd, zwróć wiadomość IF sy-subrc = 2. MESSAGE 'Error occured while modify' TYPE 'E'. ENDIF. ENDMETHOD. METHOD process_table. \"podziel linie po przecinku tak żeby powstała z nich tabela SPLIT is_line_to_insert AT ',' INTO TABLE DATA(lt_split). \"wybierz pierwszą wartość, która opisuje tabelę do której \"trafią dane DATA(lv_tab_name) = lt_split[ 1 ]. \"usuwany tą wartość z tabeli DELETE lt_split INDEX 1. et_processed_data = lt_split. ev_table_name = lv_tab_name. ENDMETHOD. ENDCLASS. Jeżeli mimo opisu nie do końca rozumiesz co dzieje się w kodzie to się nie przejmuj. Jak program będzie już gotowy po prostu przedebugguj się przez niego.\nObsługa plików z serwera aplikacji Zacznijmy od umieszczenia pliku na serwerze aplikacji. Jak wspominałem wcześniej w al11 możemy zobaczyć pliki w tym samym miejscu w którym widać je z poziomu systemu operacyjnego. Możemy więc przenieść je tam za pomocą ssh i nadając im uprawnienia dla npladm, lub użyć modułu funkcyjnego ARCHIVFILE_CLIENT_TO_SERVER. Ważne jest aby koniecznie przed wprowadzaniem danych zaznaczyć flagę Uppercase/Lowercase.\nNastępnie w path podajemy ścieżkę do pliku na naszym systemie operacyjnym (w Windows będzie ona zaczynać się prawdopodobnie od C:), natomiast w targetpath ścieżkę w której chcemy zapisać plik na serwerze aplikacji. Następnie uruchamiamy modół i sprawdzamy czy plik faktycznie znajduje się w katalogu /usr/sap/NPL/D00/work/.\nJeżeli dwa razy klikniemy w plik powinniśmy zobaczyć jego zawartość:\nPrzejdźmy teraz do definicji klasy ZCL_FILE_SERVER CLASS zcl_file_server DEFINITION INHERITING FROM zcl_file PUBLIC FINAL CREATE PUBLIC. PUBLIC SECTION. METHODS constructor IMPORTING iv_path TYPE string. METHODS process_server_data. METHODS: get_ov_path RETURNING VALUE(r_result) TYPE string, set_ov_path IMPORTING iv_ov_path TYPE string. PROTECTED SECTION. PRIVATE SECTION. DATA: ov_path TYPE string. ENDCLASS. Klasa dziedziczy po klasie ZCL_FILE i dlatego potrzebujemy INHERITING FROM. Po naszej klasie nie będzie można dziedziczyć, dlatego posiada dopisek „final”. Wewnątrz klasy tworzymy prywatny parametr path, który odczytać możemy za pomocą gettera a zapisać za pomocą settera. Jest to zgodne z zasadami programowania obiektowego, i umożliwia nam stworzenie np. dodatkowej walidacji w setterze gdzie możemy sprawdzić czy nasza ścieżka zawiera charakterystyczne znaki jak np. „/”. Do parametru prywatnego nie mamy dostępu zarówno z poziomu obiektu klasy, jak i w przypadku dziedziczenia. Implementacja będzie wyglądać następująco:\nCLASS zcl_file_server IMPLEMENTATION. METHOD constructor. \"konstruktor jest wywoływany podczas tworzenia obiektu i ustawia argument klasy \"ov_path przy użyciu settera \"zgodnie z wymaganimi musimy zawsze wywołać konstruktor nadrzędny, który mimo \"tego że nie jest przez nas zadeklarowany to niejawnie istnieje super-\u003econstructor( ). set_ov_path( iv_ov_path = iv_path ). ENDMETHOD. METHOD process_server_data. \"tworzymy strukturę typu string DATA ls_data TYPE t_string_tab. \"pobieramy ścieżkę do pliku z atrybutu ov_path DATA(lv_path) = get_ov_path( ). \"otwieramy nasz plik z danymi do odczytu w trybie tekstowym OPEN DATASET lv_path FOR INPUT IN TEXT MODE ENCODING DEFAULT. \"jeśli pojawi się błąd, pokaż wiadomość o błędzie IF sy-subrc \u003c\u003e 0. MESSAGE 'Can not open file for read' TYPE 'E'. EXIT. ENDIF. DO. \"czytaj plik linia po linii READ DATASET lv_path INTO ls_data. \"jeśli wystąpił błąd to plik prawdopodobnie został już odczytany do końca IF sy-subrc \u003c\u003e 0. EXIT. ENDIF. \"wywołaj metodę process_table z ZCL_FILE (dziedziczymy ją) \"do tabeli wyeksportuj linie z naszego pliku i pobierz \"danę oraz tabele do ktorej należy je wpisać. process_table( EXPORTING is_line_to_insert = ls_data IMPORTING et_processed_data = DATA(lt_ctab) ev_table_name = DATA(lv_tab) ). \"wywołaj metodę insert_to_table z ZCL_FILE (dziedziczymy ją) \"do tabeli wyeksportuj dane, oraz nazwę tabeli \"do której należy je wpisać insert_to_table( EXPORTING iv_table_name = lv_tab it_table = lt_ctab ). ENDDO. \"jeśli wszystko poszło ok, wyświetl komunikat o błędzie MESSAGE 'Processing succesfull' TYPE 'S'. ENDMETHOD. METHOD get_ov_path. r_result = me-\u003eov_path. ENDMETHOD. METHOD set_ov_path. me-\u003eov_path = iv_ov_path. ENDMETHOD. ENDCLASS. Raport uruchamiający przetważanie Finalnie możemy przejść do stworzenia raportu który będzie odpowiedzialny za uruchamianie naszej implementacji:\nREPORT zload_data. PARAMETERS: pa_path TYPE dxfields-longpath LOWER CASE, pa_sapp RADIOBUTTON GROUP rb1 USER-COMMAND gr1 DEFAULT 'X', pa_sagu RADIOBUTTON GROUP rb1. \"Obsługa evetu który umożliwia nam wyświetlenie menu z pomocą we wprowadzeniu \"ściezki do parametru path AT SELECTION-SCREEN ON VALUE-REQUEST FOR pa_path. DATA(lv_loc) = SWITCH dxfields-location( pa_sapp WHEN abap_true THEN 'A' WHEN abap_false THEN 'P' ). CALL FUNCTION 'F4_DXFILENAME_TOPRECURSION' EXPORTING i_location_flag = lv_loc i_path = pa_path IMPORTING o_path = pa_path EXCEPTIONS rfc_error = 1 error_with_gui = 2 OTHERS = 3. IF sy-subrc \u0026lt;\u003e 0. MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4. ENDIF. AT SELECTION-SCREEN. IF sy-ucomm \u0026lt;\u003e 'GR1' AND pa_path IS INITIAL. MESSAGE 'File path is required' TYPE 'E'. ENDIF. START-OF-SELECTION. DATA: lt_tab TYPE zcl_file=\u003ett_string_tab. IF pa_sagu = abap_true. \"tworzymy nowy obiekt DATA(lobj_app_server) = NEW zcl_file_gui( ). \"chcemy znać powód dla którego nie możemy zauploadować pliku \"z GUI, dlatego EXCEPTIONS są odkomentowane w całości cl_gui_frontend_services=\u003egui_upload( EXPORTING filename = CONV #( pa_path ) CHANGING data_tab = lt_tab EXCEPTIONS file_open_error = 1 file_read_error = 2 no_batch = 3 gui_refuse_filetransfer = 4 invalid_type = 5 no_authority = 6 unknown_error = 7 bad_data_format = 8 header_not_allowed = 9 separator_not_allowed = 10 header_too_long = 11 unknown_dp_error = 12 access_denied = 13 dp_out_of_memory = 14 disk_full = 15 dp_timeout = 16 not_supported_by_gui = 17 error_no_gui = 18 OTHERS = 19 ). IF sy-subrc \u0026lt;\u003e 0. MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4. ENDIF. \"uruchamiamy metodę process_gui_data i przekazuemy dane wczytane z GUI lobj_app_server-\u003eprocess_gui_data( lt_table = lt_tab ). ELSE. \"tworzymy obiekt i przekazujemy wymagne dane do konstruktora DATA(lobj_file_server) = NEW zcl_file_server( iv_path = CONV #( pa_path ) ). \"uruchamiamy metodę do przetwarzania danych z serwera apikacji lobj_file_server-\u003eprocess_server_data( ). ENDIF. Text elementy do raportu powinny wyglądać następująco:\nFinalnie powinniśmy mieć trzy nowe klasy i raport oraz dwie tabele i plik widoczny w al11:\nPrzed uruchomieniem programu tabele powinny być puste, natomiast po jego uruchomieniu powinny wypełnić się danymi:\nW tej lekcji to już wszystko. Jeśli plik przeprocesował się poprawnie, wpisy w obu tabelach powinny pojawić się natychmiast po uruchomieniu. Pliki utworzone podczas tej lekcji możecie znaleźć też na githubie:\nhttps://github.com/pawelwiejkut/abap_operacje_na_plikach.git\n",
+  "wordCount" : "1609",
+  "inLanguage": "en",
+  "datePublished": "2019-05-06T17:53:34+01:00",
+  "dateModified": "2019-05-06T17:53:34+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pawelwiejkut.dev/posts/dzialania-na-plikach/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pawel Wiejkut",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pawelwiejkut.dev/profile.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://pawelwiejkut.dev/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://pawelwiejkut.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span><i class='fa fa-heart'></i>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/sac-tutorial/" title="SAC">
+                    <span>SAC</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
+                    <span>ABAP od postaw 🇵🇱 </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pawelwiejkut.dev/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Działania na plikach
+    </h1>
+    <div class="post-meta"><span title='2019-05-06 17:53:34 +0100 +0100'>May 6, 2019</span>&nbsp;·&nbsp;8 min&nbsp;|&nbsp;<a href="https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content/posts/dzialania-na-plikach.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:</p>
+<p>employees <a href="/dzialania_na_plikach/employees.csv">Pobierz</a></br></p>
+<p>Procedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:</p>
+<ul>
+<li>wczytać dane od użytkownika,</li>
+<li>wprowadzić nowe wpisy od użytkownika do bazy ,</li>
+<li>wprowadzić wpisy z serwera aplikacji do bazy.</br></li>
+</ul>
+<p>Fajnie byłoby aby program był tak dynamicznie napisany, że nie będziemy musieli go zmieniać nawet jeżeli będziemy chcieć „wpisać” dane do tabeli określonej w pierwszej kolumnie naszego pliku. Jeżeli otworzymy zbiór danych, zobaczymy że prezentują się one następująco:</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/dzialania_na_plikach/1.png#center" width="60%"/> 
+</figure>
+
+<p>Uwaga, w tym artykule przedstawiam dwa ważne rozdziały: operacje na plikach i programowanie obiektowe. Jeśli niektóre rozwiązania są dla Ciebie niejasne, bądź też chcesz dowiedzieć się więcej to <mark>
+zapraszam Cię do zapoznania się z ofertą: <a href="https://saponit.pl/kurs-abap/">https://saponit.pl/kurs-abap/</a> </mark></p>
+<h1 id="tworzymy-dodatkową-tabelę">Tworzymy dodatkową tabelę<a hidden class="anchor" aria-hidden="true" href="#tworzymy-dodatkową-tabelę">#</a></h1>
+<p>Pierwszą kolumną w pliku csv oznaczona jest nazwa tabeli do której chcemy wpisać dane. Dwie kolejne zawierają dane które chcemy do podanych tabel wpisać. Potrzebujemy zatem poza tabelką ZEMPLOYEES jeszcze tabelę ZSALARIES. Możemy ją szybko utworzyć w eclipse:</p>
+<p><figure class="align-center ">
+    <img loading="lazy" src="/dzialania_na_plikach/2.png#center" width="60%"/> 
+</figure>
+
+<figure class="align-center ">
+    <img loading="lazy" src="/dzialania_na_plikach/3.png#center" width="60%"/> 
+</figure>
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">@</span>EndUserText.label : <span style="color:#e6db74">&#39;Employees salaries&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">@</span>AbapCatalog.enhancementCategory : <span style="color:#960050;background-color:#1e0010">#</span>NOT_EXTENSIBLE
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">@</span>AbapCatalog.tableCategory : <span style="color:#960050;background-color:#1e0010">#</span>TRANSPARENT
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">@</span>AbapCatalog.deliveryClass : <span style="color:#960050;background-color:#1e0010">#</span>A
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">@</span>AbapCatalog.dataMaintenance : <span style="color:#960050;background-color:#1e0010">#</span>LIMITED
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">define</span> <span style="color:#66d9ef">table</span> zsalaries <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">key</span> <span style="color:#66d9ef">id</span> : char3 <span style="color:#f92672">not</span> null;
+</span></span><span style="display:flex;"><span>  amount : integer64; <span style="color:#960050;background-color:#1e0010">}</span></span></span></code></pre></div>
+<p>Tabele mamy gotowe, fajnie byłoby gdybyśmy mogli nie tylko używać plików pobranych od użytkownika, ale również tych które są dostępne na app serwerze. O tym ostatnim jeszcze nie pisałem w żadnych z poprzednich poradników. Nowością jest tu transakcja al11, która służy w NetVeawer do przechowywania plików. Można powiedzieć, że jest ona odpowiednikiem windowsowego explorera, widać w niej foldery odpowiadające tym faktycznie umieszczonym na dysku twardym wirtualnej maszyny:</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/dzialania_na_plikach/4.png#center" width="80%"/> 
+</figure>
+
+<p>Dostęp do plików z poziomu ABAPa odpowiada dostępowi z poziomu systemu operacyjnego. Jest to o tyle ważne, że jeżeli używamy Windowsa to wielkość znaków w ścieżce do pliku nie ma znaczenia, <mark>natomiast w przypadku Linuxa jest odwrotnie. Nasz serwer aplikacji zainstalowany jest na maszynie z Linuxem</mark>, natomiast serwer prezentacji (czyli SAP GUI) możemy mieć zainstalowany na dowolnym systemie operacyjnym, np. Windows.
+Nasz development będzie składać się z dwóch klas i raportu służącego do uruchomienia. Wykorzystamy tutaj dziedziczenie, czyli jedną z zalet programowania obiektowego. Jeżeli chcielibyśmy przedstawić klasy graficznie wyglądałoby to następująco:</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/dzialania_na_plikach/5.png#center" width="80%"/> 
+</figure>
+
+<h1 id="klasa-po-której-będziemy-dziedziczyć">Klasa po której będziemy dziedziczyć<a hidden class="anchor" aria-hidden="true" href="#klasa-po-której-będziemy-dziedziczyć">#</a></h1>
+<ol>
+<li>Zacznijmy od eclipse i stwórzmy pierwszą klasę ZCL_FILE. Po pierwsze musimy zadeklarować potrzebne typy danych:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">CLASS</span> zcl_file <span style="color:#66d9ef">DEFINITION</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PUBLIC</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">CREATE PUBLIC</span> .
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PUBLIC SECTION</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">TYPES</span> t_string_tab  <span style="color:#66d9ef">TYPE </span>string.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">TYPES</span> tt_string_tab <span style="color:#66d9ef">TYPE STANDARD TABLE OF</span> t_string_tab.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">METHODS</span> insert_to_table
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">IMPORTING</span> iv_table_name <span style="color:#66d9ef">TYPE </span>string
+</span></span><span style="display:flex;"><span>                it_table      <span style="color:#66d9ef">TYPE </span>STANDARD <span style="color:#66d9ef">TABLE</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PROTECTED SECTION</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">METHODS</span> process_table
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">IMPORTING</span> is_line_to_insert <span style="color:#66d9ef">TYPE </span>t_string_tab
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">EXPORTING</span> et_processed_data <span style="color:#66d9ef">TYPE </span>tt_string_tab
+</span></span><span style="display:flex;"><span>                ev_table_name     <span style="color:#66d9ef">TYPE </span>string.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PRIVATE SECTION</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ENDCLASS</span>.</span></span></code></pre></div>
+<p>Określamy najpierw własne typy: strukturę zwierającą tylko stringi i tabelę do niej. W sekcji publicznej tworzymy również dwie metody. Pierwsza z nich ma za zadanie wpisać nasze dane do tabeli, natomiast druga jest odpowiedzialna za odczytanie przekazanej lini z tabeli i określenia do jakiej tabeli wpis powinien trafić.</p>
+<ol start="2">
+<li>Implementacja:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">CLASS</span> zcl_file <span style="color:#66d9ef">IMPLEMENTATION</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">METHOD</span> <span style="color:#a6e22e">insert_to_table</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;deklarujemy tabele stringów
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">DATA</span>:lt_tab  <span style="color:#66d9ef">TYPE </span>tt_string_tab.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;oraz dwie referencje, do danych i do opisu struktury
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">DATA</span>:
+</span></span><span style="display:flex;"><span>      lr_str  <span style="color:#66d9ef">TYPE REF TO</span> <span style="color:#66d9ef">data</span>,
+</span></span><span style="display:flex;"><span>      lr_strd <span style="color:#66d9ef">TYPE REF TO</span> cl_abap_structdescr.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;tworzymy sobie referencje
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">CREATE DATA</span> lr_str TYPE (iv_table_name).
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;i przypisujemy ją do field-sybolu
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">ASSIGN</span> lr_str-&gt;* <span style="color:#66d9ef">TO</span> <span style="color:#66d9ef">FIELD</span><span style="color:#f92672">-</span>SYMBOL(&lt;ls_str&gt;).
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;pobieramy refernecję do opisu naszej struktury na podstawie field-symbolu
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">&#34;(można było również pobrać ją po nazwie)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    lr_strd <span style="color:#f92672">?=</span> cl_abap_tabledescr<span style="color:#f92672">=&gt;</span><span style="color:#a6e22e">describe_by_data_ref</span>( lr_str ).
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;wykonujemy petle po wszytskich komponentach naszej struktury
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">&#34;(w przypadku zemployees będzie tu:ID,NAME,LAST_NAME)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">LOOP AT </span>lr_strd<span style="color:#f92672">-&gt;</span>components <span style="color:#66d9ef">ASSIGNING</span> <span style="color:#66d9ef">FIELD</span><span style="color:#f92672">-</span>SYMBOL(&lt;ls_comp&gt;).
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">&#34;każdy z komponentów przypisujemy do zmiennej
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">ASSIGN</span> <span style="color:#66d9ef">COMPONENT</span> &lt;ls_comp&gt;<span style="color:#f92672">-</span>name <span style="color:#66d9ef">OF STRUCTURE</span> &lt;ls_str&gt; <span style="color:#66d9ef">TO</span> <span style="color:#66d9ef">FIELD</span><span style="color:#f92672">-</span>SYMBOL(&lt;lv_comp&gt;).
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">&#34;z odczytanej lini z danymi bierzemy odpowiednią wartość, o takiej samej kolejności
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#75715e">&#34;jak ta odczytana z kompnentu
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#75715e">&#34;(w przypadku naszego pliku pierwsze będzie tu: JNO &#34;)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">ASSIGN</span> it_table[ sy<span style="color:#f92672">-</span>tabix ] <span style="color:#66d9ef">TO</span> <span style="color:#66d9ef">FIELD</span><span style="color:#f92672">-</span>SYMBOL(&lt;ls_ctab&gt;) .
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">&#34;do struktury przypisujemy dane z odczytanej lini, teraz nasze dane
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#75715e">&#34;powinny być w poprawnym typie w &lt;ls_str&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      &lt;lv_comp&gt; <span style="color:#f92672">=</span> &lt;ls_ctab&gt;.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ENDLOOP</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;wpisujemy dane do tabeli w bazie danych
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">MODIFY</span> (iv_table_name) <span style="color:#66d9ef">FROM</span> &lt;ls_str&gt;.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;jeśli wystąpi błąd, zwróć wiadomość
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">IF</span> sy<span style="color:#f92672">-</span>subrc <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>.
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">MESSAGE</span> <span style="color:#e6db74">&#39;Error occured while modify&#39;</span> TYPE <span style="color:#e6db74">&#39;E&#39;</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ENDIF</span>.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ENDMETHOD</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">METHOD</span> <span style="color:#a6e22e">process_table</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;podziel linie po przecinku tak żeby powstała z nich tabela
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">SPLIT</span> is_line_to_insert <span style="color:#66d9ef">AT</span> <span style="color:#e6db74">&#39;,&#39;</span> <span style="color:#66d9ef">INTO</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">DATA</span>(lt_split).
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;wybierz pierwszą wartość, która opisuje tabelę do której
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">&#34;trafią dane
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">DATA</span>(lv_tab_name) <span style="color:#f92672">=</span> lt_split[ <span style="color:#ae81ff">1</span> ].
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;usuwany tą wartość z tabeli
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">DELETE</span> lt_split <span style="color:#66d9ef">INDEX</span> <span style="color:#ae81ff">1</span>.
+</span></span><span style="display:flex;"><span>    et_processed_data <span style="color:#f92672">=</span> lt_split.
+</span></span><span style="display:flex;"><span>    ev_table_name <span style="color:#f92672">=</span> lv_tab_name.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ENDMETHOD</span>.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ENDCLASS</span>.</span></span></code></pre></div>
+<p>Jeżeli mimo opisu nie do końca rozumiesz co dzieje się w kodzie to się nie przejmuj. Jak program będzie już gotowy po prostu przedebugguj się przez niego.</p>
+<h1 id="obsługa-plików-z-serwera-aplikacji">Obsługa plików z serwera aplikacji<a hidden class="anchor" aria-hidden="true" href="#obsługa-plików-z-serwera-aplikacji">#</a></h1>
+<p>Zacznijmy od umieszczenia pliku na serwerze aplikacji. Jak wspominałem wcześniej w al11 możemy zobaczyć pliki w tym samym miejscu w którym widać je z poziomu systemu operacyjnego. Możemy więc przenieść je tam za pomocą ssh i nadając im uprawnienia dla npladm, lub użyć modułu funkcyjnego ARCHIVFILE_CLIENT_TO_SERVER. Ważne jest aby koniecznie przed wprowadzaniem danych zaznaczyć flagę Uppercase/Lowercase.</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/dzialania_na_plikach/6.png#center" width="80%"/> 
+</figure>
+
+<p>Następnie w path podajemy ścieżkę do pliku na naszym systemie operacyjnym (w Windows będzie ona zaczynać się prawdopodobnie od C:), natomiast w targetpath ścieżkę w której chcemy zapisać plik na serwerze aplikacji. Następnie uruchamiamy modół i sprawdzamy czy plik faktycznie znajduje się w katalogu /usr/sap/NPL/D00/work/.</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/dzialania_na_plikach/7.png#center" width="60%"/> 
+</figure>
+
+<p>Jeżeli dwa razy klikniemy w plik powinniśmy zobaczyć jego zawartość:</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/dzialania_na_plikach/8.png#center" width="40%"/> 
+</figure>
+
+<ol start="3">
+<li>Przejdźmy teraz do definicji klasy ZCL_FILE_SERVER</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">CLASS</span> zcl_file_server <span style="color:#66d9ef">DEFINITION</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">INHERITING FROM</span> zcl_file
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PUBLIC</span>
+</span></span><span style="display:flex;"><span>  FINAL
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">CREATE PUBLIC</span>.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PUBLIC SECTION</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">METHODS</span> constructor
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">IMPORTING</span> iv_path <span style="color:#66d9ef">TYPE </span>string.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">METHODS</span> process_server_data.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">METHODS</span>: get_ov_path <span style="color:#66d9ef">RETURNING</span> <span style="color:#66d9ef">VALUE</span>(r_result) <span style="color:#66d9ef">TYPE </span>string,
+</span></span><span style="display:flex;"><span>      set_ov_path <span style="color:#66d9ef">IMPORTING</span> iv_ov_path <span style="color:#66d9ef">TYPE </span>string.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PROTECTED SECTION</span>.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PRIVATE SECTION</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">DATA</span>: ov_path <span style="color:#66d9ef">TYPE </span>string.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ENDCLASS</span>.</span></span></code></pre></div>
+<p>Klasa dziedziczy po klasie ZCL_FILE i dlatego potrzebujemy INHERITING FROM. Po naszej klasie nie będzie można dziedziczyć, dlatego posiada dopisek „final”. Wewnątrz klasy tworzymy prywatny parametr path, który odczytać możemy za pomocą gettera a zapisać za pomocą settera. Jest to zgodne z zasadami programowania obiektowego, i umożliwia nam stworzenie np. dodatkowej walidacji w setterze gdzie możemy sprawdzić czy nasza ścieżka zawiera charakterystyczne znaki jak np. „/”. Do parametru prywatnego nie mamy dostępu zarówno z poziomu obiektu klasy, jak i w przypadku dziedziczenia. Implementacja będzie wyglądać następująco:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">CLASS</span> zcl_file_server <span style="color:#66d9ef">IMPLEMENTATION</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">METHOD</span> <span style="color:#a6e22e">constructor</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;konstruktor jest wywoływany podczas tworzenia obiektu i ustawia argument klasy
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">&#34;ov_path przy użyciu settera
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">&#34;zgodnie z wymaganimi musimy zawsze wywołać konstruktor nadrzędny, który mimo
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">&#34;tego że nie jest przez nas zadeklarowany to niejawnie istnieje
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    super<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">constructor</span>( ).
+</span></span><span style="display:flex;"><span>    set_ov_path( iv_ov_path <span style="color:#f92672">=</span> iv_path  ).
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ENDMETHOD</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">METHOD</span> <span style="color:#a6e22e">process_server_data</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;tworzymy strukturę typu string
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">DATA</span> ls_data <span style="color:#66d9ef">TYPE </span>t_string_tab.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;pobieramy ścieżkę do pliku z atrybutu ov_path
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">DATA</span>(lv_path) <span style="color:#f92672">=</span> get_ov_path( ).
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;otwieramy nasz plik z danymi do odczytu w trybie tekstowym
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">OPEN DATASET</span> lv_path <span style="color:#66d9ef">FOR</span> INPUT <span style="color:#66d9ef">IN</span> TEXT MODE ENCODING <span style="color:#66d9ef">DEFAULT</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;jeśli pojawi się błąd, pokaż wiadomość o błędzie
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">IF</span> sy<span style="color:#f92672">-</span>subrc <span style="color:#f92672">&lt;&gt;</span> <span style="color:#ae81ff">0</span>.
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">MESSAGE</span> <span style="color:#e6db74">&#39;Can not open file for read&#39;</span> TYPE <span style="color:#e6db74">&#39;E&#39;</span>.
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">EXIT</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ENDIF</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">DO</span>.
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">&#34;czytaj plik linia po linii
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">READ</span> DATASET lv_path <span style="color:#66d9ef">INTO</span> ls_data.
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">&#34;jeśli wystąpił błąd to plik prawdopodobnie został już odczytany do końca
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">IF</span> sy<span style="color:#f92672">-</span>subrc <span style="color:#f92672">&lt;&gt;</span> <span style="color:#ae81ff">0</span>.
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">EXIT</span>.
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">ENDIF</span>.
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">&#34;wywołaj metodę process_table z ZCL_FILE (dziedziczymy ją)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#75715e">&#34;do tabeli wyeksportuj linie z naszego pliku i pobierz
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#75715e">&#34;danę oraz tabele do ktorej należy je wpisać.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      process_table(
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">EXPORTING</span>
+</span></span><span style="display:flex;"><span>          is_line_to_insert <span style="color:#f92672">=</span> ls_data
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">IMPORTING</span>
+</span></span><span style="display:flex;"><span>          et_processed_data <span style="color:#f92672">=</span> <span style="color:#66d9ef">DATA</span>(lt_ctab)
+</span></span><span style="display:flex;"><span>          ev_table_name     <span style="color:#f92672">=</span> <span style="color:#66d9ef">DATA</span>(lv_tab) ).
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">&#34;wywołaj metodę insert_to_table z ZCL_FILE (dziedziczymy ją)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#75715e">&#34;do tabeli wyeksportuj dane, oraz nazwę tabeli
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#75715e">&#34;do której należy je wpisać
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      insert_to_table(
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">EXPORTING</span>
+</span></span><span style="display:flex;"><span>          iv_table_name   <span style="color:#f92672">=</span> lv_tab
+</span></span><span style="display:flex;"><span>          it_table        <span style="color:#f92672">=</span> lt_ctab ).
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ENDDO</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;jeśli wszystko poszło ok, wyświetl komunikat o błędzie
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">MESSAGE</span> <span style="color:#e6db74">&#39;Processing succesfull&#39;</span> TYPE <span style="color:#e6db74">&#39;S&#39;</span>.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ENDMETHOD</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">METHOD</span> <span style="color:#a6e22e">get_ov_path</span>.
+</span></span><span style="display:flex;"><span>    r_result <span style="color:#f92672">=</span> me<span style="color:#f92672">-&gt;</span>ov_path.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ENDMETHOD</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">METHOD</span> <span style="color:#a6e22e">set_ov_path</span>.
+</span></span><span style="display:flex;"><span>    me<span style="color:#f92672">-&gt;</span>ov_path <span style="color:#f92672">=</span> iv_ov_path.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ENDMETHOD</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ENDCLASS</span>.</span></span></code></pre></div>
+<h1 id="raport-uruchamiający-przetważanie">Raport uruchamiający przetważanie<a hidden class="anchor" aria-hidden="true" href="#raport-uruchamiający-przetważanie">#</a></h1>
+<p>Finalnie możemy przejść do stworzenia raportu który będzie odpowiedzialny za uruchamianie naszej implementacji:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-abap" data-lang="abap"><span style="display:flex;"><span><span style="color:#66d9ef">REPORT</span> zload_data.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PARAMETERS</span>:
+</span></span><span style="display:flex;"><span>  pa_path <span style="color:#66d9ef">TYPE </span>dxfields<span style="color:#f92672">-</span>longpath <span style="color:#66d9ef">LOWER CASE</span>,
+</span></span><span style="display:flex;"><span>  pa_sapp <span style="color:#66d9ef">RADIOBUTTON GROUP</span> rb1 USER<span style="color:#f92672">-</span>COMMAND gr1 <span style="color:#66d9ef">DEFAULT</span> <span style="color:#e6db74">&#39;X&#39;</span>,
+</span></span><span style="display:flex;"><span>  pa_sagu <span style="color:#66d9ef">RADIOBUTTON GROUP</span> rb1.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;Obsługa evetu który umożliwia nam wyświetlenie menu z pomocą we wprowadzeniu
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;ściezki do parametru path
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">AT SELECTION-SCREEN ON VALUE-REQUEST FOR</span> pa_path.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">DATA</span>(lv_loc) <span style="color:#f92672">=</span> SWITCH dxfields<span style="color:#f92672">-</span>location( pa_sapp
+</span></span><span style="display:flex;"><span>                                           <span style="color:#66d9ef">WHEN</span> abap_true THEN <span style="color:#e6db74">&#39;A&#39;</span>
+</span></span><span style="display:flex;"><span>                                           <span style="color:#66d9ef">WHEN</span> abap_false THEN <span style="color:#e6db74">&#39;P&#39;</span> ).
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">CALL FUNCTION</span> <span style="color:#e6db74">&#39;F4_DXFILENAME_TOPRECURSION&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">EXPORTING</span>
+</span></span><span style="display:flex;"><span>      i_location_flag <span style="color:#f92672">=</span> lv_loc
+</span></span><span style="display:flex;"><span>      i_path          <span style="color:#f92672">=</span> pa_path
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">IMPORTING</span>
+</span></span><span style="display:flex;"><span>      o_path          <span style="color:#f92672">=</span> pa_path
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">EXCEPTIONS</span>
+</span></span><span style="display:flex;"><span>      rfc_error       <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      error_with_gui  <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">OTHERS</span>          <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">IF</span> sy<span style="color:#f92672">-</span>subrc <span style="color:#f92672">&amp;</span><span style="color:#f92672">lt</span>;<span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">MESSAGE</span> <span style="color:#66d9ef">ID</span> sy<span style="color:#f92672">-</span>msgid <span style="color:#66d9ef">TYPE </span>sy<span style="color:#f92672">-</span>msgty <span style="color:#66d9ef">NUMBER</span> sy<span style="color:#f92672">-</span>msgno
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">WITH</span> sy<span style="color:#f92672">-</span>msgv1 sy<span style="color:#f92672">-</span>msgv2 sy<span style="color:#f92672">-</span>msgv3 sy<span style="color:#f92672">-</span>msgv4.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ENDIF</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">AT SELECTION-SCREEN</span>.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">IF</span> sy<span style="color:#f92672">-</span>ucomm <span style="color:#f92672">&amp;</span><span style="color:#f92672">lt</span>;<span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;GR1&#39;</span> <span style="color:#f92672">AND</span> pa_path <span style="color:#f92672">IS INITIAL</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">MESSAGE</span> <span style="color:#e6db74">&#39;File path is required&#39;</span> TYPE <span style="color:#e6db74">&#39;E&#39;</span>.
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ENDIF</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">START-OF-SELECTION</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">DATA</span>: lt_tab <span style="color:#66d9ef">TYPE  </span>zcl_file<span style="color:#f92672">=&gt;</span>tt_string_tab.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">IF</span> pa_sagu <span style="color:#f92672">=</span> abap_true.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;tworzymy nowy obiekt
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">DATA</span>(lobj_app_server) <span style="color:#f92672">=</span> NEW zcl_file_gui( ).
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;chcemy znać powód dla którego nie możemy zauploadować pliku
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">&#34;z GUI, dlatego EXCEPTIONS są odkomentowane w całości
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    cl_gui_frontend_services<span style="color:#f92672">=&gt;</span><span style="color:#a6e22e">gui_upload</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">EXPORTING</span>
+</span></span><span style="display:flex;"><span>    filename                <span style="color:#f92672">=</span> CONV <span style="color:#960050;background-color:#1e0010">#</span>( pa_path )
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">CHANGING</span>
+</span></span><span style="display:flex;"><span>    data_tab                <span style="color:#f92672">=</span>  lt_tab
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">EXCEPTIONS</span>
+</span></span><span style="display:flex;"><span>    file_open_error         <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    file_read_error         <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    no_batch                <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>    gui_refuse_filetransfer <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>    invalid_type            <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>    no_authority            <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>    unknown_error           <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>    bad_data_format         <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>    header_not_allowed      <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>    separator_not_allowed   <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>    header_too_long         <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span>
+</span></span><span style="display:flex;"><span>    unknown_dp_error        <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>
+</span></span><span style="display:flex;"><span>    access_denied           <span style="color:#f92672">=</span> <span style="color:#ae81ff">13</span>
+</span></span><span style="display:flex;"><span>    dp_out_of_memory        <span style="color:#f92672">=</span> <span style="color:#ae81ff">14</span>
+</span></span><span style="display:flex;"><span>    disk_full               <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>    dp_timeout              <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span>
+</span></span><span style="display:flex;"><span>    not_supported_by_gui    <span style="color:#f92672">=</span> <span style="color:#ae81ff">17</span>
+</span></span><span style="display:flex;"><span>    error_no_gui            <span style="color:#f92672">=</span> <span style="color:#ae81ff">18</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">OTHERS</span>                  <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span> ).
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">IF</span> sy<span style="color:#f92672">-</span>subrc <span style="color:#f92672">&amp;</span><span style="color:#f92672">lt</span>;<span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>.
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">MESSAGE</span> <span style="color:#66d9ef">ID</span> sy<span style="color:#f92672">-</span>msgid <span style="color:#66d9ef">TYPE </span>sy<span style="color:#f92672">-</span>msgty <span style="color:#66d9ef">NUMBER</span> sy<span style="color:#f92672">-</span>msgno
+</span></span><span style="display:flex;"><span>                 <span style="color:#66d9ef">WITH</span> sy<span style="color:#f92672">-</span>msgv1 sy<span style="color:#f92672">-</span>msgv2 sy<span style="color:#f92672">-</span>msgv3 sy<span style="color:#f92672">-</span>msgv4.
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ENDIF</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;uruchamiamy metodę process_gui_data i przekazuemy dane wczytane z GUI
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    lobj_app_server<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">process_gui_data</span>( lt_table <span style="color:#f92672">=</span> lt_tab  ).
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ELSE</span>.
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;tworzymy obiekt i przekazujemy wymagne dane do konstruktora
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">DATA</span>(lobj_file_server) <span style="color:#f92672">=</span> NEW zcl_file_server( iv_path <span style="color:#f92672">=</span> CONV <span style="color:#960050;background-color:#1e0010">#</span>( pa_path ) ).
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&#34;uruchamiamy metodę do przetwarzania danych z serwera apikacji
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    lobj_file_server<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">process_server_data</span>( ).
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ENDIF</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> </span></span></code></pre></div>
+<p>Text elementy do raportu powinny wyglądać następująco:</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/dzialania_na_plikach/8a.png#center" width="70%"/> 
+</figure>
+
+<p>Finalnie powinniśmy mieć trzy nowe klasy i raport oraz dwie tabele i plik widoczny w al11:</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/dzialania_na_plikach/9.gif#center" width="70%"/> 
+</figure>
+
+<p>Przed uruchomieniem programu tabele powinny być puste, natomiast po jego uruchomieniu powinny wypełnić się danymi:</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/dzialania_na_plikach/10.gif#center" width="70%"/> 
+</figure>
+
+<p>W tej lekcji to już wszystko. Jeśli plik przeprocesował się poprawnie, wpisy w obu tabelach powinny pojawić się natychmiast po uruchomieniu. Pliki utworzone podczas tej lekcji możecie znaleźć też na githubie:</p>
+<p><a href="https://github.com/pawelwiejkut/abap_operacje_na_plikach.git">https://github.com/pawelwiejkut/abap_operacje_na_plikach.git</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://pawelwiejkut.dev/tags/abap/">ABAP</a></li>
+      <li><a href="https://pawelwiejkut.dev/tags/abap-od-podstaw/">ABAP od podstaw</a></li>
+    </ul>
+  </footer>
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup">
+<form action="https://pawelwiejkut.us19.list-manage.com/subscribe/post?u=ead4e0dc04f1f8c07403a39ac&amp;id=500c9c1881" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe for newsletter:</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ead4e0dc04f1f8c07403a39ac_500c9c1881" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+
+
+<script src="https://utteranc.es/client.js"
+        repo="pawelwiejkut/pawelwiejkut.dev"
+        issue-term="pathname"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://pawelwiejkut.dev/">Pawel Wiejkut</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+const images = Array.from(document.querySelectorAll(".post-content img"));
+images.forEach(img => {
+  mediumZoom(img, {
+    margin: 0,  
+    scrollOffset: 40,  
+    container: null,  
+    template: null  
+  });
+});
+</script>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SAC on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/sac/</link>
+    <description>Recent content in SAC on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Dec 2021 22:01:41 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/sac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a popup to change dimensions order</title>
+      <link>https://pawelwiejkut.dev/posts/sac-popup-order/</link>
+      <pubDate>Wed, 15 Dec 2021 22:01:41 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/sac-popup-order/</guid>
+      <description>Let&amp;rsquo;s start by creating the popup Rename new window Definitely we should arrange this new space. Start with a new List Box Add tree new buttons: UP, DOWN, Save and Close Change style on List Box to add borders Rename new elements Create a new button on the Canvas Create a script variable Change name and set as array Create onClick event for the new - Change Layout button // Get current dimensions var currentDimensions = Table_Games_Sales.</description>
+    </item>
+    
+    <item>
+      <title>Select dimensions by CheckBox and Button</title>
+      <link>https://pawelwiejkut.dev/posts/sac-button-checkbox/</link>
+      <pubDate>Mon, 13 Dec 2021 15:12:24 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/sac-button-checkbox/</guid>
+      <description>We need a CheckBox, it can be added from the toolbar Let&amp;rsquo;s change the background color of the CheckboxGroup. To do this, please click on the brush icon, bucket icon and then on more Change color to hex 1f303f Next change the font color Set new color to white, hex ffffff Remove the values from the Checkbox Rename checkbox to CheckboxGroup_Dimensions, bu click on the keys icon Add additional code to the Application - onInitialization // Get all dimensions var dimensions = Table_Games_Sales.</description>
+    </item>
+    
+    <item>
+      <title>SAC APP Design &amp; clean the filter button</title>
+      <link>https://pawelwiejkut.dev/posts/sac-app-design/</link>
+      <pubDate>Mon, 13 Dec 2021 12:15:41 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/sac-app-design/</guid>
+      <description>Button To clean the filter we need a button. Let&amp;rsquo;s get one from the plus in the toolbar Put the button near the Year dropdown and rename it Go to the Button_Clean_Filters - onClick Put the following code // Remove all filters from the model Table_Games_Sales.getDataSource().removeDimensionFilter(&amp;#34;Name&amp;#34;); Table_Games_Sales.getDataSource().removeDimensionFilter(&amp;#34;Publisher&amp;#34;); Table_Games_Sales.getDataSource().removeDimensionFilter(&amp;#34;Year&amp;#34;); //Set all dropdowns selection to empty Dropdown_Name.setSelectedKey(&amp;#39;&amp;#39;); Dropdown_Publisher.setSelectedKey(&amp;#39;&amp;#39;); Dropdown_Year.setSelectedKey(&amp;#39;&amp;#39;); Button should now work properly Design Please download image dataset from here
+Insert images using the plus in the toolbar</description>
+    </item>
+    
+    <item>
+      <title>Cascade filtering in SAC</title>
+      <link>https://pawelwiejkut.dev/posts/sac-app-dropdown-cascade/</link>
+      <pubDate>Sun, 12 Dec 2021 15:42:26 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/sac-app-dropdown-cascade/</guid>
+      <description>In this part of the tutorial, we are focusing on creating a cascade filter on the dropdown in SAC APP. Cascade means that filters on the dashboard will depend on each other. In the example, if you pick up the publisher name Nintendo then in the games list (Name) you should see only games that belong to Nintendo and no more others. To achieve this, we have to redesign our app a bit.</description>
+    </item>
+    
+    <item>
+      <title>Create and fill a dropdown in SAC APP</title>
+      <link>https://pawelwiejkut.dev/posts/sac-app-dropdown/</link>
+      <pubDate>Sun, 12 Dec 2021 14:13:53 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/sac-app-dropdown/</guid>
+      <description>Firstly we have to move our table a few lines down. This can be done by moving the mouse between the table and toolbar and drag and dropping when the cursor changes the icon: Click on the plus icon on the toolbar Select Dropdown form the list Lets rename the Table by click on tree dots -&amp;gt; Rename, and set new name to Table_Games_Sales Same with Dropdown, and put new name Dropdown_Name</description>
+    </item>
+    
+    <item>
+      <title>Simple APP on SAC</title>
+      <link>https://pawelwiejkut.dev/posts/sac-create-app/</link>
+      <pubDate>Sun, 12 Dec 2021 11:58:15 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/sac-create-app/</guid>
+      <description>We have a model so now it is time to build a SAC APP.
+Go to applications, click on Create Application Click on the table from at the toolbar Select a existing model Click on model that we created in the previous post Delete columns Add Measure/Dimension to rows Select Name and Publisher Quit panel Save application Click on Run Result should be similar to the image bellow </description>
+    </item>
+    
+    <item>
+      <title>Create new model on SAC</title>
+      <link>https://pawelwiejkut.dev/posts/sac-model/</link>
+      <pubDate>Sat, 11 Dec 2021 21:03:40 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/sac-model/</guid>
+      <description>Let&amp;rsquo;s build a very simple SAC model using kaggle data on video game sales.
+To create a model on SAC, firstly you have to login into your account (please search for trail if necessary). Next click on files, plus icon, and select model. Now, please click on From a CSV or Excel File Select Source File Download source file from Kaggle.
+Find vgsales.csv and load into SAC
+Click on import This model is very simple so we don&amp;rsquo;t have to change anything.</description>
+    </item>
+    
+  </channel>
+</rss>
