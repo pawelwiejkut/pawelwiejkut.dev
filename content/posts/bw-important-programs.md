@@ -1,5 +1,5 @@
 ---
-title: "BW important programs / Function modules "
+title: "BW important programs / Function modules / Tables "
 date: 2021-11-04T11:15:20+01:00
 tags: ["BW","ABAP","Function modules","Program"]
 aliases : [ bw_important_programs ]
@@ -36,3 +36,19 @@ Almost all of these programs are included in my GitHub development "bw_toolbox".
 | RSDG_IOBJ_REORG            | IOBJ     | PROG | Repair Infoobject                                   |
 | RSPC_PROCESS_FINISH        | RSPC     | PROG | Process chain  variant status change                |
 | BAPI_USER_UNLOCK           | N/A      | FM   | Unlock user                                         |
+
+## BW4 GUI Versions
+
+| Description                      | Name             | Type        |
+|----------------------------------|------------------|-------------|
+| DTP View                         | rsbk0001         | PROG        |
+| TRFN View                        | rstran_gui_start | PROG        |
+| DataSource View                  | rsds             | Transaction |
+| Infoprovider View (display data) | rsoadso          | Transaction |
+| Manage Request                   | rsmng            | Transaction |
+
+## Tables
+
+| Description                            | Name                  |
+|----------------------------------------|-----------------------|
+| Check iobj assigned to extractor field | RSTSFIELD RSOFIELSMAP |
