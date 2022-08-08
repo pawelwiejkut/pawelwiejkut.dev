@@ -10,17 +10,17 @@ editPost:
 ---
 Important transactions in the context of BW Fiori Apps:
 
-Tile Maitenance - category,group
-/ui2/flpd_cust
+Tile Maitenance - category,group</br>
+/ui2/flpd_cust</br>
 
-Transaltion
-SE63, Short Text, TABL, WDY_CONF_USERT2
+Transaltion</br>
+SE63, Short Text, TABL, WDY_CONF_USERT2</br></br>
 
-Cache
-/UI2/INVALIDATE_CLIENT_CACHES
-/UI2/INVALIDATE_GLOBAL_CACHES
-/UI5/APP_INDEX_CALCULATE
-/UI2/DELETE_CACHE
+Cache</br>
+/UI2/INVALIDATE_CLIENT_CACHES</br>
+/UI2/INVALIDATE_GLOBAL_CACHES</br>
+/UI5/APP_INDEX_CALCULATE</br>
+/UI2/DELETE_CACHE</br>
 
 
 
