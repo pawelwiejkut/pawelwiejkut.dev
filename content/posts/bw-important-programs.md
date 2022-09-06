@@ -52,3 +52,11 @@ Almost all of these programs are included in my GitHub development "bw_toolbox".
 | Description                            | Name                  |
 |----------------------------------------|-----------------------|
 | Check iobj assigned to extractor field | RSTSFIELD RSOFIELSMAP |
+
+### Others
+
+| Description                      | Name             | Type        |
+|----------------------------------|------------------|-------------|
+| Remove file                      | SCMS_FILE_DELETE | FM          |
+| Rename file                      | SCMS_FILE_COPY   | FM          |
+| Upload file                      | ARCHIVFILE_CLIENT_TO_SERVER    | FM |
