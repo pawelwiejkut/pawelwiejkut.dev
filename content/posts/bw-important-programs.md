@@ -37,7 +37,7 @@ Almost all of these programs are included in my GitHub development "bw_toolbox".
 | RSPC_PROCESS_FINISH        | RSPC     | PROG | Process chain  variant status change                |
 | BAPI_USER_UNLOCK           | N/A      | FM   | Unlock user                                         |
 
-## BW4 GUI Versions
+### BW4 GUI Versions
 
 | Description                      | Name             | Type        |
 |----------------------------------|------------------|-------------|
@@ -47,7 +47,7 @@ Almost all of these programs are included in my GitHub development "bw_toolbox".
 | Infoprovider View (display data) | rsoadso          | Transaction |
 | Manage Request                   | rsmng            | Transaction |
 
-## Tables
+### Tables
 
 | Description                            | Name                  |
 |----------------------------------------|-----------------------|
