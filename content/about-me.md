@@ -16,7 +16,7 @@ Nice to meet you 👋
 2. [Instagram](https://www.instagram.com/pawelwiejkut/)
 3. [Twitter](https://twitter.com/pawelwiejkut)
 4. [SAP profile](http://people.sap.com/pawelwiejkut)
-5. [Tik Tok](https://www.tiktok.com/@subrc0)
+5. [Tik Tok](https://www.tiktok.com/@pawelwiejkut)
 6. [Github](https://github.com/pawelwiejkut)
 7. [YouTube](https://www.youtube.com/user/PawelWiejkut)
 
