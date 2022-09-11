@@ -13,7 +13,7 @@ Nice to meet you 👋
 ## Social media
 
 1. [Linkedin](https://www.linkedin.com/in/pawelwiejkut/)
-2. [Instagram](https://www.instagram.com/subrc0/)
+2. [Instagram](https://www.instagram.com/pawelwiejkut/)
 3. [Twitter](https://twitter.com/pawelwiejkut)
 4. [SAP profile](http://people.sap.com/pawelwiejkut)
 5. [Tik Tok](https://www.tiktok.com/@subrc0)
