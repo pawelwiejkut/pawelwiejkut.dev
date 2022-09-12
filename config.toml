@@ -21,22 +21,27 @@ unsafe= true
   identifier = "tags"
   name = "Tags"
   url = "/tags/"
-  weight = 10 
+  weight = 6 
 [[menu.main]]
   identifier = "abap-od-podstaw"
   name = "ABAP od postaw 🇵🇱 "
   url = "/abap-od-podstaw/"
-  weight = 8
+  weight = 5
 [[menu.main]]
   identifier = "SAC"
   name = "SAC"
   url = "/sac-tutorial/" 
-  weight = 2
+  weight = 4
 [[menu.main]]
   identifier = "Aboutme"
   name = "About me"
   url = "/about-me/"
   weight = 2
+  [[menu.main]]
+  identifier = "BW"
+  name = "BW"
+  url = "/bw/"
+  weight = 3
 
 [params]
 description = 'Paweł Wiejkut homepage. ABAP BW SAC HANA Tips & Tricks 👨🏻‍💻'
