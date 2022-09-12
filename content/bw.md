@@ -7,7 +7,8 @@ ShowToc: true
 ---
 Important articles for quick-access: </br>
 [BW important programs / Function modules / Tables](https://pawelwiejkut.dev/posts/bw-important-programs/)</br>
-[BW formula parameters](https://pawelwiejkut.dev/posts/bw-formula-parameters/)</br></br>
+[BW formula parameters](https://pawelwiejkut.dev/posts/bw-formula-parameters/)</br>
+[Useful modern ABAP statements for BW transformations](https://pawelwiejkut.dev/posts/abap-trfn-bw/)</br></br>
 
 All BW relited articles:</br>
 [https://pawelwiejkut.dev/tags/bw/](https://pawelwiejkut.dev/tags/bw/)
