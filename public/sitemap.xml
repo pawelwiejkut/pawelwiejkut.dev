@@ -3,28 +3,35 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://pawelwiejkut.dev/posts/check-bpc-authorization/</loc>
-    <lastmod>2022-06-04T21:23:34+02:00</lastmod>
+    <loc>https://pawelwiejkut.dev/posts/bw-fiori/</loc>
+    <lastmod>2022-08-08T12:31:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://pawelwiejkut.dev/</loc>
-    <lastmod>2022-06-04T21:23:34+02:00</lastmod>
+    <lastmod>2022-08-08T12:31:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://pawelwiejkut.dev/posts/</loc>
-    <lastmod>2022-06-04T21:23:34+02:00</lastmod>
+    <lastmod>2022-08-08T12:31:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://pawelwiejkut.dev/tags/</loc>
+    <lastmod>2022-08-08T12:31:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawelwiejkut.dev/posts/check-bpc-authorization/</loc>
     <lastmod>2022-06-04T21:23:34+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -171,6 +178,13 @@
   </url>
   
   <url>
+    <loc>https://pawelwiejkut.dev/posts/lumira-cheatsheet/</loc>
+    <lastmod>2021-11-11T11:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://pawelwiejkut.dev/posts/abap1909-dev-m1/</loc>
     <lastmod>2021-11-10T20:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -186,6 +200,13 @@
   
   <url>
     <loc>https://pawelwiejkut.dev/about-me/</loc>
+    <lastmod>2021-11-04T11:15:14+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawelwiejkut.dev/bw/</loc>
     <lastmod>2021-11-04T11:15:14+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

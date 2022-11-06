@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://pawelwiejkut.dev/profile.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.100.1" />
+<meta name="generator" content="Hugo 0.105.0">
 <link rel="alternate" type="application/rss+xml" href="https://pawelwiejkut.dev/posts/index.xml">
 <noscript>
     <style>
@@ -146,6 +146,11 @@ if (!doNotTrack) {
                 </a>
             </li>
             <li>
+                <a href="https://pawelwiejkut.dev/bw/" title="BW">
+                    <span>BW</span>
+                </a>
+            </li>
+            <li>
                 <a href="https://pawelwiejkut.dev/sac-tutorial/" title="SAC">
                     <span>SAC</span>
                 </a>
@@ -175,6 +180,22 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>How AMDP TRFN is executed<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>ADSO definition:
+TRFN definition:
+In general execution looks like: ABAP Method-&gt;Call SQL on HANA-&gt;Execute … -&gt; select
+Step by step:
+From ABAP site: cl_rstran_db_stat=&gt;execute_haap() is executed with SQL like: SELECT &#34;FIELD1&#34; AS &#34;FIELD1&#34; , &#34;0RECORDMODE&#34; AS &#34;RECORDMODE&#34; , &#34;RECORD&#34; AS &#34;RECORD&#34; FROM &#34;SAPA4H&#34;.&#34;/1BCAMDP/0BW:DAP:TR_04TFNXDAAVG5T5E8AZJ239HYT&#34; (&#39;PLACEHOLDER&#39;=(&#39;$$aggregation$$&#39;,&#39;&#34;BW_HAP__________DB_AGGREGATION&#34;=&#39;&#39;&#39;&#39;&#39;), &#39;PLACEHOLDER&#39;=(&#39;$$client$$&#39;,&#39;001&#39;), &#39;PLACEHOLDER&#39;=(&#39;$$keydate$$&#39;,&#39;20211110&#39;), &#39;PLACEHOLDER&#39;=(&#39;$$langu$$&#39;,&#39;E&#39;), &#39;PLACEHOLDER&#39;=(&#39;$$objvers$$&#39;,&#39;&#34;OBJVERS&#34; = &#39;&#39;A&#39;&#39;&#39;), &#39;PLACEHOLDER&#39;=(&#39;$$shift_decimal_places$$&#39;,&#39;&#34;BW_HAP__________SHIFT_DECIMAL_PLACES&#34;=&#39;&#39;I&#39;&#39;&#39;), &#39;PLACEHOLDER&#39;=(&#39;TR_04TFNXDAAVG5T5E8AZJ239HYT.$$adso_dtp_extraction_mode$$&#39;,&#39;&#34;_IS_FULL_KEY&#34; = 1 AND ( (&#34;1TECHPROV_KEY&#34; = &#39;&#39;ZAMDP$C&#39;&#39; OR &#34;1TECHPROV_KEY&#34; = &#39;&#39;ZAMDP&#39;&#39; ) )&#39;), &#39;PLACEHOLDER&#39;=(&#39;TR_04TFNXDAAVG5T5E8AZJ239HYT.$$runid$$&#39;,&#39;&#34;BW_HAP__________RUNID&#34;=&#39;&#39;96SBW6PMF5XU9CAGGGHRMDRSY&#39;&#39; AND &#34;BW_HAP__________HAP_SEQ_NUMBER&#34;=&#39;&#39;0&#39;&#39;&#39;),&#39;PLACEHOLDER&#39; = (&#39;ce_settings&#39;, &#39;{&#34;enable_partitioned_execution&#34;: &#34;0&#34;, &#34;ceqo_enable_rownum_expr_general&#34;: &#34;1&#34;}&#39;) ) WITH HINT ( ROUTE_BY_CARDINALITY(&#34;/BIC/AZAMDP2&#34;) ) This is a</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-11-11 22:58:24 +0200 +0200'>November 11, 2021</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to How AMDP TRFN is executed" href="https://pawelwiejkut.dev/posts/how-amdp-is-executed/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Call SAP HANA function with table
     </h2>
   </header>
@@ -183,6 +204,18 @@ if (!doNotTrack) {
   </section>
   <footer class="entry-footer"><span title='2021-11-11 11:44:24 +0200 +0200'>November 11, 2021</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Call SAP HANA function with table" href="https://pawelwiejkut.dev/posts/call-function-table/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Call SAP HANA function with table
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>How to run the HANA SQL function where an output table is required? Example function (from this tutorial): CREATE TYPE &#34;TT_RESTAURANTS&#34; AS TABLE (&#34;node_id&#34; INTEGER, &#34;distance&#34; INTEGER, &#34;hops&#34; BIGINT); CREATE OR REPLACE PROCEDURE &#34;NEAREST_RESTAURANT&#34;(IN startV INT, OUT res &#34;TT_RESTAURANTS&#34;) LANGUAGE GRAPH READS SQL DATA AS BEGIN GRAPH g = Graph(&#34;SKIING&#34;); VERTEX v_s = Vertex(:g, :startV); MULTISET&lt;Vertex&gt; rests = v IN Vertices(:g) WHERE :v.&#34;restaurant&#34; == N&#39;TRUE&#39;; ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (INT &#34;distance&#34; = 0); ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (BIGINT &#34;hops&#34; = 0L); FOREACH rest in :rests { VERTEX v_rest = Vertex(:g, :rest....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-11-11 11:44:24 +0200 +0200'>November 11, 2021</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Call SAP HANA function with table" href="https://pawelwiejkut.dev/posts/lumira-cheatsheet/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -203,15 +236,15 @@ Install docker sudo apt-get update sudo apt-get install \ ca-certificates \ curl
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>BW important programs / Function modules 
+    <h2>BW important programs / Function modules / Tables 
     </h2>
   </header>
   <section class="entry-content">
     <p>Almost all of these programs are included in my GitHub development “bw_toolbox”. If you want, you can just implement this in an easy way to your system. Please check by clicking here.
-Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user </p>
+Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPM_PROCESS_MONITOR DTP PROG Change DTP request status ADSO RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user BW4 GUI Versions Description Name Type DTP View rsbk0001 PROG TRFN View rstran_gui_start PROG DataSource View rsds Transaction Infoprovider View (display data) rsoadso Transaction Manage Request rsmng Transaction Tables Description Name Check iobj assigned to extractor field RSTSFIELD RSOFIELSMAP Others Description Name Type Remove file SCMS_FILE_DELETE FM Rename file SCMS_FILE_COPY FM Upload file ARCHIVFILE_CLIENT_TO_SERVER FM </p>
   </section>
-  <footer class="entry-footer"><span title='2021-11-04 11:15:20 +0100 CET'>November 4, 2021</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to BW important programs / Function modules " href="https://pawelwiejkut.dev/posts/bw-important-programs/"></a>
+  <footer class="entry-footer"><span title='2021-11-04 11:15:20 +0100 CET'>November 4, 2021</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to BW important programs / Function modules / Tables " href="https://pawelwiejkut.dev/posts/bw-important-programs/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -278,31 +311,6 @@ We have to go to the transaction SGL1 and search for RSSM Now you should be able
   </section>
   <footer class="entry-footer"><span title='2021-01-10 20:44:24 +0200 +0200'>January 10, 2021</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to How to check who deleted your BW object?" href="https://pawelwiejkut.dev/posts/check-who-deleted/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Developing custom HANA adapter – quickstart
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>In this blog post, I will show you how you can fast start with developing custom HANA adapters in JAVA.
-S-User is required to download data provisioning agent: https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;_EVENT=DISPHIER&amp;HEADER=Y&amp;FUNCTIONBAR=N&amp;EVENT=TREE&amp;NE=NAVIGATE&amp;ENR=73555000100200005999&amp;V=MAINT&amp;TA=ACTUAL&amp;PAGE=SEARCH/HANA%20DP%20AGENT%202.0 I downloaded the Linux version, but windows should work too (I’m on Mac OS). I will proceed in SAP Hana Studio because Eclipse is missing some packages. If you don’t have SAP Hana Studio, please check: https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;_EVENT=DISPHIER&amp;HEADER=Y&amp;FUNCTIONBAR=N&amp;EVENT=TREE&amp;NE=NAVIGATE&amp;ENR=73554900100200000585&amp;V=MAINT&amp;TA=ACTUAL&amp;PAGE=SEARCH/SAP%20HANA%20STUDIO%202 Download missing plugins: https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api/2.3.0 https://mvnrepository....</p>
-  </section>
-  <footer class="entry-footer"><span title='2020-10-18 20:44:24 +0200 CEST'>October 18, 2020</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Developing custom HANA adapter – quickstart" href="https://pawelwiejkut.dev/posts/custom-hana-adapter/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Create new SAP client
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>In the SAP NetWeaver system, clients are used for many purposes. One of the business purposes can be handling many sub-companies on one system. From a development perspective, you can use a different client to protect your development or split the system by development and unit tests. Last time I also create a new client on my instance, to separate the client between data to my extractors and rest. How you can achieve this?...</p>
-  </section>
-  <footer class="entry-footer"><span title='2019-06-03 20:44:24 +0200 CEST'>June 3, 2019</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Create new SAP client" href="https://pawelwiejkut.dev/posts/new-sap-client/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

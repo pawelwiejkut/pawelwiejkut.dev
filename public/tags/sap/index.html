@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://pawelwiejkut.dev/profile.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.100.1" />
+<meta name="generator" content="Hugo 0.105.0">
 <link rel="alternate" type="application/rss+xml" href="https://pawelwiejkut.dev/tags/sap/index.xml">
 <noscript>
     <style>
@@ -131,6 +131,11 @@ if (!doNotTrack) {
                 </a>
             </li>
             <li>
+                <a href="https://pawelwiejkut.dev/bw/" title="BW">
+                    <span>BW</span>
+                </a>
+            </li>
+            <li>
                 <a href="https://pawelwiejkut.dev/sac-tutorial/" title="SAC">
                     <span>SAC</span>
                 </a>
@@ -164,8 +169,9 @@ if (!doNotTrack) {
     </h2>
   </header>
   <section class="entry-content">
-    <p>Process of building authorization in BW with and without BPC is different. Reason is that user authorizaitons are enhanced by roles assigned to them in
-Important SAP Note: https://launchpad.support.sap.com/#/notes/2366358</p>
+    <p>Process of building authorization in BW with, and without BPC, is different. Reason is user authorization are enhanced by roles assigned to them in BPC administration panel. For more information about this process you can search for Data Access Profiles (DAPs).
+Common ways Common ways to check the BW auth is:
+Execute query on the affected user in rsudo - But it may not be enough, please check more Check authorization log using SU53 Trace authorization using ST01, STAUTHTRACE or similar BPC Most important difference is that user is sometimes able to execute the query in rsrt, but in the same time is not able to execute the BPC Planing workbook laing on the same object....</p>
   </section>
   <footer class="entry-footer"><span title='2022-06-04 21:23:34 +0200 CEST'>June 4, 2022</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to How to trace BW BPC Authorization" href="https://pawelwiejkut.dev/posts/check-bpc-authorization/"></a>

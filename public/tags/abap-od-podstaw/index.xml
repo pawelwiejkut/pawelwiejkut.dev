@@ -64,7 +64,7 @@ Zaczynamy od skopiowania poprzedniego programu. Aby to zrobić, w transakcji se8
       <pubDate>Sun, 19 Mar 2017 17:01:40 +0100</pubDate>
       
       <guid>https://pawelwiejkut.dev/posts/tworzymy-alv-grid/</guid>
-      <description>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
+      <description>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
 Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
 Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy.</description>
     </item>

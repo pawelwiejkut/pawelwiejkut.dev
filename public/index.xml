@@ -6,15 +6,28 @@
     <description>Recent content on Pawel Wiejkut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jun 2022 21:23:34 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Aug 2022 12:31:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BW Fiori cheat sheet</title>
+      <link>https://pawelwiejkut.dev/posts/bw-fiori/</link>
+      <pubDate>Mon, 08 Aug 2022 12:31:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/bw-fiori/</guid>
+      <description>Important transactions in the context of BW Fiori Apps:
+Tile Maitenance - category,group /ui2/flpd_cust
+Transaltion SE63, Short Text, TABL, WDY_CONF_USERT2
+Cache /UI2/INVALIDATE_CLIENT_CACHES /UI2/INVALIDATE_GLOBAL_CACHES /UI5/APP_INDEX_CALCULATE /UI2/DELETE_CACHE</description>
+    </item>
+    
     <item>
       <title>How to trace BW BPC Authorization</title>
       <link>https://pawelwiejkut.dev/posts/check-bpc-authorization/</link>
       <pubDate>Sat, 04 Jun 2022 21:23:34 +0200</pubDate>
       
       <guid>https://pawelwiejkut.dev/posts/check-bpc-authorization/</guid>
-      <description>Process of building authorization in BW with and without BPC is different. Reason is that user authorizaitons are enhanced by roles assigned to them in
-Important SAP Note: https://launchpad.support.sap.com/#/notes/2366358</description>
+      <description>Process of building authorization in BW with, and without BPC, is different. Reason is user authorization are enhanced by roles assigned to them in BPC administration panel. For more information about this process you can search for Data Access Profiles (DAPs).
+Common ways Common ways to check the BW auth is:
+Execute query on the affected user in rsudo - But it may not be enough, please check more Check authorization log using SU53 Trace authorization using ST01, STAUTHTRACE or similar BPC Most important difference is that user is sometimes able to execute the query in rsrt, but in the same time is not able to execute the BPC Planing workbook laing on the same object.</description>
     </item>
     
     <item>
@@ -226,6 +239,15 @@ From ABAP site: cl_rstran_db_stat=&amp;gt;execute_haap() is executed with SQL li
     </item>
     
     <item>
+      <title>Call SAP HANA function with table</title>
+      <link>https://pawelwiejkut.dev/posts/lumira-cheatsheet/</link>
+      <pubDate>Thu, 11 Nov 2021 11:44:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/posts/lumira-cheatsheet/</guid>
+      <description>How to run the HANA SQL function where an output table is required? Example function (from this tutorial): CREATE TYPE &amp;#34;TT_RESTAURANTS&amp;#34; AS TABLE (&amp;#34;node_id&amp;#34; INTEGER, &amp;#34;distance&amp;#34; INTEGER, &amp;#34;hops&amp;#34; BIGINT); CREATE OR REPLACE PROCEDURE &amp;#34;NEAREST_RESTAURANT&amp;#34;(IN startV INT, OUT res &amp;#34;TT_RESTAURANTS&amp;#34;) LANGUAGE GRAPH READS SQL DATA AS BEGIN GRAPH g = Graph(&amp;#34;SKIING&amp;#34;); VERTEX v_s = Vertex(:g, :startV); MULTISET&amp;lt;Vertex&amp;gt; rests = v IN Vertices(:g) WHERE :v.&amp;#34;restaurant&amp;#34; == N&amp;#39;TRUE&amp;#39;; ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (INT &amp;#34;distance&amp;#34; = 0); ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (BIGINT &amp;#34;hops&amp;#34; = 0L); FOREACH rest in :rests { VERTEX v_rest = Vertex(:g, :rest.</description>
+    </item>
+    
+    <item>
       <title>How to install ABAP 1909 on mac M1</title>
       <link>https://pawelwiejkut.dev/posts/abap1909-dev-m1/</link>
       <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
@@ -239,13 +261,13 @@ Install docker sudo apt-get update sudo apt-get install \ ca-certificates \ curl
     </item>
     
     <item>
-      <title>BW important programs / Function modules </title>
+      <title>BW important programs / Function modules / Tables </title>
       <link>https://pawelwiejkut.dev/posts/bw-important-programs/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:20 +0100</pubDate>
       
       <guid>https://pawelwiejkut.dev/posts/bw-important-programs/</guid>
       <description>Almost all of these programs are included in my GitHub development &amp;ldquo;bw_toolbox&amp;rdquo;. If you want, you can just implement this in an easy way to your system. Please check by clicking here.
-Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user </description>
+Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPM_PROCESS_MONITOR DTP PROG Change DTP request status ADSO RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user BW4 GUI Versions Description Name Type DTP View rsbk0001 PROG TRFN View rstran_gui_start PROG DataSource View rsds Transaction Infoprovider View (display data) rsoadso Transaction Manage Request rsmng Transaction Tables Description Name Check iobj assigned to extractor field RSTSFIELD RSOFIELSMAP Others Description Name Type Remove file SCMS_FILE_DELETE FM Rename file SCMS_FILE_COPY FM Upload file ARCHIVFILE_CLIENT_TO_SERVER FM </description>
     </item>
     
     <item>
@@ -256,6 +278,16 @@ Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate t
       <guid>https://pawelwiejkut.dev/about-me/</guid>
       <description>Nice to meet you 👋
 My name is Pawel Wiejkut and I am an SAP Consultant since 2016. Since the beginning, my career is related to big data. In this blog, I share my knowledge about SAP &amp;amp; Databases. Besides, I am the author of saponit.pl platform where I teach people programming in ABAP in Polish. In my free time, I co-create projects on GitHub. Feel free to contact me via social media.</description>
+    </item>
+    
+    <item>
+      <title>BW</title>
+      <link>https://pawelwiejkut.dev/bw/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/bw/</guid>
+      <description>Important articles for quick-access: BW important programs / Function modules / Tables BW formula parameters Useful modern ABAP statements for BW transformations
+All BW relited articles: https://pawelwiejkut.dev/tags/bw/</description>
     </item>
     
     <item>
@@ -428,7 +460,7 @@ Zaczynamy od skopiowania poprzedniego programu. Aby to zrobić, w transakcji se8
       <pubDate>Sun, 19 Mar 2017 17:01:40 +0100</pubDate>
       
       <guid>https://pawelwiejkut.dev/posts/tworzymy-alv-grid/</guid>
-      <description>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
+      <description>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
 Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
 Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy.</description>
     </item>

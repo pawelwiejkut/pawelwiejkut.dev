@@ -7,13 +7,13 @@
 <meta name="robots" content="index, follow">
 <title>Tworzymy ALV Grid | Pawel Wiejkut</title>
 <meta name="keywords" content="ABAP, ABAP od podstaw" />
-<meta name="description" content="Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
+<meta name="description" content="Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
 Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
 Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy.">
 <meta name="author" content="">
 <link rel="canonical" href="https://pawelwiejkut.dev/posts/tworzymy-alv-grid/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.ac4bcbb73df0e6ab1ca259fb2803b8b2c1dd02cbb6ad0840029b799f5c5360ba.css" integrity="sha256-rEvLtz3w5qscoln7KAO4ssHdAsu2rQhAApt5n1xTYLo=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://pawelwiejkut.dev/profile.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://pawelwiejkut.dev/profile.png">
@@ -22,7 +22,7 @@ Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisuje
 <link rel="mask-icon" href="https://pawelwiejkut.dev/profile.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.100.1" />
+<meta name="generator" content="Hugo 0.105.0">
 <noscript>
     <style>
         #theme-toggle,
@@ -73,7 +73,7 @@ if (!doNotTrack) {
 }
 </script>
 <meta property="og:title" content="Tworzymy ALV Grid" />
-<meta property="og:description" content="Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
+<meta property="og:description" content="Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
 Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
 Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy." />
 <meta property="og:type" content="article" />
@@ -83,7 +83,7 @@ Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisuje
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tworzymy ALV Grid"/>
-<meta name="twitter:description" content="Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
+<meta name="twitter:description" content="Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
 Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
 Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy."/>
 
@@ -114,11 +114,11 @@ Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisuje
   "@type": "BlogPosting",
   "headline": "Tworzymy ALV Grid",
   "name": "Tworzymy ALV Grid",
-  "description": "Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.\nJeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/\nWchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy.",
+  "description": "Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.\nJeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/\nWchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy.",
   "keywords": [
     "ABAP", "ABAP od podstaw"
   ],
-  "articleBody": "Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.\nJeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/\nWchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy. Klikamy na Pattern. Przycisk ten jest odpowiedzialny za wywoływanie funkcji, metod itp. Wpisujemy nazwę funkcji: „REUSE_ALV_GRID_DISPLAY”. Aby skonfigurować funkcję Pretty Printer czyli formatowanie kodu, klikany na „Utilities” a następnie na „Settings”. Następnie ustawiamy opcje w zakładce „Abap editor” „Pretty printer” tak jak na ekranie poniżej. Wracamy do naszego programu, zmieniłam nieco funkcję usuwając niepotrzebne argumenty które nie będą wykorzystywane. W momencie kiedy będziesz pisać ten program spróbuj użyć skrótu klawiszowego alt + spacja, który jest odpowiedzialny za uzupełnianie i podpowiadanie. Spróbuj teraz sformatować kod programu. Służy do tego skrót klawiszowy shift + f1. GUI Zapewnia jeszcze jeden ważny feature, mianowicie możliwość sprawdzenia poprawności programu. Aby użyć tej funkcji należy kliknąć ikonę u góry bądź nacisnąć skrót klawiszowy ctrl+ F2. Końcowy program powinien wyglądać tak jak na ekranie poniżej. Następnie zapisujemy, aktywujemy i uruchamiamy program. *\u0026---------------------------------------------------------------------* *\u0026 Report ZALVGRID *\u0026---------------------------------------------------------------------* *\u0026 *\u0026---------------------------------------------------------------------* REPORT zalvgrid. DATA: l_tab_sflight TYPE STANDARD TABLE OF sflight. \"Tworzymy tabelę wewnętrzną SELECT * FROM sflight INTO TABLE l_tab_sflight. \"Pobieramy dane z tabeli zewnętrzej do wewnętrznej CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY' \"Wywołujemy funkcję odpowiedzialną za użycie tabeli EXPORTING i_structure_name = 'SFLIGHT' \"Nazwa struktury tabeli i_grid_title = 'Moja pierwsza tabela' \"Tytuł tabeli TABLES t_outtab = l_tab_sflight \"Zmieniana tabela EXCEPTIONS \"Wyjątki program_error = 1 OTHERS = 2. Końcowy efekt powinien wyglądać tak jak na zrzucie ekranu poniżej Gratulacje, właśnie napisałeś program który korzysta z modułu funcyjnego. Wiesz już też jak działa poprawianie czytelności kodu, sprawdzanie błędów, aktywacja, czy jego uruchamianie. W kolejnych poradnikach zajmiemy się modyfikacją tego pomysłu oraz jego rozbudowywaniem.\n",
+  "articleBody": "Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.\nJeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/\nWchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy. Klikamy na Pattern. Przycisk ten jest odpowiedzialny za wywoływanie funkcji, metod itp. Wpisujemy nazwę funkcji: „REUSE_ALV_GRID_DISPLAY”. Aby skonfigurować funkcję Pretty Printer czyli formatowanie kodu, klikany na „Utilities” a następnie na „Settings”. Następnie ustawiamy opcje w zakładce „Abap editor” „Pretty printer” tak jak na ekranie poniżej. Wracamy do naszego programu, zmieniłam nieco funkcję usuwając niepotrzebne argumenty które nie będą wykorzystywane. W momencie kiedy będziesz pisać ten program spróbuj użyć skrótu klawiszowego alt + spacja, który jest odpowiedzialny za uzupełnianie i podpowiadanie. Spróbuj teraz sformatować kod programu. Służy do tego skrót klawiszowy shift + f1. GUI Zapewnia jeszcze jeden ważny feature, mianowicie możliwość sprawdzenia poprawności programu. Aby użyć tej funkcji należy kliknąć ikonę u góry bądź nacisnąć skrót klawiszowy ctrl+ F2. Końcowy program powinien wyglądać tak jak na ekranie poniżej. Następnie zapisujemy, aktywujemy i uruchamiamy program. *\u0026---------------------------------------------------------------------* *\u0026 Report ZALVGRID *\u0026---------------------------------------------------------------------* *\u0026 *\u0026---------------------------------------------------------------------* REPORT zalvgrid. DATA: l_tab_sflight TYPE STANDARD TABLE OF sflight. \"Tworzymy tabelę wewnętrzną SELECT * FROM sflight INTO TABLE l_tab_sflight. \"Pobieramy dane z tabeli zewnętrzej do wewnętrznej CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY' \"Wywołujemy funkcję odpowiedzialną za użycie tabeli EXPORTING i_structure_name = 'SFLIGHT' \"Nazwa struktury tabeli i_grid_title = 'Moja pierwsza tabela' \"Tytuł tabeli TABLES t_outtab = l_tab_sflight \"Zmieniana tabela EXCEPTIONS \"Wyjątki program_error = 1 OTHERS = 2. Końcowy efekt powinien wyglądać tak jak na zrzucie ekranu poniżej Gratulacje, właśnie napisałeś program który korzysta z modułu funcyjnego. Wiesz już też jak działa poprawianie czytelności kodu, sprawdzanie błędów, aktywacja, czy jego uruchamianie. W kolejnych poradnikach zajmiemy się modyfikacją tego pomysłu oraz jego rozbudowywaniem.\n",
   "wordCount" : "332",
   "inLanguage": "en",
   "datePublished": "2017-03-19T17:01:40+01:00",
@@ -190,6 +190,11 @@ Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisuje
                 </a>
             </li>
             <li>
+                <a href="https://pawelwiejkut.dev/bw/" title="BW">
+                    <span>BW</span>
+                </a>
+            </li>
+            <li>
                 <a href="https://pawelwiejkut.dev/sac-tutorial/" title="SAC">
                     <span>SAC</span>
                 </a>
@@ -224,7 +229,7 @@ Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisuje
 
 </div>
   </header> 
-  <div class="post-content"><p>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.</p>
+  <div class="post-content"><p>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.</p>
 <p><mark>Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: <a href="https://saponit.pl/kurs-abap/">https://saponit.pl/kurs-abap/</a></mark></p>
 <ol>
 <li>Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami.</li>

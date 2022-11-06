@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://pawelwiejkut.dev/profile.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.100.1" />
+<meta name="generator" content="Hugo 0.105.0">
 <link rel="alternate" type="application/rss+xml" href="https://pawelwiejkut.dev/tags/hana/index.xml">
 <noscript>
     <style>
@@ -131,6 +131,11 @@ if (!doNotTrack) {
                 </a>
             </li>
             <li>
+                <a href="https://pawelwiejkut.dev/bw/" title="BW">
+                    <span>BW</span>
+                </a>
+            </li>
+            <li>
                 <a href="https://pawelwiejkut.dev/sac-tutorial/" title="SAC">
                     <span>SAC</span>
                 </a>
@@ -195,6 +200,18 @@ In both cases, the instance number is 02. Example in Eclipse:</p>
   </section>
   <footer class="entry-footer"><span title='2021-11-11 11:44:24 +0200 +0200'>November 11, 2021</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Call SAP HANA function with table" href="https://pawelwiejkut.dev/posts/call-function-table/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Call SAP HANA function with table
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>How to run the HANA SQL function where an output table is required? Example function (from this tutorial): CREATE TYPE &#34;TT_RESTAURANTS&#34; AS TABLE (&#34;node_id&#34; INTEGER, &#34;distance&#34; INTEGER, &#34;hops&#34; BIGINT); CREATE OR REPLACE PROCEDURE &#34;NEAREST_RESTAURANT&#34;(IN startV INT, OUT res &#34;TT_RESTAURANTS&#34;) LANGUAGE GRAPH READS SQL DATA AS BEGIN GRAPH g = Graph(&#34;SKIING&#34;); VERTEX v_s = Vertex(:g, :startV); MULTISET&lt;Vertex&gt; rests = v IN Vertices(:g) WHERE :v.&#34;restaurant&#34; == N&#39;TRUE&#39;; ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (INT &#34;distance&#34; = 0); ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (BIGINT &#34;hops&#34; = 0L); FOREACH rest in :rests { VERTEX v_rest = Vertex(:g, :rest....</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-11-11 11:44:24 +0200 +0200'>November 11, 2021</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Call SAP HANA function with table" href="https://pawelwiejkut.dev/posts/lumira-cheatsheet/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 

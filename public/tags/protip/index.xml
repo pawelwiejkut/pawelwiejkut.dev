@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Protip on Pawel Wiejkut</title>
+    <link>https://pawelwiejkut.dev/tags/protip/</link>
+    <description>Recent content in Protip on Pawel Wiejkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Nov 2021 11:15:14 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/protip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BW</title>
+      <link>https://pawelwiejkut.dev/bw/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/bw/</guid>
+      <description>Important articles for quick-access: BW important programs / Function modules / Tables BW formula parameters Useful modern ABAP statements for BW transformations
+All BW relited articles: https://pawelwiejkut.dev/tags/bw/</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,8 +13,9 @@
       <pubDate>Sat, 04 Jun 2022 21:23:34 +0200</pubDate>
       
       <guid>https://pawelwiejkut.dev/posts/check-bpc-authorization/</guid>
-      <description>Process of building authorization in BW with and without BPC is different. Reason is that user authorizaitons are enhanced by roles assigned to them in
-Important SAP Note: https://launchpad.support.sap.com/#/notes/2366358</description>
+      <description>Process of building authorization in BW with, and without BPC, is different. Reason is user authorization are enhanced by roles assigned to them in BPC administration panel. For more information about this process you can search for Data Access Profiles (DAPs).
+Common ways Common ways to check the BW auth is:
+Execute query on the affected user in rsudo - But it may not be enough, please check more Check authorization log using SU53 Trace authorization using ST01, STAUTHTRACE or similar BPC Most important difference is that user is sometimes able to execute the query in rsrt, but in the same time is not able to execute the BPC Planing workbook laing on the same object.</description>
     </item>
     
   </channel>

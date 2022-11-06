@@ -79,13 +79,13 @@ Install docker sudo apt-get update sudo apt-get install \ ca-certificates \ curl
     </item>
     
     <item>
-      <title>BW important programs / Function modules </title>
+      <title>BW important programs / Function modules / Tables </title>
       <link>https://pawelwiejkut.dev/posts/bw-important-programs/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:20 +0100</pubDate>
       
       <guid>https://pawelwiejkut.dev/posts/bw-important-programs/</guid>
       <description>Almost all of these programs are included in my GitHub development &amp;ldquo;bw_toolbox&amp;rdquo;. If you want, you can just implement this in an easy way to your system. Please check by clicking here.
-Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user </description>
+Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPM_PROCESS_MONITOR DTP PROG Change DTP request status ADSO RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user BW4 GUI Versions Description Name Type DTP View rsbk0001 PROG TRFN View rstran_gui_start PROG DataSource View rsds Transaction Infoprovider View (display data) rsoadso Transaction Manage Request rsmng Transaction Tables Description Name Check iobj assigned to extractor field RSTSFIELD RSOFIELSMAP Others Description Name Type Remove file SCMS_FILE_DELETE FM Rename file SCMS_FILE_COPY FM Upload file ARCHIVFILE_CLIENT_TO_SERVER FM </description>
     </item>
     
     <item>
@@ -188,7 +188,7 @@ Zaczynamy od skopiowania poprzedniego programu. Aby to zrobić, w transakcji se8
       <pubDate>Sun, 19 Mar 2017 17:01:40 +0100</pubDate>
       
       <guid>https://pawelwiejkut.dev/posts/tworzymy-alv-grid/</guid>
-      <description>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokarze po krotce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
+      <description>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
 Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
 Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy.</description>
     </item>

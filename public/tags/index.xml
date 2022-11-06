@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Pawel Wiejkut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jun 2022 21:23:34 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Aug 2022 12:31:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BW</title>
+      <link>https://pawelwiejkut.dev/tags/bw/</link>
+      <pubDate>Mon, 08 Aug 2022 12:31:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/tags/bw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cheatsheet</title>
+      <link>https://pawelwiejkut.dev/tags/cheatsheet/</link>
+      <pubDate>Mon, 08 Aug 2022 12:31:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/tags/cheatsheet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fiori</title>
+      <link>https://pawelwiejkut.dev/tags/fiori/</link>
+      <pubDate>Mon, 08 Aug 2022 12:31:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/tags/fiori/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>launchpad</title>
+      <link>https://pawelwiejkut.dev/tags/launchpad/</link>
+      <pubDate>Mon, 08 Aug 2022 12:31:24 +0200</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/tags/launchpad/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>auth</title>
       <link>https://pawelwiejkut.dev/tags/auth/</link>
@@ -22,15 +58,6 @@
       <pubDate>Sat, 04 Jun 2022 21:23:34 +0200</pubDate>
       
       <guid>https://pawelwiejkut.dev/tags/bpc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>BW</title>
-      <link>https://pawelwiejkut.dev/tags/bw/</link>
-      <pubDate>Sat, 04 Jun 2022 21:23:34 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/bw/</guid>
       <description></description>
     </item>
     
@@ -395,11 +422,29 @@
     </item>
     
     <item>
+      <title>necessary</title>
+      <link>https://pawelwiejkut.dev/tags/necessary/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/tags/necessary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Opensource</title>
       <link>https://pawelwiejkut.dev/tags/opensource/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
       
       <guid>https://pawelwiejkut.dev/tags/opensource/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protip</title>
+      <link>https://pawelwiejkut.dev/tags/protip/</link>
+      <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
+      
+      <guid>https://pawelwiejkut.dev/tags/protip/</guid>
       <description></description>
     </item>
     

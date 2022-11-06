@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://pawelwiejkut.dev/profile.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.100.1" />
+<meta name="generator" content="Hugo 0.105.0">
 <link rel="alternate" type="application/rss+xml" href="https://pawelwiejkut.dev/index.xml">
 <link rel="alternate" type="application/json" href="https://pawelwiejkut.dev/index.json">
 <noscript>
@@ -88,7 +88,7 @@ if (!doNotTrack) {
   "description": "Paweł Wiejkut homepage. ABAP BW SAC HANA Tips \u0026amp; Tricks 👨🏻‍💻",
   "thumbnailUrl": "https://pawelwiejkut.dev/profile.png",
   "sameAs": [
-      "https://instagram.com/subrc0", "https://linkedin.com/in/pawelwiejkut", "https://github.com/pawelwiejkut", "https://twitter.com/pawelwiejkut", "https://www.youtube.com/user/PawelWiejkut/"
+      "https://instagram.com/pawelwiejkut", "https://linkedin.com/in/pawelwiejkut", "https://github.com/pawelwiejkut", "https://twitter.com/pawelwiejkut", "https://www.youtube.com/user/PawelWiejkut/"
   ]
 }
 </script>
@@ -145,6 +145,11 @@ if (!doNotTrack) {
                 </a>
             </li>
             <li>
+                <a href="https://pawelwiejkut.dev/bw/" title="BW">
+                    <span>BW</span>
+                </a>
+            </li>
+            <li>
                 <a href="https://pawelwiejkut.dev/sac-tutorial/" title="SAC">
                     <span>SAC</span>
                 </a>
@@ -168,6 +173,26 @@ if (!doNotTrack) {
     </nav>
 </header>
 <main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>BW formula parameters
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>BW contains many standard formulas which can be used in TRFN’s and RSPC’s. The main issue is that sometimes you need to know default values/data types.
+All available formulas can be checked in class CL_RSAR_FUNCTION. Bellow, you can find a table with explained importing and returning parameters.
+Formula / Method Name Description Importing
+Types
+(Example) Returning
+Types
+(Example
+result) ABORT_PACKAGE Returns exception cx_rfso_abort_package to stop
+processing N/A N/A ADD_TO_DATE Add days to the specified date DATS,INT...</p>
+  </section>
+  <footer class="entry-footer"><span title='2021-12-20 09:13:49 +0100 CET'>December 20, 2021</span>&nbsp;·&nbsp;5 min</footer>
+  <a class="entry-link" aria-label="post link to BW formula parameters" href="https://pawelwiejkut.dev/posts/bw-formula-parameters/"></a>
+</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -283,22 +308,6 @@ What do I need? – system requirements Connection with GitHub – your instance
   </section>
   <footer class="entry-footer"><span title='2021-12-01 22:01:24 +0200 +0200'>December 1, 2021</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to How to contribute ABAP projects on Github" href="https://pawelwiejkut.dev/posts/how-to-contribute/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>How AMDP TRFN is executed<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>ADSO definition:
-TRFN definition:
-In general execution looks like: ABAP Method-&gt;Call SQL on HANA-&gt;Execute … -&gt; select
-Step by step:
-From ABAP site: cl_rstran_db_stat=&gt;execute_haap() is executed with SQL like: SELECT &#34;FIELD1&#34; AS &#34;FIELD1&#34; , &#34;0RECORDMODE&#34; AS &#34;RECORDMODE&#34; , &#34;RECORD&#34; AS &#34;RECORD&#34; FROM &#34;SAPA4H&#34;.&#34;/1BCAMDP/0BW:DAP:TR_04TFNXDAAVG5T5E8AZJ239HYT&#34; (&#39;PLACEHOLDER&#39;=(&#39;$$aggregation$$&#39;,&#39;&#34;BW_HAP__________DB_AGGREGATION&#34;=&#39;&#39;&#39;&#39;&#39;), &#39;PLACEHOLDER&#39;=(&#39;$$client$$&#39;,&#39;001&#39;), &#39;PLACEHOLDER&#39;=(&#39;$$keydate$$&#39;,&#39;20211110&#39;), &#39;PLACEHOLDER&#39;=(&#39;$$langu$$&#39;,&#39;E&#39;), &#39;PLACEHOLDER&#39;=(&#39;$$objvers$$&#39;,&#39;&#34;OBJVERS&#34; = &#39;&#39;A&#39;&#39;&#39;), &#39;PLACEHOLDER&#39;=(&#39;$$shift_decimal_places$$&#39;,&#39;&#34;BW_HAP__________SHIFT_DECIMAL_PLACES&#34;=&#39;&#39;I&#39;&#39;&#39;), &#39;PLACEHOLDER&#39;=(&#39;TR_04TFNXDAAVG5T5E8AZJ239HYT.$$adso_dtp_extraction_mode$$&#39;,&#39;&#34;_IS_FULL_KEY&#34; = 1 AND ( (&#34;1TECHPROV_KEY&#34; = &#39;&#39;ZAMDP$C&#39;&#39; OR &#34;1TECHPROV_KEY&#34; = &#39;&#39;ZAMDP&#39;&#39; ) )&#39;), &#39;PLACEHOLDER&#39;=(&#39;TR_04TFNXDAAVG5T5E8AZJ239HYT.$$runid$$&#39;,&#39;&#34;BW_HAP__________RUNID&#34;=&#39;&#39;96SBW6PMF5XU9CAGGGHRMDRSY&#39;&#39; AND &#34;BW_HAP__________HAP_SEQ_NUMBER&#34;=&#39;&#39;0&#39;&#39;&#39;),&#39;PLACEHOLDER&#39; = (&#39;ce_settings&#39;, &#39;{&#34;enable_partitioned_execution&#34;: &#34;0&#34;, &#34;ceqo_enable_rownum_expr_general&#34;: &#34;1&#34;}&#39;) ) WITH HINT ( ROUTE_BY_CARDINALITY(&#34;/BIC/AZAMDP2&#34;) ) This is a</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-11-11 22:58:24 +0200 +0200'>November 11, 2021</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to How AMDP TRFN is executed" href="https://pawelwiejkut.dev/posts/how-amdp-is-executed/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
