@@ -1,5 +1,5 @@
 ---
-title: "Lumira cheatsheet"
+title: "Lumira cheat sheet"
 date: 2022-11-06T17:30:24+01:00
 tags: ["Lumira","Cheatsheet","language"]
 aliases : [ call_function_table ]
