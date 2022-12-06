@@ -15,7 +15,7 @@ To jest poradnik dla kompletnych laików, dlatego też tytuł jest bardzo skrót
 
 W skrócie, aby zainstalować SAPA potrzebujesz:
 1. Około 1,5 godziny wolnego czasu,
-2. Open Suse Linux, dostępny [tutaj](https://get.opensuse.org/leap/?type=desktop#download)
+2. Open Suse Linux 15.3, dostępny [tutaj](https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-DVD-x86_64-Current.iso)<mark>koniecznie właśnie 15.3, na nowszym to nie zadziała</mark>
 3. SAP Netveawer, dostępny [tutaj](https://developers.sap.com/trials-downloads.html?search=abap)
 4. Virtualbox, dostępny [tutaj](https://www.virtualbox.org/wiki/Downloads)
 5. Instalujemy Virtualboxa,
