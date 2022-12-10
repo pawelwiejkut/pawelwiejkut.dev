@@ -46,7 +46,7 @@ Nice to meet you 👋
 
 ### BW & HANA
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="d68a2500-6ce5-402d-a325-f53d9cf7f3e6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-<div style="display:inline-block">
+<div style="display:inline-block;margin-left:40px">
 <a href="https://open.sap.com/verify/xukoh-dovos-cihup-zofar-vabum">
 <img src ="/about-me/bw4h2_open_badge.png" width="150">
 </a>
