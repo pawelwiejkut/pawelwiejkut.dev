@@ -10,6 +10,6 @@ Important articles for quick-access: </br>
 [BW formula parameters](https://pawelwiejkut.dev/posts/bw-formula-parameters/)</br>
 [Useful modern ABAP statements for BW transformations](https://pawelwiejkut.dev/posts/abap-trfn-bw/)</br></br>
 
-All BW relited articles:</br>
+All BW related articles:</br>
 [https://pawelwiejkut.dev/tags/bw/](https://pawelwiejkut.dev/tags/bw/)
 
