@@ -23,10 +23,10 @@ Nice to meet you 👋
 ## Certificates
 ### SAC & Analitycs
 
- <div id="certs">
+<div id="certs">
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="d6bf6cf2-27bd-4535-84af-0919108cd200" data-share-badge-host="https://www.credly.com" style="display:inline-block"><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </div>
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bab2fde2-c71e-40eb-8ad3-0ced115c4c61" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+<div style="display:inline-block;margin-left:40px" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bab2fde2-c71e-40eb-8ad3-0ced115c4c61" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 <div style="display:inline-block;margin-left:40px">
 <a href="https://open.sap.com/verify/xisif-belyv-vikup-huguf-pucag">
 <img src ="/about-me/opensap_sac_ap.png" width="150">
