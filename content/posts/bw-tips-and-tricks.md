@@ -1,7 +1,7 @@
 ---
 title: "BW Tips and Tricks"
 date: 2023-05-29T19:56:19+01:00
-tags: ["BW","TIPS",|TRICKS"]
+tags: ["BW","TIPS","TRICKS"]
 editPost:
     URL: "https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
