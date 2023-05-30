@@ -10,7 +10,7 @@ editPost:
 
 ### How to add new line character in text variable ?
 
-If you want to add a new line character in text variable of customer exit type, just use standard class:
+If you want to add a new line character in text variable of customer exit type, just use standard class cl_abap_char_utilities=>newline:
 
 {{< highlight abap >}}
 e_t_range = VALUE #( ( sign = 'I' opt = 'EQ' low = | LINE 1 { cl_abap_char_utilities=>newline } LINE2 | ) ).
