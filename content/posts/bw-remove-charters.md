@@ -12,7 +12,7 @@ If you have in your BW regular flat-file data load in your BW system, you probab
 
 <img src="/bw_remove_charters/1.png" width="80%" />
 
-#Or other issues like:
+# Or other issues like:
 
 Value '#’ (hex. '2300′) of characteristic  contains invalid characters
 Error when assigning SID: Action VAL_SID_CONVERT InfoObject
@@ -25,7 +25,7 @@ And this is, of course, true and corresponds to note 173241. But what if you add
 
 The best way to achieve this is the usage of good FM RSKC_CHAVL_OF_IOBJ_CHECK, which checks charter correctness according to the info object. But by default, this is not a dynamic development. I want to have some dynamic code, which I can paste in every transformation after Datasource and make necessary checks. That’s why I decided to write my own implementation which can handle this issue.
 
-#My implementation
+# My implementation
 Now all I need to do is add following code like below to the end routine ( consider a move of reference declaration to proper place ):
 
 
@@ -43,7 +43,7 @@ lobj_check->validate(
 Now any unsupported charter will be simply replaced by nothing.
 {{< / highlight>}}
 
-#Download
+# Download
 You can test this by yourself by getting code from my GitHub page:
 
 https://github.com/pawelwiejkut/bw_remove_charters
