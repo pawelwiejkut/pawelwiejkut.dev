@@ -47,7 +47,7 @@ Almost all of these programs are included in my GitHub development "bw_toolbox".
 | DataSource View                  | rsds             | Transaction |
 | Infoprovider View (display data) | rsoadso          | Transaction |
 | Manage Request                   | rsmng            | Transaction |
-
+ 
 ### Tables
 
 | Description                            | Name                  |
