@@ -55,6 +55,7 @@ Almost all of these programs are included in my GitHub development "bw_toolbox".
 | Check iobj assigned to extractor field | RSTSFIELD RSOFIELSMAP |
 | Keyfigures basic info                  | RSDKYF                |
 | Characteristics basic info             | RSDCHABAS             |
+| Extractor metadata (fields)            | RSDSSEGFD             |
 
 
 ### Others
