@@ -56,7 +56,19 @@ Almost all of these programs are included in my GitHub development "bw_toolbox".
 | Keyfigures basic info                  | RSDKYF                |
 | Characteristics basic info             | RSDCHABAS             |
 | Extractor metadata including custom (fields)            | RSDSSEGFD             |
+| Query Repo (UUID from name)            | RSZCOMPDIR            |
 
+
+## Authorization Tables
+
+| Description                      | Name             |
+|----------------------------------|------------------|
+| Role Defnition                   | AGR_DEFINE       |
+| Role user asigment ( S_RS_AUTH for BW RSECADMIN)    | AGR_1251   |
+
+
+Maintenance View transport:
+SE54 > Utilities > Total Transport
 
 ### Others
 
@@ -65,3 +77,5 @@ Almost all of these programs are included in my GitHub development "bw_toolbox".
 | Remove file                      | SCMS_FILE_DELETE | FM          |
 | Rename file                      | SCMS_FILE_COPY   | FM          |
 | Upload file                      | ARCHIVFILE_CLIENT_TO_SERVER    | FM |
+
+
