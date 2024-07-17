@@ -2,19 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SACButton on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/sacbutton/</link>
+    <link>http://localhost:56746/tags/sacbutton/</link>
     <description>Recent content in SACButton on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Dec 2021 15:12:24 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/sacbutton/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Dec 2021 15:12:24 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/sacbutton/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Select dimensions by CheckBox and Button</title>
-      <link>https://pawelwiejkut.dev/posts/sac-button-checkbox/</link>
+      <link>http://localhost:56746/posts/sac-button-checkbox/</link>
       <pubDate>Mon, 13 Dec 2021 15:12:24 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/sac-button-checkbox/</guid>
+      <guid>http://localhost:56746/posts/sac-button-checkbox/</guid>
       <description>We need a CheckBox, it can be added from the toolbar Let&amp;rsquo;s change the background color of the CheckboxGroup. To do this, please click on the brush icon, bucket icon and then on more Change color to hex 1f303f Next change the font color Set new color to white, hex ffffff Remove the values from the Checkbox Rename checkbox to CheckboxGroup_Dimensions, bu click on the keys icon Add additional code to the Application - onInitialization // Get all dimensions var dimensions = Table_Games_Sales.</description>
     </item>
-    
   </channel>
 </rss>

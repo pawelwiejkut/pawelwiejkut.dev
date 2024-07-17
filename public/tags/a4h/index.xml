@@ -2,23 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>A4H on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/a4h/</link>
+    <link>http://localhost:56746/tags/a4h/</link>
     <description>Recent content in A4H on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Nov 2021 20:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/a4h/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Nov 2021 20:44:24 +0200</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/a4h/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to install ABAP 1909 on mac M1</title>
-      <link>https://pawelwiejkut.dev/posts/abap1909-dev-m1/</link>
+      <link>http://localhost:56746/posts/abap1909-dev-m1/</link>
       <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/abap1909-dev-m1/</guid>
+      <guid>http://localhost:56746/posts/abap1909-dev-m1/</guid>
       <description>How to run ABAP 1909 on MacOs with M1? For me, the best idea was to use UTM. I also tried before with docker without success - in the end, there was always an error.
 Install UTM
 Download Ubuntu Server x64 bit version
 Create virtual machine on UTM (220 GB storage, 6-7 CPU&amp;rsquo;s, additional flags) Install Ubuntu server on UTM
 Install docker sudo apt-get update sudo apt-get install \ ca-certificates \ curl \ gnupg \ lsb-release curl -fsSL https://download.</description>
     </item>
-    
   </channel>
 </rss>

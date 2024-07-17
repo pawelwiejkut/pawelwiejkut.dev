@@ -2,658 +2,543 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/</link>
+    <link>http://localhost:56746/tags/</link>
     <description>Recent content in Tags on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Aug 2022 12:31:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 May 2023 19:56:19 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BW</title>
-      <link>https://pawelwiejkut.dev/tags/bw/</link>
-      <pubDate>Mon, 08 Aug 2022 12:31:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/bw/</guid>
+      <link>http://localhost:56746/tags/bw/</link>
+      <pubDate>Mon, 29 May 2023 19:56:19 +0100</pubDate>
+      <guid>http://localhost:56746/tags/bw/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cheatsheet</title>
-      <link>https://pawelwiejkut.dev/tags/cheatsheet/</link>
-      <pubDate>Mon, 08 Aug 2022 12:31:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/cheatsheet/</guid>
+      <title>TIPS</title>
+      <link>http://localhost:56746/tags/tips/</link>
+      <pubDate>Mon, 29 May 2023 19:56:19 +0100</pubDate>
+      <guid>http://localhost:56746/tags/tips/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>TRICKS</title>
+      <link>http://localhost:56746/tags/tricks/</link>
+      <pubDate>Mon, 29 May 2023 19:56:19 +0100</pubDate>
+      <guid>http://localhost:56746/tags/tricks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cheatsheet</title>
+      <link>http://localhost:56746/tags/cheatsheet/</link>
+      <pubDate>Sun, 06 Nov 2022 17:30:24 +0100</pubDate>
+      <guid>http://localhost:56746/tags/cheatsheet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Language</title>
+      <link>http://localhost:56746/tags/language/</link>
+      <pubDate>Sun, 06 Nov 2022 17:30:24 +0100</pubDate>
+      <guid>http://localhost:56746/tags/language/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lumira</title>
+      <link>http://localhost:56746/tags/lumira/</link>
+      <pubDate>Sun, 06 Nov 2022 17:30:24 +0100</pubDate>
+      <guid>http://localhost:56746/tags/lumira/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Fiori</title>
-      <link>https://pawelwiejkut.dev/tags/fiori/</link>
+      <link>http://localhost:56746/tags/fiori/</link>
       <pubDate>Mon, 08 Aug 2022 12:31:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/fiori/</guid>
+      <guid>http://localhost:56746/tags/fiori/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>launchpad</title>
-      <link>https://pawelwiejkut.dev/tags/launchpad/</link>
+      <title>Launchpad</title>
+      <link>http://localhost:56746/tags/launchpad/</link>
       <pubDate>Mon, 08 Aug 2022 12:31:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/launchpad/</guid>
+      <guid>http://localhost:56746/tags/launchpad/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>auth</title>
-      <link>https://pawelwiejkut.dev/tags/auth/</link>
+      <title>Auth</title>
+      <link>http://localhost:56746/tags/auth/</link>
       <pubDate>Sat, 04 Jun 2022 21:23:34 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/auth/</guid>
+      <guid>http://localhost:56746/tags/auth/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>bpc</title>
-      <link>https://pawelwiejkut.dev/tags/bpc/</link>
+      <title>Bpc</title>
+      <link>http://localhost:56746/tags/bpc/</link>
       <pubDate>Sat, 04 Jun 2022 21:23:34 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/bpc/</guid>
+      <guid>http://localhost:56746/tags/bpc/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sap</title>
-      <link>https://pawelwiejkut.dev/tags/sap/</link>
+      <title>Sap</title>
+      <link>http://localhost:56746/tags/sap/</link>
       <pubDate>Sat, 04 Jun 2022 21:23:34 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/sap/</guid>
+      <guid>http://localhost:56746/tags/sap/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ABAP</title>
-      <link>https://pawelwiejkut.dev/tags/abap/</link>
+      <link>http://localhost:56746/tags/abap/</link>
       <pubDate>Fri, 11 Feb 2022 16:45:44 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/abap/</guid>
+      <guid>http://localhost:56746/tags/abap/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>HANA</title>
-      <link>https://pawelwiejkut.dev/tags/hana/</link>
+      <link>http://localhost:56746/tags/hana/</link>
       <pubDate>Fri, 11 Feb 2022 16:45:44 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/hana/</guid>
+      <guid>http://localhost:56746/tags/hana/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>ABAP od podstaw</title>
-      <link>https://pawelwiejkut.dev/tags/abap-od-podstaw/</link>
+      <title>ABAP Od Podstaw</title>
+      <link>http://localhost:56746/tags/abap-od-podstaw/</link>
       <pubDate>Sat, 29 Jan 2022 18:33:53 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/abap-od-podstaw/</guid>
+      <guid>http://localhost:56746/tags/abap-od-podstaw/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Login</title>
-      <link>https://pawelwiejkut.dev/tags/login/</link>
+      <link>http://localhost:56746/tags/login/</link>
       <pubDate>Fri, 28 Jan 2022 14:53:45 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/login/</guid>
+      <guid>http://localhost:56746/tags/login/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Password</title>
-      <link>https://pawelwiejkut.dev/tags/password/</link>
+      <link>http://localhost:56746/tags/password/</link>
       <pubDate>Fri, 28 Jan 2022 14:53:45 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/password/</guid>
+      <guid>http://localhost:56746/tags/password/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ADSO</title>
-      <link>https://pawelwiejkut.dev/tags/adso/</link>
+      <link>http://localhost:56746/tags/adso/</link>
       <pubDate>Thu, 06 Jan 2022 12:52:44 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/adso/</guid>
+      <guid>http://localhost:56746/tags/adso/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hacks</title>
-      <link>https://pawelwiejkut.dev/tags/hacks/</link>
+      <link>http://localhost:56746/tags/hacks/</link>
       <pubDate>Thu, 06 Jan 2022 12:23:54 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/hacks/</guid>
+      <guid>http://localhost:56746/tags/hacks/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>TRFN</title>
-      <link>https://pawelwiejkut.dev/tags/trfn/</link>
+      <link>http://localhost:56746/tags/trfn/</link>
       <pubDate>Sun, 02 Jan 2022 19:56:19 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/trfn/</guid>
+      <guid>http://localhost:56746/tags/trfn/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Authorization</title>
-      <link>https://pawelwiejkut.dev/tags/authorization/</link>
+      <link>http://localhost:56746/tags/authorization/</link>
       <pubDate>Sat, 25 Dec 2021 14:51:25 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/authorization/</guid>
+      <guid>http://localhost:56746/tags/authorization/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>database</title>
-      <link>https://pawelwiejkut.dev/tags/database/</link>
+      <title>Database</title>
+      <link>http://localhost:56746/tags/database/</link>
       <pubDate>Sat, 25 Dec 2021 14:51:25 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/database/</guid>
+      <guid>http://localhost:56746/tags/database/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SE11</title>
-      <link>https://pawelwiejkut.dev/tags/se11/</link>
+      <link>http://localhost:56746/tags/se11/</link>
       <pubDate>Sat, 25 Dec 2021 14:51:25 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/se11/</guid>
+      <guid>http://localhost:56746/tags/se11/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SE16</title>
-      <link>https://pawelwiejkut.dev/tags/se16/</link>
+      <link>http://localhost:56746/tags/se16/</link>
       <pubDate>Sat, 25 Dec 2021 14:51:25 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/se16/</guid>
+      <guid>http://localhost:56746/tags/se16/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>BWFunctions</title>
-      <link>https://pawelwiejkut.dev/tags/bwfunctions/</link>
+      <link>http://localhost:56746/tags/bwfunctions/</link>
       <pubDate>Mon, 20 Dec 2021 09:13:49 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/bwfunctions/</guid>
+      <guid>http://localhost:56746/tags/bwfunctions/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Class</title>
-      <link>https://pawelwiejkut.dev/tags/class/</link>
+      <link>http://localhost:56746/tags/class/</link>
       <pubDate>Mon, 20 Dec 2021 09:13:49 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/class/</guid>
+      <guid>http://localhost:56746/tags/class/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Parameters</title>
-      <link>https://pawelwiejkut.dev/tags/parameters/</link>
+      <link>http://localhost:56746/tags/parameters/</link>
       <pubDate>Mon, 20 Dec 2021 09:13:49 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/parameters/</guid>
+      <guid>http://localhost:56746/tags/parameters/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>JavaScript</title>
-      <link>https://pawelwiejkut.dev/tags/javascript/</link>
+      <link>http://localhost:56746/tags/javascript/</link>
       <pubDate>Wed, 15 Dec 2021 22:01:41 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/javascript/</guid>
+      <guid>http://localhost:56746/tags/javascript/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SAC</title>
-      <link>https://pawelwiejkut.dev/tags/sac/</link>
+      <link>http://localhost:56746/tags/sac/</link>
       <pubDate>Wed, 15 Dec 2021 22:01:41 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/sac/</guid>
+      <guid>http://localhost:56746/tags/sac/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SACApp</title>
-      <link>https://pawelwiejkut.dev/tags/sacapp/</link>
+      <link>http://localhost:56746/tags/sacapp/</link>
       <pubDate>Wed, 15 Dec 2021 22:01:41 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/sacapp/</guid>
+      <guid>http://localhost:56746/tags/sacapp/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SACPopup</title>
-      <link>https://pawelwiejkut.dev/tags/sacpopup/</link>
+      <link>http://localhost:56746/tags/sacpopup/</link>
       <pubDate>Wed, 15 Dec 2021 22:01:41 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/sacpopup/</guid>
+      <guid>http://localhost:56746/tags/sacpopup/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SACButton</title>
-      <link>https://pawelwiejkut.dev/tags/sacbutton/</link>
+      <link>http://localhost:56746/tags/sacbutton/</link>
       <pubDate>Mon, 13 Dec 2021 15:12:24 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/sacbutton/</guid>
+      <guid>http://localhost:56746/tags/sacbutton/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Dropdown</title>
-      <link>https://pawelwiejkut.dev/tags/dropdown/</link>
+      <link>http://localhost:56746/tags/dropdown/</link>
       <pubDate>Mon, 13 Dec 2021 12:15:41 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/dropdown/</guid>
+      <guid>http://localhost:56746/tags/dropdown/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SACAppFilter</title>
-      <link>https://pawelwiejkut.dev/tags/sacappfilter/</link>
+      <link>http://localhost:56746/tags/sacappfilter/</link>
       <pubDate>Mon, 13 Dec 2021 12:15:41 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/sacappfilter/</guid>
+      <guid>http://localhost:56746/tags/sacappfilter/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>model</title>
-      <link>https://pawelwiejkut.dev/tags/model/</link>
+      <title>Model</title>
+      <link>http://localhost:56746/tags/model/</link>
       <pubDate>Sat, 11 Dec 2021 21:03:40 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/model/</guid>
+      <guid>http://localhost:56746/tags/model/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Instagram</title>
-      <link>https://pawelwiejkut.dev/tags/instagram/</link>
+      <link>http://localhost:56746/tags/instagram/</link>
       <pubDate>Tue, 07 Dec 2021 08:25:49 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/instagram/</guid>
+      <guid>http://localhost:56746/tags/instagram/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>iOS</title>
-      <link>https://pawelwiejkut.dev/tags/ios/</link>
+      <title>IOS</title>
+      <link>http://localhost:56746/tags/ios/</link>
       <pubDate>Tue, 07 Dec 2021 08:25:49 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/ios/</guid>
+      <guid>http://localhost:56746/tags/ios/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>MacOS</title>
-      <link>https://pawelwiejkut.dev/tags/macos/</link>
+      <link>http://localhost:56746/tags/macos/</link>
       <pubDate>Tue, 07 Dec 2021 08:25:49 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/macos/</guid>
+      <guid>http://localhost:56746/tags/macos/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sideload</title>
-      <link>https://pawelwiejkut.dev/tags/sideload/</link>
+      <title>Sideload</title>
+      <link>http://localhost:56746/tags/sideload/</link>
       <pubDate>Tue, 07 Dec 2021 08:25:49 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/sideload/</guid>
+      <guid>http://localhost:56746/tags/sideload/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ABAPGit</title>
-      <link>https://pawelwiejkut.dev/tags/abapgit/</link>
+      <link>http://localhost:56746/tags/abapgit/</link>
       <pubDate>Wed, 01 Dec 2021 22:01:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/abapgit/</guid>
+      <guid>http://localhost:56746/tags/abapgit/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Github</title>
-      <link>https://pawelwiejkut.dev/tags/github/</link>
+      <link>http://localhost:56746/tags/github/</link>
       <pubDate>Wed, 01 Dec 2021 22:01:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/github/</guid>
+      <guid>http://localhost:56746/tags/github/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AMDP</title>
-      <link>https://pawelwiejkut.dev/tags/amdp/</link>
+      <link>http://localhost:56746/tags/amdp/</link>
       <pubDate>Thu, 11 Nov 2021 22:58:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/amdp/</guid>
+      <guid>http://localhost:56746/tags/amdp/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SQL</title>
-      <link>https://pawelwiejkut.dev/tags/sql/</link>
+      <link>http://localhost:56746/tags/sql/</link>
       <pubDate>Thu, 11 Nov 2021 11:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/sql/</guid>
+      <guid>http://localhost:56746/tags/sql/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>A4H</title>
-      <link>https://pawelwiejkut.dev/tags/a4h/</link>
+      <link>http://localhost:56746/tags/a4h/</link>
       <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/a4h/</guid>
+      <guid>http://localhost:56746/tags/a4h/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ABAP_trial</title>
-      <link>https://pawelwiejkut.dev/tags/abap_trial/</link>
+      <link>http://localhost:56746/tags/abap_trial/</link>
       <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/abap_trial/</guid>
+      <guid>http://localhost:56746/tags/abap_trial/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Apple Silicon</title>
-      <link>https://pawelwiejkut.dev/tags/apple-silicon/</link>
+      <link>http://localhost:56746/tags/apple-silicon/</link>
       <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/apple-silicon/</guid>
+      <guid>http://localhost:56746/tags/apple-silicon/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>docker</title>
-      <link>https://pawelwiejkut.dev/tags/docker/</link>
+      <title>Docker</title>
+      <link>http://localhost:56746/tags/docker/</link>
       <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/docker/</guid>
+      <guid>http://localhost:56746/tags/docker/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Installation</title>
-      <link>https://pawelwiejkut.dev/tags/installation/</link>
+      <link>http://localhost:56746/tags/installation/</link>
       <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/installation/</guid>
+      <guid>http://localhost:56746/tags/installation/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>M1</title>
-      <link>https://pawelwiejkut.dev/tags/m1/</link>
+      <link>http://localhost:56746/tags/m1/</link>
       <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/m1/</guid>
+      <guid>http://localhost:56746/tags/m1/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>Function modules</title>
-      <link>https://pawelwiejkut.dev/tags/function-modules/</link>
+      <title>Function Modules</title>
+      <link>http://localhost:56746/tags/function-modules/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:20 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/function-modules/</guid>
+      <guid>http://localhost:56746/tags/function-modules/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Program</title>
-      <link>https://pawelwiejkut.dev/tags/program/</link>
+      <link>http://localhost:56746/tags/program/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:20 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/program/</guid>
+      <guid>http://localhost:56746/tags/program/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>necessary</title>
-      <link>https://pawelwiejkut.dev/tags/necessary/</link>
+      <title>Necessary</title>
+      <link>http://localhost:56746/tags/necessary/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/necessary/</guid>
+      <guid>http://localhost:56746/tags/necessary/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Opensource</title>
-      <link>https://pawelwiejkut.dev/tags/opensource/</link>
+      <link>http://localhost:56746/tags/opensource/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/opensource/</guid>
+      <guid>http://localhost:56746/tags/opensource/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Protip</title>
-      <link>https://pawelwiejkut.dev/tags/protip/</link>
+      <link>http://localhost:56746/tags/protip/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/protip/</guid>
+      <guid>http://localhost:56746/tags/protip/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ABAPTrial</title>
-      <link>https://pawelwiejkut.dev/tags/abaptrial/</link>
+      <link>http://localhost:56746/tags/abaptrial/</link>
       <pubDate>Fri, 02 Apr 2021 22:01:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/abaptrial/</guid>
+      <guid>http://localhost:56746/tags/abaptrial/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>License</title>
-      <link>https://pawelwiejkut.dev/tags/license/</link>
+      <link>http://localhost:56746/tags/license/</link>
       <pubDate>Fri, 02 Apr 2021 22:01:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/license/</guid>
+      <guid>http://localhost:56746/tags/license/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>NPL</title>
-      <link>https://pawelwiejkut.dev/tags/npl/</link>
+      <link>http://localhost:56746/tags/npl/</link>
       <pubDate>Fri, 02 Apr 2021 22:01:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/npl/</guid>
+      <guid>http://localhost:56746/tags/npl/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SYBASE</title>
-      <link>https://pawelwiejkut.dev/tags/sybase/</link>
+      <link>http://localhost:56746/tags/sybase/</link>
       <pubDate>Fri, 02 Apr 2021 22:01:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/sybase/</guid>
+      <guid>http://localhost:56746/tags/sybase/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>hack</title>
-      <link>https://pawelwiejkut.dev/tags/hack/</link>
+      <title>Hack</title>
+      <link>http://localhost:56746/tags/hack/</link>
       <pubDate>Sun, 10 Jan 2021 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/hack/</guid>
+      <guid>http://localhost:56746/tags/hack/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>slg0</title>
-      <link>https://pawelwiejkut.dev/tags/slg0/</link>
+      <title>Slg0</title>
+      <link>http://localhost:56746/tags/slg0/</link>
       <pubDate>Sun, 10 Jan 2021 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/slg0/</guid>
+      <guid>http://localhost:56746/tags/slg0/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Adapter</title>
-      <link>https://pawelwiejkut.dev/tags/adapter/</link>
+      <link>http://localhost:56746/tags/adapter/</link>
       <pubDate>Sun, 18 Oct 2020 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/adapter/</guid>
+      <guid>http://localhost:56746/tags/adapter/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>Data provisioning</title>
-      <link>https://pawelwiejkut.dev/tags/data-provisioning/</link>
+      <title>Data Provisioning</title>
+      <link>http://localhost:56746/tags/data-provisioning/</link>
       <pubDate>Sun, 18 Oct 2020 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/data-provisioning/</guid>
+      <guid>http://localhost:56746/tags/data-provisioning/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Eclipse</title>
-      <link>https://pawelwiejkut.dev/tags/eclipse/</link>
+      <link>http://localhost:56746/tags/eclipse/</link>
       <pubDate>Sun, 18 Oct 2020 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/eclipse/</guid>
+      <guid>http://localhost:56746/tags/eclipse/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Java</title>
-      <link>https://pawelwiejkut.dev/tags/java/</link>
+      <link>http://localhost:56746/tags/java/</link>
       <pubDate>Sun, 18 Oct 2020 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/java/</guid>
+      <guid>http://localhost:56746/tags/java/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>basis</title>
-      <link>https://pawelwiejkut.dev/tags/basis/</link>
+      <title>Basis</title>
+      <link>http://localhost:56746/tags/basis/</link>
       <pubDate>Mon, 03 Jun 2019 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/basis/</guid>
+      <guid>http://localhost:56746/tags/basis/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Client</title>
-      <link>https://pawelwiejkut.dev/tags/client/</link>
+      <link>http://localhost:56746/tags/client/</link>
       <pubDate>Mon, 03 Jun 2019 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/client/</guid>
+      <guid>http://localhost:56746/tags/client/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Decision</title>
-      <link>https://pawelwiejkut.dev/tags/decision/</link>
+      <link>http://localhost:56746/tags/decision/</link>
       <pubDate>Wed, 15 May 2019 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/decision/</guid>
+      <guid>http://localhost:56746/tags/decision/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>RSPC</title>
-      <link>https://pawelwiejkut.dev/tags/rspc/</link>
+      <link>http://localhost:56746/tags/rspc/</link>
       <pubDate>Wed, 15 May 2019 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/rspc/</guid>
+      <guid>http://localhost:56746/tags/rspc/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>disk</title>
-      <link>https://pawelwiejkut.dev/tags/disk/</link>
+      <title>Disk</title>
+      <link>http://localhost:56746/tags/disk/</link>
       <pubDate>Fri, 10 Aug 2018 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/disk/</guid>
+      <guid>http://localhost:56746/tags/disk/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>oralce</title>
-      <link>https://pawelwiejkut.dev/tags/oralce/</link>
+      <title>Oralce</title>
+      <link>http://localhost:56746/tags/oralce/</link>
       <pubDate>Fri, 10 Aug 2018 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/oralce/</guid>
+      <guid>http://localhost:56746/tags/oralce/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>storage</title>
-      <link>https://pawelwiejkut.dev/tags/storage/</link>
+      <title>Storage</title>
+      <link>http://localhost:56746/tags/storage/</link>
       <pubDate>Fri, 10 Aug 2018 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/storage/</guid>
+      <guid>http://localhost:56746/tags/storage/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>background</title>
-      <link>https://pawelwiejkut.dev/tags/background/</link>
+      <title>Background</title>
+      <link>http://localhost:56746/tags/background/</link>
       <pubDate>Sat, 17 Feb 2018 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/background/</guid>
+      <guid>http://localhost:56746/tags/background/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>batch</title>
-      <link>https://pawelwiejkut.dev/tags/batch/</link>
+      <title>Batch</title>
+      <link>http://localhost:56746/tags/batch/</link>
       <pubDate>Sat, 17 Feb 2018 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/batch/</guid>
+      <guid>http://localhost:56746/tags/batch/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>DTP</title>
-      <link>https://pawelwiejkut.dev/tags/dtp/</link>
+      <link>http://localhost:56746/tags/dtp/</link>
       <pubDate>Sat, 17 Feb 2018 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/dtp/</guid>
+      <guid>http://localhost:56746/tags/dtp/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>job</title>
-      <link>https://pawelwiejkut.dev/tags/job/</link>
+      <title>Job</title>
+      <link>http://localhost:56746/tags/job/</link>
       <pubDate>Sat, 17 Feb 2018 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/job/</guid>
+      <guid>http://localhost:56746/tags/job/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AUTH_CHECK_TCODE</title>
-      <link>https://pawelwiejkut.dev/tags/auth_check_tcode/</link>
+      <link>http://localhost:56746/tags/auth_check_tcode/</link>
       <pubDate>Sat, 16 Dec 2017 21:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/auth_check_tcode/</guid>
+      <guid>http://localhost:56746/tags/auth_check_tcode/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>function module</title>
-      <link>https://pawelwiejkut.dev/tags/function-module/</link>
+      <title>Function Module</title>
+      <link>http://localhost:56746/tags/function-module/</link>
       <pubDate>Sat, 16 Dec 2017 21:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/tags/function-module/</guid>
+      <guid>http://localhost:56746/tags/function-module/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

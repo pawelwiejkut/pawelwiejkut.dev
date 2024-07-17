@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Function modules on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/function-modules/</link>
-    <description>Recent content in Function modules on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Function Modules on Pawel Wiejkut</title>
+    <link>http://localhost:56746/tags/function-modules/</link>
+    <description>Recent content in Function Modules on Pawel Wiejkut</description>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Nov 2021 11:15:20 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/function-modules/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Nov 2021 11:15:20 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/function-modules/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BW important programs / Function modules / Tables </title>
-      <link>https://pawelwiejkut.dev/posts/bw-important-programs/</link>
+      <link>http://localhost:56746/posts/bw-important-programs/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:20 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/bw-important-programs/</guid>
+      <guid>http://localhost:56746/posts/bw-important-programs/</guid>
       <description>Almost all of these programs are included in my GitHub development &amp;ldquo;bw_toolbox&amp;rdquo;. If you want, you can just implement this in an easy way to your system. Please check by clicking here.
-Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPM_PROCESS_MONITOR DTP PROG Change DTP request status ADSO RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user BW4 GUI Versions Description Name Type DTP View rsbk0001 PROG TRFN View rstran_gui_start PROG DataSource View rsds Transaction Infoprovider View (display data) rsoadso Transaction Manage Request rsmng Transaction Tables Description Name Check iobj assigned to extractor field RSTSFIELD RSOFIELSMAP Others Description Name Type Remove file SCMS_FILE_DELETE FM Rename file SCMS_FILE_COPY FM Upload file ARCHIVFILE_CLIENT_TO_SERVER FM </description>
+Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPM_PROCESS_MONITOR DTP PROG Change DTP request status ADSO RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user BW4 GUI Versions Description Name Type DTP View rsbk0001 PROG TRFN View rstran_gui_start PROG DataSource View rsds Transaction Infoprovider View (display data) rsoadso Transaction Manage Request rsmng Transaction Tables Description Name Check iobj assigned to extractor field RSTSFIELD RSOFIELSMAP Keyfigures basic info RSDKYF Characteristics basic info RSDCHABAS Extractor metadata including custom (fields) RSDSSEGFD Query Repo (UUID from name) RSZCOMPDIR Authorization Tables Description Name Role Defnition AGR_DEFINE Role user asigment ( S_RS_AUTH for BW RSECADMIN) AGR_1251 Maintenance View transport: SE54 &amp;gt; Utilities &amp;gt; Total Transport</description>
     </item>
-    
   </channel>
 </rss>

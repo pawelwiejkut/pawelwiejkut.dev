@@ -2,19 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>RSPC on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/rspc/</link>
+    <link>http://localhost:56746/tags/rspc/</link>
     <description>Recent content in RSPC on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 May 2019 20:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/rspc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 May 2019 20:44:24 +0200</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/rspc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to extend decision​ tree in process chain?</title>
-      <link>https://pawelwiejkut.dev/posts/extend-rspc-decision/</link>
+      <link>http://localhost:56746/posts/extend-rspc-decision/</link>
       <pubDate>Wed, 15 May 2019 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/extend-rspc-decision/</guid>
+      <guid>http://localhost:56746/posts/extend-rspc-decision/</guid>
       <description>Toady short tutorial about extending the decision tree in the process chain. As you probably know decision three blocks can be extended. In our example, we want to run a delta info package in everyday processing, and depending on our customizing perform a full load. Process chain example: Customization table: Basically, if the value of param ISIP in our customer table is set to DELTA, we want to execute the delta info package.</description>
     </item>
-    
   </channel>
 </rss>

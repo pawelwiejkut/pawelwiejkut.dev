@@ -2,120 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/posts/</link>
+    <link>http://localhost:56746/posts/</link>
     <description>Recent content in Posts on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Aug 2022 12:31:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 May 2023 19:56:19 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56746/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BW Tips and Tricks</title>
+      <link>http://localhost:56746/posts/bw-tips-and-tricks/</link>
+      <pubDate>Mon, 29 May 2023 19:56:19 +0100</pubDate>
+      <guid>http://localhost:56746/posts/bw-tips-and-tricks/</guid>
+      <description>How to add new line character in text variable ? If you want to add a new line character in text variable of customer exit type, just use standard class cl_abap_char_utilities=&amp;gt;newline:
+e_t_range = VALUE #( ( sign = &amp;#39;I&amp;#39; opt = &amp;#39;EQ&amp;#39; low = | LINE 1 { cl_abap_char_utilities=&amp;gt;newline } LINE2 | ) ). </description>
+    </item>
+    <item>
+      <title>Lumira cheat sheet</title>
+      <link>http://localhost:56746/posts/lumira-cheat_sheet/</link>
+      <pubDate>Sun, 06 Nov 2022 17:30:24 +0100</pubDate>
+      <guid>http://localhost:56746/posts/lumira-cheat_sheet/</guid>
+      <description>How to check dahsboard in different language ? To check the dashboard display in different language, please add following parameters to the URL: LANGUAGE=EN COUNTRY=US Example: http://example.com:9999//BOE/OpenDocument/opendoc/openDocument.jsp?sIDType=CUID&amp;amp;iDocID=xji8HAJksao&amp;amp;LANGUAGE=EN&amp;amp;COUNTRY=US
+How to set up query template In Lumira, you don&amp;rsquo;t have to create separate dashboard for each query if it should look and work the same way. You can crate one dahsboard with one datasource and use following parameters: XQUERY=technical_name_of_bw_query XSYSTEM=cuid:olap_connection_cuid Example: http://example.com:9999//BOE/OpenDocument/opendoc/openDocument.jsp?sIDType=CUID&amp;amp;iDocID=xji8HAJksao&amp;amp;XQUERY=ZBW_FI_Q001&amp;amp;XSYSTEM=cuid:jKIoa98a Also a small entry in the startup script of the template is required: DS_1.</description>
+    </item>
     <item>
       <title>BW Fiori cheat sheet</title>
-      <link>https://pawelwiejkut.dev/posts/bw-fiori/</link>
+      <link>http://localhost:56746/posts/bw-fiori/</link>
       <pubDate>Mon, 08 Aug 2022 12:31:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/bw-fiori/</guid>
+      <guid>http://localhost:56746/posts/bw-fiori/</guid>
       <description>Important transactions in the context of BW Fiori Apps:
 Tile Maitenance - category,group /ui2/flpd_cust
 Transaltion SE63, Short Text, TABL, WDY_CONF_USERT2
 Cache /UI2/INVALIDATE_CLIENT_CACHES /UI2/INVALIDATE_GLOBAL_CACHES /UI5/APP_INDEX_CALCULATE /UI2/DELETE_CACHE</description>
     </item>
-    
     <item>
       <title>How to trace BW BPC Authorization</title>
-      <link>https://pawelwiejkut.dev/posts/check-bpc-authorization/</link>
+      <link>http://localhost:56746/posts/check-bpc-authorization/</link>
       <pubDate>Sat, 04 Jun 2022 21:23:34 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/check-bpc-authorization/</guid>
+      <guid>http://localhost:56746/posts/check-bpc-authorization/</guid>
       <description>Process of building authorization in BW with, and without BPC, is different. Reason is user authorization are enhanced by roles assigned to them in BPC administration panel. For more information about this process you can search for Data Access Profiles (DAPs).
 Common ways Common ways to check the BW auth is:
 Execute query on the affected user in rsudo - But it may not be enough, please check more Check authorization log using SU53 Trace authorization using ST01, STAUTHTRACE or similar BPC Most important difference is that user is sometimes able to execute the query in rsrt, but in the same time is not able to execute the BPC Planing workbook laing on the same object.</description>
     </item>
-    
     <item>
       <title>Manual deployment from ABAP to SAP HANA</title>
-      <link>https://pawelwiejkut.dev/posts/manual-hana-abap-deployment/</link>
+      <link>http://localhost:56746/posts/manual-hana-abap-deployment/</link>
       <pubDate>Fri, 11 Feb 2022 16:45:44 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/manual-hana-abap-deployment/</guid>
+      <guid>http://localhost:56746/posts/manual-hana-abap-deployment/</guid>
       <description>Bellow you can find my notes about the manual deployment from ABAP Application Server to the HANA Database. This kind of activity can be done in example for Calculation Views.</description>
     </item>
-    
     <item>
       <title>Jak zainstalować SAPa żeby nauczyć się ABAPa?</title>
-      <link>https://pawelwiejkut.dev/posts/instalacja-sapa/</link>
+      <link>http://localhost:56746/posts/instalacja-sapa/</link>
       <pubDate>Sat, 29 Jan 2022 18:33:53 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/instalacja-sapa/</guid>
+      <guid>http://localhost:56746/posts/instalacja-sapa/</guid>
       <description>Cześć! To jest poradnik dla kompletnych laików, dlatego też tytuł jest bardzo skrótowy. Co bowiem oznacza instalacja SAP-a ? SAP (Systemanalyse und Programmentwicklung) jest nazwą firmy, powstałej w 1972 roku w Waldorfie zajmującej się tworzeniem oprogramowania. Zachęcam, żeby poczytać więcej o niej tutaj. Dziś chciałem pokazać Ci prosty sposób na instalację systemu SAP NetWeaver, który to umożliwi Ci naukę programowania w języku ABAP. Ten tutorial był kiedyś dostępny w wersji tekstowej, teraz dostępna jest duzo nowsza wersja wideo, która równiez jest częścią płatnego kursu abap dostępnego pod adresem https://saponit.</description>
     </item>
-    
     <item>
       <title>ABAP1909 A4H HANA Login Details</title>
-      <link>https://pawelwiejkut.dev/posts/abap1909-hana-login-details/</link>
+      <link>http://localhost:56746/posts/abap1909-hana-login-details/</link>
       <pubDate>Fri, 28 Jan 2022 14:53:45 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/abap1909-hana-login-details/</guid>
+      <guid>http://localhost:56746/posts/abap1909-hana-login-details/</guid>
       <description>If you want to login into HANA DB on ABAP1909 platform - in the example to create a calculation view, change something please use bellow details:
 For the tentant database SYSTEMDB (i.e to make some administrative changes): user SYSTEM with the password Ldtf5432 For the single-container database HDB (i.e to make some development): user SAPA4H with the password Ldtf5432
 In both cases, the instance number is 02. Example in Eclipse:</description>
     </item>
-    
     <item>
       <title>Useful modern ABAP statements for BW transformations</title>
-      <link>https://pawelwiejkut.dev/posts/abap-trfn-bw/</link>
+      <link>http://localhost:56746/posts/abap-trfn-bw/</link>
       <pubDate>Tue, 11 Jan 2022 21:21:22 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/abap-trfn-bw/</guid>
+      <guid>http://localhost:56746/posts/abap-trfn-bw/</guid>
       <description>ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare.</description>
     </item>
-    
     <item>
       <title>Create ADSO from ABAP</title>
-      <link>https://pawelwiejkut.dev/posts/create-adso-abap/</link>
+      <link>http://localhost:56746/posts/create-adso-abap/</link>
       <pubDate>Thu, 06 Jan 2022 12:52:44 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/create-adso-abap/</guid>
+      <guid>http://localhost:56746/posts/create-adso-abap/</guid>
       <description>Creating ADSO from ABAP can be easily achieved by cl_rso_adso_api=&amp;gt;create DATA(ls_flags) = VALUE cl_rso_adso_api=&amp;gt;tn_s_adsoflags( direct_update = abap_true ). TRY. cl_rso_adso_api=&amp;gt;create( EXPORTING i_adsonm = &amp;#34;Name of the ADSO i_infoarea = &amp;#34;Infoarea name i_s_adsoflags = ls_flags i_t_object = &amp;#34;Table with all fields i_t_dimension = &amp;#34;Dimension i_t_key = &amp;#34;String table with key IMPORTING e_t_msg = DATA(lt_msg) ). CATCH cx_rs_all_msg INTO DATA(lr_msg). cl_demo_output=&amp;gt;display( EXPORTING data = lr_msg-&amp;gt;get_longtext( ) name = &amp;#39;Error&amp;#39; ). ENDTRY.
 Full usage examples can be found here</description>
     </item>
-    
     <item>
       <title>Change transport description after release</title>
-      <link>https://pawelwiejkut.dev/posts/change-transport-desc/</link>
+      <link>http://localhost:56746/posts/change-transport-desc/</link>
       <pubDate>Thu, 06 Jan 2022 12:23:54 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/change-transport-desc/</guid>
+      <guid>http://localhost:56746/posts/change-transport-desc/</guid>
       <description>If you are forced to change transport description after release, you have to consider following changes:
 Use RDDIT076 to change the description - if not possible, you have to find a way to edit E07T and E070.
 Change description in TMSBUFTXT to correct display of shorttext in STMS.</description>
     </item>
-    
     <item>
       <title>Remove invalid charters in your BW transformation</title>
-      <link>https://pawelwiejkut.dev/posts/bw-remove-charters/</link>
+      <link>http://localhost:56746/posts/bw-remove-charters/</link>
       <pubDate>Sun, 02 Jan 2022 19:56:19 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/bw-remove-charters/</guid>
+      <guid>http://localhost:56746/posts/bw-remove-charters/</guid>
       <description>If you have in your BW regular flat-file data load in your BW system, you probably afflict issues with the wrong data provided by the user. The scenario of this issue can be very simple. It’s enough that the user provides an invalid unsupported charter and during activation, you will get a similar issue:
-Or other issues like:
-Value &amp;lsquo;#’ (hex. &amp;lsquo;2300′) of characteristic contains invalid characters Error when assigning SID: Action VAL_SID_CONVERT InfoObject (hex.</description>
+Or other issues like: Value &amp;lsquo;#’ (hex. &amp;lsquo;2300′) of characteristic contains invalid characters Error when assigning SID: Action VAL_SID_CONVERT InfoObject (hex.</description>
     </item>
-    
     <item>
       <title>How to change any entries in the database in SE16 or SE11</title>
-      <link>https://pawelwiejkut.dev/posts/se16-se11-change/</link>
+      <link>http://localhost:56746/posts/se16-se11-change/</link>
       <pubDate>Sat, 25 Dec 2021 14:51:25 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/se16-se11-change/</guid>
+      <guid>http://localhost:56746/posts/se16-se11-change/</guid>
       <description>Sometimes we are forced to change some database entries. There are many reasons like a new s-note from SAP or incorrect values in the technical table. Every SAP table can be changed via SE16 or SE11 transaction - all you need to have is a debug with change role assigned to your user. In this article you can find youtube video, and bellow is detailed step by step instruction.
 Video tutorial Step by step instruction how to change entry in SE16 1.</description>
     </item>
-    
     <item>
       <title>BW formula parameters</title>
-      <link>https://pawelwiejkut.dev/posts/bw-formula-parameters/</link>
+      <link>http://localhost:56746/posts/bw-formula-parameters/</link>
       <pubDate>Mon, 20 Dec 2021 09:13:49 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/bw-formula-parameters/</guid>
+      <guid>http://localhost:56746/posts/bw-formula-parameters/</guid>
       <description>BW contains many standard formulas which can be used in TRFN&amp;rsquo;s and RSPC&amp;rsquo;s. The main issue is that sometimes you need to know default values/data types.
 All available formulas can be checked in class CL_RSAR_FUNCTION. Bellow, you can find a table with explained importing and returning parameters.
 Formula / Method Name Description Importing
@@ -126,333 +121,261 @@ Types
 result) ABORT_PACKAGE Returns exception cx_rfso_abort_package to stop
 processing N/A N/A ADD_TO_DATE Add days to the specified date DATS,INT</description>
     </item>
-    
     <item>
       <title>Create a popup to change dimensions order</title>
-      <link>https://pawelwiejkut.dev/posts/sac-popup-order/</link>
+      <link>http://localhost:56746/posts/sac-popup-order/</link>
       <pubDate>Wed, 15 Dec 2021 22:01:41 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/sac-popup-order/</guid>
+      <guid>http://localhost:56746/posts/sac-popup-order/</guid>
       <description>Let&amp;rsquo;s start by creating the popup Rename new window Definitely we should arrange this new space. Start with a new List Box Add tree new buttons: UP, DOWN, Save and Close Change style on List Box to add borders Rename new elements Create a new button on the Canvas Create a script variable Change name and set as array Create onClick event for the new - Change Layout button // Get current dimensions var currentDimensions = Table_Games_Sales.</description>
     </item>
-    
     <item>
       <title>Select dimensions by CheckBox and Button</title>
-      <link>https://pawelwiejkut.dev/posts/sac-button-checkbox/</link>
+      <link>http://localhost:56746/posts/sac-button-checkbox/</link>
       <pubDate>Mon, 13 Dec 2021 15:12:24 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/sac-button-checkbox/</guid>
+      <guid>http://localhost:56746/posts/sac-button-checkbox/</guid>
       <description>We need a CheckBox, it can be added from the toolbar Let&amp;rsquo;s change the background color of the CheckboxGroup. To do this, please click on the brush icon, bucket icon and then on more Change color to hex 1f303f Next change the font color Set new color to white, hex ffffff Remove the values from the Checkbox Rename checkbox to CheckboxGroup_Dimensions, bu click on the keys icon Add additional code to the Application - onInitialization // Get all dimensions var dimensions = Table_Games_Sales.</description>
     </item>
-    
     <item>
       <title>SAC APP Design &amp; clean the filter button</title>
-      <link>https://pawelwiejkut.dev/posts/sac-app-design/</link>
+      <link>http://localhost:56746/posts/sac-app-design/</link>
       <pubDate>Mon, 13 Dec 2021 12:15:41 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/sac-app-design/</guid>
+      <guid>http://localhost:56746/posts/sac-app-design/</guid>
       <description>Button To clean the filter we need a button. Let&amp;rsquo;s get one from the plus in the toolbar Put the button near the Year dropdown and rename it Go to the Button_Clean_Filters - onClick Put the following code // Remove all filters from the model Table_Games_Sales.getDataSource().removeDimensionFilter(&amp;#34;Name&amp;#34;); Table_Games_Sales.getDataSource().removeDimensionFilter(&amp;#34;Publisher&amp;#34;); Table_Games_Sales.getDataSource().removeDimensionFilter(&amp;#34;Year&amp;#34;); //Set all dropdowns selection to empty Dropdown_Name.setSelectedKey(&amp;#39;&amp;#39;); Dropdown_Publisher.setSelectedKey(&amp;#39;&amp;#39;); Dropdown_Year.setSelectedKey(&amp;#39;&amp;#39;); Button should now work properly Design Please download image dataset from here
 Insert images using the plus in the toolbar</description>
     </item>
-    
     <item>
       <title>Cascade filtering in SAC</title>
-      <link>https://pawelwiejkut.dev/posts/sac-app-dropdown-cascade/</link>
+      <link>http://localhost:56746/posts/sac-app-dropdown-cascade/</link>
       <pubDate>Sun, 12 Dec 2021 15:42:26 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/sac-app-dropdown-cascade/</guid>
+      <guid>http://localhost:56746/posts/sac-app-dropdown-cascade/</guid>
       <description>In this part of the tutorial, we are focusing on creating a cascade filter on the dropdown in SAC APP. Cascade means that filters on the dashboard will depend on each other. In the example, if you pick up the publisher name Nintendo then in the games list (Name) you should see only games that belong to Nintendo and no more others. To achieve this, we have to redesign our app a bit.</description>
     </item>
-    
     <item>
       <title>Create and fill a dropdown in SAC APP</title>
-      <link>https://pawelwiejkut.dev/posts/sac-app-dropdown/</link>
+      <link>http://localhost:56746/posts/sac-app-dropdown/</link>
       <pubDate>Sun, 12 Dec 2021 14:13:53 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/sac-app-dropdown/</guid>
+      <guid>http://localhost:56746/posts/sac-app-dropdown/</guid>
       <description>Firstly we have to move our table a few lines down. This can be done by moving the mouse between the table and toolbar and drag and dropping when the cursor changes the icon: Click on the plus icon on the toolbar Select Dropdown form the list Lets rename the Table by click on tree dots -&amp;gt; Rename, and set new name to Table_Games_Sales Same with Dropdown, and put new name Dropdown_Name</description>
     </item>
-    
     <item>
       <title>Simple APP on SAC</title>
-      <link>https://pawelwiejkut.dev/posts/sac-create-app/</link>
+      <link>http://localhost:56746/posts/sac-create-app/</link>
       <pubDate>Sun, 12 Dec 2021 11:58:15 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/sac-create-app/</guid>
+      <guid>http://localhost:56746/posts/sac-create-app/</guid>
       <description>We have a model so now it is time to build a SAC APP.
 Go to applications, click on Create Application Click on the table from at the toolbar Select a existing model Click on model that we created in the previous post Delete columns Add Measure/Dimension to rows Select Name and Publisher Quit panel Save application Click on Run Result should be similar to the image bellow </description>
     </item>
-    
     <item>
       <title>Create new model on SAC</title>
-      <link>https://pawelwiejkut.dev/posts/sac-model/</link>
+      <link>http://localhost:56746/posts/sac-model/</link>
       <pubDate>Sat, 11 Dec 2021 21:03:40 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/sac-model/</guid>
+      <guid>http://localhost:56746/posts/sac-model/</guid>
       <description>Let&amp;rsquo;s build a very simple SAC model using kaggle data on video game sales.
 To create a model on SAC, firstly you have to login into your account (please search for trail if necessary). Next click on files, plus icon, and select model. Now, please click on From a CSV or Excel File Select Source File Download source file from Kaggle.
 Find vgsales.csv and load into SAC
 Click on import This model is very simple so we don&amp;rsquo;t have to change anything.</description>
     </item>
-    
     <item>
       <title>How to install iOS apps on MacOs M1 (Monterey)</title>
-      <link>https://pawelwiejkut.dev/posts/ios-app-on-macos/</link>
+      <link>http://localhost:56746/posts/ios-app-on-macos/</link>
       <pubDate>Tue, 07 Dec 2021 08:25:49 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/ios-app-on-macos/</guid>
+      <guid>http://localhost:56746/posts/ios-app-on-macos/</guid>
       <description>Is it still possible to install/sideload iOS apps into M1 Mac? The answer is yes - it is possible to even on the newest version of MacOS (Monterey 12.0.1).Nevertheless you have to know that not all applications are working well. For example, Instagram is crashing every time at startup, and you have to clear ~/Library/Containers/Instagram every time before launch.
 How to install the iOS app?
 Download and install sideloadly from https://sideloadly.</description>
     </item>
-    
     <item>
       <title>How to contribute ABAP projects on Github</title>
-      <link>https://pawelwiejkut.dev/posts/how-to-contribute/</link>
+      <link>http://localhost:56746/posts/how-to-contribute/</link>
       <pubDate>Wed, 01 Dec 2021 22:01:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/how-to-contribute/</guid>
+      <guid>http://localhost:56746/posts/how-to-contribute/</guid>
       <description>Last time, when I published my bw_toolbox project on Github, there were a lot of questions from regular developers not so much familiar with git, how they can contribute. Because of that, I decided to write this quick-start tutorial.
 What do I need? – system requirements Connection with GitHub – your instance should be able to establish a connection with github.com, SSL Entires – you have to configure your SAP System by adding necessary certificates into STRUST transaction (details), Profile configuration – also changes on the profile level are required, so you have to manual edit entries or use transactions (details).</description>
     </item>
-    
     <item>
       <title>How AMDP TRFN is executed</title>
-      <link>https://pawelwiejkut.dev/posts/how-amdp-is-executed/</link>
+      <link>http://localhost:56746/posts/how-amdp-is-executed/</link>
       <pubDate>Thu, 11 Nov 2021 22:58:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/how-amdp-is-executed/</guid>
+      <guid>http://localhost:56746/posts/how-amdp-is-executed/</guid>
       <description>ADSO definition:
 TRFN definition:
 In general execution looks like: ABAP Method-&amp;gt;Call SQL on HANA-&amp;gt;Execute &amp;hellip; -&amp;gt; select
 Step by step:
 From ABAP site: cl_rstran_db_stat=&amp;gt;execute_haap() is executed with SQL like: SELECT &amp;#34;FIELD1&amp;#34; AS &amp;#34;FIELD1&amp;#34; , &amp;#34;0RECORDMODE&amp;#34; AS &amp;#34;RECORDMODE&amp;#34; , &amp;#34;RECORD&amp;#34; AS &amp;#34;RECORD&amp;#34; FROM &amp;#34;SAPA4H&amp;#34;.&amp;#34;/1BCAMDP/0BW:DAP:TR_04TFNXDAAVG5T5E8AZJ239HYT&amp;#34; (&amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$aggregation$$&amp;#39;,&amp;#39;&amp;#34;BW_HAP__________DB_AGGREGATION&amp;#34;=&amp;#39;&amp;#39;&amp;#39;&amp;#39;&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$client$$&amp;#39;,&amp;#39;001&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$keydate$$&amp;#39;,&amp;#39;20211110&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$langu$$&amp;#39;,&amp;#39;E&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$objvers$$&amp;#39;,&amp;#39;&amp;#34;OBJVERS&amp;#34; = &amp;#39;&amp;#39;A&amp;#39;&amp;#39;&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$shift_decimal_places$$&amp;#39;,&amp;#39;&amp;#34;BW_HAP__________SHIFT_DECIMAL_PLACES&amp;#34;=&amp;#39;&amp;#39;I&amp;#39;&amp;#39;&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;TR_04TFNXDAAVG5T5E8AZJ239HYT.$$adso_dtp_extraction_mode$$&amp;#39;,&amp;#39;&amp;#34;_IS_FULL_KEY&amp;#34; = 1 AND ( (&amp;#34;1TECHPROV_KEY&amp;#34; = &amp;#39;&amp;#39;ZAMDP$C&amp;#39;&amp;#39; OR &amp;#34;1TECHPROV_KEY&amp;#34; = &amp;#39;&amp;#39;ZAMDP&amp;#39;&amp;#39; ) )&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;TR_04TFNXDAAVG5T5E8AZJ239HYT.$$runid$$&amp;#39;,&amp;#39;&amp;#34;BW_HAP__________RUNID&amp;#34;=&amp;#39;&amp;#39;96SBW6PMF5XU9CAGGGHRMDRSY&amp;#39;&amp;#39; AND &amp;#34;BW_HAP__________HAP_SEQ_NUMBER&amp;#34;=&amp;#39;&amp;#39;0&amp;#39;&amp;#39;&amp;#39;),&amp;#39;PLACEHOLDER&amp;#39; = (&amp;#39;ce_settings&amp;#39;, &amp;#39;{&amp;#34;enable_partitioned_execution&amp;#34;: &amp;#34;0&amp;#34;, &amp;#34;ceqo_enable_rownum_expr_general&amp;#34;: &amp;#34;1&amp;#34;}&amp;#39;) ) WITH HINT ( ROUTE_BY_CARDINALITY(&amp;#34;/BIC/AZAMDP2&amp;#34;) ) This is a</description>
     </item>
-    
     <item>
       <title>Call SAP HANA function with table</title>
-      <link>https://pawelwiejkut.dev/posts/call-function-table/</link>
+      <link>http://localhost:56746/posts/call-function-table/</link>
       <pubDate>Thu, 11 Nov 2021 11:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/call-function-table/</guid>
+      <guid>http://localhost:56746/posts/call-function-table/</guid>
       <description>How to run the HANA SQL function where an output table is required? Example function (from this tutorial): CREATE TYPE &amp;#34;TT_RESTAURANTS&amp;#34; AS TABLE (&amp;#34;node_id&amp;#34; INTEGER, &amp;#34;distance&amp;#34; INTEGER, &amp;#34;hops&amp;#34; BIGINT); CREATE OR REPLACE PROCEDURE &amp;#34;NEAREST_RESTAURANT&amp;#34;(IN startV INT, OUT res &amp;#34;TT_RESTAURANTS&amp;#34;) LANGUAGE GRAPH READS SQL DATA AS BEGIN GRAPH g = Graph(&amp;#34;SKIING&amp;#34;); VERTEX v_s = Vertex(:g, :startV); MULTISET&amp;lt;Vertex&amp;gt; rests = v IN Vertices(:g) WHERE :v.&amp;#34;restaurant&amp;#34; == N&amp;#39;TRUE&amp;#39;; ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (INT &amp;#34;distance&amp;#34; = 0); ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (BIGINT &amp;#34;hops&amp;#34; = 0L); FOREACH rest in :rests { VERTEX v_rest = Vertex(:g, :rest.</description>
     </item>
-    
-    <item>
-      <title>Call SAP HANA function with table</title>
-      <link>https://pawelwiejkut.dev/posts/lumira-cheatsheet/</link>
-      <pubDate>Thu, 11 Nov 2021 11:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/lumira-cheatsheet/</guid>
-      <description>How to run the HANA SQL function where an output table is required? Example function (from this tutorial): CREATE TYPE &amp;#34;TT_RESTAURANTS&amp;#34; AS TABLE (&amp;#34;node_id&amp;#34; INTEGER, &amp;#34;distance&amp;#34; INTEGER, &amp;#34;hops&amp;#34; BIGINT); CREATE OR REPLACE PROCEDURE &amp;#34;NEAREST_RESTAURANT&amp;#34;(IN startV INT, OUT res &amp;#34;TT_RESTAURANTS&amp;#34;) LANGUAGE GRAPH READS SQL DATA AS BEGIN GRAPH g = Graph(&amp;#34;SKIING&amp;#34;); VERTEX v_s = Vertex(:g, :startV); MULTISET&amp;lt;Vertex&amp;gt; rests = v IN Vertices(:g) WHERE :v.&amp;#34;restaurant&amp;#34; == N&amp;#39;TRUE&amp;#39;; ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (INT &amp;#34;distance&amp;#34; = 0); ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (BIGINT &amp;#34;hops&amp;#34; = 0L); FOREACH rest in :rests { VERTEX v_rest = Vertex(:g, :rest.</description>
-    </item>
-    
     <item>
       <title>How to install ABAP 1909 on mac M1</title>
-      <link>https://pawelwiejkut.dev/posts/abap1909-dev-m1/</link>
+      <link>http://localhost:56746/posts/abap1909-dev-m1/</link>
       <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/abap1909-dev-m1/</guid>
+      <guid>http://localhost:56746/posts/abap1909-dev-m1/</guid>
       <description>How to run ABAP 1909 on MacOs with M1? For me, the best idea was to use UTM. I also tried before with docker without success - in the end, there was always an error.
 Install UTM
 Download Ubuntu Server x64 bit version
 Create virtual machine on UTM (220 GB storage, 6-7 CPU&amp;rsquo;s, additional flags) Install Ubuntu server on UTM
 Install docker sudo apt-get update sudo apt-get install \ ca-certificates \ curl \ gnupg \ lsb-release curl -fsSL https://download.</description>
     </item>
-    
     <item>
       <title>BW important programs / Function modules / Tables </title>
-      <link>https://pawelwiejkut.dev/posts/bw-important-programs/</link>
+      <link>http://localhost:56746/posts/bw-important-programs/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:20 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/bw-important-programs/</guid>
+      <guid>http://localhost:56746/posts/bw-important-programs/</guid>
       <description>Almost all of these programs are included in my GitHub development &amp;ldquo;bw_toolbox&amp;rdquo;. If you want, you can just implement this in an easy way to your system. Please check by clicking here.
-Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPM_PROCESS_MONITOR DTP PROG Change DTP request status ADSO RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user BW4 GUI Versions Description Name Type DTP View rsbk0001 PROG TRFN View rstran_gui_start PROG DataSource View rsds Transaction Infoprovider View (display data) rsoadso Transaction Manage Request rsmng Transaction Tables Description Name Check iobj assigned to extractor field RSTSFIELD RSOFIELSMAP Others Description Name Type Remove file SCMS_FILE_DELETE FM Rename file SCMS_FILE_COPY FM Upload file ARCHIVFILE_CLIENT_TO_SERVER FM </description>
+Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPM_PROCESS_MONITOR DTP PROG Change DTP request status ADSO RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user BW4 GUI Versions Description Name Type DTP View rsbk0001 PROG TRFN View rstran_gui_start PROG DataSource View rsds Transaction Infoprovider View (display data) rsoadso Transaction Manage Request rsmng Transaction Tables Description Name Check iobj assigned to extractor field RSTSFIELD RSOFIELSMAP Keyfigures basic info RSDKYF Characteristics basic info RSDCHABAS Extractor metadata including custom (fields) RSDSSEGFD Query Repo (UUID from name) RSZCOMPDIR Authorization Tables Description Name Role Defnition AGR_DEFINE Role user asigment ( S_RS_AUTH for BW RSECADMIN) AGR_1251 Maintenance View transport: SE54 &amp;gt; Utilities &amp;gt; Total Transport</description>
     </item>
-    
     <item>
       <title>AMDP ABAP Transformation execution</title>
-      <link>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</link>
+      <link>http://localhost:56746/posts/amdp-abap-trfn/</link>
       <pubDate>Sun, 17 Oct 2021 21:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</guid>
+      <guid>http://localhost:56746/posts/amdp-abap-trfn/</guid>
       <description>How to execute AMDP TRFN directly from ABAP?  You can use the method execute_haap from cl_rstran_db_stat. Check this blog for complete example with parameters.</description>
     </item>
-    
     <item>
       <title>Direct Update ADSO ABAP API</title>
-      <link>https://pawelwiejkut.dev/posts/du-adso-api/</link>
+      <link>http://localhost:56746/posts/du-adso-api/</link>
       <pubDate>Sun, 17 Oct 2021 19:35:53 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/du-adso-api/</guid>
+      <guid>http://localhost:56746/posts/du-adso-api/</guid>
       <description>How to insert the data into the BW ADSO on the BW on Hana and BW4HANA ? The easy way is just to use the official function module delivered by SAP
 Example ADSO: Example code:
 REPORT zadsoamdp. DATA: lt_data TYPE STANDARD TABLE OF /bic/aadsoamdp2, lt_msg TYPE rs_t_msg. APPEND VALUE #( field1 = &amp;#39;1&amp;#39; field2 = &amp;#39;2&amp;#39; ) TO lt_data. CALL FUNCTION &amp;#39;RSDSO_DU_WRITE_API&amp;#39; EXPORTING i_adsonm = &amp;#39;ADSOAMDP&amp;#39; it_data = lt_data IMPORTING et_msg = lt_msg EXCEPTIONS write_failed = 1 datastore_not_found = 2 OTHERS = 3.</description>
     </item>
-    
     <item>
       <title>SAP NPL 7.52 does not start</title>
-      <link>https://pawelwiejkut.dev/posts/npl-wont-start/</link>
+      <link>http://localhost:56746/posts/npl-wont-start/</link>
       <pubDate>Fri, 02 Apr 2021 22:01:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/npl-wont-start/</guid>
+      <guid>http://localhost:56746/posts/npl-wont-start/</guid>
       <description>This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on: The database is not available via R3trans ------------------------------------------- starting database NPL ... Log file: /sybase/NPL/startdb.log
 Or Stop returns modlib.jslib.caughtException
 We have to download a new license file from https://developers.</description>
     </item>
-    
     <item>
       <title>Joby W ABAPie</title>
-      <link>https://pawelwiejkut.dev/posts/joby-w-abapie/</link>
+      <link>http://localhost:56746/posts/joby-w-abapie/</link>
       <pubDate>Sat, 23 Jan 2021 18:25:44 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/joby-w-abapie/</guid>
+      <guid>http://localhost:56746/posts/joby-w-abapie/</guid>
       <description>Z tej lekcji dowiesz się jak działają joby w ABAPie. Napiszemy prosty program który bedzie odpowiedzialny za wstawienie danych do tabeli a następnie ustawimy go jako proces w tle. Dodatkowo opowiadam tez o tym czym są warianty, oraz jak je tworzyć. To wideo jest częścią płatnego kursu ABAP od podstaw, dostępnego na https://saponit.pl/kurs-abap</description>
     </item>
-    
     <item>
       <title>How to check who deleted your BW object?</title>
-      <link>https://pawelwiejkut.dev/posts/check-who-deleted/</link>
+      <link>http://localhost:56746/posts/check-who-deleted/</link>
       <pubDate>Sun, 10 Jan 2021 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/check-who-deleted/</guid>
+      <guid>http://localhost:56746/posts/check-who-deleted/</guid>
       <description>Most of the objects are not modifiable on the quality or production systems, but we have exceptions like Infopackages on BW. Yesterday I have to check who deleted an object from the system and fortunately, there is the log for this operation. I will show you how to check this.
 We have to go to the transaction SGL1 and search for RSSM Now you should be able to find the impostor 🙂 </description>
     </item>
-    
     <item>
       <title>Developing custom HANA adapter – quickstart</title>
-      <link>https://pawelwiejkut.dev/posts/custom-hana-adapter/</link>
+      <link>http://localhost:56746/posts/custom-hana-adapter/</link>
       <pubDate>Sun, 18 Oct 2020 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/custom-hana-adapter/</guid>
+      <guid>http://localhost:56746/posts/custom-hana-adapter/</guid>
       <description>In this blog post, I will show you how you can fast start with developing custom HANA adapters in JAVA.
 S-User is required to download data provisioning agent: https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73555000100200005999&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/HANA%20DP%20AGENT%202.0 I downloaded the Linux version, but windows should work too (I’m on Mac OS). I will proceed in SAP Hana Studio because Eclipse is missing some packages. If you don’t have SAP Hana Studio, please check: https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73554900100200000585&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/SAP%20HANA%20STUDIO%202 Download missing plugins: https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api/2.3.0 https://mvnrepository.</description>
     </item>
-    
     <item>
       <title>Create new SAP client</title>
-      <link>https://pawelwiejkut.dev/posts/new-sap-client/</link>
+      <link>http://localhost:56746/posts/new-sap-client/</link>
       <pubDate>Mon, 03 Jun 2019 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/new-sap-client/</guid>
+      <guid>http://localhost:56746/posts/new-sap-client/</guid>
       <description>In the SAP NetWeaver system, clients are used for many purposes. One of the business purposes can be handling many sub-companies on one system. From a development perspective, you can use a different client to protect your development or split the system by development and unit tests. Last time I also create a new client on my instance, to separate the client between data to my extractors and rest. How you can achieve this?</description>
     </item>
-    
     <item>
       <title>How to extend decision​ tree in process chain?</title>
-      <link>https://pawelwiejkut.dev/posts/extend-rspc-decision/</link>
+      <link>http://localhost:56746/posts/extend-rspc-decision/</link>
       <pubDate>Wed, 15 May 2019 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/extend-rspc-decision/</guid>
+      <guid>http://localhost:56746/posts/extend-rspc-decision/</guid>
       <description>Toady short tutorial about extending the decision tree in the process chain. As you probably know decision three blocks can be extended. In our example, we want to run a delta info package in everyday processing, and depending on our customizing perform a full load. Process chain example: Customization table: Basically, if the value of param ISIP in our customer table is set to DELTA, we want to execute the delta info package.</description>
     </item>
-    
     <item>
       <title>Działania na plikach</title>
-      <link>https://pawelwiejkut.dev/posts/dzialania-na-plikach/</link>
+      <link>http://localhost:56746/posts/dzialania-na-plikach/</link>
       <pubDate>Mon, 06 May 2019 17:53:34 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/dzialania-na-plikach/</guid>
+      <guid>http://localhost:56746/posts/dzialania-na-plikach/</guid>
       <description>Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:
 employees Pobierz
 Procedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:
 wczytać dane od użytkownika, wprowadzić nowe wpisy od użytkownika do bazy , wprowadzić wpisy z serwera aplikacji do bazy.</description>
     </item>
-    
     <item>
       <title>SQL ON conditions in left join</title>
-      <link>https://pawelwiejkut.dev/posts/sql-on-join-conditions/</link>
+      <link>http://localhost:56746/posts/sql-on-join-conditions/</link>
       <pubDate>Sun, 14 Apr 2019 22:01:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/sql-on-join-conditions/</guid>
+      <guid>http://localhost:56746/posts/sql-on-join-conditions/</guid>
       <description>Even if you use SQL for your daily work, it is possible that you might don’t know about two ways to set a condition: using &amp;ldquo;where&amp;rdquo; and .. put the condition into the join. The main issue is that they can return different results. Let me explain more.
 1.Let’s assume that you have 2 tables. Content of first one 2.Content of the second one Now let’s get only this employees with salary bigger than 4 000 select * from employees emp left join salaries sal on emp.</description>
     </item>
-    
     <item>
       <title>Ballog czyli logowanie danych w ABAPie</title>
-      <link>https://pawelwiejkut.dev/posts/ballog-abap-logowanie/</link>
+      <link>http://localhost:56746/posts/ballog-abap-logowanie/</link>
       <pubDate>Sun, 14 Apr 2019 17:01:40 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/ballog-abap-logowanie/</guid>
+      <guid>http://localhost:56746/posts/ballog-abap-logowanie/</guid>
       <description>Każdy język programowania posiada możliwość zapisania informacji technicznej, czy też zdarzenia które może być pomocna później na przykład podczas sprawdzenia poprawności działania napisanego programu. W wielu językach czynność ta sprowadza się często do napisania jednej linijki kodu, np:
 console.log(&amp;#34;Oh, coś poszło nie tak!&amp;#34;); W ABAPie sytuacja jest trochę bardziej skomplikowana. Zacznijmy może od napisania prostego programu, który będzie opierać się na stworzonych przez nas wcześniej obiektach DDICowych. Żeby nauczyć się czegoś nowego polecam razem ze mną wykonać wszystko w eclipse, oczywiście równie dobrze każdy krok będzie działać też bezpośrednio w SAP GUI.</description>
     </item>
-    
     <item>
       <title>How Oracle store your data</title>
-      <link>https://pawelwiejkut.dev/posts/how-oracle-store-data/</link>
+      <link>http://localhost:56746/posts/how-oracle-store-data/</link>
       <pubDate>Fri, 10 Aug 2018 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/how-oracle-store-data/</guid>
+      <guid>http://localhost:56746/posts/how-oracle-store-data/</guid>
       <description>All of you probably at least once in your life try to insert some records to a database table, but is anyone of you ever tried to understand how Oracle actually saves the entries in the database? Last time I was making a small experiment and I want to share my results with you.
 Step one, let&amp;rsquo;s build a small table and insert a few records:
 INSERT INTO tab1 VALUES(&amp;#39;AAA&amp;#39;,111); INSERT INTO tab1 VALUES(&amp;#39;AAA&amp;#39;,222); INSERT INTO tab1 VALUES(&amp;#39;AAA&amp;#39;,333); INSERT INTO tab1 VALUES(&amp;#39;AAA&amp;#39;,444); INSERT INTO tab1 VALUES(&amp;#39;BBB&amp;#39;,111); INSERT INTO tab1 VALUES(&amp;#39;BBB&amp;#39;,222); INSERT INTO tab1 VALUES(&amp;#39;BBB&amp;#39;,333); INSERT INTO tab1 VALUES(&amp;#39;BBB&amp;#39;,444); INSERT INTO tab1 VALUES(&amp;#39;CCC&amp;#39;,111); INSERT INTO tab1 VALUES(&amp;#39;CCC&amp;#39;,222); INSERT INTO tab1 VALUES(&amp;#39;CCC&amp;#39;,333); INSERT INTO tab1 VALUES(&amp;#39;CCC&amp;#39;,444); Let’s start some fun and check how my dump from Oracle DB looks like.</description>
     </item>
-    
     <item>
       <title>How to debug background/batch job in SAP ?</title>
-      <link>https://pawelwiejkut.dev/posts/debug-background/</link>
+      <link>http://localhost:56746/posts/debug-background/</link>
       <pubDate>Sat, 17 Feb 2018 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/debug-background/</guid>
+      <guid>http://localhost:56746/posts/debug-background/</guid>
       <description>Today I want to show you a simple way to debug a batch job. Sometimes you just want to debug some process witch default runs in batch. Everything looks simple but you should notice that breakpoints sometimes don’t work in these cases. The situation can be even worst when your job runs only a few seconds.
 First of all if your job works for a short time, you just should keep him working for a while.</description>
     </item>
-    
     <item>
       <title>Access transaction without auth</title>
-      <link>https://pawelwiejkut.dev/posts/access-tcode-no-auth/</link>
+      <link>http://localhost:56746/posts/access-tcode-no-auth/</link>
       <pubDate>Sat, 16 Dec 2017 21:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/access-tcode-no-auth/</guid>
+      <guid>http://localhost:56746/posts/access-tcode-no-auth/</guid>
       <description>How to access transactions without an authorization? One big requirement to do this trick is having to debug and replace the function. Let’s start!
 I prepared myself, user, without authorization to the db02 transaction. When I want to run this transaction, I get a message: „You are not authorized to use transaction”
 Go to the SE37 transaction, and display function module: AUTH_CHECK_TCODE.
 Now seat a breakpoint on line 28, where sy-subrc is checked (in new versions line 53).</description>
     </item>
-    
     <item>
       <title>Ekran Wyboru</title>
-      <link>https://pawelwiejkut.dev/posts/ekran-wyboru/</link>
+      <link>http://localhost:56746/posts/ekran-wyboru/</link>
       <pubDate>Sun, 09 Apr 2017 17:01:40 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/ekran-wyboru/</guid>
+      <guid>http://localhost:56746/posts/ekran-wyboru/</guid>
       <description>Dzisiejsza instrukcja będzie nieco krótsza i dotyczyć będzie rozszerzenia naszego poprzedniego programu z tego wpisu o klika linijek kodu odpowiedzialnych za stworzenie ekranu. Nasz tworzony ekran będzie odpowiadał za umożliwienie nam wyboru wyników wyświetlanych w tabeli w zależności od numeru połączenia i numeru przewoźnika.
 Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
 Zaczynamy od skopiowania poprzedniego programu. Aby to zrobić, w transakcji se80 klikamy prawym przyciskiem myszy na nasz poprzedni program i klikamy na copy.</description>
     </item>
-    
     <item>
       <title>Tworzymy ALV Grid</title>
-      <link>https://pawelwiejkut.dev/posts/tworzymy-alv-grid/</link>
+      <link>http://localhost:56746/posts/tworzymy-alv-grid/</link>
       <pubDate>Sun, 19 Mar 2017 17:01:40 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/tworzymy-alv-grid/</guid>
+      <guid>http://localhost:56746/posts/tworzymy-alv-grid/</guid>
       <description>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
 Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
 Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy.</description>
     </item>
-    
     <item>
       <title>Hello World W ABAPie</title>
-      <link>https://pawelwiejkut.dev/posts/hello-world-w-abapie/</link>
+      <link>http://localhost:56746/posts/hello-world-w-abapie/</link>
       <pubDate>Sun, 12 Mar 2017 10:08:21 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/hello-world-w-abapie/</guid>
+      <guid>http://localhost:56746/posts/hello-world-w-abapie/</guid>
       <description>Witajcie w kolejnym poradniku dotyczącym SAPa na blogu. Dzisiejszy wpis będzie dotyczyć uzupełnienia tabel przykładowymi danymi oraz napisania prostego programu w ABAPie, zapraszam do lektury 🙂
 Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/ Uruchamiamy naszą instalację. Pamiętaj o tym że po uruchomieniu maszyny wirtualnej, trzeba jeszcze zalogować się na odpowiedniego użytkownika i uruchomić odpowiednie procesy. Opis tego jak to zrobić możesz sprawdzić w jednym z poprzednich wpisów.</description>
     </item>
-    
     <item>
       <title>Aktywacja SAP Netveawer 7.5</title>
-      <link>https://pawelwiejkut.dev/posts/aktywacja-netveawer/</link>
+      <link>http://localhost:56746/posts/aktywacja-netveawer/</link>
       <pubDate>Sat, 04 Mar 2017 21:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/aktywacja-netveawer/</guid>
+      <guid>http://localhost:56746/posts/aktywacja-netveawer/</guid>
       <description>Kiedy mamy już zainstalowanego SAP NetWeavera, należy aktywować naszą instalację SAP. Proces ten jest o wiele łatwiejszy niż instalacja, wymaga jednak pewnego oswojenia z interfejsem. Aktywacja instalacji jest niezbędna aby można było tworzyć programy w ABAPie. Przejdźmy do rzeczy. Od jakiegoś czasu tworzę kurs online poświęcony właśnie pogramowaniu w ABAPie, jeżeli jesteś zainteresowany, sprawdź proszę kursy.saponit.pl Logujemy się do systemu i wchodzimy w transakcję SLICENSE. Kopiujemy active hardware key. Przechodzimy na stronę https://go.</description>
     </item>
-    
   </channel>
 </rss>

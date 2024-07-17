@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Language on Pawel Wiejkut</title>
+    <link>http://localhost:56746/tags/language/</link>
+    <description>Recent content in Language on Pawel Wiejkut</description>
+    <generator>Hugo -- 0.128.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Nov 2022 17:30:24 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/language/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lumira cheat sheet</title>
+      <link>http://localhost:56746/posts/lumira-cheat_sheet/</link>
+      <pubDate>Sun, 06 Nov 2022 17:30:24 +0100</pubDate>
+      <guid>http://localhost:56746/posts/lumira-cheat_sheet/</guid>
+      <description>How to check dahsboard in different language ? To check the dashboard display in different language, please add following parameters to the URL: LANGUAGE=EN COUNTRY=US Example: http://example.com:9999//BOE/OpenDocument/opendoc/openDocument.jsp?sIDType=CUID&amp;amp;iDocID=xji8HAJksao&amp;amp;LANGUAGE=EN&amp;amp;COUNTRY=US
+How to set up query template In Lumira, you don&amp;rsquo;t have to create separate dashboard for each query if it should look and work the same way. You can crate one dahsboard with one datasource and use following parameters: XQUERY=technical_name_of_bw_query XSYSTEM=cuid:olap_connection_cuid Example: http://example.com:9999//BOE/OpenDocument/opendoc/openDocument.jsp?sIDType=CUID&amp;amp;iDocID=xji8HAJksao&amp;amp;XQUERY=ZBW_FI_Q001&amp;amp;XSYSTEM=cuid:jKIoa98a Also a small entry in the startup script of the template is required: DS_1.</description>
+    </item>
+  </channel>
+</rss>

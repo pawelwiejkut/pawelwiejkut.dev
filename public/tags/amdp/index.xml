@@ -2,32 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AMDP on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/amdp/</link>
+    <link>http://localhost:56746/tags/amdp/</link>
     <description>Recent content in AMDP on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Nov 2021 22:58:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/amdp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Nov 2021 22:58:24 +0200</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/amdp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How AMDP TRFN is executed</title>
-      <link>https://pawelwiejkut.dev/posts/how-amdp-is-executed/</link>
+      <link>http://localhost:56746/posts/how-amdp-is-executed/</link>
       <pubDate>Thu, 11 Nov 2021 22:58:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/how-amdp-is-executed/</guid>
+      <guid>http://localhost:56746/posts/how-amdp-is-executed/</guid>
       <description>ADSO definition:
 TRFN definition:
 In general execution looks like: ABAP Method-&amp;gt;Call SQL on HANA-&amp;gt;Execute &amp;hellip; -&amp;gt; select
 Step by step:
 From ABAP site: cl_rstran_db_stat=&amp;gt;execute_haap() is executed with SQL like: SELECT &amp;#34;FIELD1&amp;#34; AS &amp;#34;FIELD1&amp;#34; , &amp;#34;0RECORDMODE&amp;#34; AS &amp;#34;RECORDMODE&amp;#34; , &amp;#34;RECORD&amp;#34; AS &amp;#34;RECORD&amp;#34; FROM &amp;#34;SAPA4H&amp;#34;.&amp;#34;/1BCAMDP/0BW:DAP:TR_04TFNXDAAVG5T5E8AZJ239HYT&amp;#34; (&amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$aggregation$$&amp;#39;,&amp;#39;&amp;#34;BW_HAP__________DB_AGGREGATION&amp;#34;=&amp;#39;&amp;#39;&amp;#39;&amp;#39;&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$client$$&amp;#39;,&amp;#39;001&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$keydate$$&amp;#39;,&amp;#39;20211110&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$langu$$&amp;#39;,&amp;#39;E&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$objvers$$&amp;#39;,&amp;#39;&amp;#34;OBJVERS&amp;#34; = &amp;#39;&amp;#39;A&amp;#39;&amp;#39;&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;$$shift_decimal_places$$&amp;#39;,&amp;#39;&amp;#34;BW_HAP__________SHIFT_DECIMAL_PLACES&amp;#34;=&amp;#39;&amp;#39;I&amp;#39;&amp;#39;&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;TR_04TFNXDAAVG5T5E8AZJ239HYT.$$adso_dtp_extraction_mode$$&amp;#39;,&amp;#39;&amp;#34;_IS_FULL_KEY&amp;#34; = 1 AND ( (&amp;#34;1TECHPROV_KEY&amp;#34; = &amp;#39;&amp;#39;ZAMDP$C&amp;#39;&amp;#39; OR &amp;#34;1TECHPROV_KEY&amp;#34; = &amp;#39;&amp;#39;ZAMDP&amp;#39;&amp;#39; ) )&amp;#39;), &amp;#39;PLACEHOLDER&amp;#39;=(&amp;#39;TR_04TFNXDAAVG5T5E8AZJ239HYT.$$runid$$&amp;#39;,&amp;#39;&amp;#34;BW_HAP__________RUNID&amp;#34;=&amp;#39;&amp;#39;96SBW6PMF5XU9CAGGGHRMDRSY&amp;#39;&amp;#39; AND &amp;#34;BW_HAP__________HAP_SEQ_NUMBER&amp;#34;=&amp;#39;&amp;#39;0&amp;#39;&amp;#39;&amp;#39;),&amp;#39;PLACEHOLDER&amp;#39; = (&amp;#39;ce_settings&amp;#39;, &amp;#39;{&amp;#34;enable_partitioned_execution&amp;#34;: &amp;#34;0&amp;#34;, &amp;#34;ceqo_enable_rownum_expr_general&amp;#34;: &amp;#34;1&amp;#34;}&amp;#39;) ) WITH HINT ( ROUTE_BY_CARDINALITY(&amp;#34;/BIC/AZAMDP2&amp;#34;) ) This is a</description>
     </item>
-    
     <item>
       <title>AMDP ABAP Transformation execution</title>
-      <link>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</link>
+      <link>http://localhost:56746/posts/amdp-abap-trfn/</link>
       <pubDate>Sun, 17 Oct 2021 21:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</guid>
+      <guid>http://localhost:56746/posts/amdp-abap-trfn/</guid>
       <description>How to execute AMDP TRFN directly from ABAP?  You can use the method execute_haap from cl_rstran_db_stat. Check this blog for complete example with parameters.</description>
     </item>
-    
   </channel>
 </rss>

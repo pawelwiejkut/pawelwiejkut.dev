@@ -2,21 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Login on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/login/</link>
+    <link>http://localhost:56746/tags/login/</link>
     <description>Recent content in Login on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Jan 2022 14:53:45 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/login/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Jan 2022 14:53:45 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/login/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ABAP1909 A4H HANA Login Details</title>
-      <link>https://pawelwiejkut.dev/posts/abap1909-hana-login-details/</link>
+      <link>http://localhost:56746/posts/abap1909-hana-login-details/</link>
       <pubDate>Fri, 28 Jan 2022 14:53:45 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/abap1909-hana-login-details/</guid>
+      <guid>http://localhost:56746/posts/abap1909-hana-login-details/</guid>
       <description>If you want to login into HANA DB on ABAP1909 platform - in the example to create a calculation view, change something please use bellow details:
 For the tentant database SYSTEMDB (i.e to make some administrative changes): user SYSTEM with the password Ldtf5432 For the single-container database HDB (i.e to make some development): user SAPA4H with the password Ldtf5432
 In both cases, the instance number is 02. Example in Eclipse:</description>
     </item>
-    
   </channel>
 </rss>

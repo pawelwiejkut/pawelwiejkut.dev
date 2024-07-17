@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>auth on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/auth/</link>
-    <description>Recent content in auth on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Auth on Pawel Wiejkut</title>
+    <link>http://localhost:56746/tags/auth/</link>
+    <description>Recent content in Auth on Pawel Wiejkut</description>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jun 2022 21:23:34 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/auth/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Jun 2022 21:23:34 +0200</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/auth/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to trace BW BPC Authorization</title>
-      <link>https://pawelwiejkut.dev/posts/check-bpc-authorization/</link>
+      <link>http://localhost:56746/posts/check-bpc-authorization/</link>
       <pubDate>Sat, 04 Jun 2022 21:23:34 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/check-bpc-authorization/</guid>
+      <guid>http://localhost:56746/posts/check-bpc-authorization/</guid>
       <description>Process of building authorization in BW with, and without BPC, is different. Reason is user authorization are enhanced by roles assigned to them in BPC administration panel. For more information about this process you can search for Data Access Profiles (DAPs).
 Common ways Common ways to check the BW auth is:
 Execute query on the affected user in rsudo - But it may not be enough, please check more Check authorization log using SU53 Trace authorization using ST01, STAUTHTRACE or similar BPC Most important difference is that user is sometimes able to execute the query in rsrt, but in the same time is not able to execute the BPC Planing workbook laing on the same object.</description>
     </item>
-    
   </channel>
 </rss>

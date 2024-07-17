@@ -2,58 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>HANA on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/hana/</link>
+    <link>http://localhost:56746/tags/hana/</link>
     <description>Recent content in HANA on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Feb 2022 16:45:44 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/hana/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Feb 2022 16:45:44 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/hana/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manual deployment from ABAP to SAP HANA</title>
-      <link>https://pawelwiejkut.dev/posts/manual-hana-abap-deployment/</link>
+      <link>http://localhost:56746/posts/manual-hana-abap-deployment/</link>
       <pubDate>Fri, 11 Feb 2022 16:45:44 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/manual-hana-abap-deployment/</guid>
+      <guid>http://localhost:56746/posts/manual-hana-abap-deployment/</guid>
       <description>Bellow you can find my notes about the manual deployment from ABAP Application Server to the HANA Database. This kind of activity can be done in example for Calculation Views.</description>
     </item>
-    
     <item>
       <title>ABAP1909 A4H HANA Login Details</title>
-      <link>https://pawelwiejkut.dev/posts/abap1909-hana-login-details/</link>
+      <link>http://localhost:56746/posts/abap1909-hana-login-details/</link>
       <pubDate>Fri, 28 Jan 2022 14:53:45 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/abap1909-hana-login-details/</guid>
+      <guid>http://localhost:56746/posts/abap1909-hana-login-details/</guid>
       <description>If you want to login into HANA DB on ABAP1909 platform - in the example to create a calculation view, change something please use bellow details:
 For the tentant database SYSTEMDB (i.e to make some administrative changes): user SYSTEM with the password Ldtf5432 For the single-container database HDB (i.e to make some development): user SAPA4H with the password Ldtf5432
 In both cases, the instance number is 02. Example in Eclipse:</description>
     </item>
-    
     <item>
       <title>Call SAP HANA function with table</title>
-      <link>https://pawelwiejkut.dev/posts/call-function-table/</link>
+      <link>http://localhost:56746/posts/call-function-table/</link>
       <pubDate>Thu, 11 Nov 2021 11:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/call-function-table/</guid>
+      <guid>http://localhost:56746/posts/call-function-table/</guid>
       <description>How to run the HANA SQL function where an output table is required? Example function (from this tutorial): CREATE TYPE &amp;#34;TT_RESTAURANTS&amp;#34; AS TABLE (&amp;#34;node_id&amp;#34; INTEGER, &amp;#34;distance&amp;#34; INTEGER, &amp;#34;hops&amp;#34; BIGINT); CREATE OR REPLACE PROCEDURE &amp;#34;NEAREST_RESTAURANT&amp;#34;(IN startV INT, OUT res &amp;#34;TT_RESTAURANTS&amp;#34;) LANGUAGE GRAPH READS SQL DATA AS BEGIN GRAPH g = Graph(&amp;#34;SKIING&amp;#34;); VERTEX v_s = Vertex(:g, :startV); MULTISET&amp;lt;Vertex&amp;gt; rests = v IN Vertices(:g) WHERE :v.&amp;#34;restaurant&amp;#34; == N&amp;#39;TRUE&amp;#39;; ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (INT &amp;#34;distance&amp;#34; = 0); ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (BIGINT &amp;#34;hops&amp;#34; = 0L); FOREACH rest in :rests { VERTEX v_rest = Vertex(:g, :rest.</description>
     </item>
-    
-    <item>
-      <title>Call SAP HANA function with table</title>
-      <link>https://pawelwiejkut.dev/posts/lumira-cheatsheet/</link>
-      <pubDate>Thu, 11 Nov 2021 11:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/lumira-cheatsheet/</guid>
-      <description>How to run the HANA SQL function where an output table is required? Example function (from this tutorial): CREATE TYPE &amp;#34;TT_RESTAURANTS&amp;#34; AS TABLE (&amp;#34;node_id&amp;#34; INTEGER, &amp;#34;distance&amp;#34; INTEGER, &amp;#34;hops&amp;#34; BIGINT); CREATE OR REPLACE PROCEDURE &amp;#34;NEAREST_RESTAURANT&amp;#34;(IN startV INT, OUT res &amp;#34;TT_RESTAURANTS&amp;#34;) LANGUAGE GRAPH READS SQL DATA AS BEGIN GRAPH g = Graph(&amp;#34;SKIING&amp;#34;); VERTEX v_s = Vertex(:g, :startV); MULTISET&amp;lt;Vertex&amp;gt; rests = v IN Vertices(:g) WHERE :v.&amp;#34;restaurant&amp;#34; == N&amp;#39;TRUE&amp;#39;; ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (INT &amp;#34;distance&amp;#34; = 0); ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (BIGINT &amp;#34;hops&amp;#34; = 0L); FOREACH rest in :rests { VERTEX v_rest = Vertex(:g, :rest.</description>
-    </item>
-    
     <item>
       <title>Developing custom HANA adapter – quickstart</title>
-      <link>https://pawelwiejkut.dev/posts/custom-hana-adapter/</link>
+      <link>http://localhost:56746/posts/custom-hana-adapter/</link>
       <pubDate>Sun, 18 Oct 2020 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/custom-hana-adapter/</guid>
+      <guid>http://localhost:56746/posts/custom-hana-adapter/</guid>
       <description>In this blog post, I will show you how you can fast start with developing custom HANA adapters in JAVA.
 S-User is required to download data provisioning agent: https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73555000100200005999&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/HANA%20DP%20AGENT%202.0 I downloaded the Linux version, but windows should work too (I’m on Mac OS). I will proceed in SAP Hana Studio because Eclipse is missing some packages. If you don’t have SAP Hana Studio, please check: https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73554900100200000585&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/SAP%20HANA%20STUDIO%202 Download missing plugins: https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api/2.3.0 https://mvnrepository.</description>
     </item>
-    
   </channel>
 </rss>

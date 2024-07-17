@@ -1,367 +1,648 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://pawelwiejkut.dev/posts/bw-fiori/</loc>
+    <loc>http://localhost:56746/tags/bw/</loc>
+    <lastmod>2023-05-29T19:56:19+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/bw-tips-and-tricks/</loc>
+    <lastmod>2023-05-29T19:56:19+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/</loc>
+    <lastmod>2023-05-29T19:56:19+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/</loc>
+    <lastmod>2023-05-29T19:56:19+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/</loc>
+    <lastmod>2023-05-29T19:56:19+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/tips/</loc>
+    <lastmod>2023-05-29T19:56:19+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/tricks/</loc>
+    <lastmod>2023-05-29T19:56:19+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/cheatsheet/</loc>
+    <lastmod>2022-11-06T17:30:24+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/language/</loc>
+    <lastmod>2022-11-06T17:30:24+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/lumira/</loc>
+    <lastmod>2022-11-06T17:30:24+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/lumira-cheat_sheet/</loc>
+    <lastmod>2022-11-06T17:30:24+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/bw-fiori/</loc>
     <lastmod>2022-08-08T12:31:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/fiori/</loc>
     <lastmod>2022-08-08T12:31:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/launchpad/</loc>
     <lastmod>2022-08-08T12:31:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/tags/</loc>
-    <lastmod>2022-08-08T12:31:24+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/check-bpc-authorization/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/auth/</loc>
     <lastmod>2022-06-04T21:23:34+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/manual-hana-abap-deployment/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/bpc/</loc>
+    <lastmod>2022-06-04T21:23:34+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/check-bpc-authorization/</loc>
+    <lastmod>2022-06-04T21:23:34+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/sap/</loc>
+    <lastmod>2022-06-04T21:23:34+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/abap/</loc>
     <lastmod>2022-02-11T16:45:44+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/instalacja-sapa/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/hana/</loc>
+    <lastmod>2022-02-11T16:45:44+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/manual-hana-abap-deployment/</loc>
+    <lastmod>2022-02-11T16:45:44+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/abap-od-podstaw/</loc>
     <lastmod>2022-01-29T18:33:53+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/abap1909-hana-login-details/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/instalacja-sapa/</loc>
+    <lastmod>2022-01-29T18:33:53+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/abap1909-hana-login-details/</loc>
     <lastmod>2022-01-28T14:53:45+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/abap-trfn-bw/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/login/</loc>
+    <lastmod>2022-01-28T14:53:45+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/password/</loc>
+    <lastmod>2022-01-28T14:53:45+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/abap-trfn-bw/</loc>
     <lastmod>2022-01-11T21:21:22+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/create-adso-abap/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/adso/</loc>
     <lastmod>2022-01-06T12:52:44+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/change-transport-desc/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/create-adso-abap/</loc>
+    <lastmod>2022-01-06T12:52:44+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/change-transport-desc/</loc>
     <lastmod>2022-01-06T12:23:54+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/bw-remove-charters/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/hacks/</loc>
+    <lastmod>2022-01-06T12:23:54+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/bw-remove-charters/</loc>
     <lastmod>2022-01-02T19:56:19+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/se16-se11-change/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/trfn/</loc>
+    <lastmod>2022-01-02T19:56:19+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/authorization/</loc>
     <lastmod>2021-12-25T14:51:25+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/bw-formula-parameters/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/database/</loc>
+    <lastmod>2021-12-25T14:51:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/se16-se11-change/</loc>
+    <lastmod>2021-12-25T14:51:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/se11/</loc>
+    <lastmod>2021-12-25T14:51:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/se16/</loc>
+    <lastmod>2021-12-25T14:51:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/bw-formula-parameters/</loc>
     <lastmod>2021-12-20T09:13:49+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/sac-popup-order/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/bwfunctions/</loc>
+    <lastmod>2021-12-20T09:13:49+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/class/</loc>
+    <lastmod>2021-12-20T09:13:49+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/parameters/</loc>
+    <lastmod>2021-12-20T09:13:49+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/sac-popup-order/</loc>
     <lastmod>2021-12-15T22:01:41+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/sac-button-checkbox/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/javascript/</loc>
+    <lastmod>2021-12-15T22:01:41+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/sac/</loc>
+    <lastmod>2021-12-15T22:01:41+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/sacapp/</loc>
+    <lastmod>2021-12-15T22:01:41+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/sacpopup/</loc>
+    <lastmod>2021-12-15T22:01:41+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/sacbutton/</loc>
     <lastmod>2021-12-13T15:12:24+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/sac-app-design/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/sac-button-checkbox/</loc>
+    <lastmod>2021-12-13T15:12:24+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/dropdown/</loc>
     <lastmod>2021-12-13T12:15:41+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/sac-app-dropdown-cascade/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/sac-app-design/</loc>
+    <lastmod>2021-12-13T12:15:41+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/sacappfilter/</loc>
+    <lastmod>2021-12-13T12:15:41+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/sac-app-dropdown-cascade/</loc>
     <lastmod>2021-12-12T15:42:26+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/sac-app-dropdown/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/sac-app-dropdown/</loc>
     <lastmod>2021-12-12T14:13:53+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/sac-create-app/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/sac-create-app/</loc>
     <lastmod>2021-12-12T11:58:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/sac-model/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/sac-model/</loc>
     <lastmod>2021-12-11T21:03:40+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/ios-app-on-macos/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/model/</loc>
+    <lastmod>2021-12-11T21:03:40+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/ios-app-on-macos/</loc>
     <lastmod>2021-12-07T08:25:49+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/how-to-contribute/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/instagram/</loc>
+    <lastmod>2021-12-07T08:25:49+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/ios/</loc>
+    <lastmod>2021-12-07T08:25:49+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/macos/</loc>
+    <lastmod>2021-12-07T08:25:49+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/sideload/</loc>
+    <lastmod>2021-12-07T08:25:49+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/abapgit/</loc>
     <lastmod>2021-12-01T22:01:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/how-amdp-is-executed/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/github/</loc>
+    <lastmod>2021-12-01T22:01:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/how-to-contribute/</loc>
+    <lastmod>2021-12-01T22:01:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/amdp/</loc>
     <lastmod>2021-11-11T22:58:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/call-function-table/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/how-amdp-is-executed/</loc>
+    <lastmod>2021-11-11T22:58:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/call-function-table/</loc>
     <lastmod>2021-11-11T11:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/lumira-cheatsheet/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/sql/</loc>
     <lastmod>2021-11-11T11:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/abap1909-dev-m1/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/a4h/</loc>
     <lastmod>2021-11-10T20:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/bw-important-programs/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/abap_trial/</loc>
+    <lastmod>2021-11-10T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/apple-silicon/</loc>
+    <lastmod>2021-11-10T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/docker/</loc>
+    <lastmod>2021-11-10T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/abap1909-dev-m1/</loc>
+    <lastmod>2021-11-10T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/installation/</loc>
+    <lastmod>2021-11-10T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/m1/</loc>
+    <lastmod>2021-11-10T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/bw-important-programs/</loc>
     <lastmod>2021-11-04T11:15:20+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/about-me/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/function-modules/</loc>
+    <lastmod>2021-11-04T11:15:20+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/program/</loc>
+    <lastmod>2021-11-04T11:15:20+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/about-me/</loc>
     <lastmod>2021-11-04T11:15:14+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/bw/</loc>
+  </url><url>
+    <loc>http://localhost:56746/bw/</loc>
     <lastmod>2021-11-04T11:15:14+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/sac-tutorial/</loc>
+  </url><url>
+    <loc>http://localhost:56746/sac-tutorial/</loc>
     <lastmod>2021-11-04T11:15:14+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/amdp-abap-trfn/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/necessary/</loc>
+    <lastmod>2021-11-04T11:15:14+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/opensource/</loc>
+    <lastmod>2021-11-04T11:15:14+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/protip/</loc>
+    <lastmod>2021-11-04T11:15:14+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/amdp-abap-trfn/</loc>
     <lastmod>2021-10-17T21:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/du-adso-api/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/du-adso-api/</loc>
     <lastmod>2021-10-17T19:35:53+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/npl-wont-start/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/abaptrial/</loc>
+    <lastmod>2021-12-11T00:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/license/</loc>
+    <lastmod>2021-12-11T00:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/npl/</loc>
+    <lastmod>2021-12-11T00:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/npl-wont-start/</loc>
     <lastmod>2021-04-02T22:01:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/joby-w-abapie/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/sybase/</loc>
+    <lastmod>2021-12-11T00:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/joby-w-abapie/</loc>
     <lastmod>2021-01-23T18:25:44+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/check-who-deleted/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/hack/</loc>
     <lastmod>2021-01-10T20:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/custom-hana-adapter/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/check-who-deleted/</loc>
+    <lastmod>2021-01-10T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/slg0/</loc>
+    <lastmod>2021-01-10T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/adapter/</loc>
     <lastmod>2020-10-18T20:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/new-sap-client/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/data-provisioning/</loc>
+    <lastmod>2020-10-18T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/custom-hana-adapter/</loc>
+    <lastmod>2020-10-18T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/eclipse/</loc>
+    <lastmod>2020-10-18T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/java/</loc>
+    <lastmod>2020-10-18T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/basis/</loc>
     <lastmod>2019-06-03T20:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/extend-rspc-decision/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/client/</loc>
+    <lastmod>2019-06-03T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/new-sap-client/</loc>
+    <lastmod>2019-06-03T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/decision/</loc>
     <lastmod>2019-05-15T20:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/dzialania-na-plikach/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/extend-rspc-decision/</loc>
+    <lastmod>2019-05-15T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/rspc/</loc>
+    <lastmod>2019-05-15T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/dzialania-na-plikach/</loc>
     <lastmod>2019-05-06T17:53:34+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/sql-on-join-conditions/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/sql-on-join-conditions/</loc>
     <lastmod>2021-12-11T00:00:00+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/ballog-abap-logowanie/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/ballog-abap-logowanie/</loc>
     <lastmod>2019-04-14T17:01:40+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/how-oracle-store-data/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/disk/</loc>
     <lastmod>2018-08-10T20:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/debug-background/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/how-oracle-store-data/</loc>
+    <lastmod>2018-08-10T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/oralce/</loc>
+    <lastmod>2018-08-10T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/storage/</loc>
+    <lastmod>2018-08-10T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/background/</loc>
     <lastmod>2018-02-17T20:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/access-tcode-no-auth/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/batch/</loc>
+    <lastmod>2018-02-17T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/dtp/</loc>
+    <lastmod>2018-02-17T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/debug-background/</loc>
+    <lastmod>2018-02-17T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/job/</loc>
+    <lastmod>2018-02-17T20:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/access-tcode-no-auth/</loc>
     <lastmod>2017-12-16T21:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/ekran-wyboru/</loc>
+  </url><url>
+    <loc>http://localhost:56746/tags/auth_check_tcode/</loc>
+    <lastmod>2017-12-16T21:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/tags/function-module/</loc>
+    <lastmod>2017-12-16T21:44:24+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/posts/ekran-wyboru/</loc>
     <lastmod>2017-04-09T17:01:40+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/tworzymy-alv-grid/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/tworzymy-alv-grid/</loc>
     <lastmod>2017-03-19T17:01:40+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/hello-world-w-abapie/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/hello-world-w-abapie/</loc>
     <lastmod>2017-03-12T10:08:21+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/abap-od-podstaw/</loc>
+  </url><url>
+    <loc>http://localhost:56746/abap-od-podstaw/</loc>
     <lastmod>2021-12-11T00:00:00+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/posts/aktywacja-netveawer/</loc>
+  </url><url>
+    <loc>http://localhost:56746/posts/aktywacja-netveawer/</loc>
     <lastmod>2017-03-04T21:44:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/categories/</loc>
+  </url><url>
+    <loc>http://localhost:56746/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:56746/search/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-  
-  <url>
-    <loc>https://pawelwiejkut.dev/search/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
 </urlset>

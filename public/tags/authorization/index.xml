@@ -2,32 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Authorization on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/authorization/</link>
+    <link>http://localhost:56746/tags/authorization/</link>
     <description>Recent content in Authorization on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Dec 2021 14:51:25 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/authorization/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Dec 2021 14:51:25 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/authorization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to change any entries in the database in SE16 or SE11</title>
-      <link>https://pawelwiejkut.dev/posts/se16-se11-change/</link>
+      <link>http://localhost:56746/posts/se16-se11-change/</link>
       <pubDate>Sat, 25 Dec 2021 14:51:25 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/se16-se11-change/</guid>
+      <guid>http://localhost:56746/posts/se16-se11-change/</guid>
       <description>Sometimes we are forced to change some database entries. There are many reasons like a new s-note from SAP or incorrect values in the technical table. Every SAP table can be changed via SE16 or SE11 transaction - all you need to have is a debug with change role assigned to your user. In this article you can find youtube video, and bellow is detailed step by step instruction.
 Video tutorial Step by step instruction how to change entry in SE16 1.</description>
     </item>
-    
     <item>
       <title>Access transaction without auth</title>
-      <link>https://pawelwiejkut.dev/posts/access-tcode-no-auth/</link>
+      <link>http://localhost:56746/posts/access-tcode-no-auth/</link>
       <pubDate>Sat, 16 Dec 2017 21:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/access-tcode-no-auth/</guid>
+      <guid>http://localhost:56746/posts/access-tcode-no-auth/</guid>
       <description>How to access transactions without an authorization? One big requirement to do this trick is having to debug and replace the function. Let’s start!
 I prepared myself, user, without authorization to the db02 transaction. When I want to run this transaction, I get a message: „You are not authorized to use transaction”
 Go to the SE37 transaction, and display function module: AUTH_CHECK_TCODE.
 Now seat a breakpoint on line 28, where sy-subrc is checked (in new versions line 53).</description>
     </item>
-    
   </channel>
 </rss>

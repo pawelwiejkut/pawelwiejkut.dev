@@ -2,20 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ADSO on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/adso/</link>
+    <link>http://localhost:56746/tags/adso/</link>
     <description>Recent content in ADSO on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jan 2022 12:52:44 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/adso/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jan 2022 12:52:44 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/adso/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create ADSO from ABAP</title>
-      <link>https://pawelwiejkut.dev/posts/create-adso-abap/</link>
+      <link>http://localhost:56746/posts/create-adso-abap/</link>
       <pubDate>Thu, 06 Jan 2022 12:52:44 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/create-adso-abap/</guid>
+      <guid>http://localhost:56746/posts/create-adso-abap/</guid>
       <description>Creating ADSO from ABAP can be easily achieved by cl_rso_adso_api=&amp;gt;create DATA(ls_flags) = VALUE cl_rso_adso_api=&amp;gt;tn_s_adsoflags( direct_update = abap_true ). TRY. cl_rso_adso_api=&amp;gt;create( EXPORTING i_adsonm = &amp;#34;Name of the ADSO i_infoarea = &amp;#34;Infoarea name i_s_adsoflags = ls_flags i_t_object = &amp;#34;Table with all fields i_t_dimension = &amp;#34;Dimension i_t_key = &amp;#34;String table with key IMPORTING e_t_msg = DATA(lt_msg) ). CATCH cx_rs_all_msg INTO DATA(lr_msg). cl_demo_output=&amp;gt;display( EXPORTING data = lr_msg-&amp;gt;get_longtext( ) name = &amp;#39;Error&amp;#39; ). ENDTRY.
 Full usage examples can be found here</description>
     </item>
-    
   </channel>
 </rss>

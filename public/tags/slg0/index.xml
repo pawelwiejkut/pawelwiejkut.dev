@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>slg0 on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/slg0/</link>
-    <description>Recent content in slg0 on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Slg0 on Pawel Wiejkut</title>
+    <link>http://localhost:56746/tags/slg0/</link>
+    <description>Recent content in Slg0 on Pawel Wiejkut</description>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Jan 2021 20:44:24 +0200</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/slg0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Jan 2021 20:44:24 +0200</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/slg0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to check who deleted your BW object?</title>
-      <link>https://pawelwiejkut.dev/posts/check-who-deleted/</link>
+      <link>http://localhost:56746/posts/check-who-deleted/</link>
       <pubDate>Sun, 10 Jan 2021 20:44:24 +0200</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/check-who-deleted/</guid>
+      <guid>http://localhost:56746/posts/check-who-deleted/</guid>
       <description>Most of the objects are not modifiable on the quality or production systems, but we have exceptions like Infopackages on BW. Yesterday I have to check who deleted an object from the system and fortunately, there is the log for this operation. I will show you how to check this.
 We have to go to the transaction SGL1 and search for RSSM Now you should be able to find the impostor 🙂 </description>
     </item>
-    
   </channel>
 </rss>

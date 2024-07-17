@@ -2,21 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hacks on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/hacks/</link>
+    <link>http://localhost:56746/tags/hacks/</link>
     <description>Recent content in Hacks on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jan 2022 12:23:54 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/hacks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jan 2022 12:23:54 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/hacks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Change transport description after release</title>
-      <link>https://pawelwiejkut.dev/posts/change-transport-desc/</link>
+      <link>http://localhost:56746/posts/change-transport-desc/</link>
       <pubDate>Thu, 06 Jan 2022 12:23:54 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/change-transport-desc/</guid>
+      <guid>http://localhost:56746/posts/change-transport-desc/</guid>
       <description>If you are forced to change transport description after release, you have to consider following changes:
 Use RDDIT076 to change the description - if not possible, you have to find a way to edit E07T and E070.
 Change description in TMSBUFTXT to correct display of shorttext in STMS.</description>
     </item>
-    
   </channel>
 </rss>

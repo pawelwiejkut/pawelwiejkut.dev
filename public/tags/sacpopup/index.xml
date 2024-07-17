@@ -2,19 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SACPopup on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/sacpopup/</link>
+    <link>http://localhost:56746/tags/sacpopup/</link>
     <description>Recent content in SACPopup on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Dec 2021 22:01:41 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/sacpopup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Dec 2021 22:01:41 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/sacpopup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create a popup to change dimensions order</title>
-      <link>https://pawelwiejkut.dev/posts/sac-popup-order/</link>
+      <link>http://localhost:56746/posts/sac-popup-order/</link>
       <pubDate>Wed, 15 Dec 2021 22:01:41 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/sac-popup-order/</guid>
+      <guid>http://localhost:56746/posts/sac-popup-order/</guid>
       <description>Let&amp;rsquo;s start by creating the popup Rename new window Definitely we should arrange this new space. Start with a new List Box Add tree new buttons: UP, DOWN, Save and Close Change style on List Box to add borders Rename new elements Create a new button on the Canvas Create a script variable Change name and set as array Create onClick event for the new - Change Layout button // Get current dimensions var currentDimensions = Table_Games_Sales.</description>
     </item>
-    
   </channel>
 </rss>

@@ -2,21 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MacOS on Pawel Wiejkut</title>
-    <link>https://pawelwiejkut.dev/tags/macos/</link>
+    <link>http://localhost:56746/tags/macos/</link>
     <description>Recent content in MacOS on Pawel Wiejkut</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Dec 2021 08:25:49 +0100</lastBuildDate><atom:link href="https://pawelwiejkut.dev/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Dec 2021 08:25:49 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56746/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to install iOS apps on MacOs M1 (Monterey)</title>
-      <link>https://pawelwiejkut.dev/posts/ios-app-on-macos/</link>
+      <link>http://localhost:56746/posts/ios-app-on-macos/</link>
       <pubDate>Tue, 07 Dec 2021 08:25:49 +0100</pubDate>
-      
-      <guid>https://pawelwiejkut.dev/posts/ios-app-on-macos/</guid>
+      <guid>http://localhost:56746/posts/ios-app-on-macos/</guid>
       <description>Is it still possible to install/sideload iOS apps into M1 Mac? The answer is yes - it is possible to even on the newest version of MacOS (Monterey 12.0.1).Nevertheless you have to know that not all applications are working well. For example, Instagram is crashing every time at startup, and you have to clear ~/Library/Containers/Instagram every time before launch.
 How to install the iOS app?
 Download and install sideloadly from https://sideloadly.</description>
     </item>
-    
   </channel>
 </rss>
