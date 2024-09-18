@@ -15,13 +15,13 @@ jobs:
         with:
           submodules: recursive  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          persist-credentials: false
 
       # Node for any Compression
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
           node-version: '16.x'
-          persist-credentials: false
       
       - name: Install Dependencies
         run: npm install
