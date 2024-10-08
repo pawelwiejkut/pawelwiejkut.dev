@@ -1,5 +1,5 @@
 ---
-title: "Remove invalid charters in your BW transformation"
+title: "Remove invalid characters in your BW transformation"
 date: 2022-01-02T19:56:19+01:00
 tags: ["BW","TRFN"]
 editPost:
