@@ -1,3 +1,6 @@
 :root {
     --main-width: 900px;
 }
+
+::-webkit-scrollbar{ background: var(--theme); }
+
