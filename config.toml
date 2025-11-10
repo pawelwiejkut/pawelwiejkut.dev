@@ -37,7 +37,7 @@ unsafe= true
   name = "About me"
   url = "/about-me/"
   weight = 2
-  [[menu.main]]
+[[menu.main]]
   identifier = "BW"
   name = "BW"
   url = "/bw/"
@@ -48,6 +48,8 @@ description = 'Paweł Wiejkut homepage. ABAP BW SAC HANA Tips & Tricks 👨🏻�
 env = "production"
 comments = true
 ShowReadingTime = true
+defaultTheme =  "light"
+
 [params.assets]
 favicon = "./profile.png"
 favicon16x16 = "./profile.png"
@@ -93,11 +95,14 @@ url = "https://linkedin.com/in/pawelwiejkut"
 name = "github"
 url = "https://github.com/pawelwiejkut"
 [[params.socialIcons]]
-name = "twitter"
+name = "x"
 url = "https://twitter.com/pawelwiejkut"
 [[params.socialIcons]]
 name = "youtube"
 url = "https://www.youtube.com/user/PawelWiejkut/"
+[[params.socialIcons]]
+name = "tiktok"
+url = "https://www.tiktok.com/@pawelwiejkut"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
