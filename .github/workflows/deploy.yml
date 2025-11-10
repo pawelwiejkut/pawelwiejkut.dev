@@ -11,7 +11,7 @@ jobs:
     name: deployment to server
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: recursive  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -28,9 +28,9 @@ jobs:
         
         #Setup of Hugo and Caching of files
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.128.0'
+          hugo-version: '0.152.2'
           extended: true
 
       - name: Clean public directory
