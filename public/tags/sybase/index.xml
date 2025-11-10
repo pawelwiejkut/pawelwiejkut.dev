@@ -2,28 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SYBASE on Pawel Wiejkut</title>
-    <link>http://localhost:56746/tags/sybase/</link>
+    <link>http://localhost:1313/tags/sybase/</link>
     <description>Recent content in SYBASE on Pawel Wiejkut</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Dec 2021 00:00:00 +0200</lastBuildDate>
-    <atom:link href="http://localhost:56746/tags/sybase/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/sybase/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SAP NPL 7.52 does not start</title>
-      <link>http://localhost:56746/posts/npl-wont-start/</link>
+      <link>http://localhost:1313/posts/npl-wont-start/</link>
       <pubDate>Fri, 02 Apr 2021 22:01:24 +0200</pubDate>
-      <guid>http://localhost:56746/posts/npl-wont-start/</guid>
-      <description>This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on: The database is not available via R3trans ------------------------------------------- starting database NPL ... Log file: /sybase/NPL/startdb.log
-Or Stop returns modlib.jslib.caughtException
-We have to download a new license file from https://developers.</description>
+      <guid>http://localhost:1313/posts/npl-wont-start/</guid>
+      <description>&lt;p&gt;This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;The database is not available via R3trans
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-------------------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;starting database NPL ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Log file: /sybase/NPL/startdb.log&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Or
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Stop returns modlib.jslib.caughtException&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;We have to download a new license file from &lt;a href=&#34;https://developers.sap.com/trials-downloads.html?search=ABAP&#34;&gt;https://developers.sap.com/trials-downloads.html?search=ABAP&lt;/a&gt; under the section SAP NetWeaver AS ABAP Developer Edition 7.52 SP04
+&lt;img src=&#34;http://localhost:1313/npl_wont_start/licsyb1.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQL ON conditions in left join</title>
-      <link>http://localhost:56746/posts/sql-on-join-conditions/</link>
+      <link>http://localhost:1313/posts/sql-on-join-conditions/</link>
       <pubDate>Sun, 14 Apr 2019 22:01:24 +0200</pubDate>
-      <guid>http://localhost:56746/posts/sql-on-join-conditions/</guid>
-      <description>Even if you use SQL for your daily work, it is possible that you might don’t know about two ways to set a condition: using &amp;ldquo;where&amp;rdquo; and .. put the condition into the join. The main issue is that they can return different results. Let me explain more.
-1.Let’s assume that you have 2 tables. Content of first one 2.Content of the second one Now let’s get only this employees with salary bigger than 4 000 select * from employees emp left join salaries sal on emp.</description>
+      <guid>http://localhost:1313/posts/sql-on-join-conditions/</guid>
+      <description>&lt;p&gt;Even if you use SQL for your daily work, it is possible that you might don’t know about two ways to set a condition: using &amp;ldquo;where&amp;rdquo; and .. put the condition into the join. The main issue is that they can return different results. Let me explain more.&lt;/p&gt;
+&lt;p&gt;1.Let’s assume that you have 2 tables. Content of first one
+&lt;img src=&#34;http://localhost:1313/sql_on_join_conditions/1.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;2.Content of the second one
+&lt;img src=&#34;http://localhost:1313/sql_on_join_conditions/2.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Now let’s get only this employees with salary bigger than 4 000
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; employees emp &lt;span style=&#34;color:#66d9ef&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;join&lt;/span&gt; salaries sal &lt;span style=&#34;color:#66d9ef&#34;&gt;on&lt;/span&gt; emp.id &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sal.employee
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;where&lt;/span&gt; sal.salary &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4000&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,19 +2,229 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Function Modules on Pawel Wiejkut</title>
-    <link>http://localhost:56746/tags/function-modules/</link>
+    <link>http://localhost:1313/tags/function-modules/</link>
     <description>Recent content in Function Modules on Pawel Wiejkut</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Nov 2021 11:15:20 +0100</lastBuildDate>
-    <atom:link href="http://localhost:56746/tags/function-modules/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/function-modules/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BW important programs / Function modules / Tables </title>
-      <link>http://localhost:56746/posts/bw-important-programs/</link>
+      <link>http://localhost:1313/posts/bw-important-programs/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:20 +0100</pubDate>
-      <guid>http://localhost:56746/posts/bw-important-programs/</guid>
-      <description>Almost all of these programs are included in my GitHub development &amp;ldquo;bw_toolbox&amp;rdquo;. If you want, you can just implement this in an easy way to your system. Please check by clicking here.
-Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPM_PROCESS_MONITOR DTP PROG Change DTP request status ADSO RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user BW4 GUI Versions Description Name Type DTP View rsbk0001 PROG TRFN View rstran_gui_start PROG DataSource View rsds Transaction Infoprovider View (display data) rsoadso Transaction Manage Request rsmng Transaction Tables Description Name Check iobj assigned to extractor field RSTSFIELD RSOFIELSMAP Keyfigures basic info RSDKYF Characteristics basic info RSDCHABAS Extractor metadata including custom (fields) RSDSSEGFD Query Repo (UUID from name) RSZCOMPDIR Authorization Tables Description Name Role Defnition AGR_DEFINE Role user asigment ( S_RS_AUTH for BW RSECADMIN) AGR_1251 Maintenance View transport: SE54 &amp;gt; Utilities &amp;gt; Total Transport</description>
+      <guid>http://localhost:1313/posts/bw-important-programs/</guid>
+      <description>&lt;p&gt;Almost all of these programs are included in my GitHub development &amp;ldquo;bw_toolbox&amp;rdquo;. If you want, you can just implement this in an easy way to your system. &lt;a href=&#34;https://github.com/pawelwiejkut/bw_toolbox&#34;&gt;Please check by clicking here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;activate&#34;&gt;Activate:&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Category&lt;/th&gt;
+          &lt;th&gt;Type&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_TRFN_ACTIVATE&lt;/td&gt;
+          &lt;td&gt;TRFN&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDS_DATASOURCE_ACTIVATE_ALL&lt;/td&gt;
+          &lt;td&gt;RSDS&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate data source&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSBKDTPREPAIR&lt;/td&gt;
+          &lt;td&gt;DTP&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate data transfer process&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_HCPR_ACTIVATE&lt;/td&gt;
+          &lt;td&gt;HCPR&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate composite provider&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_CUBE_ACTIVATE&lt;/td&gt;
+          &lt;td&gt;CUBE&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate cube&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_ADSO_ACTIVATE&lt;/td&gt;
+          &lt;td&gt;ADSO&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate Advanced DataStore Object&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_IOBJ_ACTIVATE&lt;/td&gt;
+          &lt;td&gt;IOBJ&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate InfoObject&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;maintenance&#34;&gt;Maintenance:&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Category&lt;/th&gt;
+          &lt;th&gt;Type&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_AFTER_IMPORT_FOR_CORR&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Reimport transport&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSBM_GUI_CHANGE_USTATE&lt;/td&gt;
+          &lt;td&gt;DTP&lt;/td&gt;
+          &lt;td&gt;FM&lt;/td&gt;
+          &lt;td&gt;Change DTP request status&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSPM_PROCESS_MONITOR&lt;/td&gt;
+          &lt;td&gt;DTP&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Change DTP request status ADSO&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSPC_VARIANT_DELETE&lt;/td&gt;
+          &lt;td&gt;RSPC&lt;/td&gt;
+          &lt;td&gt;FM&lt;/td&gt;
+          &lt;td&gt;Delete process chain variant&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSPC_API_CHAIN_START&lt;/td&gt;
+          &lt;td&gt;RSPC&lt;/td&gt;
+          &lt;td&gt;FM&lt;/td&gt;
+          &lt;td&gt;Start process chain  immediately ( even scheduled )&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;DB_DROP_TABLE&lt;/td&gt;
+          &lt;td&gt;DEST&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Drop tables under the OpenHub&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_IOBJ_REORG&lt;/td&gt;
+          &lt;td&gt;IOBJ&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Repair Infoobject&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSPC_PROCESS_FINISH&lt;/td&gt;
+          &lt;td&gt;RSPC&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Process chain  variant status change&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;BAPI_USER_UNLOCK&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;FM&lt;/td&gt;
+          &lt;td&gt;Unlock user&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;bw4-gui-versions&#34;&gt;BW4 GUI Versions&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Type&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;DTP View&lt;/td&gt;
+          &lt;td&gt;rsbk0001&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;TRFN View&lt;/td&gt;
+          &lt;td&gt;rstran_gui_start&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;DataSource View&lt;/td&gt;
+          &lt;td&gt;rsds&lt;/td&gt;
+          &lt;td&gt;Transaction&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Infoprovider View (display data)&lt;/td&gt;
+          &lt;td&gt;rsoadso&lt;/td&gt;
+          &lt;td&gt;Transaction&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Manage Request&lt;/td&gt;
+          &lt;td&gt;rsmng&lt;/td&gt;
+          &lt;td&gt;Transaction&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Check iobj assigned to extractor field&lt;/td&gt;
+          &lt;td&gt;RSTSFIELD RSOFIELSMAP&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Keyfigures basic info&lt;/td&gt;
+          &lt;td&gt;RSDKYF&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Characteristics basic info&lt;/td&gt;
+          &lt;td&gt;RSDCHABAS&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Extractor metadata including custom (fields)&lt;/td&gt;
+          &lt;td&gt;RSDSSEGFD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Query Repo (UUID from name)&lt;/td&gt;
+          &lt;td&gt;RSZCOMPDIR&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;authorization-tables&#34;&gt;Authorization Tables&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Role Defnition&lt;/td&gt;
+          &lt;td&gt;AGR_DEFINE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Role user asigment ( S_RS_AUTH for BW RSECADMIN)&lt;/td&gt;
+          &lt;td&gt;AGR_1251&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Maintenance View transport:
+SE54 &amp;gt; Utilities &amp;gt; Total Transport&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

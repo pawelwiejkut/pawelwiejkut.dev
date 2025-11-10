@@ -2,21 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Launchpad on Pawel Wiejkut</title>
-    <link>http://localhost:56746/tags/launchpad/</link>
+    <link>http://localhost:1313/tags/launchpad/</link>
     <description>Recent content in Launchpad on Pawel Wiejkut</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Aug 2022 12:31:24 +0200</lastBuildDate>
-    <atom:link href="http://localhost:56746/tags/launchpad/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/launchpad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BW Fiori cheat sheet</title>
-      <link>http://localhost:56746/posts/bw-fiori/</link>
+      <link>http://localhost:1313/posts/bw-fiori/</link>
       <pubDate>Mon, 08 Aug 2022 12:31:24 +0200</pubDate>
-      <guid>http://localhost:56746/posts/bw-fiori/</guid>
-      <description>Important transactions in the context of BW Fiori Apps:
-Tile Maitenance - category,group /ui2/flpd_cust
-Transaltion SE63, Short Text, TABL, WDY_CONF_USERT2
-Cache /UI2/INVALIDATE_CLIENT_CACHES /UI2/INVALIDATE_GLOBAL_CACHES /UI5/APP_INDEX_CALCULATE /UI2/DELETE_CACHE</description>
+      <guid>http://localhost:1313/posts/bw-fiori/</guid>
+      <description>&lt;p&gt;Important transactions in the context of BW Fiori Apps:&lt;/p&gt;
+&lt;p&gt;Tile Maitenance - category,group&lt;/br&gt;
+/ui2/flpd_cust&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;Transaltion&lt;/br&gt;
+SE63, Short Text, TABL, WDY_CONF_USERT2&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;Cache&lt;/br&gt;
+/UI2/INVALIDATE_CLIENT_CACHES&lt;/br&gt;
+/UI2/INVALIDATE_GLOBAL_CACHES&lt;/br&gt;
+/UI5/APP_INDEX_CALCULATE&lt;/br&gt;
+/UI2/DELETE_CACHE&lt;/br&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

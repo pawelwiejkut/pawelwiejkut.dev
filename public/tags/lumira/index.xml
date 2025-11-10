@@ -2,19 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Lumira on Pawel Wiejkut</title>
-    <link>http://localhost:56746/tags/lumira/</link>
+    <link>http://localhost:1313/tags/lumira/</link>
     <description>Recent content in Lumira on Pawel Wiejkut</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Nov 2022 17:30:24 +0100</lastBuildDate>
-    <atom:link href="http://localhost:56746/tags/lumira/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/lumira/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lumira cheat sheet</title>
-      <link>http://localhost:56746/posts/lumira-cheat_sheet/</link>
+      <link>http://localhost:1313/posts/lumira-cheat_sheet/</link>
       <pubDate>Sun, 06 Nov 2022 17:30:24 +0100</pubDate>
-      <guid>http://localhost:56746/posts/lumira-cheat_sheet/</guid>
-      <description>How to check dahsboard in different language ? To check the dashboard display in different language, please add following parameters to the URL: LANGUAGE=EN COUNTRY=US Example: http://example.com:9999//BOE/OpenDocument/opendoc/openDocument.jsp?sIDType=CUID&amp;amp;iDocID=xji8HAJksao&amp;amp;LANGUAGE=EN&amp;amp;COUNTRY=US
-How to set up query template In Lumira, you don&amp;rsquo;t have to create separate dashboard for each query if it should look and work the same way. You can crate one dahsboard with one datasource and use following parameters: XQUERY=technical_name_of_bw_query XSYSTEM=cuid:olap_connection_cuid Example: http://example.com:9999//BOE/OpenDocument/opendoc/openDocument.jsp?sIDType=CUID&amp;amp;iDocID=xji8HAJksao&amp;amp;XQUERY=ZBW_FI_Q001&amp;amp;XSYSTEM=cuid:jKIoa98a Also a small entry in the startup script of the template is required: DS_1.</description>
+      <guid>http://localhost:1313/posts/lumira-cheat_sheet/</guid>
+      <description>&lt;h2 id=&#34;how-to-check-dahsboard-in-different-language-&#34;&gt;How to check dahsboard in different language ?&lt;/h2&gt;
+&lt;p&gt;To check the dashboard display in different language, please add following parameters to the URL:&lt;/br&gt;&lt;/br&gt;
+LANGUAGE=EN&lt;/br&gt;
+COUNTRY=US&lt;/br&gt;&lt;/br&gt;
+Example: &lt;a href=&#34;http://example.com:9999//BOE/OpenDocument/opendoc/openDocument.jsp?sIDType=CUID&amp;amp;iDocID=xji8HAJksao&#34;&gt;http://example.com:9999//BOE/OpenDocument/opendoc/openDocument.jsp?sIDType=CUID&amp;amp;iDocID=xji8HAJksao&lt;/a&gt;&lt;mark&gt;&amp;amp;LANGUAGE=EN&amp;amp;COUNTRY=US&lt;/mark&gt;&lt;/p&gt;
+&lt;h2 id=&#34;how-to-set-up-query-template&#34;&gt;How to set up query template&lt;/h2&gt;
+&lt;p&gt;In Lumira, you don&amp;rsquo;t have to create separate dashboard for each query if it should look and work the same way. You can crate one dahsboard with one datasource and use following parameters:&lt;/br&gt;&lt;/br&gt;
+XQUERY=technical_name_of_bw_query&lt;/br&gt;
+XSYSTEM=cuid:olap_connection_cuid&lt;/br&gt;&lt;/br&gt;
+Example: &lt;a href=&#34;http://example.com:9999//BOE/OpenDocument/opendoc/openDocument.jsp?sIDType=CUID&amp;amp;iDocID=xji8HAJksao&#34;&gt;http://example.com:9999//BOE/OpenDocument/opendoc/openDocument.jsp?sIDType=CUID&amp;amp;iDocID=xji8HAJksao&lt;/a&gt;&lt;mark&gt;&amp;amp;XQUERY=ZBW_FI_Q001&amp;amp;XSYSTEM=cuid:jKIoa98a&lt;/mark&gt;
+&lt;/br&gt;&lt;/br&gt;
+Also a small entry in the startup script of the template is required:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;DS_1&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;assignDataSource&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;XSYSTEM&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;DataSourceType&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;QUERY&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;XQUERY&lt;/span&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/br&gt;
+More:&lt;/br&gt;
+&lt;a href=&#34;https://answers.sap.com/questions/409169/datasource-generic-global-template-in-lumira-21.html&#34;&gt;https://answers.sap.com/questions/409169/datasource-generic-global-template-in-lumira-21.html&lt;/a&gt;&lt;/br&gt;
+&lt;a href=&#34;https://answers.sap.com/questions/13310814/report-to-report-interface-in-lumira.html&#34;&gt;https://answers.sap.com/questions/13310814/report-to-report-interface-in-lumira.html&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

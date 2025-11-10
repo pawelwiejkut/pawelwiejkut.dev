@@ -2,176 +2,771 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ABAP on Pawel Wiejkut</title>
-    <link>http://localhost:56746/tags/abap/</link>
+    <link>http://localhost:1313/tags/abap/</link>
     <description>Recent content in ABAP on Pawel Wiejkut</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 11 Feb 2022 16:45:44 +0100</lastBuildDate>
-    <atom:link href="http://localhost:56746/tags/abap/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/abap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manual deployment from ABAP to SAP HANA</title>
-      <link>http://localhost:56746/posts/manual-hana-abap-deployment/</link>
+      <link>http://localhost:1313/posts/manual-hana-abap-deployment/</link>
       <pubDate>Fri, 11 Feb 2022 16:45:44 +0100</pubDate>
-      <guid>http://localhost:56746/posts/manual-hana-abap-deployment/</guid>
+      <guid>http://localhost:1313/posts/manual-hana-abap-deployment/</guid>
       <description>Bellow you can find my notes about the manual deployment from ABAP Application Server to the HANA Database. This kind of activity can be done in example for Calculation Views.</description>
     </item>
     <item>
       <title>Jak zainstalować SAPa żeby nauczyć się ABAPa?</title>
-      <link>http://localhost:56746/posts/instalacja-sapa/</link>
+      <link>http://localhost:1313/posts/instalacja-sapa/</link>
       <pubDate>Sat, 29 Jan 2022 18:33:53 +0100</pubDate>
-      <guid>http://localhost:56746/posts/instalacja-sapa/</guid>
-      <description>Cześć! To jest poradnik dla kompletnych laików, dlatego też tytuł jest bardzo skrótowy. Co bowiem oznacza instalacja SAP-a ? SAP (Systemanalyse und Programmentwicklung) jest nazwą firmy, powstałej w 1972 roku w Waldorfie zajmującej się tworzeniem oprogramowania. Zachęcam, żeby poczytać więcej o niej tutaj. Dziś chciałem pokazać Ci prosty sposób na instalację systemu SAP NetWeaver, który to umożliwi Ci naukę programowania w języku ABAP. Ten tutorial był kiedyś dostępny w wersji tekstowej, teraz dostępna jest duzo nowsza wersja wideo, która równiez jest częścią płatnego kursu abap dostępnego pod adresem https://saponit.</description>
+      <guid>http://localhost:1313/posts/instalacja-sapa/</guid>
+      <description>&lt;p&gt;Cześć!
+To jest poradnik dla kompletnych laików, dlatego też tytuł jest bardzo skrótowy. Co bowiem oznacza instalacja SAP-a ?  SAP (Systemanalyse und Programmentwicklung) jest nazwą firmy, powstałej w 1972 roku w Waldorfie zajmującej się tworzeniem oprogramowania. Zachęcam, żeby poczytać więcej o niej &lt;a href=&#34;https://en.wikipedia.org/wiki/SAP&#34;&gt;tutaj&lt;/a&gt;. Dziś chciałem pokazać Ci prosty sposób na instalację systemu SAP NetWeaver, który to umożliwi Ci naukę programowania w języku ABAP. &lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Ten tutorial był kiedyś dostępny w wersji tekstowej, teraz dostępna jest duzo nowsza wersja wideo, która równiez jest częścią płatnego kursu abap dostępnego pod adresem &lt;a href=&#34;https://saponit.pl/kurs-abap&#34;&gt;https://saponit.pl/kurs-abap&lt;/a&gt;&lt;/mark&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Useful modern ABAP statements for BW transformations</title>
-      <link>http://localhost:56746/posts/abap-trfn-bw/</link>
+      <link>http://localhost:1313/posts/abap-trfn-bw/</link>
       <pubDate>Tue, 11 Jan 2022 21:21:22 +0100</pubDate>
-      <guid>http://localhost:56746/posts/abap-trfn-bw/</guid>
-      <description>ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare.</description>
+      <guid>http://localhost:1313/posts/abap-trfn-bw/</guid>
+      <description>&lt;p&gt;ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare. You can treat this post as a ABAP handbook/guide for BW developers. If you want to check more information how to write a clean ABAP code, check out &lt;a href=&#34;https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md&#34;&gt;check this website&lt;/a&gt; where is an official guide from SAP.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Create ADSO from ABAP</title>
-      <link>http://localhost:56746/posts/create-adso-abap/</link>
+      <link>http://localhost:1313/posts/create-adso-abap/</link>
       <pubDate>Thu, 06 Jan 2022 12:52:44 +0100</pubDate>
-      <guid>http://localhost:56746/posts/create-adso-abap/</guid>
-      <description>Creating ADSO from ABAP can be easily achieved by cl_rso_adso_api=&amp;gt;create DATA(ls_flags) = VALUE cl_rso_adso_api=&amp;gt;tn_s_adsoflags( direct_update = abap_true ). TRY. cl_rso_adso_api=&amp;gt;create( EXPORTING i_adsonm = &amp;#34;Name of the ADSO i_infoarea = &amp;#34;Infoarea name i_s_adsoflags = ls_flags i_t_object = &amp;#34;Table with all fields i_t_dimension = &amp;#34;Dimension i_t_key = &amp;#34;String table with key IMPORTING e_t_msg = DATA(lt_msg) ). CATCH cx_rs_all_msg INTO DATA(lr_msg). cl_demo_output=&amp;gt;display( EXPORTING data = lr_msg-&amp;gt;get_longtext( ) name = &amp;#39;Error&amp;#39; ). ENDTRY.
-Full usage examples can be found here</description>
+      <guid>http://localhost:1313/posts/create-adso-abap/</guid>
+      <description>&lt;p&gt;Creating ADSO from ABAP can be easily achieved by &lt;strong&gt;cl_rso_adso_api=&amp;gt;create&lt;/strong&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-abap&#34; data-lang=&#34;abap&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DATA&lt;/span&gt;(ls_flags) &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;VALUE&lt;/span&gt; cl_rso_adso_api&lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;tn_s_adsoflags&lt;/span&gt;( direct_update &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; abap_true  ).
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;TRY&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          cl_rso_adso_api&lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;create&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;EXPORTING&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              i_adsonm                      &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Name of the ADSO
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;              i_infoarea                    &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Infoarea name
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;              i_s_adsoflags                 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ls_flags
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              i_t_object                    &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Table with all fields
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;              i_t_dimension                 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Dimension
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;              i_t_key                       &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;String table with key
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;          &lt;span style=&#34;color:#66d9ef&#34;&gt;IMPORTING&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            e_t_msg                       &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;DATA&lt;/span&gt;(lt_msg)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          ).
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;CATCH&lt;/span&gt; cx_rs_all_msg &lt;span style=&#34;color:#66d9ef&#34;&gt;INTO&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;DATA&lt;/span&gt;(lr_msg).
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          cl_demo_output&lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;display&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;EXPORTING&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#66d9ef&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; lr_msg&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get_longtext&lt;/span&gt;( )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Error&amp;#39;&lt;/span&gt;  ).
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;ENDTRY&lt;/span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Full usage examples can be found &lt;a href=&#34;https://github.com/pawelwiejkut/bw_adso_bof/blob/main/src/zbw_adso_bof.prog.abap&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Change transport description after release</title>
-      <link>http://localhost:56746/posts/change-transport-desc/</link>
+      <link>http://localhost:1313/posts/change-transport-desc/</link>
       <pubDate>Thu, 06 Jan 2022 12:23:54 +0100</pubDate>
-      <guid>http://localhost:56746/posts/change-transport-desc/</guid>
-      <description>If you are forced to change transport description after release, you have to consider following changes:
-Use RDDIT076 to change the description - if not possible, you have to find a way to edit E07T and E070.
-Change description in TMSBUFTXT to correct display of shorttext in STMS.</description>
+      <guid>http://localhost:1313/posts/change-transport-desc/</guid>
+      <description>&lt;p&gt;If you are forced to change transport description after release, you have to consider following changes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Use &lt;strong&gt;RDDIT076&lt;/strong&gt; to change the description - if not possible, you have to find a way to edit E07T and E070.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Change description in TMSBUFTXT to correct display of shorttext in STMS.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     <item>
       <title>How to contribute ABAP projects on Github</title>
-      <link>http://localhost:56746/posts/how-to-contribute/</link>
+      <link>http://localhost:1313/posts/how-to-contribute/</link>
       <pubDate>Wed, 01 Dec 2021 22:01:24 +0200</pubDate>
-      <guid>http://localhost:56746/posts/how-to-contribute/</guid>
-      <description>Last time, when I published my bw_toolbox project on Github, there were a lot of questions from regular developers not so much familiar with git, how they can contribute. Because of that, I decided to write this quick-start tutorial.
-What do I need? – system requirements Connection with GitHub – your instance should be able to establish a connection with github.com, SSL Entires – you have to configure your SAP System by adding necessary certificates into STRUST transaction (details), Profile configuration – also changes on the profile level are required, so you have to manual edit entries or use transactions (details).</description>
+      <guid>http://localhost:1313/posts/how-to-contribute/</guid>
+      <description>&lt;p&gt;Last time, when I published my bw_toolbox project on Github, there were a lot of questions from regular developers not so much familiar with git, how they can contribute. Because of that, I decided to write this quick-start tutorial.&lt;/p&gt;
+&lt;p&gt;What do I need? – system requirements
+Connection with GitHub – your instance should be able to establish a connection with github.com,
+SSL Entires – you have to configure your SAP System by adding necessary certificates into STRUST transaction (details),
+Profile configuration – also changes on the profile level are required, so you have to manual edit entries or use transactions (details).
+ABAP implementation of git – ABAPGit – this program can be downloaded by copy-paste from its GitHub page.
+As you see this is a quite specific configuration, and usually this can’t be done on our client instances. Because of that, a good idea is to install your own SAP Instance. For details please check the article below or my youtube video.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to install ABAP 1909 on mac M1</title>
-      <link>http://localhost:56746/posts/abap1909-dev-m1/</link>
+      <link>http://localhost:1313/posts/abap1909-dev-m1/</link>
       <pubDate>Wed, 10 Nov 2021 20:44:24 +0200</pubDate>
-      <guid>http://localhost:56746/posts/abap1909-dev-m1/</guid>
-      <description>How to run ABAP 1909 on MacOs with M1? For me, the best idea was to use UTM. I also tried before with docker without success - in the end, there was always an error.
-Install UTM
-Download Ubuntu Server x64 bit version
-Create virtual machine on UTM (220 GB storage, 6-7 CPU&amp;rsquo;s, additional flags) Install Ubuntu server on UTM
-Install docker sudo apt-get update sudo apt-get install \ ca-certificates \ curl \ gnupg \ lsb-release curl -fsSL https://download.</description>
+      <guid>http://localhost:1313/posts/abap1909-dev-m1/</guid>
+      <description>&lt;p&gt;How to run ABAP 1909 on MacOs with M1? For me, the best idea was to use UTM. I also tried before with docker without success - in the end, there was always an error.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;a href=&#34;https://mac.getutm.app&#34;&gt;UTM&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download &lt;a href=&#34;https://ubuntu.com/download/server&#34;&gt;Ubuntu Server&lt;/a&gt; x64 bit version&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create virtual machine on UTM (220 GB storage, 6-7 CPU&amp;rsquo;s, additional flags)
+&lt;img src=&#34;http://localhost:1313/abap_1909_dev_m1/utm1a.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/abap_1909_dev_m1/utm2a.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/abap_1909_dev_m1/utm3a.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/abap_1909_dev_m1/utm4a.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install Ubuntu server on UTM&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;a href=&#34;https://docs.docker.com/engine/install/ubuntu/&#34;&gt;docker&lt;/a&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    ca-certificates &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    curl &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    gnupg &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    lsb-release
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;deb [arch=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;dpkg --print-architecture&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;lsb_release -cs&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; stable&amp;#34;&lt;/span&gt; | sudo tee /etc/apt/sources.list.d/docker.list &amp;gt; /dev/null
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  sudo apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  sudo apt-get install docker-ce docker-ce-cli containerd.io&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>BW important programs / Function modules / Tables </title>
-      <link>http://localhost:56746/posts/bw-important-programs/</link>
+      <link>http://localhost:1313/posts/bw-important-programs/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:20 +0100</pubDate>
-      <guid>http://localhost:56746/posts/bw-important-programs/</guid>
-      <description>Almost all of these programs are included in my GitHub development &amp;ldquo;bw_toolbox&amp;rdquo;. If you want, you can just implement this in an easy way to your system. Please check by clicking here.
-Activate: Name Category Type Description RSDG_TRFN_ACTIVATE TRFN PROG Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly. RSDS_DATASOURCE_ACTIVATE_ALL RSDS PROG Activate data source RSBKDTPREPAIR DTP PROG Activate data transfer process RSDG_HCPR_ACTIVATE HCPR PROG Activate composite provider RSDG_CUBE_ACTIVATE CUBE PROG Activate cube RSDG_ADSO_ACTIVATE ADSO PROG Activate Advanced DataStore Object RSDG_IOBJ_ACTIVATE IOBJ PROG Activate InfoObject Maintenance: Name Category Type Description RSDG_AFTER_IMPORT_FOR_CORR N/A PROG Reimport transport RSBM_GUI_CHANGE_USTATE DTP FM Change DTP request status RSPM_PROCESS_MONITOR DTP PROG Change DTP request status ADSO RSPC_VARIANT_DELETE RSPC FM Delete process chain variant RSPC_API_CHAIN_START RSPC FM Start process chain immediately ( even scheduled ) DB_DROP_TABLE DEST PROG Drop tables under the OpenHub RSDG_IOBJ_REORG IOBJ PROG Repair Infoobject RSPC_PROCESS_FINISH RSPC PROG Process chain variant status change BAPI_USER_UNLOCK N/A FM Unlock user BW4 GUI Versions Description Name Type DTP View rsbk0001 PROG TRFN View rstran_gui_start PROG DataSource View rsds Transaction Infoprovider View (display data) rsoadso Transaction Manage Request rsmng Transaction Tables Description Name Check iobj assigned to extractor field RSTSFIELD RSOFIELSMAP Keyfigures basic info RSDKYF Characteristics basic info RSDCHABAS Extractor metadata including custom (fields) RSDSSEGFD Query Repo (UUID from name) RSZCOMPDIR Authorization Tables Description Name Role Defnition AGR_DEFINE Role user asigment ( S_RS_AUTH for BW RSECADMIN) AGR_1251 Maintenance View transport: SE54 &amp;gt; Utilities &amp;gt; Total Transport</description>
+      <guid>http://localhost:1313/posts/bw-important-programs/</guid>
+      <description>&lt;p&gt;Almost all of these programs are included in my GitHub development &amp;ldquo;bw_toolbox&amp;rdquo;. If you want, you can just implement this in an easy way to your system. &lt;a href=&#34;https://github.com/pawelwiejkut/bw_toolbox&#34;&gt;Please check by clicking here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;activate&#34;&gt;Activate:&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Category&lt;/th&gt;
+          &lt;th&gt;Type&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_TRFN_ACTIVATE&lt;/td&gt;
+          &lt;td&gt;TRFN&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate transformations on the system. If you are missing fields in source or target - then it will not work correctly.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDS_DATASOURCE_ACTIVATE_ALL&lt;/td&gt;
+          &lt;td&gt;RSDS&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate data source&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSBKDTPREPAIR&lt;/td&gt;
+          &lt;td&gt;DTP&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate data transfer process&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_HCPR_ACTIVATE&lt;/td&gt;
+          &lt;td&gt;HCPR&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate composite provider&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_CUBE_ACTIVATE&lt;/td&gt;
+          &lt;td&gt;CUBE&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate cube&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_ADSO_ACTIVATE&lt;/td&gt;
+          &lt;td&gt;ADSO&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate Advanced DataStore Object&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_IOBJ_ACTIVATE&lt;/td&gt;
+          &lt;td&gt;IOBJ&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Activate InfoObject&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;maintenance&#34;&gt;Maintenance:&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Category&lt;/th&gt;
+          &lt;th&gt;Type&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_AFTER_IMPORT_FOR_CORR&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Reimport transport&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSBM_GUI_CHANGE_USTATE&lt;/td&gt;
+          &lt;td&gt;DTP&lt;/td&gt;
+          &lt;td&gt;FM&lt;/td&gt;
+          &lt;td&gt;Change DTP request status&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSPM_PROCESS_MONITOR&lt;/td&gt;
+          &lt;td&gt;DTP&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Change DTP request status ADSO&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSPC_VARIANT_DELETE&lt;/td&gt;
+          &lt;td&gt;RSPC&lt;/td&gt;
+          &lt;td&gt;FM&lt;/td&gt;
+          &lt;td&gt;Delete process chain variant&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSPC_API_CHAIN_START&lt;/td&gt;
+          &lt;td&gt;RSPC&lt;/td&gt;
+          &lt;td&gt;FM&lt;/td&gt;
+          &lt;td&gt;Start process chain  immediately ( even scheduled )&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;DB_DROP_TABLE&lt;/td&gt;
+          &lt;td&gt;DEST&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Drop tables under the OpenHub&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSDG_IOBJ_REORG&lt;/td&gt;
+          &lt;td&gt;IOBJ&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Repair Infoobject&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RSPC_PROCESS_FINISH&lt;/td&gt;
+          &lt;td&gt;RSPC&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+          &lt;td&gt;Process chain  variant status change&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;BAPI_USER_UNLOCK&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;FM&lt;/td&gt;
+          &lt;td&gt;Unlock user&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;bw4-gui-versions&#34;&gt;BW4 GUI Versions&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Type&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;DTP View&lt;/td&gt;
+          &lt;td&gt;rsbk0001&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;TRFN View&lt;/td&gt;
+          &lt;td&gt;rstran_gui_start&lt;/td&gt;
+          &lt;td&gt;PROG&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;DataSource View&lt;/td&gt;
+          &lt;td&gt;rsds&lt;/td&gt;
+          &lt;td&gt;Transaction&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Infoprovider View (display data)&lt;/td&gt;
+          &lt;td&gt;rsoadso&lt;/td&gt;
+          &lt;td&gt;Transaction&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Manage Request&lt;/td&gt;
+          &lt;td&gt;rsmng&lt;/td&gt;
+          &lt;td&gt;Transaction&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Check iobj assigned to extractor field&lt;/td&gt;
+          &lt;td&gt;RSTSFIELD RSOFIELSMAP&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Keyfigures basic info&lt;/td&gt;
+          &lt;td&gt;RSDKYF&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Characteristics basic info&lt;/td&gt;
+          &lt;td&gt;RSDCHABAS&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Extractor metadata including custom (fields)&lt;/td&gt;
+          &lt;td&gt;RSDSSEGFD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Query Repo (UUID from name)&lt;/td&gt;
+          &lt;td&gt;RSZCOMPDIR&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;authorization-tables&#34;&gt;Authorization Tables&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Role Defnition&lt;/td&gt;
+          &lt;td&gt;AGR_DEFINE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Role user asigment ( S_RS_AUTH for BW RSECADMIN)&lt;/td&gt;
+          &lt;td&gt;AGR_1251&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Maintenance View transport:
+SE54 &amp;gt; Utilities &amp;gt; Total Transport&lt;/p&gt;</description>
     </item>
     <item>
       <title>About me</title>
-      <link>http://localhost:56746/about-me/</link>
+      <link>http://localhost:1313/about-me/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
-      <guid>http://localhost:56746/about-me/</guid>
-      <description>Nice to meet you 👋
-My name is Pawel Wiejkut and I am an SAP Consultant since 2016. Since the beginning, my career is related to big data. In this blog, I share my knowledge about SAP &amp;amp; Databases. Besides, I am the author of saponit.pl platform where I teach people programming in ABAP in Polish. In my free time, I co-create projects on GitHub. Feel free to contact me via social media.</description>
+      <guid>http://localhost:1313/about-me/</guid>
+      <description>&lt;p&gt;Nice to meet you 👋&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/me.jpeg&#34; style=&#34;float:right; margin-left:15px;&#34; /&gt; My name is Pawel Wiejkut and I am an SAP Consultant since 2016. Since the beginning, my career is related to big data. In this blog, I share my knowledge about SAP &amp;amp; Databases. Besides, I am the author of saponit.pl platform where I teach people programming in ABAP in Polish. In my free time, I co-create projects on GitHub. Feel free to contact me via social media.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Create simple SAC APP step by step</title>
-      <link>http://localhost:56746/sac-tutorial/</link>
+      <link>http://localhost:1313/sac-tutorial/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
-      <guid>http://localhost:56746/sac-tutorial/</guid>
-      <description>This tutorial group describes how to create a simple SAC App step by step. We are beginning from the new data model, and go through dropdowns, cascade filtering, design and popups. Everything step by step with screenshots and gifs.
-Create new model on SAC Simple APP on SAC Create and fill a dropdown in SAC APP Cascade filtering in SAC Design the app and create button to clean the filters Select dimensions by CheckBox and Button Create a popup to change dimensions order </description>
+      <guid>http://localhost:1313/sac-tutorial/</guid>
+      <description>&lt;p&gt;This tutorial group describes how to create a simple SAC App step by step. We are beginning from the new data model, and go through dropdowns, cascade filtering, design and popups. Everything step by step with screenshots and gifs.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/sac-model&#34;&gt;Create new model on SAC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/sac-create-app&#34;&gt;Simple APP on SAC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/sac-app-dropdown&#34;&gt;Create and fill a dropdown in SAC APP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/sac-app-dropdown-cascade&#34;&gt;Cascade filtering in SAC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/sac-app-design&#34;&gt;Design the app and create button to clean the filters &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/sac-button-checkbox&#34;&gt;Select dimensions by CheckBox and Button&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/sac-popup-order&#34;&gt;Create a popup to change dimensions order&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     <item>
       <title>AMDP ABAP Transformation execution</title>
-      <link>http://localhost:56746/posts/amdp-abap-trfn/</link>
+      <link>http://localhost:1313/posts/amdp-abap-trfn/</link>
       <pubDate>Sun, 17 Oct 2021 21:44:24 +0200</pubDate>
-      <guid>http://localhost:56746/posts/amdp-abap-trfn/</guid>
+      <guid>http://localhost:1313/posts/amdp-abap-trfn/</guid>
       <description>How to execute AMDP TRFN directly from ABAP?  You can use the method execute_haap from cl_rstran_db_stat. Check this blog for complete example with parameters.</description>
     </item>
     <item>
       <title>Direct Update ADSO ABAP API</title>
-      <link>http://localhost:56746/posts/du-adso-api/</link>
+      <link>http://localhost:1313/posts/du-adso-api/</link>
       <pubDate>Sun, 17 Oct 2021 19:35:53 +0200</pubDate>
-      <guid>http://localhost:56746/posts/du-adso-api/</guid>
-      <description>How to insert the data into the BW ADSO on the BW on Hana and BW4HANA ? The easy way is just to use the official function module delivered by SAP
-Example ADSO: Example code:
-REPORT zadsoamdp. DATA: lt_data TYPE STANDARD TABLE OF /bic/aadsoamdp2, lt_msg TYPE rs_t_msg. APPEND VALUE #( field1 = &amp;#39;1&amp;#39; field2 = &amp;#39;2&amp;#39; ) TO lt_data. CALL FUNCTION &amp;#39;RSDSO_DU_WRITE_API&amp;#39; EXPORTING i_adsonm = &amp;#39;ADSOAMDP&amp;#39; it_data = lt_data IMPORTING et_msg = lt_msg EXCEPTIONS write_failed = 1 datastore_not_found = 2 OTHERS = 3.</description>
+      <guid>http://localhost:1313/posts/du-adso-api/</guid>
+      <description>&lt;p&gt;How to insert the data into the BW ADSO on the BW on Hana and BW4HANA ?
+The easy way is just to use the official function module &lt;a href=&#34;https://help.sap.com/viewer/107a6e8a38b74ede94c833ca3b7b6f51/2.0.5/en-US/72e16c936fb94cffb71ce90edd5f8f8e.html&#34;&gt;delivered by SAP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example ADSO:
+&lt;img src=&#34;http://localhost:1313/adso_api_1.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Example code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-abap&#34; data-lang=&#34;abap&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;REPORT&lt;/span&gt; zadsoamdp.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DATA&lt;/span&gt;: lt_data &lt;span style=&#34;color:#66d9ef&#34;&gt;TYPE STANDARD TABLE OF&lt;/span&gt; /bic/aadsoamdp2,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      lt_msg  &lt;span style=&#34;color:#66d9ef&#34;&gt;TYPE &lt;/span&gt;rs_t_msg.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;APPEND&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;VALUE&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt;( field1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;1&amp;#39;&lt;/span&gt; field2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;2&amp;#39;&lt;/span&gt;  ) &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; lt_data.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CALL FUNCTION&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;RSDSO_DU_WRITE_API&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;EXPORTING&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i_adsonm            &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ADSOAMDP&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    it_data             &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; lt_data
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;IMPORTING&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    et_msg              &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; lt_msg
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;EXCEPTIONS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    write_failed        &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    datastore_not_found &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;OTHERS&lt;/span&gt;              &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;IF&lt;/span&gt; sy&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;subrc &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;MESSAGE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ID&lt;/span&gt; sy&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;msgid &lt;span style=&#34;color:#66d9ef&#34;&gt;TYPE &lt;/span&gt;sy&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;msgty &lt;span style=&#34;color:#66d9ef&#34;&gt;NUMBER&lt;/span&gt; sy&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;msgno
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;WITH&lt;/span&gt; sy&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;msgv1 sy&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;msgv2 sy&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;msgv3 sy&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;msgv4.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;ENDIF&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cl_demo_output&lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;display&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;EXPORTING&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; lt_msg
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;).&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Joby W ABAPie</title>
-      <link>http://localhost:56746/posts/joby-w-abapie/</link>
+      <link>http://localhost:1313/posts/joby-w-abapie/</link>
       <pubDate>Sat, 23 Jan 2021 18:25:44 +0100</pubDate>
-      <guid>http://localhost:56746/posts/joby-w-abapie/</guid>
-      <description>Z tej lekcji dowiesz się jak działają joby w ABAPie. Napiszemy prosty program który bedzie odpowiedzialny za wstawienie danych do tabeli a następnie ustawimy go jako proces w tle. Dodatkowo opowiadam tez o tym czym są warianty, oraz jak je tworzyć. To wideo jest częścią płatnego kursu ABAP od podstaw, dostępnego na https://saponit.pl/kurs-abap</description>
+      <guid>http://localhost:1313/posts/joby-w-abapie/</guid>
+      <description>&lt;p&gt;Z tej lekcji dowiesz się jak działają joby w ABAPie. Napiszemy prosty program który bedzie odpowiedzialny za wstawienie danych do tabeli a następnie ustawimy go jako proces w tle. Dodatkowo opowiadam tez o tym czym są warianty, oraz jak je tworzyć.
+&lt;mark&gt; To wideo jest częścią płatnego kursu ABAP od podstaw, dostępnego na &lt;a href=&#34;https://saponit.pl/kurs-abap&#34;&gt;https://saponit.pl/kurs-abap&lt;/a&gt;&lt;/mark&gt;&lt;/p&gt;
+&lt;iframe width=&#34;700&#34; height=&#34;450&#34; src=&#34;https://www.youtube.com/embed/hedhGVK6OKI&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>Działania na plikach</title>
-      <link>http://localhost:56746/posts/dzialania-na-plikach/</link>
+      <link>http://localhost:1313/posts/dzialania-na-plikach/</link>
       <pubDate>Mon, 06 May 2019 17:53:34 +0100</pubDate>
-      <guid>http://localhost:56746/posts/dzialania-na-plikach/</guid>
-      <description>Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:
-employees Pobierz
-Procedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:
-wczytać dane od użytkownika, wprowadzić nowe wpisy od użytkownika do bazy , wprowadzić wpisy z serwera aplikacji do bazy.</description>
+      <guid>http://localhost:1313/posts/dzialania-na-plikach/</guid>
+      <description>&lt;p&gt;Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:&lt;/p&gt;
+&lt;p&gt;employees &lt;a href=&#34;http://localhost:1313/dzialania_na_plikach/employees.csv&#34;&gt;Pobierz&lt;/a&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;Procedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wczytać dane od użytkownika,&lt;/li&gt;
+&lt;li&gt;wprowadzić nowe wpisy od użytkownika do bazy ,&lt;/li&gt;
+&lt;li&gt;wprowadzić wpisy z serwera aplikacji do bazy.&lt;/br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fajnie byłoby aby program był tak dynamicznie napisany, że nie będziemy musieli go zmieniać nawet jeżeli będziemy chcieć „wpisać” dane do tabeli określonej w pierwszej kolumnie naszego pliku. Jeżeli otworzymy zbiór danych, zobaczymy że prezentują się one następująco:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ballog czyli logowanie danych w ABAPie</title>
-      <link>http://localhost:56746/posts/ballog-abap-logowanie/</link>
+      <link>http://localhost:1313/posts/ballog-abap-logowanie/</link>
       <pubDate>Sun, 14 Apr 2019 17:01:40 +0100</pubDate>
-      <guid>http://localhost:56746/posts/ballog-abap-logowanie/</guid>
-      <description>Każdy język programowania posiada możliwość zapisania informacji technicznej, czy też zdarzenia które może być pomocna później na przykład podczas sprawdzenia poprawności działania napisanego programu. W wielu językach czynność ta sprowadza się często do napisania jednej linijki kodu, np:
-console.log(&amp;#34;Oh, coś poszło nie tak!&amp;#34;); W ABAPie sytuacja jest trochę bardziej skomplikowana. Zacznijmy może od napisania prostego programu, który będzie opierać się na stworzonych przez nas wcześniej obiektach DDICowych. Żeby nauczyć się czegoś nowego polecam razem ze mną wykonać wszystko w eclipse, oczywiście równie dobrze każdy krok będzie działać też bezpośrednio w SAP GUI.</description>
+      <guid>http://localhost:1313/posts/ballog-abap-logowanie/</guid>
+      <description>&lt;p&gt;Każdy język programowania posiada możliwość zapisania informacji technicznej, czy też zdarzenia które może być pomocna później na przykład podczas sprawdzenia poprawności działania napisanego programu. W wielu językach czynność ta sprowadza się często do napisania jednej linijki kodu, np:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Oh, coś poszło nie tak!&amp;#34;&lt;/span&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;W ABAPie sytuacja jest trochę bardziej skomplikowana. Zacznijmy może od napisania prostego programu, który będzie opierać się na stworzonych przez nas wcześniej obiektach DDICowych. Żeby nauczyć się czegoś nowego polecam razem ze mną wykonać wszystko w eclipse, oczywiście równie dobrze każdy krok będzie działać też bezpośrednio w SAP GUI.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Access transaction without auth</title>
-      <link>http://localhost:56746/posts/access-tcode-no-auth/</link>
+      <link>http://localhost:1313/posts/access-tcode-no-auth/</link>
       <pubDate>Sat, 16 Dec 2017 21:44:24 +0200</pubDate>
-      <guid>http://localhost:56746/posts/access-tcode-no-auth/</guid>
-      <description>How to access transactions without an authorization? One big requirement to do this trick is having to debug and replace the function. Let’s start!
-I prepared myself, user, without authorization to the db02 transaction. When I want to run this transaction, I get a message: „You are not authorized to use transaction”
-Go to the SE37 transaction, and display function module: AUTH_CHECK_TCODE.
-Now seat a breakpoint on line 28, where sy-subrc is checked (in new versions line 53).</description>
+      <guid>http://localhost:1313/posts/access-tcode-no-auth/</guid>
+      <description>&lt;p&gt;How to access transactions without an authorization? One big requirement to do this trick is having to debug and replace the function. Let’s start!&lt;/p&gt;
+&lt;p&gt;I prepared myself, user, without authorization to the db02 transaction. When I want to run this transaction, I get a message: „You are not authorized to use transaction”&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/access_tcode_no_auth/1.png&#34; width=&#34;80%&#34; /&gt;
+&lt;p&gt;Go to the SE37 transaction, and display function module: AUTH_CHECK_TCODE.&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/access_tcode_no_auth/2.png&#34; width=&#34;80%&#34; /&gt;
+&lt;p&gt;Now seat a breakpoint on line 28, where sy-subrc is checked (in new versions line 53).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ekran Wyboru</title>
-      <link>http://localhost:56746/posts/ekran-wyboru/</link>
+      <link>http://localhost:1313/posts/ekran-wyboru/</link>
       <pubDate>Sun, 09 Apr 2017 17:01:40 +0100</pubDate>
-      <guid>http://localhost:56746/posts/ekran-wyboru/</guid>
-      <description>Dzisiejsza instrukcja będzie nieco krótsza i dotyczyć będzie rozszerzenia naszego poprzedniego programu z tego wpisu o klika linijek kodu odpowiedzialnych za stworzenie ekranu. Nasz tworzony ekran będzie odpowiadał za umożliwienie nam wyboru wyników wyświetlanych w tabeli w zależności od numeru połączenia i numeru przewoźnika.
-Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
-Zaczynamy od skopiowania poprzedniego programu. Aby to zrobić, w transakcji se80 klikamy prawym przyciskiem myszy na nasz poprzedni program i klikamy na copy.</description>
+      <guid>http://localhost:1313/posts/ekran-wyboru/</guid>
+      <description>&lt;p&gt;Dzisiejsza instrukcja będzie nieco krótsza i dotyczyć będzie rozszerzenia naszego poprzedniego programu z tego wpisu o klika linijek kodu odpowiedzialnych za stworzenie ekranu. Nasz tworzony ekran będzie odpowiadał za umożliwienie nam wyboru wyników wyświetlanych w tabeli w zależności od numeru połączenia i numeru przewoźnika.&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: &lt;a href=&#34;https://saponit.pl/kurs-abap/&#34;&gt;https://saponit.pl/kurs-abap/&lt;/a&gt;&lt;/mark&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Zaczynamy od skopiowania poprzedniego programu. Aby to zrobić, w transakcji se80 klikamy prawym przyciskiem myszy na nasz poprzedni program i klikamy na copy.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ekran_wyboru/1.png#center&#34; width=&#34;70%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;W Source Target podajemy ZFSCREEN, a następnie potwierdzamy, następnie zaznaczamy wszystkie check’i i wybieramy swoją paczkę oraz transport.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ekran_wyboru/2.png#center&#34; width=&#34;50%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ekran_wyboru/3.png#center&#34; width=&#34;50%&#34;/&gt; 
+&lt;/figure&gt;
+&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tworzymy ALV Grid</title>
-      <link>http://localhost:56746/posts/tworzymy-alv-grid/</link>
+      <link>http://localhost:1313/posts/tworzymy-alv-grid/</link>
       <pubDate>Sun, 19 Mar 2017 17:01:40 +0100</pubDate>
-      <guid>http://localhost:56746/posts/tworzymy-alv-grid/</guid>
-      <description>Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.
-Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
-Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”. Wpisujemy opis i wybieramy typ programu jako „Executable program” Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy.</description>
+      <guid>http://localhost:1313/posts/tworzymy-alv-grid/</guid>
+      <description>&lt;p&gt;Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: &lt;a href=&#34;https://saponit.pl/kurs-abap/&#34;&gt;https://saponit.pl/kurs-abap/&lt;/a&gt;&lt;/mark&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/1.png#center&#34; width=&#34;70%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/2.png#center&#34; width=&#34;70%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Wpisujemy opis i wybieramy typ programu jako „Executable program”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/3.png#center&#34; width=&#34;70%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/4.png#center&#34; width=&#34;50%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Klikamy na Pattern. Przycisk ten jest odpowiedzialny za wywoływanie funkcji, metod itp.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/5.png#center&#34; width=&#34;70%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Wpisujemy nazwę funkcji: „REUSE_ALV_GRID_DISPLAY”.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/6.png#center&#34; width=&#34;50%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Aby skonfigurować funkcję Pretty Printer czyli formatowanie kodu, klikany na „Utilities” a następnie na „Settings”.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/7.png#center&#34; width=&#34;70%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;Następnie ustawiamy opcje w zakładce „Abap editor” „Pretty printer” tak jak na ekranie poniżej.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/8.png#center&#34; width=&#34;60%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;Wracamy do naszego programu, zmieniłam nieco funkcję usuwając niepotrzebne argumenty które nie będą wykorzystywane. W momencie kiedy będziesz pisać ten program spróbuj użyć skrótu klawiszowego alt + spacja, który jest odpowiedzialny za uzupełnianie i podpowiadanie.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/9.png#center&#34; width=&#34;60%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;Spróbuj teraz sformatować kod programu. Służy do tego  skrót klawiszowy shift + f1.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/10.png#center&#34; width=&#34;60%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;11&#34;&gt;
+&lt;li&gt;GUI Zapewnia jeszcze jeden ważny feature, mianowicie możliwość sprawdzenia poprawności programu. Aby użyć tej funkcji należy kliknąć ikonę u góry bądź nacisnąć skrót klawiszowy ctrl+ F2.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/11.png#center&#34; width=&#34;60%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;12&#34;&gt;
+&lt;li&gt;Końcowy program powinien wyglądać tak jak na ekranie poniżej. Następnie zapisujemy, aktywujemy i uruchamiamy program.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/12.png#center&#34; width=&#34;70%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-abap&#34; data-lang=&#34;abap&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*&amp;amp; Report ZALVGRID&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*&amp;amp;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;REPORT&lt;/span&gt; zalvgrid.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DATA&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      l_tab_sflight &lt;span style=&#34;color:#66d9ef&#34;&gt;TYPE STANDARD TABLE OF&lt;/span&gt; sflight.     &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Tworzymy tabelę wewnętrzną
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; sflight &lt;span style=&#34;color:#66d9ef&#34;&gt;INTO&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; l_tab_sflight.         &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Pobieramy dane z tabeli zewnętrzej do wewnętrznej
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CALL FUNCTION&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;REUSE_ALV_GRID_DISPLAY&amp;#39;&lt;/span&gt;                  &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Wywołujemy funkcję odpowiedzialną za użycie tabeli
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;EXPORTING&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i_structure_name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;SFLIGHT&amp;#39;&lt;/span&gt;                        &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Nazwa struktury tabeli
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    i_grid_title     &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Moja pierwsza tabela&amp;#39;&lt;/span&gt;           &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Tytuł tabeli
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLES&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    t_outtab         &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l_tab_sflight                    &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Zmieniana tabela
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;EXCEPTIONS&lt;/span&gt;                                            &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Wyjątki
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    program_error    &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;OTHERS&lt;/span&gt;           &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&#34;13&#34;&gt;
+&lt;li&gt;Końcowy efekt powinien wyglądać tak jak na zrzucie ekranu poniżej&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/13.png#center&#34; width=&#34;70%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;Gratulacje, właśnie napisałeś program który korzysta z modułu funcyjnego. Wiesz już też jak działa poprawianie czytelności kodu, sprawdzanie błędów, aktywacja, czy jego uruchamianie. W kolejnych poradnikach zajmiemy się modyfikacją tego pomysłu oraz jego rozbudowywaniem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello World W ABAPie</title>
-      <link>http://localhost:56746/posts/hello-world-w-abapie/</link>
+      <link>http://localhost:1313/posts/hello-world-w-abapie/</link>
       <pubDate>Sun, 12 Mar 2017 10:08:21 +0100</pubDate>
-      <guid>http://localhost:56746/posts/hello-world-w-abapie/</guid>
-      <description>Witajcie w kolejnym poradniku dotyczącym SAPa na blogu. Dzisiejszy wpis będzie dotyczyć uzupełnienia tabel przykładowymi danymi oraz napisania prostego programu w ABAPie, zapraszam do lektury 🙂
-Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/ Uruchamiamy naszą instalację. Pamiętaj o tym że po uruchomieniu maszyny wirtualnej, trzeba jeszcze zalogować się na odpowiedniego użytkownika i uruchomić odpowiednie procesy. Opis tego jak to zrobić możesz sprawdzić w jednym z poprzednich wpisów.</description>
+      <guid>http://localhost:1313/posts/hello-world-w-abapie/</guid>
+      <description>&lt;p&gt;Witajcie w kolejnym poradniku dotyczącym SAPa na blogu. Dzisiejszy wpis będzie dotyczyć uzupełnienia tabel przykładowymi danymi oraz napisania prostego programu w ABAPie, zapraszam do lektury 🙂&lt;/p&gt;
+&lt;mark&gt;
+Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
+&lt;/mark&gt;&lt;/br&gt;&lt;/br&gt;
+&lt;ol&gt;
+&lt;li&gt;Uruchamiamy naszą instalację. Pamiętaj o tym że po uruchomieniu maszyny wirtualnej, trzeba jeszcze zalogować się na odpowiedniego użytkownika i uruchomić odpowiednie procesy. Opis tego jak to zrobić możesz sprawdzić w jednym z poprzednich wpisów. Przechodzimy teraz do transakcji se38. Jest to transakcja odpowiedzialna za zarządzanie programami, nazywanymi też zamiennie w SAPie raportami.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/1.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Po przejściu do transakcji w polu „Program” wpisujemy SAPBC_DATA_GENERATOR . Jest to nazwa programu odpowiedzialnego za wypełnienie przykładowych tabel danymi na których można później swobodnie operować . Następnie uruchamiamy program poprzez kliknięcie ikonki Execute (skrót klawiszowy F8).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/2.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Wybieramy opcję „Standard data record”, a następnie klikamy znów execute.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/3.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Potwierdzamy komunikat o nadpisywaniu danych w tabeli (te tabele aktualnie i tak są puste).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/4.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Żeby sprawdzić czy dane w tabeli naprawdę istnieją, przechodzimy do transakcji se16. Aby uruchomić transakcję będąc w innej, należy poprzedzić kod transakcji „/n”. Zwróć uwagę że program wypełnił 3 tabele: SPFLI,SFLIGHT i SBOOK. W tym SPFLI ma 26 rekordów.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/5.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Wpisujemy nazwę tabeli którą chcemy sprawdzić i naciskamy enter.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/6.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Żeby sprawdzić liczbę rekordów należy nacisnąć klawisz Number of Enteries. Można też sprawdzić zawartość tabeli przez kliknięcie execute.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/7.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;Po kinięciu na number of enteries, wyświetlony zostanie komunikat.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/8.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;Przechodzimy teraz do transakcji se80, która jest wspólną transakcją do tworzenia oprogramowania w SAPie.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/9.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;Wchodzimy teraz w program utworzony w poprzednim kroku, i włączamy edycję poprzez naciśnięcie zaznaczonej ikonki.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/10.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;11&#34;&gt;
+&lt;li&gt;W prawej stronie ekranu wpisujemy kod odpowiedzialny za wyświetlenie Hello World. Następnie zapisujemy, aktywujemy i uruchamiamy program.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/11.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;12&#34;&gt;
+&lt;li&gt;Wynik działania programu powinien być taki jak przedstawiono na ekranie poniżej.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/12.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;13&#34;&gt;
+&lt;li&gt;Wracamy teraz do naszego programu i zmieniamy jego zawartość, tak żeby wykorzystać dane z tabel, które wcześniej uzupełniliśmy.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-abap&#34; data-lang=&#34;abap&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*&amp;amp; Report ZHELLOWORLD&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*&amp;amp;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;REPORT&lt;/span&gt; zhelloworld.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DATA&lt;/span&gt;:                                                               &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Deklaracje typów
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  g_tab_spfli &lt;span style=&#34;color:#66d9ef&#34;&gt;TYPE TABLE OF&lt;/span&gt; spfli,                                  &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Deklaracja tabeli lokalnej
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  g_str_spfli &lt;span style=&#34;color:#66d9ef&#34;&gt;TYPE &lt;/span&gt;spfli.                                           &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Deklaracja struktury (pojedyńczego rekordu tabeli)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; spfli &lt;span style=&#34;color:#66d9ef&#34;&gt;INTO&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CORRESPONDING FIELDS OF&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; g_tab_spfli. &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Pobranie danych z głownej tabeli
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;LOOP AT &lt;/span&gt;g_tab_spfli &lt;span style=&#34;color:#66d9ef&#34;&gt;INTO&lt;/span&gt; g_str_spfli.                               &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Pętla wybierająca dane do struktury
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;WRITE&lt;/span&gt;:/ g_str_spfli&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;countryfr,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;-&amp;#39;&lt;/span&gt;,g_str_spfli&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;countryto.          &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Wypisywanie danych na ekran
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;ENDLOOP&lt;/span&gt;.                                                            &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Koniec pętli
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;WRITE&lt;/span&gt;:/ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/13.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;Wynik działania naszego programu powinien wyglądać tak jak na obrazku poniżej.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Aktywacja SAP Netveawer 7.5</title>
-      <link>http://localhost:56746/posts/aktywacja-netveawer/</link>
+      <link>http://localhost:1313/posts/aktywacja-netveawer/</link>
       <pubDate>Sat, 04 Mar 2017 21:44:24 +0200</pubDate>
-      <guid>http://localhost:56746/posts/aktywacja-netveawer/</guid>
-      <description>Kiedy mamy już zainstalowanego SAP NetWeavera, należy aktywować naszą instalację SAP. Proces ten jest o wiele łatwiejszy niż instalacja, wymaga jednak pewnego oswojenia z interfejsem. Aktywacja instalacji jest niezbędna aby można było tworzyć programy w ABAPie. Przejdźmy do rzeczy. Od jakiegoś czasu tworzę kurs online poświęcony właśnie pogramowaniu w ABAPie, jeżeli jesteś zainteresowany, sprawdź proszę kursy.saponit.pl Logujemy się do systemu i wchodzimy w transakcję SLICENSE. Kopiujemy active hardware key. Przechodzimy na stronę https://go.</description>
+      <guid>http://localhost:1313/posts/aktywacja-netveawer/</guid>
+      <description>&lt;p&gt;Kiedy mamy już zainstalowanego SAP NetWeavera, należy aktywować naszą instalację SAP. Proces ten jest o wiele łatwiejszy niż instalacja, wymaga jednak pewnego oswojenia z interfejsem. Aktywacja instalacji jest niezbędna aby można było tworzyć programy w ABAPie. Przejdźmy do rzeczy.
+&lt;mark&gt;Od jakiegoś czasu tworzę kurs online poświęcony właśnie pogramowaniu w ABAPie, jeżeli jesteś zainteresowany, sprawdź proszę kursy.saponit.pl &lt;/mark&gt;&lt;/p&gt;
+&lt;!--End mc_embed_signup--&gt;
+&lt;ol&gt;
+&lt;li&gt;Logujemy się do systemu i wchodzimy w transakcję SLICENSE.
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/slicense.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Kopiujemy  active hardware key.
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/hardware_key-1.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Przechodzimy na stronę &lt;a href=&#34;https://go.support.sap.com/minisap/&#34;&gt;https://go.support.sap.com/minisap/&lt;/a&gt; , wybieramy NPL i klikamy Generate. Krok ten dobrze jest wykonać w przeglądarce Internet Exploler.
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/generate-1.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Po zapisaniu wygenerowanego pliku, wracamy do transakcji SLICENSE gdzie klikamy na Install. Po zakończeniu procesu nasz numer instalacji powinien zostać zmieniony na DEMOSYSTEM.
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/demosystem-1.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Teraz należy wpisać Acces Key, aby to zrobić stworzymy od razu paczkę w której możemy następnie umieszczać swoje programy. W tym celu przechodzimy do transakcji se80.
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/se80.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Żeby stworzyć paczkę, należy w wpisać jej nazwę zaczynającą się od Z albo Y, następnie nacisnąć enter.
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/package.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Uzupełniamy wymagane pola
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/package_desc.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Następnie klikamy prawym klawiszem myszy na paczce i wybieramy Create -&amp;gt; Program.
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/create_program.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Uzupełniamy nazwę programu.
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/create_program_desc.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Następnie przechodzimy do folderu z rozpakowanymi plikami i otwieramy plik readme.html, skąd kopiujemy klucz.
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/key.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Na końcu wklejamy klucz do SAPA i klikamy Continue
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/register.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Potwierdzamy utworzenie programu poprzez kliknięcie save
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/save.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Na końcu klikamy na ikonę dyskietki
+&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/save2.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Gotowe ! System jest teraz w pełni aktywny i gotowy do działania.&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
   </channel>
 </rss>

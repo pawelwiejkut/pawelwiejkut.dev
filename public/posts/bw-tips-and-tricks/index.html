@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56746&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>BW Tips and Tricks | Pawel Wiejkut</title>
 <meta name="keywords" content="BW, TIPS, TRICKS">
-<meta name="description" content="How to add new line character in text variable ? If you want to add a new line character in text variable of customer exit type, just use standard class cl_abap_char_utilities=&gt;newline:
-e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl_abap_char_utilities=&gt;newline } LINE2 | ) ). ">
+<meta name="description" content="How to add new line character in text variable ?
+If you want to add a new line character in text variable of customer exit type, just use standard class cl_abap_char_utilities=&gt;newline:
+e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl_abap_char_utilities=&gt;newline } LINE2 | ) ).">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:56746/posts/bw-tips-and-tricks/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:56746/profile.png">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:56746/profile.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:56746/profile.png">
-<link rel="apple-touch-icon" href="http://localhost:56746/profile.png">
-<link rel="mask-icon" href="http://localhost:56746/profile.png">
+<link rel="canonical" href="http://localhost:1313/posts/bw-tips-and-tricks/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9419e40dab9d5be7462e66a1815ee4a55c86e6c7accf782a28b72ff32e366ece.css" integrity="sha256-lBnkDaudW&#43;dGLmahgV7kpVyG5sesz3gqKLcv8y42bs4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/profile.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/profile.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/profile.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/profile.png">
+<link rel="mask-icon" href="http://localhost:1313/profile.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:56746/posts/bw-tips-and-tricks/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/bw-tips-and-tricks/">
 <noscript>
     <style>
         #theme-toggle,
@@ -57,15 +58,6 @@ e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl
 
     </style>
 </noscript>
-
-
-
-
-
-
-
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-3R9CLWGY39"></script>
       <script>
         var doNotTrack = false;
@@ -79,22 +71,24 @@ e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl
           gtag('js', new Date());
           gtag('config', 'G-3R9CLWGY39');
         }
-      </script>
-    
-  
-
-<meta property="og:title" content="BW Tips and Tricks" />
-<meta property="og:description" content="How to add new line character in text variable ? If you want to add a new line character in text variable of customer exit type, just use standard class cl_abap_char_utilities=&gt;newline:
-e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl_abap_char_utilities=&gt;newline } LINE2 | ) ). " />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:56746/posts/bw-tips-and-tricks/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-05-29T19:56:19+01:00" />
-<meta property="article:modified_time" content="2023-05-29T19:56:19+01:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="BW Tips and Tricks"/>
-<meta name="twitter:description" content="How to add new line character in text variable ? If you want to add a new line character in text variable of customer exit type, just use standard class cl_abap_char_utilities=&gt;newline:
-e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl_abap_char_utilities=&gt;newline } LINE2 | ) ). "/>
+      </script><meta property="og:url" content="http://localhost:1313/posts/bw-tips-and-tricks/">
+  <meta property="og:site_name" content="Pawel Wiejkut">
+  <meta property="og:title" content="BW Tips and Tricks">
+  <meta property="og:description" content="How to add new line character in text variable ? If you want to add a new line character in text variable of customer exit type, just use standard class cl_abap_char_utilities=&gt;newline:
+e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl_abap_char_utilities=&gt;newline } LINE2 | ) ).">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-05-29T19:56:19+01:00">
+    <meta property="article:modified_time" content="2023-05-29T19:56:19+01:00">
+    <meta property="article:tag" content="BW">
+    <meta property="article:tag" content="TIPS">
+    <meta property="article:tag" content="TRICKS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BW Tips and Tricks">
+<meta name="twitter:description" content="How to add new line character in text variable ?
+If you want to add a new line character in text variable of customer exit type, just use standard class cl_abap_char_utilities=&gt;newline:
+e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl_abap_char_utilities=&gt;newline } LINE2 | ) ).">
 
 
 <script type="application/ld+json">
@@ -106,13 +100,13 @@ e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "http://localhost:56746/posts/"
+      "item": "http://localhost:1313/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "BW Tips and Tricks",
-      "item": "http://localhost:56746/posts/bw-tips-and-tricks/"
+      "item": "http://localhost:1313/posts/bw-tips-and-tricks/"
     }
   ]
 }
@@ -123,7 +117,7 @@ e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl
   "@type": "BlogPosting",
   "headline": "BW Tips and Tricks",
   "name": "BW Tips and Tricks",
-  "description": "How to add new line character in text variable ? If you want to add a new line character in text variable of customer exit type, just use standard class cl_abap_char_utilities=\u0026gt;newline:\ne_t_range = VALUE #( ( sign = \u0026#39;I\u0026#39; opt = \u0026#39;EQ\u0026#39; low = | LINE 1 { cl_abap_char_utilities=\u0026gt;newline } LINE2 | ) ). ",
+  "description": "How to add new line character in text variable ? If you want to add a new line character in text variable of customer exit type, just use standard class cl_abap_char_utilities=\u0026gt;newline:\ne_t_range = VALUE #( ( sign = \u0026#39;I\u0026#39; opt = \u0026#39;EQ\u0026#39; low = | LINE 1 { cl_abap_char_utilities=\u0026gt;newline } LINE2 | ) ).",
   "keywords": [
     "BW", "TIPS", "TRICKS"
   ],
@@ -134,21 +128,21 @@ e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl
   "dateModified": "2023-05-29T19:56:19+01:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:56746/posts/bw-tips-and-tricks/"
+    "@id": "http://localhost:1313/posts/bw-tips-and-tricks/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Pawel Wiejkut",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:56746/profile.png"
+      "url": "http://localhost:1313/profile.png"
     }
   }
 }
 </script>
 </head>
-
-<body class="" id="top">
+<body id="top">
+    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -163,7 +157,7 @@ e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:56746/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -189,37 +183,37 @@ e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:56746/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span><i class='fa fa-heart'></i>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:56746/about-me/" title="About me">
+                <a href="http://localhost:1313/about-me/" title="About me">
                     <span>About me</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:56746/bw/" title="BW">
+                <a href="http://localhost:1313/bw/" title="BW">
                     <span>BW</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:56746/sac-tutorial/" title="SAC">
+                <a href="http://localhost:1313/sac-tutorial/" title="SAC">
                     <span>SAC</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:56746/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
+                <a href="http://localhost:1313/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
                     <span>ABAP od postaw 🇵🇱 </span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:56746/tags/" title="Tags">
+                <a href="http://localhost:1313/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:56746/posts/" title="Posts">
+                <a href="http://localhost:1313/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
@@ -234,7 +228,9 @@ e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl
     <h1 class="post-title entry-hint-parent">
       BW Tips and Tricks
     </h1>
-    <div class="post-meta"><span title='2023-05-29 19:56:19 +0100 +0100'>May 29, 2023</span>&nbsp;·&nbsp;1 min&nbsp;|&nbsp;<a href="https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content/posts/bw-tips-and-tricks.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta"><span title='2023-05-29 19:56:19 +0100 +0100'>May 29, 2023</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;|&nbsp;<span>
+    <a href="https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content/posts/bw-tips-and-tricks.md" rel="noopener noreferrer edit" target="_blank">Suggest Changes</a>
+</span>
 
 </div>
   </header> 
@@ -247,9 +243,9 @@ e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:56746/tags/bw/">BW</a></li>
-      <li><a href="http://localhost:56746/tags/tips/">TIPS</a></li>
-      <li><a href="http://localhost:56746/tags/tricks/">TRICKS</a></li>
+      <li><a href="http://localhost:1313/tags/bw/">BW</a></li>
+      <li><a href="http://localhost:1313/tags/tips/">TIPS</a></li>
+      <li><a href="http://localhost:1313/tags/tricks/">TRICKS</a></li>
     </ul>
   </footer>
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
@@ -280,7 +276,7 @@ e_t_range = VALUE #( ( sign = &#39;I&#39; opt = &#39;EQ&#39; low = | LINE 1 { cl
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:56746/">Pawel Wiejkut</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Pawel Wiejkut</a></span> · 
 
     <span>
         Powered by
@@ -307,10 +303,16 @@ images.forEach(img => {
 </script>
 
 
+
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -351,11 +353,12 @@ images.forEach(img => {
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

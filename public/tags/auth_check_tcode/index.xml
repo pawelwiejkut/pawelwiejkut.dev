@@ -2,21 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AUTH_CHECK_TCODE on Pawel Wiejkut</title>
-    <link>http://localhost:56746/tags/auth_check_tcode/</link>
+    <link>http://localhost:1313/tags/auth_check_tcode/</link>
     <description>Recent content in AUTH_CHECK_TCODE on Pawel Wiejkut</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 16 Dec 2017 21:44:24 +0200</lastBuildDate>
-    <atom:link href="http://localhost:56746/tags/auth_check_tcode/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/auth_check_tcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Access transaction without auth</title>
-      <link>http://localhost:56746/posts/access-tcode-no-auth/</link>
+      <link>http://localhost:1313/posts/access-tcode-no-auth/</link>
       <pubDate>Sat, 16 Dec 2017 21:44:24 +0200</pubDate>
-      <guid>http://localhost:56746/posts/access-tcode-no-auth/</guid>
-      <description>How to access transactions without an authorization? One big requirement to do this trick is having to debug and replace the function. Let’s start!
-I prepared myself, user, without authorization to the db02 transaction. When I want to run this transaction, I get a message: „You are not authorized to use transaction”
-Go to the SE37 transaction, and display function module: AUTH_CHECK_TCODE.
-Now seat a breakpoint on line 28, where sy-subrc is checked (in new versions line 53).</description>
+      <guid>http://localhost:1313/posts/access-tcode-no-auth/</guid>
+      <description>&lt;p&gt;How to access transactions without an authorization? One big requirement to do this trick is having to debug and replace the function. Let’s start!&lt;/p&gt;
+&lt;p&gt;I prepared myself, user, without authorization to the db02 transaction. When I want to run this transaction, I get a message: „You are not authorized to use transaction”&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/access_tcode_no_auth/1.png&#34; width=&#34;80%&#34; /&gt;
+&lt;p&gt;Go to the SE37 transaction, and display function module: AUTH_CHECK_TCODE.&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/access_tcode_no_auth/2.png&#34; width=&#34;80%&#34; /&gt;
+&lt;p&gt;Now seat a breakpoint on line 28, where sy-subrc is checked (in new versions line 53).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

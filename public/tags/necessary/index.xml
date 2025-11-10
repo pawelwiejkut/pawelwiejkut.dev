@@ -2,19 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Necessary on Pawel Wiejkut</title>
-    <link>http://localhost:56746/tags/necessary/</link>
+    <link>http://localhost:1313/tags/necessary/</link>
     <description>Recent content in Necessary on Pawel Wiejkut</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Nov 2021 11:15:14 +0100</lastBuildDate>
-    <atom:link href="http://localhost:56746/tags/necessary/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/necessary/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BW</title>
-      <link>http://localhost:56746/bw/</link>
+      <link>http://localhost:1313/bw/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
-      <guid>http://localhost:56746/bw/</guid>
-      <description>Important articles for quick-access: BW important programs / Function modules / Tables BW formula parameters Useful modern ABAP statements for BW transformations
-All BW related articles: https://pawelwiejkut.dev/tags/bw/</description>
+      <guid>http://localhost:1313/bw/</guid>
+      <description>&lt;p&gt;Important articles for quick-access: &lt;/br&gt;
+&lt;a href=&#34;https://pawelwiejkut.dev/posts/bw-important-programs/&#34;&gt;BW important programs / Function modules / Tables&lt;/a&gt;&lt;/br&gt;
+&lt;a href=&#34;https://pawelwiejkut.dev/posts/bw-formula-parameters/&#34;&gt;BW formula parameters&lt;/a&gt;&lt;/br&gt;
+&lt;a href=&#34;https://pawelwiejkut.dev/posts/abap-trfn-bw/&#34;&gt;Useful modern ABAP statements for BW transformations&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;All BW related articles:&lt;/br&gt;
+&lt;a href=&#34;https://pawelwiejkut.dev/tags/bw/&#34;&gt;https://pawelwiejkut.dev/tags/bw/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

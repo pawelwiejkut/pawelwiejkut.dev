@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56746&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>SAP NPL 7.52 does not start | Pawel Wiejkut</title>
 <meta name="keywords" content="NPL, ABAPTrial, SYBASE, License">
-<meta name="description" content="This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on: The database is not available via R3trans ------------------------------------------- starting database NPL ... Log file: /sybase/NPL/startdb.log
-Or Stop returns modlib.jslib.caughtException
-We have to download a new license file from https://developers.">
+<meta name="description" content="This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on:
+The database is not available via R3trans
+-------------------------------------------
+starting database NPL ...
+Log file: /sybase/NPL/startdb.log
+Or
+Stop returns modlib.jslib.caughtException
+
+
+We have to download a new license file from https://developers.sap.com/trials-downloads.html?search=ABAP under the section SAP NetWeaver AS ABAP Developer Edition 7.52 SP04
+">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:56746/posts/npl-wont-start/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:56746/profile.png">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:56746/profile.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:56746/profile.png">
-<link rel="apple-touch-icon" href="http://localhost:56746/profile.png">
-<link rel="mask-icon" href="http://localhost:56746/profile.png">
+<link rel="canonical" href="http://localhost:1313/posts/npl-wont-start/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9419e40dab9d5be7462e66a1815ee4a55c86e6c7accf782a28b72ff32e366ece.css" integrity="sha256-lBnkDaudW&#43;dGLmahgV7kpVyG5sesz3gqKLcv8y42bs4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/profile.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/profile.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/profile.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/profile.png">
+<link rel="mask-icon" href="http://localhost:1313/profile.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:56746/posts/npl-wont-start/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/npl-wont-start/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,8 +66,6 @@ We have to download a new license file from https://developers.">
 
     </style>
 </noscript>
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-3R9CLWGY39"></script>
       <script>
         var doNotTrack = false;
@@ -73,24 +79,34 @@ We have to download a new license file from https://developers.">
           gtag('js', new Date());
           gtag('config', 'G-3R9CLWGY39');
         }
-      </script>
-    
-  
-
-<meta property="og:title" content="SAP NPL 7.52 does not start" />
-<meta property="og:description" content="This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on: The database is not available via R3trans ------------------------------------------- starting database NPL ... Log file: /sybase/NPL/startdb.log
+      </script><meta property="og:url" content="http://localhost:1313/posts/npl-wont-start/">
+  <meta property="og:site_name" content="Pawel Wiejkut">
+  <meta property="og:title" content="SAP NPL 7.52 does not start">
+  <meta property="og:description" content="This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on: The database is not available via R3trans ------------------------------------------- starting database NPL ... Log file: /sybase/NPL/startdb.log
 Or Stop returns modlib.jslib.caughtException
-We have to download a new license file from https://developers." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:56746/posts/npl-wont-start/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-04-02T22:01:24+02:00" />
-<meta property="article:modified_time" content="2021-04-02T22:01:24+02:00" />
+We have to download a new license file from https://developers.sap.com/trials-downloads.html?search=ABAP under the section SAP NetWeaver AS ABAP Developer Edition 7.52 SP04 ">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-04-02T22:01:24+02:00">
+    <meta property="article:modified_time" content="2021-04-02T22:01:24+02:00">
+    <meta property="article:tag" content="NPL">
+    <meta property="article:tag" content="ABAPTrial">
+    <meta property="article:tag" content="SYBASE">
+    <meta property="article:tag" content="License">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SAP NPL 7.52 does not start">
+<meta name="twitter:description" content="This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on:
+The database is not available via R3trans
+-------------------------------------------
+starting database NPL ...
+Log file: /sybase/NPL/startdb.log
+Or
+Stop returns modlib.jslib.caughtException
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="SAP NPL 7.52 does not start"/>
-<meta name="twitter:description" content="This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on: The database is not available via R3trans ------------------------------------------- starting database NPL ... Log file: /sybase/NPL/startdb.log
-Or Stop returns modlib.jslib.caughtException
-We have to download a new license file from https://developers."/>
+
+We have to download a new license file from https://developers.sap.com/trials-downloads.html?search=ABAP under the section SAP NetWeaver AS ABAP Developer Edition 7.52 SP04
+">
 
 
 <script type="application/ld+json">
@@ -102,13 +118,13 @@ We have to download a new license file from https://developers."/>
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "http://localhost:56746/posts/"
+      "item": "http://localhost:1313/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "SAP NPL 7.52 does not start",
-      "item": "http://localhost:56746/posts/npl-wont-start/"
+      "item": "http://localhost:1313/posts/npl-wont-start/"
     }
   ]
 }
@@ -119,7 +135,7 @@ We have to download a new license file from https://developers."/>
   "@type": "BlogPosting",
   "headline": "SAP NPL 7.52 does not start",
   "name": "SAP NPL 7.52 does not start",
-  "description": "This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on: The database is not available via R3trans ------------------------------------------- starting database NPL ... Log file: /sybase/NPL/startdb.log\nOr Stop returns modlib.jslib.caughtException\nWe have to download a new license file from https://developers.",
+  "description": "This time I will show you how to fix the issue with your SAP ABAP Developer instance which don’t want to start. This article is about the license issue, which has expired 1.04.2021. In this case, the command starts ALL, will stick on: The database is not available via R3trans ------------------------------------------- starting database NPL ... Log file: /sybase/NPL/startdb.log\nOr Stop returns modlib.jslib.caughtException\nWe have to download a new license file from https://developers.sap.com/trials-downloads.html?search=ABAP under the section SAP NetWeaver AS ABAP Developer Edition 7.52 SP04 ",
   "keywords": [
     "NPL", "ABAPTrial", "SYBASE", "License"
   ],
@@ -130,21 +146,21 @@ We have to download a new license file from https://developers."/>
   "dateModified": "2021-04-02T22:01:24+02:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:56746/posts/npl-wont-start/"
+    "@id": "http://localhost:1313/posts/npl-wont-start/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Pawel Wiejkut",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:56746/profile.png"
+      "url": "http://localhost:1313/profile.png"
     }
   }
 }
 </script>
 </head>
-
-<body class="" id="top">
+<body id="top">
+    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -159,7 +175,7 @@ We have to download a new license file from https://developers."/>
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:56746/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -185,37 +201,37 @@ We have to download a new license file from https://developers."/>
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:56746/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span><i class='fa fa-heart'></i>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:56746/about-me/" title="About me">
+                <a href="http://localhost:1313/about-me/" title="About me">
                     <span>About me</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:56746/bw/" title="BW">
+                <a href="http://localhost:1313/bw/" title="BW">
                     <span>BW</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:56746/sac-tutorial/" title="SAC">
+                <a href="http://localhost:1313/sac-tutorial/" title="SAC">
                     <span>SAC</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:56746/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
+                <a href="http://localhost:1313/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
                     <span>ABAP od postaw 🇵🇱 </span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:56746/tags/" title="Tags">
+                <a href="http://localhost:1313/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:56746/posts/" title="Posts">
+                <a href="http://localhost:1313/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
@@ -230,7 +246,9 @@ We have to download a new license file from https://developers."/>
     <h1 class="post-title entry-hint-parent">
       SAP NPL 7.52 does not start
     </h1>
-    <div class="post-meta"><span title='2021-04-02 22:01:24 +0200 CEST'>April 2, 2021</span>&nbsp;·&nbsp;1 min&nbsp;|&nbsp;<a href="https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content/posts/npl-wont-start.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta"><span title='2021-04-02 22:01:24 +0200 CEST'>April 2, 2021</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;|&nbsp;<span>
+    <a href="https://github.com/pawelwiejkut/pawelwiejkut.dev/tree/main/content/posts/npl-wont-start.md" rel="noopener noreferrer edit" target="_blank">Suggest Changes</a>
+</span>
 
 </div>
   </header> 
@@ -271,10 +289,10 @@ We have to download a new license file from https://developers."/>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:56746/tags/npl/">NPL</a></li>
-      <li><a href="http://localhost:56746/tags/abaptrial/">ABAPTrial</a></li>
-      <li><a href="http://localhost:56746/tags/sybase/">SYBASE</a></li>
-      <li><a href="http://localhost:56746/tags/license/">License</a></li>
+      <li><a href="http://localhost:1313/tags/npl/">NPL</a></li>
+      <li><a href="http://localhost:1313/tags/abaptrial/">ABAPTrial</a></li>
+      <li><a href="http://localhost:1313/tags/sybase/">SYBASE</a></li>
+      <li><a href="http://localhost:1313/tags/license/">License</a></li>
     </ul>
   </footer>
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
@@ -305,7 +323,7 @@ We have to download a new license file from https://developers."/>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:56746/">Pawel Wiejkut</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Pawel Wiejkut</a></span> · 
 
     <span>
         Powered by
@@ -317,12 +335,31 @@ We have to download a new license file from https://developers."/>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    let menu = document.getElementById('menu')
+const images = Array.from(document.querySelectorAll(".post-content img"));
+images.forEach(img => {
+  mediumZoom(img, {
+    margin: 0,  
+    scrollOffset: 40,  
+    container: null,  
+    template: null  
+  });
+});
+</script>
+
+
+
+<script>
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -363,11 +400,12 @@ We have to download a new license file from https://developers."/>
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

@@ -2,20 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Auth on Pawel Wiejkut</title>
-    <link>http://localhost:56746/tags/auth/</link>
+    <link>http://localhost:1313/tags/auth/</link>
     <description>Recent content in Auth on Pawel Wiejkut</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Jun 2022 21:23:34 +0200</lastBuildDate>
-    <atom:link href="http://localhost:56746/tags/auth/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/auth/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to trace BW BPC Authorization</title>
-      <link>http://localhost:56746/posts/check-bpc-authorization/</link>
+      <link>http://localhost:1313/posts/check-bpc-authorization/</link>
       <pubDate>Sat, 04 Jun 2022 21:23:34 +0200</pubDate>
-      <guid>http://localhost:56746/posts/check-bpc-authorization/</guid>
-      <description>Process of building authorization in BW with, and without BPC, is different. Reason is user authorization are enhanced by roles assigned to them in BPC administration panel. For more information about this process you can search for Data Access Profiles (DAPs).
-Common ways Common ways to check the BW auth is:
-Execute query on the affected user in rsudo - But it may not be enough, please check more Check authorization log using SU53 Trace authorization using ST01, STAUTHTRACE or similar BPC Most important difference is that user is sometimes able to execute the query in rsrt, but in the same time is not able to execute the BPC Planing workbook laing on the same object.</description>
+      <guid>http://localhost:1313/posts/check-bpc-authorization/</guid>
+      <description>&lt;p&gt;Process of building authorization in BW with, and without BPC, is different. Reason is user authorization are enhanced by roles assigned to them in BPC administration panel. For more information about this process you can search for Data Access Profiles (DAPs).&lt;/p&gt;
+&lt;h2 id=&#34;common-ways&#34;&gt;Common ways&lt;/h2&gt;
+&lt;p&gt;Common ways to check the BW auth is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Execute query on the affected user in rsudo - But it may not be enough, please check &lt;a href=&#34;#bpc&#34;&gt;more&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Check authorization log using SU53&lt;/li&gt;
+&lt;li&gt;Trace authorization using ST01, STAUTHTRACE or similar&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;bpc&#34;&gt;BPC&lt;/h2&gt;
+&lt;p&gt;Most important difference is that user is sometimes able to execute the query in rsrt, but in the same time is not able to execute the BPC Planing workbook laing on the same object. After opening the workbook, before the prompts user will see issue like:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

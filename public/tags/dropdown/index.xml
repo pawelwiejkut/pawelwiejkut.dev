@@ -2,33 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Dropdown on Pawel Wiejkut</title>
-    <link>http://localhost:56746/tags/dropdown/</link>
+    <link>http://localhost:1313/tags/dropdown/</link>
     <description>Recent content in Dropdown on Pawel Wiejkut</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Dec 2021 12:15:41 +0100</lastBuildDate>
-    <atom:link href="http://localhost:56746/tags/dropdown/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/dropdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SAC APP Design &amp; clean the filter button</title>
-      <link>http://localhost:56746/posts/sac-app-design/</link>
+      <link>http://localhost:1313/posts/sac-app-design/</link>
       <pubDate>Mon, 13 Dec 2021 12:15:41 +0100</pubDate>
-      <guid>http://localhost:56746/posts/sac-app-design/</guid>
-      <description>Button To clean the filter we need a button. Let&amp;rsquo;s get one from the plus in the toolbar Put the button near the Year dropdown and rename it Go to the Button_Clean_Filters - onClick Put the following code // Remove all filters from the model Table_Games_Sales.getDataSource().removeDimensionFilter(&amp;#34;Name&amp;#34;); Table_Games_Sales.getDataSource().removeDimensionFilter(&amp;#34;Publisher&amp;#34;); Table_Games_Sales.getDataSource().removeDimensionFilter(&amp;#34;Year&amp;#34;); //Set all dropdowns selection to empty Dropdown_Name.setSelectedKey(&amp;#39;&amp;#39;); Dropdown_Publisher.setSelectedKey(&amp;#39;&amp;#39;); Dropdown_Year.setSelectedKey(&amp;#39;&amp;#39;); Button should now work properly Design Please download image dataset from here
-Insert images using the plus in the toolbar</description>
+      <guid>http://localhost:1313/posts/sac-app-design/</guid>
+      <description>&lt;h3&gt;Button&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;To clean the filter we need a button. Let&amp;rsquo;s get one from the plus in the toolbar&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_design/1.png#center&#34; width=&#34;30%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Put the button near the Year dropdown and rename it&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_design/2.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Go to the Button_Clean_Filters - onClick&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_design/3.png#center&#34; width=&#34;40%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Put the following code&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Remove all filters from the model
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Table_Games_Sales&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;getDataSource&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;removeDimensionFilter&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Name&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Table_Games_Sales&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;getDataSource&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;removeDimensionFilter&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Publisher&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Table_Games_Sales&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;getDataSource&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;removeDimensionFilter&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Year&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//Set all dropdowns selection to empty
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Dropdown_Name&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;setSelectedKey&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Dropdown_Publisher&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;setSelectedKey&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Dropdown_Year&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;setSelectedKey&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_design/4.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Button should now work properly&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_design/5.gif#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;h3&gt;Design&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Please download image dataset from &lt;a href=&#34;http://localhost:1313/sac_app_design/graphic.zip&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cascade filtering in SAC</title>
-      <link>http://localhost:56746/posts/sac-app-dropdown-cascade/</link>
+      <link>http://localhost:1313/posts/sac-app-dropdown-cascade/</link>
       <pubDate>Sun, 12 Dec 2021 15:42:26 +0100</pubDate>
-      <guid>http://localhost:56746/posts/sac-app-dropdown-cascade/</guid>
-      <description>In this part of the tutorial, we are focusing on creating a cascade filter on the dropdown in SAC APP. Cascade means that filters on the dashboard will depend on each other. In the example, if you pick up the publisher name Nintendo then in the games list (Name) you should see only games that belong to Nintendo and no more others. To achieve this, we have to redesign our app a bit.</description>
+      <guid>http://localhost:1313/posts/sac-app-dropdown-cascade/</guid>
+      <description>&lt;p&gt;In this part of the tutorial, we are focusing on creating a cascade filter on the dropdown in SAC APP.
+Cascade means that filters on the dashboard will depend on each other. In the example, if you pick up the publisher name Nintendo then in the games list (Name) you should see only games that belong to Nintendo and no more others. To achieve this, we have to redesign our app a bit.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Create and fill a dropdown in SAC APP</title>
-      <link>http://localhost:56746/posts/sac-app-dropdown/</link>
+      <link>http://localhost:1313/posts/sac-app-dropdown/</link>
       <pubDate>Sun, 12 Dec 2021 14:13:53 +0100</pubDate>
-      <guid>http://localhost:56746/posts/sac-app-dropdown/</guid>
-      <description>Firstly we have to move our table a few lines down. This can be done by moving the mouse between the table and toolbar and drag and dropping when the cursor changes the icon: Click on the plus icon on the toolbar Select Dropdown form the list Lets rename the Table by click on tree dots -&amp;gt; Rename, and set new name to Table_Games_Sales Same with Dropdown, and put new name Dropdown_Name</description>
+      <guid>http://localhost:1313/posts/sac-app-dropdown/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Firstly we have to move our table a few lines down. This can be done by moving the mouse between the table and toolbar and drag and dropping when the cursor changes the icon:
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_dropdown/1.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click on the plus icon on the toolbar
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_dropdown/2.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select Dropdown form the list
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_dropdown/3.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lets rename the Table by click on tree dots -&amp;gt; Rename, and set new name to Table_Games_Sales
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_dropdown/5.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Same with Dropdown, and put new name Dropdown_Name&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

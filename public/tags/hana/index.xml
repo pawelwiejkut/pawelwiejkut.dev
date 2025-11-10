@@ -2,42 +2,114 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>HANA on Pawel Wiejkut</title>
-    <link>http://localhost:56746/tags/hana/</link>
+    <link>http://localhost:1313/tags/hana/</link>
     <description>Recent content in HANA on Pawel Wiejkut</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 11 Feb 2022 16:45:44 +0100</lastBuildDate>
-    <atom:link href="http://localhost:56746/tags/hana/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hana/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manual deployment from ABAP to SAP HANA</title>
-      <link>http://localhost:56746/posts/manual-hana-abap-deployment/</link>
+      <link>http://localhost:1313/posts/manual-hana-abap-deployment/</link>
       <pubDate>Fri, 11 Feb 2022 16:45:44 +0100</pubDate>
-      <guid>http://localhost:56746/posts/manual-hana-abap-deployment/</guid>
+      <guid>http://localhost:1313/posts/manual-hana-abap-deployment/</guid>
       <description>Bellow you can find my notes about the manual deployment from ABAP Application Server to the HANA Database. This kind of activity can be done in example for Calculation Views.</description>
     </item>
     <item>
       <title>ABAP1909 A4H HANA Login Details</title>
-      <link>http://localhost:56746/posts/abap1909-hana-login-details/</link>
+      <link>http://localhost:1313/posts/abap1909-hana-login-details/</link>
       <pubDate>Fri, 28 Jan 2022 14:53:45 +0100</pubDate>
-      <guid>http://localhost:56746/posts/abap1909-hana-login-details/</guid>
-      <description>If you want to login into HANA DB on ABAP1909 platform - in the example to create a calculation view, change something please use bellow details:
-For the tentant database SYSTEMDB (i.e to make some administrative changes): user SYSTEM with the password Ldtf5432 For the single-container database HDB (i.e to make some development): user SAPA4H with the password Ldtf5432
-In both cases, the instance number is 02. Example in Eclipse:</description>
+      <guid>http://localhost:1313/posts/abap1909-hana-login-details/</guid>
+      <description>&lt;p&gt;If you want to login into HANA DB on ABAP1909 platform - in the example to create a calculation view, change something please use bellow details:&lt;/p&gt;
+&lt;p&gt;For the tentant database &lt;strong&gt;SYSTEMDB&lt;/strong&gt; (i.e to make some administrative changes):&lt;/br&gt;
+user SYSTEM with the password Ldtf5432&lt;/br&gt;&lt;/br&gt;
+For the single-container database &lt;strong&gt;HDB&lt;/strong&gt; (i.e to make some development):&lt;/br&gt;
+user SAPA4H with the password Ldtf5432&lt;/p&gt;
+&lt;p&gt;In both cases, the instance number is 02. Example in Eclipse:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Call SAP HANA function with table</title>
-      <link>http://localhost:56746/posts/call-function-table/</link>
+      <link>http://localhost:1313/posts/call-function-table/</link>
       <pubDate>Thu, 11 Nov 2021 11:44:24 +0200</pubDate>
-      <guid>http://localhost:56746/posts/call-function-table/</guid>
-      <description>How to run the HANA SQL function where an output table is required? Example function (from this tutorial): CREATE TYPE &amp;#34;TT_RESTAURANTS&amp;#34; AS TABLE (&amp;#34;node_id&amp;#34; INTEGER, &amp;#34;distance&amp;#34; INTEGER, &amp;#34;hops&amp;#34; BIGINT); CREATE OR REPLACE PROCEDURE &amp;#34;NEAREST_RESTAURANT&amp;#34;(IN startV INT, OUT res &amp;#34;TT_RESTAURANTS&amp;#34;) LANGUAGE GRAPH READS SQL DATA AS BEGIN GRAPH g = Graph(&amp;#34;SKIING&amp;#34;); VERTEX v_s = Vertex(:g, :startV); MULTISET&amp;lt;Vertex&amp;gt; rests = v IN Vertices(:g) WHERE :v.&amp;#34;restaurant&amp;#34; == N&amp;#39;TRUE&amp;#39;; ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (INT &amp;#34;distance&amp;#34; = 0); ALTER g ADD TEMPORARY VERTEX ATTRIBUTE (BIGINT &amp;#34;hops&amp;#34; = 0L); FOREACH rest in :rests { VERTEX v_rest = Vertex(:g, :rest.</description>
+      <guid>http://localhost:1313/posts/call-function-table/</guid>
+      <description>&lt;p&gt;How to run the HANA SQL function where an output table is required?
+Example function (&lt;a href=&#34;https://developers.sap.com/tutorials/hana-graph-overview-graphscript.html&#34;&gt;from this tutorial&lt;/a&gt;):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TYPE&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TT_RESTAURANTS&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;AS&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;node_id&amp;#34;&lt;/span&gt; INTEGER, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;distance&amp;#34;&lt;/span&gt; INTEGER, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hops&amp;#34;&lt;/span&gt; BIGINT);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;OR&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;REPLACE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;PROCEDURE&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;NEAREST_RESTAURANT&amp;#34;&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;IN&lt;/span&gt; startV INT, &lt;span style=&#34;color:#66d9ef&#34;&gt;OUT&lt;/span&gt; res &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TT_RESTAURANTS&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;LANGUAGE&lt;/span&gt; GRAPH &lt;span style=&#34;color:#66d9ef&#34;&gt;READS&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SQL&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;DATA&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;AS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;BEGIN&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	GRAPH &lt;span style=&#34;color:#66d9ef&#34;&gt;g&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Graph(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;SKIING&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	VERTEX v_s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Vertex(:&lt;span style=&#34;color:#66d9ef&#34;&gt;g&lt;/span&gt;, :startV);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	MULTISET&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Vertex&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; rests &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; v &lt;span style=&#34;color:#66d9ef&#34;&gt;IN&lt;/span&gt; Vertices(:&lt;span style=&#34;color:#66d9ef&#34;&gt;g&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; :v.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;restaurant&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; N&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TRUE&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;ALTER&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;g&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ADD&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TEMPORARY&lt;/span&gt; VERTEX ATTRIBUTE (INT &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;distance&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;ALTER&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;g&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ADD&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TEMPORARY&lt;/span&gt; VERTEX ATTRIBUTE (BIGINT &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hops&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;L);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	FOREACH rest &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; :rests &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		VERTEX v_rest &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Vertex(:&lt;span style=&#34;color:#66d9ef&#34;&gt;g&lt;/span&gt;, :rest.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;node_id&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		WeightedPath&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;INT&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; p &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Shortest_Path(:&lt;span style=&#34;color:#66d9ef&#34;&gt;g&lt;/span&gt;, :v_s, :v_rest, (Edge conn) &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; INTEGER &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; :conn.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;length&amp;#34;&lt;/span&gt;; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;}&lt;/span&gt; );
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		rest.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hops&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Length&lt;/span&gt;(:p);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		rest.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;distance&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Weight(:p);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	res &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; :v.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;node_id&amp;#34;&lt;/span&gt;, :v.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;distance&amp;#34;&lt;/span&gt;, :v.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hops&amp;#34;&lt;/span&gt; FOREACH v &lt;span style=&#34;color:#66d9ef&#34;&gt;IN&lt;/span&gt; :rests;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;END&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Developing custom HANA adapter – quickstart</title>
-      <link>http://localhost:56746/posts/custom-hana-adapter/</link>
+      <link>http://localhost:1313/posts/custom-hana-adapter/</link>
       <pubDate>Sun, 18 Oct 2020 20:44:24 +0200</pubDate>
-      <guid>http://localhost:56746/posts/custom-hana-adapter/</guid>
-      <description>In this blog post, I will show you how you can fast start with developing custom HANA adapters in JAVA.
-S-User is required to download data provisioning agent: https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73555000100200005999&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/HANA%20DP%20AGENT%202.0 I downloaded the Linux version, but windows should work too (I’m on Mac OS). I will proceed in SAP Hana Studio because Eclipse is missing some packages. If you don’t have SAP Hana Studio, please check: https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73554900100200000585&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/SAP%20HANA%20STUDIO%202 Download missing plugins: https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api/2.3.0 https://mvnrepository.</description>
+      <guid>http://localhost:1313/posts/custom-hana-adapter/</guid>
+      <description>&lt;p&gt;In this blog post, I will show you how you can fast start with developing custom HANA adapters in JAVA.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;S-User is required to download data provisioning agent:
+&lt;a href=&#34;https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73555000100200005999&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/HANA%20DP%20AGENT%202.0&#34;&gt;https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73555000100200005999&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/HANA%20DP%20AGENT%202.0&lt;/a&gt;
+I downloaded the Linux version, but windows should work too (I’m on Mac OS).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/1.png&#34; width=&#34;80%&#34; /&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;I will proceed in SAP Hana Studio because Eclipse is missing some packages. If you don’t have SAP Hana Studio, please check: &lt;a href=&#34;https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73554900100200000585&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/SAP%20HANA%20STUDIO%202&#34;&gt;https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73554900100200000585&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/SAP%20HANA%20STUDIO%202&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/2.png&#34; width=&#34;80%&#34; /&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Download missing plugins: &lt;a href=&#34;https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api/2.3.0&#34;&gt;https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api/2.3.0&lt;/a&gt; &lt;a href=&#34;https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl/2.3.3&#34;&gt;https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl/2.3.3&lt;/a&gt;
+and put into the plugins folder&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/3.png&#34; width=&#34;80%&#34; /&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Unpack dpagent.tar.gz&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/4.png&#34; width=&#34;80%&#34; /&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Run Hana Studio and go to the Help -&amp;gt; Install new Software. Then click on Add, Local and choose patch to UI folder from extracted DPAGENT.TGZ&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/5.png&#34; width=&#34;80%&#34; /&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Install the plugin.&lt;/li&gt;
+&lt;li&gt;Create a hello world adapter. Change perspective to Plug-in development. Click on File-&amp;gt;New-&amp;gt;Plugin Project.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/6.png&#34; width=&#34;80%&#34; /&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;Check to Generate an activator flag.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/7.png&#34; width=&#34;80%&#34; /&gt;
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;Right-click on the project, Debug As -&amp;gt;Debug Configurations&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/8.png&#34; width=&#34;80%&#34; /&gt;
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;Unselect Target Platform and click on Add Required Bundles&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/9.png&#34; width=&#34;80%&#34; /&gt;
+&lt;ol start=&#34;11&#34;&gt;
+&lt;li&gt;Select org.eclipse.equinox.console and com.sap.hana.dpagent. Next click on Add Required Bundles&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/10.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/11.png&#34; width=&#34;80%&#34; /&gt;
+&lt;ol start=&#34;12&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Click on Apply, then Debug. When this is finished, everything should work perfectly. Now we can use dplogin to deploy plugin into your Hana system. If you are using HANA Express, dpagent can be activated on HXE instance from SYSTEM connection by:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;ALTER&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;DATABASE&lt;/span&gt; HXE &lt;span style=&#34;color:#66d9ef&#34;&gt;ADD&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dpserver&amp;#39;&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/12.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

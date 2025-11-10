@@ -2,19 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Job on Pawel Wiejkut</title>
-    <link>http://localhost:56746/tags/job/</link>
+    <link>http://localhost:1313/tags/job/</link>
     <description>Recent content in Job on Pawel Wiejkut</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Feb 2018 20:44:24 +0200</lastBuildDate>
-    <atom:link href="http://localhost:56746/tags/job/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/job/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to debug background/batch job in SAP ?</title>
-      <link>http://localhost:56746/posts/debug-background/</link>
+      <link>http://localhost:1313/posts/debug-background/</link>
       <pubDate>Sat, 17 Feb 2018 20:44:24 +0200</pubDate>
-      <guid>http://localhost:56746/posts/debug-background/</guid>
-      <description>Today I want to show you a simple way to debug a batch job. Sometimes you just want to debug some process witch default runs in batch. Everything looks simple but you should notice that breakpoints sometimes don’t work in these cases. The situation can be even worst when your job runs only a few seconds.
-First of all if your job works for a short time, you just should keep him working for a while.</description>
+      <guid>http://localhost:1313/posts/debug-background/</guid>
+      <description>&lt;p&gt;Today I want to show you a simple way to debug a batch job. Sometimes you just want to debug some process witch default runs in batch. Everything looks simple but you should notice that breakpoints sometimes don’t work in these cases. The situation can be even worst when your job runs only a few seconds.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First of all if your job works for a short time, you just should keep him working for a while. To do this you just can create an infinitive loop. So just go to your code and in property place paste:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-abap&#34; data-lang=&#34;abap&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;data&lt;/span&gt;: lv_wait.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; lv_wait &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;endwhile&lt;/span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Now go to transaction sm50, click on „ALL work process” and then select your process.
+&lt;mark&gt;Remember that your background process could run on one of many application servers&lt;/mark&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/debug_background/1.png&#34; width=&#34;80%&#34; /&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Click on Administration-&amp;gt; Program -&amp;gt; Debugging.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/debug_background/2.png&#34; width=&#34;80%&#34; /&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;After confirming the pop-up you should see a debugger.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/debug_background/3.png&#34; width=&#34;80%&#34; /&gt;</description>
     </item>
   </channel>
 </rss>

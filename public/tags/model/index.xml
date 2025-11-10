@@ -2,21 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Model on Pawel Wiejkut</title>
-    <link>http://localhost:56746/tags/model/</link>
+    <link>http://localhost:1313/tags/model/</link>
     <description>Recent content in Model on Pawel Wiejkut</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Dec 2021 21:03:40 +0100</lastBuildDate>
-    <atom:link href="http://localhost:56746/tags/model/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/model/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create new model on SAC</title>
-      <link>http://localhost:56746/posts/sac-model/</link>
+      <link>http://localhost:1313/posts/sac-model/</link>
       <pubDate>Sat, 11 Dec 2021 21:03:40 +0100</pubDate>
-      <guid>http://localhost:56746/posts/sac-model/</guid>
-      <description>Let&amp;rsquo;s build a very simple SAC model using kaggle data on video game sales.
-To create a model on SAC, firstly you have to login into your account (please search for trail if necessary). Next click on files, plus icon, and select model. Now, please click on From a CSV or Excel File Select Source File Download source file from Kaggle.
-Find vgsales.csv and load into SAC
-Click on import This model is very simple so we don&amp;rsquo;t have to change anything.</description>
+      <guid>http://localhost:1313/posts/sac-model/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s build a very simple SAC model using kaggle data on video game sales.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To create a model on SAC, firstly you have to login into your account (please search for trail if necessary). Next click on files, plus icon, and select model.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_model/1.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Now, please click on From a CSV or Excel File&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_model/2.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Select Source File&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_model/3.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Download source file from &lt;a href=&#34;https://www.kaggle.com/gregorut/videogamesales&#34;&gt;Kaggle&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find vgsales.csv and load into SAC&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_model/4.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Click on import&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_model/5.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;This model is very simple so we don&amp;rsquo;t have to change anything. Just click on Create Model&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_model/6.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;Save data model&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_model/7.png#center&#34; width=&#34;80%&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;It is done 😎 Now you can use it in the next steps or your own project. Please notice that in the case of more complex datasets before saving you would have to clean the data, assign keys and descriptions or provide additional calculations.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
