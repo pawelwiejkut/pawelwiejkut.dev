@@ -25,9 +25,9 @@ W skrócie, aby zainstalować SAPA potrzebujesz:
 8. Instalujemy SAP na OpenSuse,
 9. Cały proces został szczegółowo przedstawiony, krok-po-korku w wideo poniżej.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/614583135?h=19ec10493e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="2. Tydzien 1 - Instalacja SAP 1/2"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/535082/53a67aac-6d87-4fa8-987a-615783634f8e?token=07c7c147c98cc9bcb94ca16aee553512d63cad4bcad368c89a14b41f62410ee7&expires=1762882470&autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
 </br></br>
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/615025108?h=e450dd354e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="3. Tydzien 1 - Instalacja SAP 2/2"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/535082/b7626167-5f77-4a61-b97d-011db787abd6?token=4ca47d9ec08f9bb3f8db77df7b7b876e43051dc8a18f444507a51043e8b0edd2&expires=1762882504&autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
 
 
 
