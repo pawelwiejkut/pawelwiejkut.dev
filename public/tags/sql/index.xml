@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SQL on Pawel Wiejkut</title>
-    <link>http://localhost:1313/tags/sql/</link>
+    <link>http://localhost:54161/tags/sql/</link>
     <description>Recent content in SQL on Pawel Wiejkut</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Nov 2021 11:44:24 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54161/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Call SAP HANA function with table</title>
-      <link>http://localhost:1313/posts/call-function-table/</link>
+      <link>http://localhost:54161/posts/call-function-table/</link>
       <pubDate>Thu, 11 Nov 2021 11:44:24 +0200</pubDate>
-      <guid>http://localhost:1313/posts/call-function-table/</guid>
+      <guid>http://localhost:54161/posts/call-function-table/</guid>
       <description>&lt;p&gt;How to run the HANA SQL function where an output table is required?
 Example function (&lt;a href=&#34;https://developers.sap.com/tutorials/hana-graph-overview-graphscript.html&#34;&gt;from this tutorial&lt;/a&gt;):
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TYPE&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TT_RESTAURANTS&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;AS&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;node_id&amp;#34;&lt;/span&gt; INTEGER, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;distance&amp;#34;&lt;/span&gt; INTEGER, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hops&amp;#34;&lt;/span&gt; BIGINT);

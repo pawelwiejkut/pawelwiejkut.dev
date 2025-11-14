@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Slg0 on Pawel Wiejkut</title>
-    <link>http://localhost:1313/tags/slg0/</link>
+    <link>http://localhost:54161/tags/slg0/</link>
     <description>Recent content in Slg0 on Pawel Wiejkut</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Jan 2021 20:44:24 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/slg0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54161/tags/slg0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to check who deleted your BW object?</title>
-      <link>http://localhost:1313/posts/check-who-deleted/</link>
+      <link>http://localhost:54161/posts/check-who-deleted/</link>
       <pubDate>Sun, 10 Jan 2021 20:44:24 +0200</pubDate>
-      <guid>http://localhost:1313/posts/check-who-deleted/</guid>
+      <guid>http://localhost:54161/posts/check-who-deleted/</guid>
       <description>&lt;p&gt;Most of the objects are not modifiable on the quality or production systems, but we have exceptions like Infopackages on BW. Yesterday I have to check who deleted an object from the system and fortunately, there is the log for this operation. I will show you how to check this.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;We have to go to the transaction SGL1 and search for RSSM
-&lt;img src=&#34;http://localhost:1313/check_who_deleted/1.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:54161/check_who_deleted/1.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Now you should be able to find the impostor 🙂
-&lt;img src=&#34;http://localhost:1313/check_who_deleted/2.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;</description>
+&lt;img src=&#34;http://localhost:54161/check_who_deleted/2.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

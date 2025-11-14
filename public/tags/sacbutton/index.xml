@@ -2,64 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SACButton on Pawel Wiejkut</title>
-    <link>http://localhost:1313/tags/sacbutton/</link>
+    <link>http://localhost:54161/tags/sacbutton/</link>
     <description>Recent content in SACButton on Pawel Wiejkut</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Dec 2021 15:12:24 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sacbutton/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54161/tags/sacbutton/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Select dimensions by CheckBox and Button</title>
-      <link>http://localhost:1313/posts/sac-button-checkbox/</link>
+      <link>http://localhost:54161/posts/sac-button-checkbox/</link>
       <pubDate>Mon, 13 Dec 2021 15:12:24 +0100</pubDate>
-      <guid>http://localhost:1313/posts/sac-button-checkbox/</guid>
+      <guid>http://localhost:54161/posts/sac-button-checkbox/</guid>
       <description>&lt;ol&gt;
 &lt;li&gt;We need a CheckBox, it can be added from the toolbar&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/1.png#center&#34; width=&#34;40%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/1.png#center&#34; width=&#34;40%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Let&amp;rsquo;s change the background color of the CheckboxGroup. To do this, please click on the brush icon, bucket icon and then on more&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/2.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/2.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Change color to hex 1f303f&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/3.png#center&#34; width=&#34;40%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/3.png#center&#34; width=&#34;40%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Next change the font color&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/4.png#center&#34; width=&#34;40%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/4.png#center&#34; width=&#34;40%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;Set new color to white, hex ffffff&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/5.png#center&#34; width=&#34;30%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/5.png#center&#34; width=&#34;30%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;Remove the values from the Checkbox&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/7.gif#center&#34; width=&#34;50%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/7.gif#center&#34; width=&#34;50%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;Rename checkbox to CheckboxGroup_Dimensions, bu click on the keys icon&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/6.png#center&#34; width=&#34;30%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/6.png#center&#34; width=&#34;30%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;8&#34;&gt;
@@ -73,28 +73,28 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;CheckboxGroup_Dimensions&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addItem&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;dimensions&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;,&lt;span style=&#34;color:#a6e22e&#34;&gt;dimensions&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt;);
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/8.png#center&#34; width=&#34;90%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/8.png#center&#34; width=&#34;90%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;9&#34;&gt;
 &lt;li&gt;Last but not least - we need a button&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/9.png#center&#34; width=&#34;40%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/9.png#center&#34; width=&#34;40%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;10&#34;&gt;
 &lt;li&gt;Rename the button&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/13.png#center&#34; width=&#34;40%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/13.png#center&#34; width=&#34;40%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;10&#34;&gt;
 &lt;li&gt;Let&amp;rsquo;s also add a code to handle it&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/10.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/10.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Get current list of dimensions to remove it
@@ -111,14 +111,14 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;Table_Games_Sales&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addDimensionToRows&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;selectedDimensions&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;]);
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/11.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/11.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;11&#34;&gt;
 &lt;li&gt;At the end-user should be able to pick up interesting dimensions by themself&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_button_checkbox/12.gif#center&#34; width=&#34;90%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_button_checkbox/12.gif#center&#34; width=&#34;90%&#34;/&gt; 
 &lt;/figure&gt;</description>
     </item>
   </channel>

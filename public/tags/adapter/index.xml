@@ -2,68 +2,68 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Adapter on Pawel Wiejkut</title>
-    <link>http://localhost:1313/tags/adapter/</link>
+    <link>http://localhost:54161/tags/adapter/</link>
     <description>Recent content in Adapter on Pawel Wiejkut</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Oct 2020 20:44:24 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/adapter/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54161/tags/adapter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developing custom HANA adapter – quickstart</title>
-      <link>http://localhost:1313/posts/custom-hana-adapter/</link>
+      <link>http://localhost:54161/posts/custom-hana-adapter/</link>
       <pubDate>Sun, 18 Oct 2020 20:44:24 +0200</pubDate>
-      <guid>http://localhost:1313/posts/custom-hana-adapter/</guid>
+      <guid>http://localhost:54161/posts/custom-hana-adapter/</guid>
       <description>&lt;p&gt;In this blog post, I will show you how you can fast start with developing custom HANA adapters in JAVA.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;S-User is required to download data provisioning agent:
 &lt;a href=&#34;https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73555000100200005999&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/HANA%20DP%20AGENT%202.0&#34;&gt;https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73555000100200005999&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/HANA%20DP%20AGENT%202.0&lt;/a&gt;
 I downloaded the Linux version, but windows should work too (I’m on Mac OS).&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/1.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/custom_hana_adapter/1.png&#34; width=&#34;80%&#34; /&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;I will proceed in SAP Hana Studio because Eclipse is missing some packages. If you don’t have SAP Hana Studio, please check: &lt;a href=&#34;https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73554900100200000585&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/SAP%20HANA%20STUDIO%202&#34;&gt;https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&amp;amp;_EVENT=DISPHIER&amp;amp;HEADER=Y&amp;amp;FUNCTIONBAR=N&amp;amp;EVENT=TREE&amp;amp;NE=NAVIGATE&amp;amp;ENR=73554900100200000585&amp;amp;V=MAINT&amp;amp;TA=ACTUAL&amp;amp;PAGE=SEARCH/SAP%20HANA%20STUDIO%202&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/2.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/custom_hana_adapter/2.png&#34; width=&#34;80%&#34; /&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Download missing plugins: &lt;a href=&#34;https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api/2.3.0&#34;&gt;https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api/2.3.0&lt;/a&gt; &lt;a href=&#34;https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl/2.3.3&#34;&gt;https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl/2.3.3&lt;/a&gt;
 and put into the plugins folder&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/3.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/custom_hana_adapter/3.png&#34; width=&#34;80%&#34; /&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Unpack dpagent.tar.gz&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/4.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/custom_hana_adapter/4.png&#34; width=&#34;80%&#34; /&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;Run Hana Studio and go to the Help -&amp;gt; Install new Software. Then click on Add, Local and choose patch to UI folder from extracted DPAGENT.TGZ&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/5.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/custom_hana_adapter/5.png&#34; width=&#34;80%&#34; /&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;Install the plugin.&lt;/li&gt;
 &lt;li&gt;Create a hello world adapter. Change perspective to Plug-in development. Click on File-&amp;gt;New-&amp;gt;Plugin Project.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/6.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/custom_hana_adapter/6.png&#34; width=&#34;80%&#34; /&gt;
 &lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;Check to Generate an activator flag.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/7.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/custom_hana_adapter/7.png&#34; width=&#34;80%&#34; /&gt;
 &lt;ol start=&#34;9&#34;&gt;
 &lt;li&gt;Right-click on the project, Debug As -&amp;gt;Debug Configurations&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/8.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/custom_hana_adapter/8.png&#34; width=&#34;80%&#34; /&gt;
 &lt;ol start=&#34;10&#34;&gt;
 &lt;li&gt;Unselect Target Platform and click on Add Required Bundles&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/9.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/custom_hana_adapter/9.png&#34; width=&#34;80%&#34; /&gt;
 &lt;ol start=&#34;11&#34;&gt;
 &lt;li&gt;Select org.eclipse.equinox.console and com.sap.hana.dpagent. Next click on Add Required Bundles&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/10.png&#34; width=&#34;80%&#34; /&gt;
-&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/11.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/custom_hana_adapter/10.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/custom_hana_adapter/11.png&#34; width=&#34;80%&#34; /&gt;
 &lt;ol start=&#34;12&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;Click on Apply, then Debug. When this is finished, everything should work perfectly. Now we can use dplogin to deploy plugin into your Hana system. If you are using HANA Express, dpagent can be activated on HXE instance from SYSTEM connection by:
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;ALTER&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;DATABASE&lt;/span&gt; HXE &lt;span style=&#34;color:#66d9ef&#34;&gt;ADD&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dpserver&amp;#39;&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;img src=&#34;http://localhost:1313/custom_hana_adapter/12.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;</description>
+&lt;img src=&#34;http://localhost:54161/custom_hana_adapter/12.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

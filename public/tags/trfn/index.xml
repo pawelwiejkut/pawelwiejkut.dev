@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>TRFN on Pawel Wiejkut</title>
-    <link>http://localhost:1313/tags/trfn/</link>
+    <link>http://localhost:54161/tags/trfn/</link>
     <description>Recent content in TRFN on Pawel Wiejkut</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Jan 2022 19:56:19 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/trfn/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54161/tags/trfn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Remove invalid characters in your BW transformation</title>
-      <link>http://localhost:1313/posts/bw-remove-charters/</link>
+      <link>http://localhost:54161/posts/bw-remove-charters/</link>
       <pubDate>Sun, 02 Jan 2022 19:56:19 +0100</pubDate>
-      <guid>http://localhost:1313/posts/bw-remove-charters/</guid>
+      <guid>http://localhost:54161/posts/bw-remove-charters/</guid>
       <description>&lt;p&gt;If you have in your BW regular flat-file data load in your BW system, you probably afflict issues with the wrong data provided by the user. The scenario of this issue can be very simple. It’s enough that the user provides an invalid unsupported charter and during activation, you will get a similar issue:&lt;/p&gt;
-&lt;img src=&#34;http://localhost:1313/bw_remove_charters/1.png&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/bw_remove_charters/1.png&#34; width=&#34;80%&#34; /&gt;
 &lt;h1 id=&#34;or-other-issues-like&#34;&gt;Or other issues like:&lt;/h1&gt;
 &lt;p&gt;Value &amp;lsquo;#’ (hex. &amp;lsquo;2300′) of characteristic  contains invalid characters
 Error when assigning SID: Action VAL_SID_CONVERT InfoObject

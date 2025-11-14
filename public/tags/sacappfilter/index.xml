@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SACAppFilter on Pawel Wiejkut</title>
-    <link>http://localhost:1313/tags/sacappfilter/</link>
+    <link>http://localhost:54161/tags/sacappfilter/</link>
     <description>Recent content in SACAppFilter on Pawel Wiejkut</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Dec 2021 12:15:41 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sacappfilter/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54161/tags/sacappfilter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SAC APP Design &amp; clean the filter button</title>
-      <link>http://localhost:1313/posts/sac-app-design/</link>
+      <link>http://localhost:54161/posts/sac-app-design/</link>
       <pubDate>Mon, 13 Dec 2021 12:15:41 +0100</pubDate>
-      <guid>http://localhost:1313/posts/sac-app-design/</guid>
+      <guid>http://localhost:54161/posts/sac-app-design/</guid>
       <description>&lt;h3&gt;Button&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;To clean the filter we need a button. Let&amp;rsquo;s get one from the plus in the toolbar&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_design/1.png#center&#34; width=&#34;30%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_app_design/1.png#center&#34; width=&#34;30%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Put the button near the Year dropdown and rename it&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_design/2.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_app_design/2.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Go to the Button_Clean_Filters - onClick&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_design/3.png#center&#34; width=&#34;40%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_app_design/3.png#center&#34; width=&#34;40%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;4&#34;&gt;
@@ -48,20 +48,20 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Dropdown_Publisher&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;setSelectedKey&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;);
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Dropdown_Year&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;setSelectedKey&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_design/4.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_app_design/4.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;Button should now work properly&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/sac_app_design/5.gif#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/sac_app_design/5.gif#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;h3&gt;Design&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Please download image dataset from &lt;a href=&#34;http://localhost:1313/sac_app_design/graphic.zip&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;Please download image dataset from &lt;a href=&#34;http://localhost:54161/sac_app_design/graphic.zip&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

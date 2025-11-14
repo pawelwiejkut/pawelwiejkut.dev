@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Protip on Pawel Wiejkut</title>
-    <link>http://localhost:1313/tags/protip/</link>
+    <link>http://localhost:54161/tags/protip/</link>
     <description>Recent content in Protip on Pawel Wiejkut</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Nov 2021 11:15:14 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/protip/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54161/tags/protip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BW</title>
-      <link>http://localhost:1313/bw/</link>
+      <link>http://localhost:54161/bw/</link>
       <pubDate>Thu, 04 Nov 2021 11:15:14 +0100</pubDate>
-      <guid>http://localhost:1313/bw/</guid>
+      <guid>http://localhost:54161/bw/</guid>
       <description>&lt;p&gt;Important articles for quick-access: &lt;/br&gt;
 &lt;a href=&#34;https://pawelwiejkut.dev/posts/bw-important-programs/&#34;&gt;BW important programs / Function modules / Tables&lt;/a&gt;&lt;/br&gt;
 &lt;a href=&#34;https://pawelwiejkut.dev/posts/bw-formula-parameters/&#34;&gt;BW formula parameters&lt;/a&gt;&lt;/br&gt;

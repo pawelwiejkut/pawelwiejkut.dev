@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AMDP on Pawel Wiejkut</title>
-    <link>http://localhost:1313/tags/amdp/</link>
+    <link>http://localhost:54161/tags/amdp/</link>
     <description>Recent content in AMDP on Pawel Wiejkut</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Oct 2021 21:44:24 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/amdp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54161/tags/amdp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AMDP ABAP Transformation execution</title>
-      <link>http://localhost:1313/posts/amdp-abap-trfn/</link>
+      <link>http://localhost:54161/posts/amdp-abap-trfn/</link>
       <pubDate>Sun, 17 Oct 2021 21:44:24 +0200</pubDate>
-      <guid>http://localhost:1313/posts/amdp-abap-trfn/</guid>
+      <guid>http://localhost:54161/posts/amdp-abap-trfn/</guid>
       <description>How to execute AMDP TRFN directly from ABAP?  You can use the method execute_haap from cl_rstran_db_stat. Check this blog for complete example with parameters.</description>
     </item>
   </channel>

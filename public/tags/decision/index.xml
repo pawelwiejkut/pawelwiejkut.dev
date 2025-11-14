@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Decision on Pawel Wiejkut</title>
-    <link>http://localhost:1313/tags/decision/</link>
+    <link>http://localhost:54161/tags/decision/</link>
     <description>Recent content in Decision on Pawel Wiejkut</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2019 20:44:24 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/decision/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54161/tags/decision/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to extend decision​ tree in process chain?</title>
-      <link>http://localhost:1313/posts/extend-rspc-decision/</link>
+      <link>http://localhost:54161/posts/extend-rspc-decision/</link>
       <pubDate>Wed, 15 May 2019 20:44:24 +0200</pubDate>
-      <guid>http://localhost:1313/posts/extend-rspc-decision/</guid>
+      <guid>http://localhost:54161/posts/extend-rspc-decision/</guid>
       <description>&lt;p&gt;Toady short tutorial about extending the decision tree in the process chain. As you probably know decision three blocks can be extended. In our example, we want to run a delta info package in everyday processing, and depending on our customizing perform a full load.
 Process chain example:
-&lt;img src=&#34;http://localhost:1313/extend_rspc_decision/1.jpg&#34; width=&#34;80%&#34; /&gt;
+&lt;img src=&#34;http://localhost:54161/extend_rspc_decision/1.jpg&#34; width=&#34;80%&#34; /&gt;
 Customization table:
-&lt;img src=&#34;http://localhost:1313/extend_rspc_decision/2.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:54161/extend_rspc_decision/2.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Basically, if the value of param ISIP in our customer table is set to DELTA, we want to execute the delta info package. If param will be set to the FULL, execute ISIP in full mode.&lt;/p&gt;</description>
     </item>
   </channel>

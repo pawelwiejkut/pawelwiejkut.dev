@@ -48,7 +48,7 @@ description = 'Paweł Wiejkut homepage. ABAP BW SAC HANA Tips & Tricks 👨🏻�
 env = "production"
 comments = true
 ShowReadingTime = true
-defaultTheme =  "light"
+
 
 [params.assets]
 favicon = "./profile.png"

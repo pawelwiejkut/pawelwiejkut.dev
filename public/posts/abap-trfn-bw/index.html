@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="light">
+<html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=54161&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,16 +9,16 @@
 <meta name="keywords" content="BW, ABAP">
 <meta name="description" content="ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare. You can treat this post as a ABAP handbook/guide for BW developers. If you want to check more information how to write a clean ABAP code, check out check this website where is an official guide from SAP.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/abap-trfn-bw/">
+<link rel="canonical" href="http://localhost:54161/posts/abap-trfn-bw/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.4c0621a8829edbc808d1f377c9ce00914985697820b7b988f06e2c329d214714.css" integrity="sha256-TAYhqIKe28gI0fN3yc4AkUmFaXggt7mI8G4sMp0hRxQ=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/profile.png">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/profile.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/profile.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/profile.png">
-<link rel="mask-icon" href="http://localhost:1313/profile.png">
+<link rel="icon" href="http://localhost:54161/profile.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:54161/profile.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:54161/profile.png">
+<link rel="apple-touch-icon" href="http://localhost:54161/profile.png">
+<link rel="mask-icon" href="http://localhost:54161/profile.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/abap-trfn-bw/">
+<link rel="alternate" hreflang="en" href="http://localhost:54161/posts/abap-trfn-bw/">
 <noscript>
     <style>
         #theme-toggle,
@@ -27,7 +27,50 @@
         }
 
     </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
 </noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-3R9CLWGY39"></script>
       <script>
         var doNotTrack = false;
@@ -41,7 +84,7 @@
           gtag('js', new Date());
           gtag('config', 'G-3R9CLWGY39');
         }
-      </script><meta property="og:url" content="http://localhost:1313/posts/abap-trfn-bw/">
+      </script><meta property="og:url" content="http://localhost:54161/posts/abap-trfn-bw/">
   <meta property="og:site_name" content="Pawel Wiejkut">
   <meta property="og:title" content="Useful modern ABAP statements for BW transformations">
   <meta property="og:description" content="ABAP 7.4 SAP introduced a lot of inline declarations. Nevertheless in BW world many developments are still written in very old syntax, where some of them are even not supported by the cloud version of ABAP (Steampunk). If you want to check out a modern ABAP statement that can be used in BW then this article is definitely for you. Every example contains a previous and a new version to compare. You can treat this post as a ABAP handbook/guide for BW developers. If you want to check more information how to write a clean ABAP code, check out check this website where is an official guide from SAP.">
@@ -66,13 +109,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "http://localhost:1313/posts/"
+      "item": "http://localhost:54161/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Useful modern ABAP statements for BW transformations",
-      "item": "http://localhost:1313/posts/abap-trfn-bw/"
+      "item": "http://localhost:54161/posts/abap-trfn-bw/"
     }
   ]
 }
@@ -94,34 +137,26 @@
   "dateModified": "2022-01-11T21:21:22+01:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/posts/abap-trfn-bw/"
+    "@id": "http://localhost:54161/posts/abap-trfn-bw/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Pawel Wiejkut",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/profile.png"
+      "url": "http://localhost:54161/profile.png"
     }
   }
 }
 </script>
 </head>
 <body id="top">
-    
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
+            <a href="http://localhost:54161/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -145,37 +180,37 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:54161/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span><i class='fa fa-heart'></i>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about-me/" title="About me">
+                <a href="http://localhost:54161/about-me/" title="About me">
                     <span>About me</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/bw/" title="BW">
+                <a href="http://localhost:54161/bw/" title="BW">
                     <span>BW</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/sac-tutorial/" title="SAC">
+                <a href="http://localhost:54161/sac-tutorial/" title="SAC">
                     <span>SAC</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
+                <a href="http://localhost:54161/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
                     <span>ABAP od postaw 🇵🇱 </span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="http://localhost:54161/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="http://localhost:54161/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
@@ -394,8 +429,8 @@ You can declare lv_integer directly after method IMPORTING, EXPORTING or RETURNI
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/bw/">BW</a></li>
-      <li><a href="http://localhost:1313/tags/abap/">ABAP</a></li>
+      <li><a href="http://localhost:54161/tags/bw/">BW</a></li>
+      <li><a href="http://localhost:54161/tags/abap/">ABAP</a></li>
     </ul>
   </footer>
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
@@ -426,7 +461,7 @@ You can declare lv_integer directly after method IMPORTING, EXPORTING or RETURNI
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Pawel Wiejkut</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:54161/">Pawel Wiejkut</a></span> · 
 
     <span>
         Powered by
@@ -451,7 +486,6 @@ images.forEach(img => {
   });
 });
 </script>
-
 
 
 <script>

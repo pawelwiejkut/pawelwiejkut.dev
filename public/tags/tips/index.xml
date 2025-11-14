@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>TIPS on Pawel Wiejkut</title>
-    <link>http://localhost:1313/tags/tips/</link>
+    <link>http://localhost:54161/tags/tips/</link>
     <description>Recent content in TIPS on Pawel Wiejkut</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 May 2023 19:56:19 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54161/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BW Tips and Tricks</title>
-      <link>http://localhost:1313/posts/bw-tips-and-tricks/</link>
+      <link>http://localhost:54161/posts/bw-tips-and-tricks/</link>
       <pubDate>Mon, 29 May 2023 19:56:19 +0100</pubDate>
-      <guid>http://localhost:1313/posts/bw-tips-and-tricks/</guid>
+      <guid>http://localhost:54161/posts/bw-tips-and-tricks/</guid>
       <description>&lt;h3 id=&#34;how-to-add-new-line-character-in-text-variable-&#34;&gt;How to add new line character in text variable ?&lt;/h3&gt;
 &lt;p&gt;If you want to add a new line character in text variable of customer exit type, just use standard class cl_abap_char_utilities=&amp;gt;newline:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-abap&#34; data-lang=&#34;abap&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;e_t_range &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;VALUE&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt;( ( &lt;span style=&#34;color:#66d9ef&#34;&gt;sign&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;I&amp;#39;&lt;/span&gt; opt &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;EQ&amp;#39;&lt;/span&gt; low &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; |&lt;span style=&#34;color:#e6db74&#34;&gt; LINE 1 &lt;/span&gt;{ cl_abap_char_utilities&lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt;newline }&lt;span style=&#34;color:#e6db74&#34;&gt; LINE2 &lt;/span&gt;| ) ).&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>

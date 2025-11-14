@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="light">
+<html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=54161&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,17 +9,17 @@
 <meta name="keywords" content="">
 <meta name="description" content="Posts - Pawel Wiejkut">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:54161/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.4c0621a8829edbc808d1f377c9ce00914985697820b7b988f06e2c329d214714.css" integrity="sha256-TAYhqIKe28gI0fN3yc4AkUmFaXggt7mI8G4sMp0hRxQ=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/profile.png">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/profile.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/profile.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/profile.png">
-<link rel="mask-icon" href="http://localhost:1313/profile.png">
+<link rel="icon" href="http://localhost:54161/profile.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:54161/profile.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:54161/profile.png">
+<link rel="apple-touch-icon" href="http://localhost:54161/profile.png">
+<link rel="mask-icon" href="http://localhost:54161/profile.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:54161/posts/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:54161/posts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -28,7 +28,50 @@
         }
 
     </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
 </noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-3R9CLWGY39"></script>
       <script>
         var doNotTrack = false;
@@ -42,7 +85,7 @@
           gtag('js', new Date());
           gtag('config', 'G-3R9CLWGY39');
         }
-      </script><meta property="og:url" content="http://localhost:1313/posts/">
+      </script><meta property="og:url" content="http://localhost:54161/posts/">
   <meta property="og:site_name" content="Pawel Wiejkut">
   <meta property="og:title" content="Posts">
   <meta property="og:description" content="Paweł Wiejkut homepage. ABAP BW SAC HANA Tips &amp; Tricks 👨🏻‍💻">
@@ -62,27 +105,19 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "http://localhost:1313/posts/"
+      "item": "http://localhost:54161/posts/"
     }
   ]
 }
 </script>
 </head>
 <body class="list" id="top">
-    
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
+            <a href="http://localhost:54161/" accesskey="h" title="Pawel Wiejkut (Alt + H)">Pawel Wiejkut</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -106,37 +141,37 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:54161/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span><i class='fa fa-heart'></i>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about-me/" title="About me">
+                <a href="http://localhost:54161/about-me/" title="About me">
                     <span>About me</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/bw/" title="BW">
+                <a href="http://localhost:54161/bw/" title="BW">
                     <span>BW</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/sac-tutorial/" title="SAC">
+                <a href="http://localhost:54161/sac-tutorial/" title="SAC">
                     <span>SAC</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
+                <a href="http://localhost:54161/abap-od-podstaw/" title="ABAP od postaw 🇵🇱 ">
                     <span>ABAP od postaw 🇵🇱 </span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="http://localhost:54161/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="http://localhost:54161/posts/" title="Posts">
                     <span class="active">Posts</span>
                 </a>
             </li>
@@ -161,7 +196,7 @@ Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do z
 Zaczynamy od skopiowania poprzedniego programu. Aby to zrobić, w transakcji se80 klikamy prawym przyciskiem myszy na nasz poprzedni program i klikamy na copy. W Source Target podajemy ZFSCREEN, a następnie potwierdzamy, następnie zaznaczamy wszystkie check’i i wybieramy swoją paczkę oraz transport. ...</p>
   </div>
   <footer class="entry-footer"><span title='2017-04-09 17:01:40 +0100 +0100'>April 9, 2017</span>&nbsp;·&nbsp;<span>2 min</span></footer>
-  <a class="entry-link" aria-label="post link to Ekran Wyboru" href="http://localhost:1313/posts/ekran-wyboru/"></a>
+  <a class="entry-link" aria-label="post link to Ekran Wyboru" href="http://localhost:54161/posts/ekran-wyboru/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -176,7 +211,7 @@ Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami. Wpisuje
 </p>
   </div>
   <footer class="entry-footer"><span title='2017-03-19 17:01:40 +0100 CET'>March 19, 2017</span>&nbsp;·&nbsp;<span>2 min</span></footer>
-  <a class="entry-link" aria-label="post link to Tworzymy ALV Grid" href="http://localhost:1313/posts/tworzymy-alv-grid/"></a>
+  <a class="entry-link" aria-label="post link to Tworzymy ALV Grid" href="http://localhost:54161/posts/tworzymy-alv-grid/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -190,7 +225,7 @@ Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do z
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2017-03-12 10:08:21 +0100 CET'>March 12, 2017</span>&nbsp;·&nbsp;<span>2 min</span></footer>
-  <a class="entry-link" aria-label="post link to Hello World W ABAPie" href="http://localhost:1313/posts/hello-world-w-abapie/"></a>
+  <a class="entry-link" aria-label="post link to Hello World W ABAPie" href="http://localhost:54161/posts/hello-world-w-abapie/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -202,11 +237,11 @@ Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do z
     <p>Kiedy mamy już zainstalowanego SAP NetWeavera, należy aktywować naszą instalację SAP. Proces ten jest o wiele łatwiejszy niż instalacja, wymaga jednak pewnego oswojenia z interfejsem. Aktywacja instalacji jest niezbędna aby można było tworzyć programy w ABAPie. Przejdźmy do rzeczy. Od jakiegoś czasu tworzę kurs online poświęcony właśnie pogramowaniu w ABAPie, jeżeli jesteś zainteresowany, sprawdź proszę kursy.saponit.pl Logujemy się do systemu i wchodzimy w transakcję SLICENSE. Kopiujemy active hardware key. Przechodzimy na stronę https://go.support.sap.com/minisap/ , wybieramy NPL i klikamy Generate. Krok ten dobrze jest wykonać w przeglądarce Internet Exploler. Po zapisaniu wygenerowanego pliku, wracamy do transakcji SLICENSE gdzie klikamy na Install. Po zakończeniu procesu nasz numer instalacji powinien zostać zmieniony na DEMOSYSTEM. Teraz należy wpisać Acces Key, aby to zrobić stworzymy od razu paczkę w której możemy następnie umieszczać swoje programy. W tym celu przechodzimy do transakcji se80. Żeby stworzyć paczkę, należy w wpisać jej nazwę zaczynającą się od Z albo Y, następnie nacisnąć enter. Uzupełniamy wymagane pola Następnie klikamy prawym klawiszem myszy na paczce i wybieramy Create -&gt; Program. Uzupełniamy nazwę programu. Następnie przechodzimy do folderu z rozpakowanymi plikami i otwieramy plik readme.html, skąd kopiujemy klucz. Na końcu wklejamy klucz do SAPA i klikamy Continue Potwierdzamy utworzenie programu poprzez kliknięcie save Na końcu klikamy na ikonę dyskietki Gotowe ! System jest teraz w pełni aktywny i gotowy do działania. </p>
   </div>
   <footer class="entry-footer"><span title='2017-03-04 21:44:24 +0200 +0200'>March 4, 2017</span>&nbsp;·&nbsp;<span>2 min</span></footer>
-  <a class="entry-link" aria-label="post link to Aktywacja SAP Netveawer 7.5" href="http://localhost:1313/posts/aktywacja-netveawer/"></a>
+  <a class="entry-link" aria-label="post link to Aktywacja SAP Netveawer 7.5" href="http://localhost:54161/posts/aktywacja-netveawer/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/posts/page/4/">
+    <a class="prev" href="http://localhost:54161/posts/page/4/">
       «&nbsp;Prev&nbsp;
     </a>
   </nav>
@@ -214,7 +249,7 @@ Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do z
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Pawel Wiejkut</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:54161/">Pawel Wiejkut</a></span> · 
 
     <span>
         Powered by
@@ -239,7 +274,6 @@ images.forEach(img => {
   });
 });
 </script>
-
 
 
 <script>

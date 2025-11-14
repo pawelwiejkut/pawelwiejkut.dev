@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ABAP Od Podstaw on Pawel Wiejkut</title>
-    <link>http://localhost:1313/tags/abap-od-podstaw/</link>
+    <link>http://localhost:54161/tags/abap-od-podstaw/</link>
     <description>Recent content in ABAP Od Podstaw on Pawel Wiejkut</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Jan 2022 18:33:53 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/abap-od-podstaw/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54161/tags/abap-od-podstaw/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jak zainstalować SAPa żeby nauczyć się ABAPa?</title>
-      <link>http://localhost:1313/posts/instalacja-sapa/</link>
+      <link>http://localhost:54161/posts/instalacja-sapa/</link>
       <pubDate>Sat, 29 Jan 2022 18:33:53 +0100</pubDate>
-      <guid>http://localhost:1313/posts/instalacja-sapa/</guid>
+      <guid>http://localhost:54161/posts/instalacja-sapa/</guid>
       <description>&lt;p&gt;Cześć!
 To jest poradnik dla kompletnych laików, dlatego też tytuł jest bardzo skrótowy. Co bowiem oznacza instalacja SAP-a ?  SAP (Systemanalyse und Programmentwicklung) jest nazwą firmy, powstałej w 1972 roku w Waldorfie zajmującej się tworzeniem oprogramowania. Zachęcam, żeby poczytać więcej o niej &lt;a href=&#34;https://en.wikipedia.org/wiki/SAP&#34;&gt;tutaj&lt;/a&gt;. Dziś chciałem pokazać Ci prosty sposób na instalację systemu SAP NetWeaver, który to umożliwi Ci naukę programowania w języku ABAP. &lt;/br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;mark&gt;Ten tutorial był kiedyś dostępny w wersji tekstowej, teraz dostępna jest duzo nowsza wersja wideo, która równiez jest częścią płatnego kursu abap dostępnego pod adresem &lt;a href=&#34;https://saponit.pl/kurs-abap&#34;&gt;https://saponit.pl/kurs-abap&lt;/a&gt;&lt;/mark&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Joby W ABAPie</title>
-      <link>http://localhost:1313/posts/joby-w-abapie/</link>
+      <link>http://localhost:54161/posts/joby-w-abapie/</link>
       <pubDate>Sat, 23 Jan 2021 18:25:44 +0100</pubDate>
-      <guid>http://localhost:1313/posts/joby-w-abapie/</guid>
+      <guid>http://localhost:54161/posts/joby-w-abapie/</guid>
       <description>&lt;p&gt;Z tej lekcji dowiesz się jak działają joby w ABAPie. Napiszemy prosty program który bedzie odpowiedzialny za wstawienie danych do tabeli a następnie ustawimy go jako proces w tle. Dodatkowo opowiadam tez o tym czym są warianty, oraz jak je tworzyć.
 &lt;mark&gt; To wideo jest częścią płatnego kursu ABAP od podstaw, dostępnego na &lt;a href=&#34;https://saponit.pl/kurs-abap&#34;&gt;https://saponit.pl/kurs-abap&lt;/a&gt;&lt;/mark&gt;&lt;/p&gt;
 &lt;iframe width=&#34;700&#34; height=&#34;450&#34; src=&#34;https://www.youtube.com/embed/hedhGVK6OKI&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>Działania na plikach</title>
-      <link>http://localhost:1313/posts/dzialania-na-plikach/</link>
+      <link>http://localhost:54161/posts/dzialania-na-plikach/</link>
       <pubDate>Mon, 06 May 2019 17:53:34 +0100</pubDate>
-      <guid>http://localhost:1313/posts/dzialania-na-plikach/</guid>
+      <guid>http://localhost:54161/posts/dzialania-na-plikach/</guid>
       <description>&lt;p&gt;Potrafimy już tworzyć podstawowe struktury danych, wiemy też jak zalogować informację przy użyciu Balloga. Czas więc przejść do kolejnego kroku i dowiedzieć się w jaki sposób możemy przeprocesować dane zewnętrzne w ABAPie. Weźmy na przykład taki plik .csv, z którego chcielibyśmy przenieść do tabeli:&lt;/p&gt;
-&lt;p&gt;employees &lt;a href=&#34;http://localhost:1313/dzialania_na_plikach/employees.csv&#34;&gt;Pobierz&lt;/a&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;employees &lt;a href=&#34;http://localhost:54161/dzialania_na_plikach/employees.csv&#34;&gt;Pobierz&lt;/a&gt;&lt;/br&gt;&lt;/p&gt;
 &lt;p&gt;Procedura jest ogólnie będzie dość prosta – jedną tabelkę już przecież mamy. Nasz program będzie potrafił:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;wczytać dane od użytkownika,&lt;/li&gt;
@@ -43,128 +43,128 @@ To jest poradnik dla kompletnych laików, dlatego też tytuł jest bardzo skrót
     </item>
     <item>
       <title>Ballog czyli logowanie danych w ABAPie</title>
-      <link>http://localhost:1313/posts/ballog-abap-logowanie/</link>
+      <link>http://localhost:54161/posts/ballog-abap-logowanie/</link>
       <pubDate>Sun, 14 Apr 2019 17:01:40 +0100</pubDate>
-      <guid>http://localhost:1313/posts/ballog-abap-logowanie/</guid>
+      <guid>http://localhost:54161/posts/ballog-abap-logowanie/</guid>
       <description>&lt;p&gt;Każdy język programowania posiada możliwość zapisania informacji technicznej, czy też zdarzenia które może być pomocna później na przykład podczas sprawdzenia poprawności działania napisanego programu. W wielu językach czynność ta sprowadza się często do napisania jednej linijki kodu, np:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Oh, coś poszło nie tak!&amp;#34;&lt;/span&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;W ABAPie sytuacja jest trochę bardziej skomplikowana. Zacznijmy może od napisania prostego programu, który będzie opierać się na stworzonych przez nas wcześniej obiektach DDICowych. Żeby nauczyć się czegoś nowego polecam razem ze mną wykonać wszystko w eclipse, oczywiście równie dobrze każdy krok będzie działać też bezpośrednio w SAP GUI.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ekran Wyboru</title>
-      <link>http://localhost:1313/posts/ekran-wyboru/</link>
+      <link>http://localhost:54161/posts/ekran-wyboru/</link>
       <pubDate>Sun, 09 Apr 2017 17:01:40 +0100</pubDate>
-      <guid>http://localhost:1313/posts/ekran-wyboru/</guid>
+      <guid>http://localhost:54161/posts/ekran-wyboru/</guid>
       <description>&lt;p&gt;Dzisiejsza instrukcja będzie nieco krótsza i dotyczyć będzie rozszerzenia naszego poprzedniego programu z tego wpisu o klika linijek kodu odpowiedzialnych za stworzenie ekranu. Nasz tworzony ekran będzie odpowiadał za umożliwienie nam wyboru wyników wyświetlanych w tabeli w zależności od numeru połączenia i numeru przewoźnika.&lt;/p&gt;
 &lt;p&gt;&lt;mark&gt;Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: &lt;a href=&#34;https://saponit.pl/kurs-abap/&#34;&gt;https://saponit.pl/kurs-abap/&lt;/a&gt;&lt;/mark&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Zaczynamy od skopiowania poprzedniego programu. Aby to zrobić, w transakcji se80 klikamy prawym przyciskiem myszy na nasz poprzedni program i klikamy na copy.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ekran_wyboru/1.png#center&#34; width=&#34;70%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/ekran_wyboru/1.png#center&#34; width=&#34;70%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;W Source Target podajemy ZFSCREEN, a następnie potwierdzamy, następnie zaznaczamy wszystkie check’i i wybieramy swoją paczkę oraz transport.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ekran_wyboru/2.png#center&#34; width=&#34;50%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/ekran_wyboru/2.png#center&#34; width=&#34;50%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ekran_wyboru/3.png#center&#34; width=&#34;50%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/ekran_wyboru/3.png#center&#34; width=&#34;50%&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;</description>
     </item>
     <item>
       <title>Tworzymy ALV Grid</title>
-      <link>http://localhost:1313/posts/tworzymy-alv-grid/</link>
+      <link>http://localhost:54161/posts/tworzymy-alv-grid/</link>
       <pubDate>Sun, 19 Mar 2017 17:01:40 +0100</pubDate>
-      <guid>http://localhost:1313/posts/tworzymy-alv-grid/</guid>
+      <guid>http://localhost:54161/posts/tworzymy-alv-grid/</guid>
       <description>&lt;p&gt;Witajcie w kolejnej części kursu programowania w ABAPie. Dzisiaj pokaże po krótce jak stworzyć ALV GRID, czyli przekładając na język polski – tabelę. Ustawimy też od razu formatowanie kodu przy użyciu pretty printer.&lt;/p&gt;
 &lt;p&gt;&lt;mark&gt;Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: &lt;a href=&#34;https://saponit.pl/kurs-abap/&#34;&gt;https://saponit.pl/kurs-abap/&lt;/a&gt;&lt;/mark&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Wchodzimy w transakcję se38 odpowiedzialną za zarządzanie programami.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/1.png#center&#34; width=&#34;70%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/1.png#center&#34; width=&#34;70%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Wpisujemy nazwę programu ZALVGRID i klikamy na „Create”.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/2.png#center&#34; width=&#34;70%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/2.png#center&#34; width=&#34;70%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Wpisujemy opis i wybieramy typ programu jako „Executable program”&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/3.png#center&#34; width=&#34;70%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/3.png#center&#34; width=&#34;70%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Wybieramy stworzoną przez nas wcześniej paczkę programu i zapisujemy.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/4.png#center&#34; width=&#34;50%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/4.png#center&#34; width=&#34;50%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;Klikamy na Pattern. Przycisk ten jest odpowiedzialny za wywoływanie funkcji, metod itp.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/5.png#center&#34; width=&#34;70%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/5.png#center&#34; width=&#34;70%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;Wpisujemy nazwę funkcji: „REUSE_ALV_GRID_DISPLAY”.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/6.png#center&#34; width=&#34;50%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/6.png#center&#34; width=&#34;50%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;Aby skonfigurować funkcję Pretty Printer czyli formatowanie kodu, klikany na „Utilities” a następnie na „Settings”.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/7.png#center&#34; width=&#34;70%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/7.png#center&#34; width=&#34;70%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;Następnie ustawiamy opcje w zakładce „Abap editor” „Pretty printer” tak jak na ekranie poniżej.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/8.png#center&#34; width=&#34;60%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/8.png#center&#34; width=&#34;60%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;9&#34;&gt;
 &lt;li&gt;Wracamy do naszego programu, zmieniłam nieco funkcję usuwając niepotrzebne argumenty które nie będą wykorzystywane. W momencie kiedy będziesz pisać ten program spróbuj użyć skrótu klawiszowego alt + spacja, który jest odpowiedzialny za uzupełnianie i podpowiadanie.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/9.png#center&#34; width=&#34;60%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/9.png#center&#34; width=&#34;60%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;10&#34;&gt;
 &lt;li&gt;Spróbuj teraz sformatować kod programu. Służy do tego  skrót klawiszowy shift + f1.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/10.png#center&#34; width=&#34;60%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/10.png#center&#34; width=&#34;60%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;11&#34;&gt;
 &lt;li&gt;GUI Zapewnia jeszcze jeden ważny feature, mianowicie możliwość sprawdzenia poprawności programu. Aby użyć tej funkcji należy kliknąć ikonę u góry bądź nacisnąć skrót klawiszowy ctrl+ F2.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/11.png#center&#34; width=&#34;60%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/11.png#center&#34; width=&#34;60%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;12&#34;&gt;
 &lt;li&gt;Końcowy program powinien wyglądać tak jak na ekranie poniżej. Następnie zapisujemy, aktywujemy i uruchamiamy program.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/12.png#center&#34; width=&#34;70%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/12.png#center&#34; width=&#34;70%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-abap&#34; data-lang=&#34;abap&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
@@ -192,16 +192,16 @@ To jest poradnik dla kompletnych laików, dlatego też tytuł jest bardzo skrót
 &lt;li&gt;Końcowy efekt powinien wyglądać tak jak na zrzucie ekranu poniżej&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tworzymy_alv_grid/13.png#center&#34; width=&#34;70%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/tworzymy_alv_grid/13.png#center&#34; width=&#34;70%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;p&gt;Gratulacje, właśnie napisałeś program który korzysta z modułu funcyjnego. Wiesz już też jak działa poprawianie czytelności kodu, sprawdzanie błędów, aktywacja, czy jego uruchamianie. W kolejnych poradnikach zajmiemy się modyfikacją tego pomysłu oraz jego rozbudowywaniem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello World W ABAPie</title>
-      <link>http://localhost:1313/posts/hello-world-w-abapie/</link>
+      <link>http://localhost:54161/posts/hello-world-w-abapie/</link>
       <pubDate>Sun, 12 Mar 2017 10:08:21 +0100</pubDate>
-      <guid>http://localhost:1313/posts/hello-world-w-abapie/</guid>
+      <guid>http://localhost:54161/posts/hello-world-w-abapie/</guid>
       <description>&lt;p&gt;Witajcie w kolejnym poradniku dotyczącym SAPa na blogu. Dzisiejszy wpis będzie dotyczyć uzupełnienia tabel przykładowymi danymi oraz napisania prostego programu w ABAPie, zapraszam do lektury 🙂&lt;/p&gt;
 &lt;mark&gt;
 Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do zapoznania się z ofertą: https://saponit.pl/kurs-abap/
@@ -210,84 +210,84 @@ Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do z
 &lt;li&gt;Uruchamiamy naszą instalację. Pamiętaj o tym że po uruchomieniu maszyny wirtualnej, trzeba jeszcze zalogować się na odpowiedniego użytkownika i uruchomić odpowiednie procesy. Opis tego jak to zrobić możesz sprawdzić w jednym z poprzednich wpisów. Przechodzimy teraz do transakcji se38. Jest to transakcja odpowiedzialna za zarządzanie programami, nazywanymi też zamiennie w SAPie raportami.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/1.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/1.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Po przejściu do transakcji w polu „Program” wpisujemy SAPBC_DATA_GENERATOR . Jest to nazwa programu odpowiedzialnego za wypełnienie przykładowych tabel danymi na których można później swobodnie operować . Następnie uruchamiamy program poprzez kliknięcie ikonki Execute (skrót klawiszowy F8).&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/2.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/2.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Wybieramy opcję „Standard data record”, a następnie klikamy znów execute.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/3.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/3.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Potwierdzamy komunikat o nadpisywaniu danych w tabeli (te tabele aktualnie i tak są puste).&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/4.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/4.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;Żeby sprawdzić czy dane w tabeli naprawdę istnieją, przechodzimy do transakcji se16. Aby uruchomić transakcję będąc w innej, należy poprzedzić kod transakcji „/n”. Zwróć uwagę że program wypełnił 3 tabele: SPFLI,SFLIGHT i SBOOK. W tym SPFLI ma 26 rekordów.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/5.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/5.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;Wpisujemy nazwę tabeli którą chcemy sprawdzić i naciskamy enter.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/6.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/6.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;Żeby sprawdzić liczbę rekordów należy nacisnąć klawisz Number of Enteries. Można też sprawdzić zawartość tabeli przez kliknięcie execute.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/7.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/7.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;Po kinięciu na number of enteries, wyświetlony zostanie komunikat.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/8.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/8.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;9&#34;&gt;
 &lt;li&gt;Przechodzimy teraz do transakcji se80, która jest wspólną transakcją do tworzenia oprogramowania w SAPie.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/9.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/9.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;10&#34;&gt;
 &lt;li&gt;Wchodzimy teraz w program utworzony w poprzednim kroku, i włączamy edycję poprzez naciśnięcie zaznaczonej ikonki.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/10.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/10.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;11&#34;&gt;
 &lt;li&gt;W prawej stronie ekranu wpisujemy kod odpowiedzialny za wyświetlenie Hello World. Następnie zapisujemy, aktywujemy i uruchamiamy program.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/11.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/11.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;12&#34;&gt;
 &lt;li&gt;Wynik działania programu powinien być taki jak przedstawiono na ekranie poniżej.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/12.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/12.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;ol start=&#34;13&#34;&gt;
@@ -312,55 +312,55 @@ Jeżeli szukasz kompletnego kursu online abap od podstaw – zapraszam Cię do z
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;WRITE&lt;/span&gt;:/ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/hello_world_w_abapie/13.png#center&#34; width=&#34;80%&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:54161/hello_world_w_abapie/13.png#center&#34; width=&#34;80%&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;p&gt;Wynik działania naszego programu powinien wyglądać tak jak na obrazku poniżej.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ABAP od podstaw</title>
-      <link>http://localhost:1313/abap-od-podstaw/</link>
+      <link>http://localhost:54161/abap-od-podstaw/</link>
       <pubDate>Sat, 04 Mar 2017 21:44:24 +0200</pubDate>
-      <guid>http://localhost:1313/abap-od-podstaw/</guid>
+      <guid>http://localhost:54161/abap-od-podstaw/</guid>
       <description>&lt;p&gt;Hej!&lt;/p&gt;
 &lt;p&gt;W 2017 roku napisałem tutorial „Jak zainstalować SAPa żeby nauczyć się ABAPa” przez dwa lata wyświetliliście ten artykuł blisko 10 tysięcy razy ! Równocześnie z wpisem na blogu powstał też film na youtube który zbliża się już do 100 tys wyświetleń.Te liczby mówią same za siebie, dlatego postanowiłem całą serię przedłużyć i pokazać wam więcej.&lt;/p&gt;
 &lt;p&gt;Chcesz nauczyć się programować w języku ABAP ? A może chciałbyś lepiej zrozumieć w jaki sposób działają procesy w rozwiązaniach opartych na platformie NetVeawer ? Jeśli tak to to miejsce jest dla Ciebie! Lista poniżej będzie stopniowo rozbudowywana o coraz to nowsze artykuły które pozwolą Ci zdobyć niezbędną techniczną wiedzę do programowania aplikacji w ABAPie.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Aktywacja SAP Netveawer 7.5</title>
-      <link>http://localhost:1313/posts/aktywacja-netveawer/</link>
+      <link>http://localhost:54161/posts/aktywacja-netveawer/</link>
       <pubDate>Sat, 04 Mar 2017 21:44:24 +0200</pubDate>
-      <guid>http://localhost:1313/posts/aktywacja-netveawer/</guid>
+      <guid>http://localhost:54161/posts/aktywacja-netveawer/</guid>
       <description>&lt;p&gt;Kiedy mamy już zainstalowanego SAP NetWeavera, należy aktywować naszą instalację SAP. Proces ten jest o wiele łatwiejszy niż instalacja, wymaga jednak pewnego oswojenia z interfejsem. Aktywacja instalacji jest niezbędna aby można było tworzyć programy w ABAPie. Przejdźmy do rzeczy.
 &lt;mark&gt;Od jakiegoś czasu tworzę kurs online poświęcony właśnie pogramowaniu w ABAPie, jeżeli jesteś zainteresowany, sprawdź proszę kursy.saponit.pl &lt;/mark&gt;&lt;/p&gt;
 &lt;!--End mc_embed_signup--&gt;
 &lt;ol&gt;
 &lt;li&gt;Logujemy się do systemu i wchodzimy w transakcję SLICENSE.
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/slicense.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/slicense.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Kopiujemy  active hardware key.
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/hardware_key-1.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/hardware_key-1.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Przechodzimy na stronę &lt;a href=&#34;https://go.support.sap.com/minisap/&#34;&gt;https://go.support.sap.com/minisap/&lt;/a&gt; , wybieramy NPL i klikamy Generate. Krok ten dobrze jest wykonać w przeglądarce Internet Exploler.
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/generate-1.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/generate-1.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Po zapisaniu wygenerowanego pliku, wracamy do transakcji SLICENSE gdzie klikamy na Install. Po zakończeniu procesu nasz numer instalacji powinien zostać zmieniony na DEMOSYSTEM.
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/demosystem-1.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/demosystem-1.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Teraz należy wpisać Acces Key, aby to zrobić stworzymy od razu paczkę w której możemy następnie umieszczać swoje programy. W tym celu przechodzimy do transakcji se80.
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/se80.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/se80.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Żeby stworzyć paczkę, należy w wpisać jej nazwę zaczynającą się od Z albo Y, następnie nacisnąć enter.
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/package.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/package.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Uzupełniamy wymagane pola
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/package_desc.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/package_desc.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Następnie klikamy prawym klawiszem myszy na paczce i wybieramy Create -&amp;gt; Program.
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/create_program.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/create_program.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Uzupełniamy nazwę programu.
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/create_program_desc.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/create_program_desc.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Następnie przechodzimy do folderu z rozpakowanymi plikami i otwieramy plik readme.html, skąd kopiujemy klucz.
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/key.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/key.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Na końcu wklejamy klucz do SAPA i klikamy Continue
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/register.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/register.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Potwierdzamy utworzenie programu poprzez kliknięcie save
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/save.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/save.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Na końcu klikamy na ikonę dyskietki
-&lt;img src=&#34;http://localhost:1313/aktywacja_netveawer/save2.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:54161/aktywacja_netveawer/save2.png&#34; width=&#34;80%&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Gotowe ! System jest teraz w pełni aktywny i gotowy do działania.&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
